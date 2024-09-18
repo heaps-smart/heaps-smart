@@ -36,7 +36,6 @@ export default function Contact() {
                     d="M3 10h18M3 14h18"
                   />
                 </svg>
-                PO Box 238 Mission Beach QLD 4852
               </p>
               <p className="flex items-center text-neutral-600 dark:text-neutral-400">
                 <svg

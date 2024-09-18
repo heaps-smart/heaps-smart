@@ -7,7 +7,6 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm">
             <p>&copy; 2024 Heaps Smart.</p>
-            <p>Empowering non-profits with smart digital solutions.</p>
           </div>
           <div className="flex space-x-6">
             <a href="/contact" className="hover:text-blue-500">
