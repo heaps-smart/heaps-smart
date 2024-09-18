@@ -1,14 +1,16 @@
-'use client';
-
-import Link from "next/link";
 import { Logo } from "./logo";
 
 export function HeroLogo() {
   return (
-    <section className="flex-col flex items-center justify-center mt-16 mb-16 md:mb-12">
-      <Link href="/">
-        <Logo />
-      </Link>
+    <section
+      className="flex items-center justify-center h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: `url('/assets/img/rainforest.jpg')`,
+      }}
+    >
+      <div className="bg-black bg-opacity-50 p-8 aspect-square flex items-center justify-center">
+        <Logo gradientColor="transparent" />
+      </div>
     </section>
   );
-};
+}

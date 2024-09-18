@@ -11,7 +11,6 @@ export default function Index() {
 
   return (
     <main>
-      <Container>
         <HeroLogo />
         {/* <Header /> */}
         {/* <section>
@@ -37,7 +36,6 @@ export default function Index() {
         </section>
         
         {<AllPosts posts={allPosts} />} */}
-      </Container>
       {/* <section className="bg-slate-100 py-8 w-full">
           <div className="container mx-auto px-4 max-w-screen-xl">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tighter">Chat with us for free.</h2>
