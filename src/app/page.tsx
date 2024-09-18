@@ -1,5 +1,6 @@
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
+import { HeroLogo } from "@/app/_components/hero-logo";
 import Image from "next/image";
 import CoverImage from "@/app/_components/cover-image";
 import { AllPosts } from "@/app/_components/all-posts";
@@ -11,8 +12,9 @@ export default function Index() {
   return (
     <main>
       <Container>
-        <Header />
-        <section>
+        <HeroLogo />
+        {/* <Header /> */}
+        {/* <section>
           <div className="mb-8 md:mb-16">
             <CoverImage title="Henlo" src="/assets/img/mountains.jpg" />
           </div>
@@ -34,9 +36,9 @@ export default function Index() {
           </div>
         </section>
         
-        {<AllPosts posts={allPosts} />}
+        {<AllPosts posts={allPosts} />} */}
       </Container>
-      <section className="bg-slate-100 py-8 w-full">
+      {/* <section className="bg-slate-100 py-8 w-full">
           <div className="container mx-auto px-4 max-w-screen-xl">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tighter">Chat with us for free.</h2>
 
@@ -50,7 +52,7 @@ export default function Index() {
               Get in touch
             </a>
             </div>
-        </section>
+        </section> */}
     </main>
   );
 }

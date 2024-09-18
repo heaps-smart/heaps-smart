@@ -1,7 +1,6 @@
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import CoverImage from "@/app/_components/cover-image";
-import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
