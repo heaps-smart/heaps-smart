@@ -25,7 +25,7 @@ export function PostPreview({
 }: Props) {
   return (
     <div>
-      <div className="mb-5">
+      <div className="mb-5 relative w-full aspect-[16/9] overflow-hidden">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <h3 className="text-3xl font-bold mb-3 leading-snug tracking-tight">

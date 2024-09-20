@@ -2,7 +2,7 @@
 title: "The Dyrt"
 subtitle: "Simplifying the camping experience"
 excerpt: The Dyrt is a leading platform dedicated to helping outdoor enthusiasts discover and enjoy camping in The Great Outdoors. Founded with the mission to simplify the camping experience, The Dyrt can be thought of as the Airbnb of camping. The mobile and web application provides comprehensive campground discovery, user-generated reviews, photos, and essential information for campers and campground owners alike"
-coverImage: "/assets/blog/hello-world/cover.jpg"
+coverImage:  "/assets/img/mountains.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
   name: Derek Blank

@@ -1,5 +1,6 @@
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
+import { Footer } from "@/app/_components/footer";
 
 export default function Contact() {
   return (
@@ -132,6 +133,7 @@ export default function Contact() {
           </div>
         </section>
       </Container>
+      <Footer />
     </main>
   );
 }
