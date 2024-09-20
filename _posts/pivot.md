@@ -2,13 +2,13 @@
 title: "Pivot"
 subtitle: "Helping schools drive greater impact with data"
 excerpt: "Pivot Professional Learning provides K-12 schools with research-backed survey tools designed to improve both teaching and learning experiences. Their mission is to empower educators and students with actionable insights that drive improved educational outcomes."
-coverImage: "/assets/img/classroom.jpg"
+coverImage: "/heaps-smart/assets/img/classroom.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
   name: Derek Blank
-  picture: "/assets/img/classroom.jpg"
+  picture: "/heaps-smart/assets/img/classroom.jpg"
 ogImage:
-  url: "/assets/img/classroom.jpg"
+  url: "/heaps-smart/assets/img/classroom.jpg"
 ---
 
 **About**:  Pivot Professional Learning provides K-12 schools with research-backed survey tools designed to improve both teaching and learning experiences. Their mission is to empower educators and students with actionable insights that drive improved educational outcomes.
