@@ -20,9 +20,16 @@ export function getPostBySlug(slug: string) {
 
 export function getAllPosts(): Post[] {
   const slugs = getPostSlugs();
+  
   const posts = slugs
-    .map((slug) => getPostBySlug(slug))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+    .map((slug) => {
+      const post = getPostBySlug(slug);
+      const fullPath = join(postsDirectory, `${slug}`);
+      const stats = fs.statSync(fullPath);
+      const lastModified = stats.mtime; // Get the last modified time
+      return { ...post, lastModified };
+    })
+    .sort((post1, post2) => (post1.lastModified > post2.lastModified ? -1 : 1));
+
   return posts;
 }

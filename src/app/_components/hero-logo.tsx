@@ -5,7 +5,7 @@ export function HeroLogo() {
     <section
       className="flex items-center justify-center h-screen bg-cover bg-center"
       style={{
-        backgroundImage: `url('/heaps-smart/assets/img/rainforest.jpg')`,
+        backgroundImage: `url('/assets/img/rainforest.jpg')`,
       }}
     >
       <div className="bg-black bg-opacity-50 p-8 aspect-square flex items-center justify-center">

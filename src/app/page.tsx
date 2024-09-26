@@ -1,8 +1,8 @@
+import { useEffect } from "react";
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
-import { HeroLogo } from "@/app/_components/hero-logo";
-import Image from "next/image";
 import CoverImage from "@/app/_components/cover-image";
+import Footer from "@/app/_components/footer";
 import { AllPosts } from "@/app/_components/all-posts";
 import { getAllPosts } from "@/lib/api";
 
@@ -11,18 +11,47 @@ export default function Index() {
 
   return (
     <main>
-        <HeroLogo />
-        {/* <Header /> */}
-        {/* <section>
-          <div className="mb-8 md:mb-16">
-            <CoverImage title="Henlo" src="/assets/img/mountains.jpg" />
-          </div>
+      <Container>
+        <Header />
+        <section>
+          <section className="mb-8 md:mb-16 relative">
+            <CoverImage title="Henlo" src="/assets/img/hinchinbrook.jpg" />
+            <div className="absolute top-0 left-0 p-8 text-[#355E3B] text-4xl md:text-6xl font-bold tracking-tighter">
+              <h1 className="relative inline-flex items-baseline">Technology for Good.</h1>
+            </div>
+          </section>
           <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
             <div>
               <h3 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
                 What We Do
               </h3>
-              <Image src="/assets/img/what-we-do.png" alt="Henlo" layout="responsive" width={1194} height={354} />
+
+              <div className="flex justify-between items-center mr-8">
+                <div className="text-center">
+                  <img src="/assets/svg/web.svg" alt="Web" width={64} height={64} />
+                  <p className="mt-2 text-sm font-semibold tracking-tight">Web</p>
+                </div>
+                <div className="text-center">
+                  <img src="/assets/svg/mobile.svg" alt="Mobile" width={64} height={64} />
+                  <p className="mt-2 text-sm font-semibold tracking-tight">Mobile</p>
+                </div>
+                <div className="text-center">
+                  <img src="/assets/svg/data.svg" alt="Data" width={64} height={64} />
+                  <p className="mt-2 text-sm font-semibold tracking-tight">Data</p>
+                </div>
+                <div className="text-center">
+                  <img src="/assets/svg/design.svg" alt="Design" width={64} height={64} />
+                  <p className="mt-2 text-sm font-semibold tracking-tight">Design</p>
+                </div>
+                <div className="text-center">
+                  <img src="/assets/svg/sound.svg" alt="Sound" width={64} height={64} />
+                  <p className="mt-2 text-sm font-semibold tracking-tight">Sound</p>
+                </div>
+                <div className="text-center">
+                  <img src="/assets/svg/training.svg" alt="Training" width={64} height={64} />
+                  <p className="mt-2 text-sm font-semibold tracking-tight">Training</p>
+                </div>
+              </div>
             </div>
             <div>
               <p className="text-lg leading-relaxed mb-4">
@@ -34,23 +63,25 @@ export default function Index() {
             </div>
           </div>
         </section>
-        
-        {<AllPosts posts={allPosts} />} */}
-      {/* <section className="bg-slate-100 py-8 w-full">
-          <div className="container mx-auto px-4 max-w-screen-xl">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tighter">Chat with us for free.</h2>
 
-            <p className="text-lg mb-6">
-              We’re known for our enthusiastic approach to people and problems and look forward to helping you achieve your mission. Initial consultations are always free.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block bg-white py-2 px-4 rounded font-bold text-lg hover:bg-gray-200"
-            >
-              Get in touch
-            </a>
-            </div>
-        </section> */}
+        {/* {<AllPosts posts={allPosts} />} */}
+      </Container>
+      <section className="bg-slate-100 py-8 w-full">
+        <div className="container mx-auto px-4 max-w-screen-xl text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-tighter">Nice to meet you.</h2>
+
+          <p className="text-lg mb-6">
+            We’re creatives, technologists and problem solvers.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block bg-white py-2 px-4 rounded font-bold text-lg hover:bg-gray-200"
+          >
+            Get in touch
+          </a>
+        </div>
+      </section>
+      <Footer />
     </main>
   );
 }

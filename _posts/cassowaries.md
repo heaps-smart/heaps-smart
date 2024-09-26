@@ -1,14 +1,14 @@
 ---
-title: "C4: Community for Coastal and Cassowary Conservation"
+title: "Engaging a Community for Cassowary Conservation."
 subtitle: "Engaging a Community for Cassowary Conservation"
 excerpt: "Since 1990, the C4 community has been dedicated to preserving the natural wonders of Queensland’s Cassowary Coast, where the ancient Wet Tropics meet the Great Barrier Reef. Through community collaboration, education, and innovative action, C4 spearheads efforts to protect the endangered Southern Cassowary and its critical habitats."
-coverImage: "/heaps-smart/assets/img/rainforest.jpg"
+coverImage: "/assets/img/rainforest.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
   name: Derek Blank
-  picture: "/heaps-smart/assets/blog/authors/jj.jpeg"
+  picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: "/heaps-smart/assets/img/rainforest.jpg"
+  url: "/assets/img/rainforest.jpg"
 ---
 
 **About**: Since 1990, the C4 community has been dedicated to preserving the natural wonders of Queensland’s Cassowary Coast, where the ancient Wet Tropics meet the Great Barrier Reef. Through community collaboration, education, and innovative action, C4 spearheads efforts to protect the endangered Southern Cassowary and its critical habitats.

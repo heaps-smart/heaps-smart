@@ -25,15 +25,12 @@ export function PostPreview({
 }: Props) {
   return (
     <div>
-      <div className="mb-5 relative w-full aspect-[16/9] overflow-hidden">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
       <h3 className="text-3xl font-bold mb-3 leading-snug tracking-tight">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
       </h3>
-      {subtitle && <h2 className="text-xl md:text-xl leading-tight mb-4 font-bold">{subtitle}</h2>}
+      {/* {subtitle && <h2 className="text-xl md:text-xl leading-tight tracking-tight mb-4 font-semibold">{subtitle}</h2>} */}
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
     </div>
   );

@@ -12,17 +12,17 @@ export function Header() {
       <nav className="mt-5 md:mt-0">
         <ul className="flex space-x-6 text-lg">
           <li>
-            <Link href="/work" className="hover:text-blue-600 duration-200 transition-colors">
+            <Link href="/work" className="duration-200 transition-colors">
               Our Work
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-blue-600 duration-200 transition-colors">
+            <Link href="/about" className="duration-200 transition-colors">
               About Us
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-blue-600 duration-200 transition-colors">
+            <Link href="/contact" className="duration-200 transition-colors">
               Contact
             </Link>
           </li>

@@ -1,10 +1,6 @@
-interface LogoProps {
-  gradientColor?: string;
-}
-
-export function Logo({ gradientColor = 'blue' }: LogoProps) {
+export function Logo() {
 	return (
-		<div className={`p-4 bg-gradient-to-r from-${gradientColor}-500 to-${gradientColor}-600`}>
+		<div className="p-4 bg-[#355E3B]">
 			<svg
 				width="200"
 				height="121"

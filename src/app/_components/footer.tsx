@@ -6,7 +6,8 @@ export function Footer() {
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-sm">
-            <p>&copy; 2024 Heaps Smart.</p>
+            <p className="mb-3">&copy; 2024 Heaps Smart.</p>
+            <p>ABN 23456789876543</p>
           </div>
           <div className="flex space-x-6">
             <a href="/contact" className="hover:text-blue-500">
