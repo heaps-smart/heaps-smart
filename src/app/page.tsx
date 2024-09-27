@@ -13,8 +13,10 @@ export default function Index() {
 
         <section className="mb-8 md:mb-16 relative">
           <CoverImage title="Hinchinbrook Island" src="/assets/img/hinchinbrook.jpg" />
-          <div className="absolute top-0 left-0 p-8 text-[#355E3B] text-4xl md:text-6xl font-bold tracking-tighter">
-            <h1 className="relative inline-flex items-baseline">Technology for good.</h1>
+          <div className="absolute top-0 left-0 p-8">
+            <h1 className="text-[#355E3B] text-2xl sm:text-5xl md:text-6xl font-bold tracking-tighter">
+              Technology for good.
+            </h1>
           </div>
         </section>
 
@@ -30,7 +32,7 @@ export default function Index() {
                 { src: "/assets/svg/sound.svg", alt: "Sound", label: "Sound" },
                 { src: "/assets/svg/training.svg", alt: "Training", label: "Training" },
               ].map((item, idx) => (
-                <div key={idx} className="text-center flex flex-col items-center mx-4">
+                <div key={idx} className="text-center flex flex-col items-center mx-4 mb-4">
                   <Image src={item.src} alt={item.alt} width={64} height={64} />
                   <p className="mt-2 text-sm font-semibold tracking-tight">{item.label}</p>
                 </div>
