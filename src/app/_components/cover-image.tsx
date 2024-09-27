@@ -1,4 +1,3 @@
-import cn from "classnames";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -12,16 +11,15 @@ const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image
       src={src}
-      alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm w-full", {
-        "hover:shadow-lg transition-shadow duration-200": slug,
-      })}
+      className="shadow-sm w-full hover:shadow-lg transition-shadow duration-200"
+      alt={title}
       width={1300}
       height={630}
     />
   );
+
   return (
-    <div className="sm:mx-0">
+    <figure className="sm:mx-0">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}
@@ -29,7 +27,12 @@ const CoverImage = ({ title, src, slug }: Props) => {
       ) : (
         image
       )}
-    </div>
+      {title && (
+        <figcaption className="text-xs text-black mt-2 text-right">
+          Photo: {title}
+        </figcaption>
+      )}
+    </figure>
   );
 };
 

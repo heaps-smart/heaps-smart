@@ -1,6 +1,6 @@
 export function Logo() {
 	return (
-		<div className="p-4 bg-[#355E3B]">
+		<div className="p-4 bg-gradient-to-br from-[#333] to-[#111]">
 			<svg
 				width="200"
 				height="121"

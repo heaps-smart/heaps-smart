@@ -30,13 +30,6 @@ export default function Index() {
           </section>
           <section className="flex items-start">
             <div className="w-1/2">
-              <Image
-                src="/assets/img/heaps-smart.jpg"
-                alt="Placeholder"
-                width={500}
-                height={300}
-                layout="responsive"
-              />
             </div>
             <div className="w-1/2 pl-8">
               <h2 className="text-5xl font-bold mb-8 tracking-tighter">Our Founders</h2>

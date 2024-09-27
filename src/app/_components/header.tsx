@@ -12,17 +12,17 @@ export function Header() {
       <nav className="mt-5 md:mt-0">
         <ul className="flex space-x-6 text-lg">
           <li>
-            <Link href="/work" className="duration-200 transition-colors">
-              Our Work
+            <Link href="#work" className="font-semibold duration-200 transition-colors tracking-tight">
+              What we do
             </Link>
           </li>
           <li>
-            <Link href="/about" className="duration-200 transition-colors">
-              About Us
+            <Link href="#about" className="font-semibold duration-200 transition-colors tracking-tight">
+              About us
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="duration-200 transition-colors">
+            <Link href="#contact" className="font-semibold duration-200 transition-colors tracking-tight">
               Contact
             </Link>
           </li>

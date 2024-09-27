@@ -9,7 +9,6 @@ export default function Contact() {
       <Container>
         <Header />
 
-        {/* Main Heading Section */}
         <section className="text-center mb-12">
           <h1 className="text-5xl font-bold tracking-tighter mb-4">
             Nice to meet you.
@@ -19,7 +18,6 @@ export default function Contact() {
           </p>
         </section>
 
-        {/* Contact Information Section */}
         <section className="flex flex-col items-center text-center space-y-4">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tighter">
             info@heaps-smart.com
