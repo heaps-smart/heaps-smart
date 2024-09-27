@@ -12,12 +12,11 @@ export default function Index() {
         <Header />
 
         <section className="mb-8 md:mb-16 relative">
+          <h1 className="text-[#355E3B] text-4xl font-bold tracking-tighter mb-4 sm:text-2xl sm:mb-0 sm:absolute sm:top-0 sm:left-0 sm:p-8 sm:text-5xl md:text-6xl">
+            Technology for good.
+          </h1>
+          
           <CoverImage title="Hinchinbrook Island" src="/assets/img/hinchinbrook.jpg" />
-          <div className="absolute top-0 left-0 p-8">
-            <h1 className="text-[#355E3B] text-2xl sm:text-5xl md:text-6xl font-bold tracking-tighter">
-              Technology for good.
-            </h1>
-          </div>
         </section>
 
         <section id="work" className="mb-20 md:mb-28">
