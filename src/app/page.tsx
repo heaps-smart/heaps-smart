@@ -12,7 +12,7 @@ export default function Index() {
         <Header />
 
         <section className="mb-8 md:mb-16 relative">
-          <CoverImage title="Hinchinbrook Island" src="/assets/img/hinchinbrook.jpg" />
+          <CoverImage title="Hinchinbrook Island" src="/heaps-smart/assets/img/hinchinbrook.jpg" />
           <div className="absolute top-0 left-0 p-8 text-[#355E3B] text-4xl md:text-6xl font-bold tracking-tighter">
             <h1 className="relative inline-flex items-baseline">Technology for good.</h1>
           </div>
@@ -23,12 +23,12 @@ export default function Index() {
           <div className="flex flex-col md:flex-row items-start md:items-center">
             <div className="flex justify-between items-center w-full md:w-1/2 flex-wrap mb-4">
               {[
-                { src: "/assets/svg/web.svg", alt: "Web", label: "Web" },
-                { src: "/assets/svg/mobile.svg", alt: "Mobile", label: "Mobile" },
-                { src: "/assets/svg/data.svg", alt: "Data", label: "Data" },
-                { src: "/assets/svg/design.svg", alt: "Design", label: "Design" },
-                { src: "/assets/svg/sound.svg", alt: "Sound", label: "Sound" },
-                { src: "/assets/svg/training.svg", alt: "Training", label: "Training" },
+                { src: "/heaps-smart/assets/svg/web.svg", alt: "Web", label: "Web" },
+                { src: "/heaps-smart/assets/svg/mobile.svg", alt: "Mobile", label: "Mobile" },
+                { src: "/heaps-smart/assets/svg/data.svg", alt: "Data", label: "Data" },
+                { src: "/heaps-smart/assets/svg/design.svg", alt: "Design", label: "Design" },
+                { src: "/heaps-smart/assets/svg/sound.svg", alt: "Sound", label: "Sound" },
+                { src: "/heaps-smart/assets/svg/training.svg", alt: "Training", label: "Training" },
               ].map((item, idx) => (
                 <div key={idx} className="text-center flex flex-col items-center mx-4">
                   <img src={item.src} alt={item.alt} width={64} height={64} />
@@ -50,7 +50,7 @@ export default function Index() {
         <div className="container mx-auto flex flex-col md:flex-row items-start">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <Image
-              src="/assets/img/rainforest-2.jpg"
+              src="/heaps-smart/assets/img/rainforest-2.jpg"
               alt="Placeholder"
               width={500}
               height={300}
