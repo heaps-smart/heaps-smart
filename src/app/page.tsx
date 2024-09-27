@@ -31,7 +31,7 @@ export default function Index() {
                 { src: "/heaps-smart/assets/svg/training.svg", alt: "Training", label: "Training" },
               ].map((item, idx) => (
                 <div key={idx} className="text-center flex flex-col items-center mx-4">
-                  <img src={item.src} alt={item.alt} width={64} height={64} />
+                  <Image src={item.src} alt={item.alt} width={64} height={64} />
                   <p className="mt-2 text-sm font-semibold tracking-tight">{item.label}</p>
                 </div>
               ))}
@@ -72,7 +72,7 @@ export default function Index() {
 
       <section id="contact" className="w-full bg-[#355E3B] py-20">
         <div className="container mx-auto p-10 max-w-screen-xl text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">We'd love to hear from you.</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">We&#39;d love to hear from you.</h2>
           <p className="text-lg mb-6">Have a project or idea for us?</p>
 
           <address className="not-italic">
