@@ -1,3 +1,4 @@
+// Page file (e.g., index.js or main layout file)
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import CoverImage from "@/app/_components/cover-image";
@@ -5,7 +6,6 @@ import Footer from "@/app/_components/footer";
 import Image from "next/image";
 
 export default function Index() {
-
   return (
     <main>
       <Container>
@@ -15,10 +15,11 @@ export default function Index() {
           <h1 className="text-[#355E3B] text-4xl font-bold tracking-tighter mb-4 sm:text-2xl sm:mb-0 sm:absolute sm:top-0 sm:left-0 sm:p-8 sm:text-5xl md:text-6xl">
             Technology for good.
           </h1>
-          
+
           <CoverImage title="Hinchinbrook Island" src="/assets/img/hinchinbrook.jpg" />
         </section>
 
+        {/* Updated "What we do" Section */}
         <section id="work" className="mb-20 md:mb-28">
           <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight text-left">What we do</h2>
           <div className="flex flex-col md:flex-row items-start md:items-center">
@@ -40,36 +41,12 @@ export default function Index() {
 
             <div className="text-lg leading-relaxed mt-4 md:mt-0 md:w-1/2 pl-8">
               <p>
-                At Heaps Smart, we solve problems with technology. We support and empower for-good organisations, large and small, by providing innovative and beautifully designed tech solutions that address unique challenges.
+                Heaps Smart is a collective of creative technologists based in Mission Beach, Queensland. We create <b>websites</b>, <b>mobile apps</b>, and <b>data solutions</b> focused on non-profits, businesses, and organisations located in Far North Queensland and beyond.
               </p>
             </div>
           </div>
         </section>
       </Container>
-
-      <section id="about" className="w-full bg-[#f1f3f5] py-16 px-8">
-        <div className="container mx-auto flex flex-col md:flex-row items-start">
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <Image
-              src="/assets/img/rainforest-2.jpg"
-              alt="Placeholder"
-              width={500}
-              height={300}
-              layout="responsive"
-            />
-          </div>
-          
-          <div className="w-full md:w-1/2 md:pl-8">
-            <h2 className="text-5xl font-bold mb-8 tracking-tighter">About Us</h2>
-            <p className="mb-8">
-              Heaps Smart was founded by Derek and Kate Blank, a husband-and-wife technology design team with over 15 years of experience globally and a strong commitment to making a difference locally. After years spent in the private sector leading product and engineering development for web and mobile technologies, it was time for a tree-change.
-            </p>
-            <p className="mb-8">
-              After relocating to the tropics of Far North Queensland, a greener, more sustainable way of life emerged, and Heaps Smart was born.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section id="contact" className="w-full bg-[#355E3B] py-20">
         <div className="container mx-auto p-10 max-w-screen-xl text-center text-white">
