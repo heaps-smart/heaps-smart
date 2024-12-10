@@ -3,7 +3,7 @@ export function Logo({ fill = "white" }) {
   const oppositeColor = fill === "black" ? "white" : "black";
 
   return (
-    <div className="bg-gradient-to-br from-[#fff]/30 to-[#fff]/50">
+    <div className={fill !== "white" ? "bg-gradient-to-br from-[#fff]/30 to-[#fff]/50" : "bg-white"}>
       <svg
         width="230"
         height="139"
@@ -12,14 +12,8 @@ export function Logo({ fill = "white" }) {
       >
         <defs>
           <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#353b5f">
-              <animate attributeName="stop-color" values="#353b5f;#4f5a89;#353b5f" dur="6s" repeatCount="indefinite" />
-            </stop>
             <stop offset="50%" stopColor="#000000">
-              <animate attributeName="stop-color" values="#000000;#1a1a1a;#000000" dur="3s" repeatCount="indefinite" />
-            </stop>
-            <stop offset="100%" stopColor="#ffffff">
-              <animate attributeName="stop-color" values="#353b5faa;#353b5f;#353b5faa" dur="6s" repeatCount="indefinite" />
+              <animate attributeName="stop-color" values="#000000;#000000" dur="3s" repeatCount="indefinite" />
             </stop>
           </linearGradient>
           <mask id="cutout-mask">

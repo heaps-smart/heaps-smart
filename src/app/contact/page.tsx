@@ -4,10 +4,10 @@ import Footer from "@/app/_components/footer";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#000000] font-sans">
+    <div className="min-h-screen flex flex-col bg-[#000000] text-[#FFFFFF] font-sans">
       {/* Header */}
       <Container>
-        <Header />
+        <Header inverted={true} />
       </Container>
 
       <main className="flex-grow">
@@ -23,7 +23,7 @@ export default function Contact() {
             <p className="text-4xl md:text-5xl font-semibold mb-8">
               <a
                 href="mailto:hello@heaps-smart.com"
-                className="text-neutral-700 dark:text-neutral-200 hover:underline"
+                className="text-neutral-300 hover:underline"
               >
                 hello@heaps-smart.com
               </a>
@@ -32,7 +32,7 @@ export default function Contact() {
         </Container>
       </main>
 
-      <Footer />
+      <Footer inverted={true} />
     </div>
   );
 }

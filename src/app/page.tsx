@@ -49,39 +49,42 @@ export default function About() {
           </h2>
           <div className="relative mt-auto mb-16">
             <p className="tracking-tight md:text-3xl max-w-4xl">
-              We design and develop{" "}
-              <b>websites</b>, <b>mobile apps</b>, and <b>digital experiences</b> for{" "}
-              <u>non-profits</u>, <u>businesses</u>, and <u>purpose-driven organisations</u>.
+              We are <b>creatives</b> and <b>technologists</b> that build <b>digital experiences</b> and <b>online products</b> for <u>non-profits</u> and <u>purpose-driven organisations</u> - <br />right here, in Far North Queensland.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            {[
-              {
-                title: "Helping Non-Profits Go Digital",
-                content:
-                  "Non-profits deserve tools that make their work easier. Our experienced digital solutions helps for-good organisations reach more people through technology.",
-              },
-              {
-                title: "Connecting to Community",
-                content:
-                  "Your cause should be simple for people to discover and support. From digital marketing campaigns to online app platforms, we help you stay connected and grow your audience.",
-              },
-              {
-                title: "Custom Tools for Your Mission",
-                content:
-                  "Every organisation has unique needs. Whether it's managing volunteers, or tracking cassowaries, we work directly with your organisation to provide purpose-built solutions.",
-              },
-              {
-                title: "Beautiful Solutions That Work",
-                content:
-                  "A great website or app does more than look good—it inspires action. With user-friendly design and smooth functionality, your audience stays engaged.",
-              },
-            ].map((item, idx) => (
-              <div key={idx}>
-                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
-                <p className="text-sm leading-relaxed">{item.content}</p>
-              </div>
-            ))}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Start with <i>why</i>
+              </h3>
+              <p className="text-sm">
+                We believe understanding your ‘why' is the first step toward meaningful change. By identifying your priorities, we help shape a digital strategy that maximises impact while making the most of your resources.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Design that does <i>more</i>
+              </h3>
+              <p className="text-sm">
+                Great design isn't just about looking good — it's about creating tools that inspire action and understanding. From websites to apps, we craft user-first solutions that turn visitors into advocates.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Build for <i>your</i> needs
+              </h3>
+              <p className="text-sm">
+                No two organisations are the same. Whether you need tools for managing volunteers or tracking cassowary activity, we build purpose-built solutions for your unique goals — and train your team along the way!
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Reach more people, <i>simply</i>
+              </h3>
+              <p className="text-sm">
+                Your work should be easy to find and support. We help you connect with a wider online audience through clear communication, thoughtful campaigns, and platforms that keep people engaged.
+              </p>
+            </div>
           </div>
         </section>
       </Container>
