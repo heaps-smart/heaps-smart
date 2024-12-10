@@ -43,8 +43,7 @@ export default function About() {
       <Container>
         <section className="py-16">
           <h2
-            className="text-4xl sm:text-5xl md:text-8xl font-bold mb-12 tracking-tight interactive"
-            data-speed="0.2"
+            className="text-4xl sm:text-5xl md:text-8xl font-bold mb-12 tracking-tight"
           >
             Technology for good.
           </h2>
@@ -70,7 +69,7 @@ export default function About() {
               {
                 title: "Custom Tools for Your Mission",
                 content:
-                  "Every organisation has unique needs. Whether it’s managing volunteers, or tracking cassowaries, we work directly with your organisation to provide purpose-built solutions.",
+                  "Every organisation has unique needs. Whether it's managing volunteers, or tracking cassowaries, we work directly with your organisation to provide purpose-built solutions.",
               },
               {
                 title: "Beautiful Solutions That Work",

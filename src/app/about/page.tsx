@@ -13,10 +13,10 @@ export default function About() {
       <Container>
         <section className="py-16 flex flex-col md:flex-row items-center md:items-start gap-12">
           <div className="flex-1">
-            <h2 className="text-8xl font-bold mb-8 tracking-tight">About Us</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-8xl font-bold mb-12 tracking-tight">About Us</h2>
             <p className="tracking-tight md:text-3xl max-w-4xl mb-6">
               Heaps Smart started with a mission to empower professional women, building their confidence in using online tools through hands-on technology training.
-              As our team grew, so did our vision. Today, we’ve evolved to offer creative development services tailored to the unique needs of non-profits and
+              As our team grew, so did our vision. Today, we've evolved to offer creative development services tailored to the unique needs of non-profits and
               purpose-driven organisations.
             </p>
             <p className="tracking-tight md:text-2xl max-w-2xl">
