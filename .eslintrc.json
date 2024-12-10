@@ -4,6 +4,8 @@
     "@typescript-eslint/no-unused-vars": "off",
     "no-unused-vars": "off",
     "react/display-name": "off",
-    "no-var": "error"
+    "no-var": "error",
+    "@next/next/no-img-element": "off",
+    "react/no-unescaped-entities": "off"
   }
 }
