@@ -11,15 +11,14 @@ const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <Image
       src={src}
-      className="shadow-sm w-full hover:shadow-lg transition-shadow duration-200"
+      className="shadow-sm w-full h-full object-cover hover:shadow-lg transition-shadow duration-200"
       alt={title}
-      width={1300}
-      height={630}
+      fill
     />
   );
 
   return (
-    <figure className="sm:mx-0">
+    <figure className="relative w-full h-[100vh] sm:mx-0"> 
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}
@@ -28,7 +27,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
         image
       )}
       {title && (
-        <figcaption className="text-xs text-black mt-2 text-right">
+        <figcaption className="absolute bottom-4 right-4 text-xs text-white bg-black bg-opacity-50 px-2 py-1 rounded">
           Photo: {title}
         </figcaption>
       )}

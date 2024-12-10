@@ -1,66 +1,105 @@
-// Page file (e.g., index.js or main layout file)
+"use client";
+
+import { useEffect } from "react";
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
-import CoverImage from "@/app/_components/cover-image";
 import Footer from "@/app/_components/footer";
 import Image from "next/image";
 
-export default function Index() {
+export default function About() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const parallaxElement = document.querySelector<HTMLDivElement>(".parallax");
+      if (parallaxElement) {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        parallaxElement.style.transform = `translateY(${scrollY * 0.5}px)`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <main>
+    <main className="bg-[#FFFFFF] text-[#000000] font-sans">
+      <header className="relative h-[70vh] overflow-hidden">
+        <div className="absolute inset-0 parallax">
+          <Image
+            src="/assets/img/hinchinbrook.jpg"
+            alt="Hinchinbrook Island"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className="relative h-full flex flex-col justify-between bg-gradient-to-t from-[#FFFFFF]/70 to-transparent">
+          <Container>
+            <Header />
+          </Container>
+        </div>
+      </header>
+
       <Container>
-        <Header />
-
-        <section className="mb-8 md:mb-16 relative">
-          <h1 className="text-[#355E3B] text-4xl font-bold tracking-tighter mb-4 sm:text-2xl sm:mb-0 sm:absolute sm:top-0 sm:left-0 sm:p-8 sm:text-5xl md:text-6xl">
+        <section className="py-16">
+          <h2
+            className="text-4xl sm:text-5xl md:text-8xl font-bold mb-12 tracking-tight interactive"
+            data-speed="0.2"
+          >
             Technology for good.
-          </h1>
-
-          <CoverImage title="Hinchinbrook Island" src="/assets/img/hinchinbrook.jpg" />
-        </section>
-
-        {/* Updated "What we do" Section */}
-        <section id="work" className="mb-20 md:mb-28">
-          <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight text-left">What we do</h2>
-          <div className="flex flex-col md:flex-row items-start md:items-center">
-            <div className="flex justify-between items-center w-full md:w-1/2 flex-wrap mb-4">
-              {[
-                { src: "/assets/svg/web.svg", alt: "Web", label: "Web" },
-                { src: "/assets/svg/mobile.svg", alt: "Mobile", label: "Mobile" },
-                { src: "/assets/svg/data.svg", alt: "Data", label: "Data" },
-                { src: "/assets/svg/design.svg", alt: "Design", label: "Design" },
-                { src: "/assets/svg/sound.svg", alt: "Sound", label: "Sound" },
-                { src: "/assets/svg/training.svg", alt: "Training", label: "Training" },
-              ].map((item, idx) => (
-                <div key={idx} className="text-center flex flex-col items-center mx-4 mb-4">
-                  <Image src={item.src} alt={item.alt} width={64} height={64} />
-                  <p className="mt-2 text-sm font-semibold tracking-tight">{item.label}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-lg leading-relaxed mt-4 md:mt-0 md:w-1/2 pl-8">
-              <p>
-                Heaps Smart is a collective of creative technologists based in Mission Beach, Queensland. We create <b>websites</b>, <b>mobile apps</b>, and <b>data solutions</b> focused on non-profits, businesses, and organisations located in Far North Queensland and beyond.
-              </p>
-            </div>
+          </h2>
+          <div className="relative mt-auto mb-16">
+            <p className="tracking-tight md:text-3xl max-w-4xl">
+              We design and develop{" "}
+              <b>websites</b>, <b>mobile apps</b>, and <b>digital experiences</b> for{" "}
+              <u>non-profits</u>, <u>businesses</u>, and <u>purpose-driven organisations</u>.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            {[
+              {
+                title: "Helping Non-Profits Go Digital",
+                content:
+                  "Non-profits deserve tools that make their work easier. Our experienced digital solutions helps for-good organisations reach more people through technology.",
+              },
+              {
+                title: "Connecting to Community",
+                content:
+                  "Your cause should be simple for people to discover and support. From digital marketing campaigns to online app platforms, we help you stay connected and grow your audience.",
+              },
+              {
+                title: "Custom Tools for Your Mission",
+                content:
+                  "Every organisation has unique needs. Whether it’s managing volunteers, or tracking cassowaries, we work directly with your organisation to provide purpose-built solutions.",
+              },
+              {
+                title: "Beautiful Solutions That Work",
+                content:
+                  "A great website or app does more than look good—it inspires action. With user-friendly design and smooth functionality, your audience stays engaged.",
+              },
+            ].map((item, idx) => (
+              <div key={idx}>
+                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
+                <p className="text-sm leading-relaxed">{item.content}</p>
+              </div>
+            ))}
           </div>
         </section>
       </Container>
 
-      <section id="contact" className="w-full bg-[#355E3B] py-20">
-        <div className="container mx-auto p-10 max-w-screen-xl text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">We&#39;d love to hear from you.</h2>
-          <p className="text-lg mb-6">Have a project or idea for us?</p>
+      <div className="relative bg-[#F5F5F5] text-[#000000] py-16 text-center">
+        <h2 className="text-[2rem] font-semibold mb-8 tracking-tight">
+          Let's get started.
+        </h2>
+        <a
+          href="mailto:hello@heaps-smart.com"
+          className="inline-block px-8 py-3 bg-[#000000] text-[#FFFFFF] text-lg font-semibold rounded transition-opacity hover:opacity-80"
+        >
+          hello@heaps-smart.com
+        </a>
+      </div>
 
-          <address className="not-italic">
-            <h3 className="text-2xl md:text-2xl font-semibold">
-              hello@heaps-smart.com
-            </h3>
-          </address>
-        </div>
-      </section>
-
+      {/* Footer */}
       <Footer />
     </main>
   );
