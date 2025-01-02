@@ -38,6 +38,9 @@ export default function About() {
             <Header />
           </Container>
         </div>
+        <div className="absolute bottom-4 right-4 bg-[#FFFFFF]/75 text-[#000000] text-sm px-3 py-1 rounded opacity-70">
+          Photo: Hinchinbrook Island
+        </div>
       </header>
 
       <Container>
