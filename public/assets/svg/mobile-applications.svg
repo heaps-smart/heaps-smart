@@ -2,11 +2,9 @@
 <svg width="800px" height="800px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
 	<defs>
 		<linearGradient id="subtleRainbowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-			<stop offset="0%" style="stop-color: #ff7f7f; stop-opacity: 1" />
-			<stop offset="25%" style="stop-color: #ffb86c; stop-opacity: 1" />
-			<stop offset="50%" style="stop-color: #f4e430; stop-opacity: 1" />
-			<stop offset="75%" style="stop-color: #6aff7b; stop-opacity: 1" />
-			<stop offset="100%" style="stop-color: #4d7eff; stop-opacity: 1" />
+        <stop offset="0%" style="stop-color: #739d88; stop-opacity: 1" />
+        <stop offset="50%" style="stop-color: #9fc4aa; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: #d5e5d3; stop-opacity: 1" />
 		</linearGradient>
 	</defs>
 	<path d="M416.488 64.058c-4.414 0-8.076-3.578-8.076-8s3.5-8 7.92-8h0.156c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="url(#subtleRainbowGradient)" />

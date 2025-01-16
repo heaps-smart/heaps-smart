@@ -94,39 +94,39 @@ export default function About() {
             <h3 className="text-3xl font-semibold mb-8 tracking-tight">Our capabilities</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/technical-strategic-consultation.svg" alt="Technical & Strategic Consultation" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Technical & Strategic Consultation</h4>
+                <img src="/assets/svg/ai-solutions.svg" alt="AI and Machine Learning Solutions" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">AI Solutions</h4>
               </div>
               <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/ai-solutions.svg" alt="AI Solutions" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">AI Solutions</h4>
+                <img src="/assets/svg/technical-strategic-consultation.svg" alt="Technical and Strategic Consultation" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Technical and Strategic Consultation</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/geospatial-mapping-solutions.svg" alt="Geospatial Analysis and Mapping Solutions" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Geospatial Analysis and Mapping</h4>
               </div>
               <div className="flex items-center justify-start text-left">
                 <img src="/assets/svg/web-development.svg" alt="Web Development" className="w-20 h-20 mr-4" />
                 <h4 className="text-xl font-semibold">Web Development</h4>
               </div>
               <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/mobile-applications.svg" alt="Mobile Applications" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Mobile Applications</h4>
+                <img src="/assets/svg/mobile-applications.svg" alt="Mobile App Development" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">iOS and Android App Development</h4>
               </div>
               <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/sound-engineering.svg" alt="Sound Engineering" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Sound Engineering</h4>
+                <img src="/assets/svg/sound-engineering.svg" alt="Audio and Sound Engineering" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Audio and Sound Engineering</h4>
               </div>
               <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/geospatial-mapping-solutions.svg" alt="Geospatial and Mapping Solutions" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Geospatial and Mapping Solutions</h4>
-              </div>
-              <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/data-infrastructure.svg" alt="Data Infrastructure and Management" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Data Infrastructure and Management</h4>
+                <img src="/assets/svg/data-infrastructure.svg" alt="Data Infrastructure Management" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Data Infrastructure Management</h4>
               </div>
               <div className="flex items-center justify-start text-left">
                 <img src="/assets/svg/digital-communications.svg" alt="Digital Communications" className="w-20 h-20 mr-4" />
                 <h4 className="text-xl font-semibold">Digital Communications</h4>
               </div>
               <div className="flex items-center justify-start text-left">
-                <img src="/assets/svg/training-capacity-building.svg" alt="Training and Capacity Building" className="w-20 h-20 mr-4" />
+                <img src="/assets/svg/training-capacity-building.svg" alt="Training and Skill Development" className="w-20 h-20 mr-4" />
                 <h4 className="text-xl font-semibold">Training and Capacity Building</h4>
               </div>
             </div>

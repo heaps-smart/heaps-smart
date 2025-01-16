@@ -2,11 +2,9 @@
 <svg width="800px" height="800px" viewBox="0 0 1024 1024" fill="#000000" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg">
 	  <defs>
     <linearGradient id="subtleRainbowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color: #ff7f7f; stop-opacity: 1" />
-      <stop offset="25%" style="stop-color: #ffb86c; stop-opacity: 1" />
-      <stop offset="50%" style="stop-color: #f4e430; stop-opacity: 1" />
-      <stop offset="75%" style="stop-color: #6aff7b; stop-opacity: 1" />
-      <stop offset="100%" style="stop-color: #4d7eff; stop-opacity: 1" />
+        <stop offset="0%" style="stop-color: #0077be; stop-opacity: 1" />
+        <stop offset="50%" style="stop-color: #00a3cc; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: #87d4f5; stop-opacity: 1" />
     </linearGradient>
   </defs>
 	<path d="M983.902 1023.894H40.098a7.994 7.994 0 0 1-7.998-8v-95.98c0-68.64 35.562-94.948 101.174-119.474 11.654-4.342 26.706-8.858 42.64-13.636 67.572-20.262 160.124-48.022 160.124-106.838 0-4.422 3.578-7.998 7.998-7.998s7.998 3.576 7.998 7.998c0 70.718-99.134 100.45-171.528 122.162-15.676 4.702-30.478 9.138-41.63 13.31-61.504 22.978-90.778 44.49-90.778 104.476v87.982h927.808v-87.982c0-59.986-29.276-81.498-90.792-104.476-11.138-4.172-25.95-8.61-41.618-13.31-72.39-21.712-171.528-51.444-171.528-122.162a7.994 7.994 0 0 1 7.998-7.998 7.992 7.992 0 0 1 7.998 7.998c0 58.816 92.544 86.576 160.124 106.838 15.934 4.78 30.992 9.294 42.63 13.636 65.626 24.528 101.182 50.834 101.182 119.474v95.98c0 4.422-3.578 8-7.998 8z"  fill="url(#subtleRainbowGradient)" />
