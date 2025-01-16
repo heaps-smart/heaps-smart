@@ -36,7 +36,7 @@ export function Footer({ inverted = false }) {
             </a>
           </div>
           <p className="text-sm text-center md:text-left">
-            This website comes to you from Djiru Country.
+            This website comes to you from <a href="https://cassowaryconservation.org/djiru-country/" className="underline" target="_blank">Djiru Country</a>.
           </p>
         </div>
       </Container>
