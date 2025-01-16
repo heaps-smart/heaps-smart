@@ -5,15 +5,14 @@ import Image from "next/image";
 
 export default function HeapsSmart() {
   return (
-    <main className="bg-[#FFFFFF] text-[#000000] font-sans">
+    <main className="bg-[#FFFFFF] text-[#111111] font-sans">
       <header className="relative h-[75vh] overflow-hidden">
         <div className="absolute inset-0">
         <Image
           src="/assets/img/hinchinbrook.webp"
           alt="Hinchinbrook Island"
           fill
-          style={{ objectFit: 'cover' }}
-          className="clip-diagonal"
+          className="object-cover clip-diagonal"
           aria-label="Scenic view of Hinchinbrook Island"
           priority
         />
@@ -23,7 +22,7 @@ export default function HeapsSmart() {
             <Header />
           </Container>
         </div>
-        <div className="absolute bottom-12 right-4 bg-[#FFFFFF]/75 text-[#000000] text-xs px-3 py-1 rounded opacity-70" aria-hidden="true">
+        <div className="absolute bottom-12 right-4 bg-[#FFFFFF]/75 text-[#111111] text-xs px-3 py-1 rounded opacity-70" aria-hidden="true">
           Photo: Hinchinbrook Island
         </div>
       </header>
