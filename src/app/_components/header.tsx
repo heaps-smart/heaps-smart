@@ -9,8 +9,8 @@ export function Header({ inverted = false }) {
     <section
       className={`flex-col md:flex-row flex items-center justify-between mt-16 mb-16 md:mb-12 ${textColor}`}
     >
-      <Link href="/">
-        <Logo fill={inverted ? "white" : "black"} />
+      <Link href="/" aria-label="Go to homepage">
+        <Logo fill={inverted ? "white" : "black"} aria-label="Heaps Smart logo" />
       </Link>
       <nav className="mt-5 md:mt-0">
         <ul className="flex space-x-6 text-lg">
@@ -18,6 +18,7 @@ export function Header({ inverted = false }) {
             <Link
               href="/about"
               className={`font-semibold duration-200 transition-colors tracking-tight relative group ${textColor}`}
+              aria-label="About page"
             >
               About
               <span
@@ -29,6 +30,7 @@ export function Header({ inverted = false }) {
             <Link
               href="/contact"
               className={`font-semibold duration-200 transition-colors tracking-tight relative group ${textColor}`}
+              aria-label="Contact page"
             >
               Contact
               <span
