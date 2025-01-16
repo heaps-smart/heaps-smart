@@ -33,7 +33,7 @@ export default function About() {
             objectFit="cover"
           />
         </div>
-        <div className="relative h-full flex flex-col justify-between bg-gradient-to-t from-[#FFFFFF]/70 to-transparent">
+        <div className="relative h-full flex flex-col justify-between bg-gradient-to-t from-[#FFFFFF]/20 to-transparent">
           <Container>
             <Header />
           </Container>
@@ -55,38 +55,80 @@ export default function About() {
               We are <b>creatives</b> and <b>technologists</b> that build <b>digital experiences</b> and <b>online products</b> for <u>non-profits</u> and <u>purpose-driven organisations</u> - <br />right here, in Far North Queensland.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div>
-              <h3 className="text-lg font-semibold mb-4">
-                Start with <i>why</i>
+              <h3 className="text-lg font-semibold mb-4 tracking-tight">
+                Ethical technology
               </h3>
               <p className="text-sm">
-                We believe understanding your ‘why' is the first step toward meaningful change. By identifying your priorities, we help shape a digital strategy that maximises impact while making the most of your resources.
+                We create ethical products that combine smart tech with big ideas to make a positive impact.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">
-                Design that does <i>more</i>
+              <h3 className="text-lg font-semibold mb-4 tracking-tight">
+                Heaps Smart tools
               </h3>
               <p className="text-sm">
-                Great design isn't just about looking good — it's about creating tools that inspire action and understanding. From websites to apps, we craft user-first solutions that turn visitors into advocates.
+                We build solutions using data, mapping and AI to make your work easier and more insightful.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">
-                Build for <i>your</i> needs
+              <h3 className="text-lg font-semibold mb-4 tracking-tight">
+                Communicate with data
               </h3>
               <p className="text-sm">
-                No two organisations are the same. Whether you need tools for managing volunteers or tracking cassowary activity, we build purpose-built solutions for your unique goals — and train your team along the way!
+                We help you turn complex data into clear insights or compelling stories that anyone can understand.
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">
-                Reach more people, <i>simply</i>
+              <h3 className="text-lg font-semibold mb-4 tracking-tight">
+                Build capacity and skills
               </h3>
               <p className="text-sm">
-                Your work should be easy to find and support. We help you connect with a wider online audience through clear communication, thoughtful campaigns, and platforms that keep people engaged.
+                We work with leaders and teams on how to confidently use AI and technology in practical ways to tackle unique problems.
               </p>
+            </div>
+          </div>
+
+          <div className="relative mt-auto mb-16">
+            <h3 className="text-3xl font-semibold mb-8 tracking-tight">Our capabilities</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/technical-strategic-consultation.svg" alt="Technical & Strategic Consultation" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Technical & Strategic Consultation</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/ai-solutions.svg" alt="AI Solutions" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">AI Solutions</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/web-development.svg" alt="Web Development" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Web Development</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/mobile-applications.svg" alt="Mobile Applications" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Mobile Applications</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/sound-engineering.svg" alt="Sound Engineering" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Sound Engineering</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/geospatial-mapping-solutions.svg" alt="Geospatial and Mapping Solutions" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Geospatial and Mapping Solutions</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/data-infrastructure.svg" alt="Data Infrastructure and Management" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Data Infrastructure and Management</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/digital-communications.svg" alt="Digital Communications" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Digital Communications</h4>
+              </div>
+              <div className="flex items-center justify-start text-left">
+                <img src="/assets/svg/training-capacity-building.svg" alt="Training and Capacity Building" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Training and Capacity Building</h4>
+              </div>
             </div>
           </div>
         </section>
