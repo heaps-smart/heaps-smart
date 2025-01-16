@@ -52,3 +52,7 @@ body {
 .swell path {
 	animation: wave 8s ease-in-out infinite;
 }
+
+.clip-diagonal {
+	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5%), 0 100%);
+}

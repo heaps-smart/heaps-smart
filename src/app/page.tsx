@@ -47,11 +47,11 @@ export default function HeapsSmart() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex items-center justify-start text-left" aria-labelledby="ai-assisted-solutions">
                 <img src="/assets/svg/ai-solutions.svg" alt="AI and Machine Learning Solutions" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">AI-Assisted Solutions</h4>
+                <h4 className="text-xl font-semibold">AI Solutions</h4>
               </div>
-              <div className="flex items-center justify-start text-left" aria-labelledby="technical-strategic-consulting">
-                <img src="/assets/svg/technical-strategic-consultation.svg" alt="Technical and Strategic Consulting" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Technical and Strategic Consulting</h4>
+              <div className="flex items-center justify-start text-left" aria-labelledby="data-infrastructure">
+                <img src="/assets/svg/data-infrastructure.svg" alt="Data Infrastructure Management" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Data Infrastructure Management</h4>
               </div>
               <div className="flex items-center justify-start text-left" aria-labelledby="geospatial-mapping">
                 <img src="/assets/svg/geospatial-mapping-solutions.svg" alt="Geospatial Analysis and Mapping Solutions" className="w-20 h-20 mr-4" />
@@ -63,15 +63,15 @@ export default function HeapsSmart() {
               </div>
               <div className="flex items-center justify-start text-left" aria-labelledby="mobile-app-development">
                 <img src="/assets/svg/mobile-applications.svg" alt="Mobile App Development" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">iOS and Android App Development</h4>
+                <h4 className="text-xl font-semibold">Mobile App Development</h4>
+              </div>
+              <div className="flex items-center justify-start text-left" aria-labelledby="technical-strategic-consulting">
+                <img src="/assets/svg/technical-strategic-consultation.svg" alt="Technical and Strategic Consulting" className="w-20 h-20 mr-4" />
+                <h4 className="text-xl font-semibold">Technical Consulting</h4>
               </div>
               <div className="flex items-center justify-start text-left" aria-labelledby="audio-sound-engineering">
                 <img src="/assets/svg/sound-engineering.svg" alt="Audio and Sound Engineering" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Audio and Sound Engineering</h4>
-              </div>
-              <div className="flex items-center justify-start text-left" aria-labelledby="data-infrastructure">
-                <img src="/assets/svg/data-infrastructure.svg" alt="Data Infrastructure Management" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">Data Infrastructure Management</h4>
+                <h4 className="text-xl font-semibold">Audio Engineering</h4>
               </div>
               <div className="flex items-center justify-start text-left" aria-labelledby="digital-communications">
                 <img src="/assets/svg/digital-communications.svg" alt="Digital Communications" className="w-20 h-20 mr-4" />
