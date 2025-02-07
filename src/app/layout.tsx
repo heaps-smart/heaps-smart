@@ -17,7 +17,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Heaps Smart - Technology for Good</title>
-
         <meta
           name="description"
           content="Heaps Smart is a creative technology agency helping non-profits and purpose-driven organizations by providing digital solutions, including AI, web, and mobile app development."

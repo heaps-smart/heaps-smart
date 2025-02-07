@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-[#121212] text-[#FFFFFF] font-sans" aria-label="About Us Page">
       <Container>
-        <Header inverted={true} />
+        <Header variant="dark" />
       </Container>
 
       <Container>
@@ -44,25 +44,25 @@ export default function About() {
 
         <h3 className="text-3xl font-semibold mb-4 tracking-tight" aria-labelledby="our-mission-section">Our Mission</h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16" aria-labelledby="mission-items">
-          <div>
+          <div className="bg-white/10 p-6 rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105">
             <h3 className="text-lg font-semibold mb-4 tracking-tight">Use ethical technology</h3>
             <p className="text-md">
               We create ethical solutions that blends smart tech with big ideas.
             </p>
           </div>
-          <div>
+          <div className="bg-white/10 p-6 rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105">
             <h3 className="text-lg font-semibold mb-4 tracking-tight">Build <span className="italic">Heaps Smart</span> tools</h3>
             <p className="text-md">
               Our approach combines data, mapping, and AI to make work easier and more insightful.
             </p>
           </div>
-          <div>
+          <div className="bg-white/10 p-6 rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105">
             <h3 className="text-lg font-semibold mb-4 tracking-tight">Communicate with data</h3>
             <p className="text-md">
               We turn complex data into clear insights and compelling stories that anyone can understand.
             </p>
           </div>
-          <div>
+          <div className="bg-white/10 p-6 rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105">
             <h3 className="text-lg font-semibold mb-4 tracking-tight">Expand capacity and skills</h3>
             <p className="text-md">
               We empower leaders and teams on how to confidently use AI and technology in practical ways to tackle unique problems.

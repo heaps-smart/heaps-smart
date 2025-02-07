@@ -3,6 +3,7 @@ import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import Image from "next/image";
 import Swell from "./_components/swell";
+import CalendlyPopup from "./_components/calendly";
 
 export default function HeapsSmart() {
   return (
@@ -90,16 +91,11 @@ export default function HeapsSmart() {
         <h2 id="get-started" className="text-[2rem] font-semibold mb-8 tracking-tight">
           Let's get started.
         </h2>
-        <a
-          href="mailto:hello@heaps-smart.com"
-          className="inline-block px-8 py-3 bg-[#000000] text-[#FFFFFF] text-lg font-semibold rounded transition-opacity hover:opacity-80"
-          aria-label="Send an email to hello@heaps-smart.com"
-        >
-          hello@heaps-smart.com
-        </a>
+        <CalendlyPopup />
       </div>
       <Swell />
       <Footer />
+
     </main>
   );
 }
