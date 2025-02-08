@@ -14,7 +14,7 @@ export default function HeapsSmart() {
           src="/assets/img/hinchinbrook.webp"
           alt="Hinchinbrook Island"
           fill
-          className="object-cover clip-diagonal"
+          className="object-cover"
           aria-label="Scenic view of Hinchinbrook Island"
           priority
         />

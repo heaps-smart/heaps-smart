@@ -48,7 +48,7 @@ export function Footer({ inverted = false }) {
               </a>{" "}
               in Far North Queensland.
             </span>
-            <a href="https://www.youtube.com/watch?v=KOVhDUkmIvk" target="_blank" rel="noopener noreferrer" className="cursor-default" aria-label="Watch the video on YouTube">
+            <a href="https://www.youtube.com/watch?v=KOVhDUkmIvk" target="_blank" rel="noopener noreferrer" className="cursor-default" aria-label="Go for">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"

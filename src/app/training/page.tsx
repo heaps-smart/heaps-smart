@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useEffect } from "react";
   import { FaQuoteLeft } from "react-icons/fa";
 
-export default function Coffee() {
+export default function Training() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://js.stripe.com/v3/pricing-table.js";
@@ -40,18 +40,18 @@ export default function Coffee() {
   return (
     <div className="min-h-screen flex flex-col font-sans" aria-label="Coffee Sessions Page">
       
-      <div className="bg-gradient-to-r from-[#5BBF9D] to-[#4CAF8E] mb-12">
+      <div className="bg-gradient-to-r bg-[#F8F3EF] mb-12">
         <Container className="relative">
-          <Header variant="dark" />
+          <Header variant="light" />
 
-          <h2 id="technology-for-good" className="text-4xl sm:text-5xl md:text-8xl font-bold mt-28 mb-12 tracking-tight text-white drop-shadow-lg">
+          <h2 id="technology-for-good" className="text-4xl sm:text-5xl md:text-8xl font-bold mt-28 mb-12 tracking-tight text-black/85">
             What is AI? Start here.
           </h2>
           <div className="relative mt-auto mb-12">
-            <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-white/90">
-              If you're curious about AI but don't know where to begin, our Coffee Session <b className="text-white">Hello, AI</b> is the perfect starting point. 
+            <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-black/80">
+              If you're curious about AI but don't know where to begin, our Coffee Session <b className="text-black">Hello, AI</b> is the perfect starting point. 
             </p>
-            <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-white/90">
+            <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-black/80">
               In just 90 minutes, you'll join a small group online to explore and discuss key AI topics.
             </p>
             <a
@@ -89,23 +89,23 @@ export default function Coffee() {
         </ul>
       </Container>
 
-      <div className="bg-gradient-to-r from-[#5BBF9D] to-[#4CAF8E] mt-8 mb-4 py-16 text-white">
+      <div className="bg-[#F8F3EF] mt-8 mb-4 py-16">
         <Container>
-          <h3 className="text-4xl font-bold text-center mb-12 tracking-tight">
+          <h3 className="text-4xl font-bold text-center mb-12 tracking-tight text-black/80">
             What People Are Saying
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="bg-white/10 p-6 rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105"
+                className="bg-white/10 p-6 rounded-2xl transition-transform duration-300 hover:scale-105"
               >
-                <FaQuoteLeft className="text-4xl text-white/50 mb-4" />
+                <FaQuoteLeft className="text-4xl text-black/70 mb-4" />
                 <p className="text-lg italic">{testimonial.quote}</p>
                 <div className="flex items-center mt-6 space-x-4">
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-white/80">{testimonial.role}</p>
+                    <p className="text-sm text-black/60">{testimonial.role}</p>
                   </div>
                 </div>
               </div>
