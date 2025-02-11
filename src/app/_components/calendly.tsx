@@ -17,8 +17,8 @@ export default function CalendlyPopup({ url, text, variant = 'light' }: Calendly
   }, []);
 
   const buttonStyles = {
-    light: "inline-block px-8 py-3 bg-[#007999] text-white text-lg font-semibold rounded hover:bg-[#004c73] transition-all",
-    dark: "inline-block px-8 py-3 bg-[#000000] text-[#FFFFFF] text-lg font-semibold rounded transition-opacity hover:opacity-80"
+    light: "inline-block px-8 py-3 bg-[#fcbb1e] text-black text-lg font-semibold rounded hover:bg-[#e0a817] transition-all",
+    dark: "inline-block px-8 py-3 bg-[#000000] text-[#FFFFFF] text-lg font-semibold rounded transition-opacity hover:bg-[#333333]"
   };
 
   if (!isClient) {
