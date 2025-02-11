@@ -68,7 +68,10 @@ export default function HeapsSmart() {
         <h2 id="get-started" className="text-[2rem] font-semibold mb-8 tracking-tight">
           Let's get started.
         </h2>
-        <CalendlyPopup />
+        <CalendlyPopup
+          url="https://calendly.com/heaps-smart/discovery-call"
+          text="Schedule a time to chat →"
+        />
       </div>
       <Swell dark={true} />
       <Footer />

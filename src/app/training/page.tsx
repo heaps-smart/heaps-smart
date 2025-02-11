@@ -2,21 +2,13 @@
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { PopupButton } from "react-calendly";
+import { useState } from "react";
+import CalendlyPopup from "../_components/calendly";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Swell from "../_components/swell";
+
 
 export default function Training() {
-  useEffect(() => {
-    if (typeof document !== "undefined") {
-      const script = document.createElement("script");
-      script.src = "https://js.stripe.com/v3/pricing-table.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }, []);
-
   const testimonials = [
     {
       quote: "I've learned more in the past 20 minutes than I've learned in the last six years.",
@@ -39,8 +31,6 @@ export default function Training() {
   const [showHow, setShowHow] = useState(false);
   const [showNeed, setShowNeed] = useState(false);
 
-  
-
   return (
     <div className="min-h-screen flex flex-col text-black font-sans" aria-label="About Us Page">
       <div className="bg-[#F7F2EE]">
@@ -59,11 +49,10 @@ export default function Training() {
               <p className="tracking-tight md:text-2xl max-w-4xl mb-8 text-black/80">
                 In just 90 mins, you’ll learn the basics and get hands-on with easy-to-use AI tools. Sessions run every Thursday, join us!
               </p>
-              <PopupButton
+              <CalendlyPopup
                 url="https://calendly.com/heaps-smart/coffee-sessions-90mins"
-                rootElement={document.body}
                 text="Sign up now →"
-                className="inline-block px-8 py-3 bg-[#007999] text-white text-lg font-semibold rounded hover:bg-[#004c73] transition-all"
+                variant="light"
               />
             </div>
         </Container>
@@ -110,7 +99,7 @@ export default function Training() {
               <li className="mb-2 text-lg">
                 <b>Bring friends or meet new ones!</b>
                 <br />
-                Each 90-minute session is held online with a small group of 2–5 participants.
+                Each 90-minute session is held online with a small group of 2-5 participants.
               </li>
               <li className="mb-2 text-lg">
                 <b>Learn & discuss</b>
@@ -146,12 +135,12 @@ export default function Training() {
         </div>
       </Container>
 
-      <div className="bg-[#F7F2EE] mt-8 mb-4 py-16">
+      <div className="bg-[#F7F2EE] mt-8 pt-16">
         <Container>
           <h3 className="text-4xl font-bold text-center mb-12 tracking-tight text-black/80">
             What People Are Saying
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
@@ -168,9 +157,9 @@ export default function Training() {
             ))}
           </div>
         </Container>
+        <Swell dark />
+        <Footer inverted={false} />
       </div>
-
-      <Footer inverted={false} />
     </div>
   );
 }

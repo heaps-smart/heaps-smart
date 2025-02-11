@@ -4,10 +4,12 @@ import { useEffect, useState } from "react";
 import { PopupButton } from "react-calendly";
 
 interface CalendlyPopupProps {
+  url: string;
+  text: string;
   variant?: 'light' | 'dark';
 }
 
-export default function CalendlyPopup({ variant = 'light' }: CalendlyPopupProps) {
+export default function CalendlyPopup({ url, text, variant = 'light' }: CalendlyPopupProps) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -25,9 +27,9 @@ export default function CalendlyPopup({ variant = 'light' }: CalendlyPopupProps)
 
   return (
     <PopupButton
-      url="https://calendly.com/heaps-smart/discovery-call"
+      url={url}
       rootElement={document.body}
-      text="Schedule a time to chat →"
+      text={text}
       className={buttonStyles[variant]}
     />
   );

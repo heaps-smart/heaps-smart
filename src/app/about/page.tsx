@@ -82,7 +82,10 @@ export default function About() {
 
       <div className="relative text-black/80 py-16 text-center" aria-labelledby="get-started-section">
         <h2 id="get-started-section" className="text-[2rem] font-semibold mb-8 tracking-tight">Let's get started.</h2>
-        <CalendlyPopup />
+        <CalendlyPopup
+          url="https://calendly.com/heaps-smart/discovery-call"
+          text="Schedule a time to chat →"
+        />
       </div>
       <Swell dark={true} />
       <Footer inverted={false} />
