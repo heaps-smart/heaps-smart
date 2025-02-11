@@ -39,15 +39,15 @@ export default function Training() {
         </Container>
 
         <Container>
-          <h2 id="technology-for-good" className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
-            What is AI? <span className="text-black/90">Start here.</span>
+          <h2 id="technology-for-good" className="text-4xl md:text-6xl tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
+            <span className="font-bold">What is AI?</span> <span className="font-semibold">Start here.</span>
           </h2>
             <div className="relative mt-auto mb-12">
               <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-black/80">
                 We're running relaxed, beginner-friendly online training that will get you started in the world of AI.
               </p>
               <p className="tracking-tight md:text-2xl max-w-4xl mb-8 text-black/80">
-                In just 90 mins, you'll learn the basics and get hands-on with easy-to-use AI tools. Sessions are $55 and run every Thursday &mdash; join us!
+                In just 90 mins, you'll learn the basics and get hands-on with easy-to-use AI tools. Group sessions are $55/pp and run every Thursday &mdash; join us!
               </p>
               <CalendlyPopup
                 url="https://calendly.com/heaps-smart/coffee-sessions-90mins"
