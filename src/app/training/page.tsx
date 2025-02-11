@@ -9,10 +9,12 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Training() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://js.stripe.com/v3/pricing-table.js";
-    script.async = true;
-    document.body.appendChild(script);
+    if (typeof document !== "undefined") {
+      const script = document.createElement("script");
+      script.src = "https://js.stripe.com/v3/pricing-table.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }, []);
 
   const testimonials = [
@@ -36,6 +38,8 @@ export default function Training() {
   const [showLearn, setShowLearn] = useState(false);
   const [showHow, setShowHow] = useState(false);
   const [showNeed, setShowNeed] = useState(false);
+
+  
 
   return (
     <div className="min-h-screen flex flex-col text-black font-sans" aria-label="About Us Page">
