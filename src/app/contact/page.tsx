@@ -5,20 +5,20 @@ import Swell from "../_components/swell";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#121212] text-[#FFFFFF] font-sans" aria-label="Contact Page">
+    <div className="min-h-screen flex flex-col bg-[#F7F2EE] text-black font-sans" aria-label="Contact Page">
       <Container>
-        <Header variant="dark" />
+        <Header variant="light" />
       </Container>
 
       <main className="flex-grow">
         <Container>
-          <section className="py-16" aria-labelledby="get-in-touch">
-            <h2 id="get-in-touch" className="text-5xl md:text-8xl font-bold mb-8 tracking-tight leading-tight">
+          <section className="pt-8 pb-4" aria-labelledby="get-in-touch">
+            <h2 id="get-in-touch" className="text-4xl sm:text-5xl md:text-8xl font-bold mb-12 tracking-tighter text-black/80">
               Get in touch
             </h2>
-            <p className="tracking-tight md:text-3xl max-w-4xl mb-6">
-              Have a question or want to collaborate? Whether you’re a non-profit, a purpose-driven organisation, or someone who believes in technology for good, 
-              we’d love to hear from you.
+            <p className="tracking-tight md:text-3xl max-w-4xl mb-6 text-black/80 leading-tight">
+              Have a question or want to collaborate? Whether you're a non-profit, a purpose-driven organisation, or someone who believes in technology for good, 
+              we'd love to hear from you.
             </p>
             <p className="text-4xl md:text-5xl font-semibold mb-8">
               <a
@@ -32,8 +32,8 @@ export default function Contact() {
           </section>
         </Container>
       </main>
-      <Swell />
-      <Footer inverted={true} />
+      <Swell dark={true} />
+      <Footer inverted={false} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ import CalendlyPopup from "./_components/calendly";
 
 export default function HeapsSmart() {
   return (
-    <main className="bg-[#F8F3EF] text-[#111111] font-sans">
+    <main className="bg-[#F7F2EE] text-[#111111] font-sans">
       <header className="relative h-[75vh] overflow-hidden">
         <div className="absolute inset-0">
         <Image
@@ -31,25 +31,25 @@ export default function HeapsSmart() {
 
       <Container>
         <section className="py-8" aria-labelledby="technology-for-good">
-          <h2 id="technology-for-good" className="text-4xl sm:text-5xl md:text-8xl font-bold my-12 tracking-tighter">
+          <h2 id="technology-for-good" className="text-4xl md:text-8xl font-bold my-8 tracking-tighter text-black/80">
             Technology for good.
           </h2>
           <div className="relative mt-auto mb-16">
-            <p className="tracking-tight md:text-3xl max-w-4xl">
+            <p className="tracking-tight md:text-3xl max-w-4xl text-black/80">
               We are <b>creatives</b> and <b>technologists</b> that build <b>digital experiences</b> and <b>online products</b> for <u>non-profits</u> and <u>purpose-driven organisations</u> right here, in Far North Queensland.
             </p>
           </div>
 
           <div className="relative mt-auto">
-            <h2 className="text-4xl sm:text-5xl font-semibold mb-4 tracking-tight text-black/80" aria-labelledby="services-and-capabilities">What we do</h2>
-            <p className="text-md mb-8">
+            <h2 className="text-4xl font-semibold mb-4 tracking-tight text-black/80" aria-labelledby="services-and-capabilities">What we do</h2>
+            <p className="text-lg mb-8">
               We're passionate about building innovative solutions that provide technology for good. With over twenty years of experience crafting web and mobile products used by millions, we're always up for a challenge.
-              Check out our latest work on <a href="https://www.linkedin.com/company/heaps-smart" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80" aria-label="Visit Heaps Smart on LinkedIn">LinkedIn</a> ↗
+              Check out our latest work on <a href="https://www.linkedin.com/company/heaps-smart" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80" aria-label="Visit Heaps Smart on LinkedIn">LinkedIn</a> or <a href="/training" className="underline hover:opacity-80" aria-label="Learn more about our training">join us for an AI training session</a>.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex items-center justify-start text-left" aria-labelledby="ai-assisted-solutions">
                 <img src="/assets/svg/ai-solutions.svg" alt="AI and Machine Learning Solutions" className="w-20 h-20 mr-4" />
-                <h4 className="text-xl font-semibold">AI Solutions</h4>
+                <h4 className="text-xl font-semibold">AI and Data Solutions</h4>
               </div>
               <div className="flex items-center justify-start text-left" aria-labelledby="web-development">
                 <img src="/assets/svg/web-development.svg" alt="Web Development" className="w-20 h-20 mr-4" />
