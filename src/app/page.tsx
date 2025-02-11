@@ -31,7 +31,7 @@ export default function HeapsSmart() {
 
       <Container>
         <section className="py-8" aria-labelledby="technology-for-good">
-          <h2 id="technology-for-good" className="text-4xl md:text-8xl font-bold my-8 tracking-tighter text-black/80">
+          <h2 id="technology-for-good" className="text-4xl md:text-8xl font-bold my-4 tracking-tighter text-black/80">
             Technology for good.
           </h2>
           <div className="relative mt-auto mb-16">

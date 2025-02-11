@@ -38,34 +38,35 @@ export default function Training() {
   const [showNeed, setShowNeed] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col font-sans" aria-label="Coffee Sessions Page">
-      
-      <div className="bg-gradient-to-r bg-[#F7F2EE] mb-12">
-        <Container className="relative">
+    <div className="min-h-screen flex flex-col text-black font-sans" aria-label="About Us Page">
+      <div className="bg-[#F7F2EE]">
+        <Container>
           <Header variant="light" />
+        </Container>
 
-          <h2 id="technology-for-good" className="tracking-tighter text-4xl sm:text-5xl md:text-8xl font-bold mt-28 tracking-tight text-black/85">
-            What is AI? Start here.
+        <Container>
+          <h2 id="technology-for-good" className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-black/80">
+            What is AI? <span className="text-black/90">Start here.</span>
           </h2>
             <div className="relative mt-auto mb-12">
               <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-black/80">
-                We're running relaxed, beginner-friendly online training that will get you started in the world of AI. Sessions run every Thursday, join us!
+                We're running relaxed, beginner-friendly online training that will get you started in the world of AI.
               </p>
               <p className="tracking-tight md:text-2xl max-w-4xl mb-8 text-black/80">
-                In just 90 minutes, I'll guide you and a small group online through the basics, so you can start using AI with confidence—no jargon, no stress, just practical know-how.
+                In just 90 mins, you’ll learn the basics and get hands-on with easy-to-use AI tools. Sessions run every Thursday, join us!
               </p>
               <PopupButton
                 url="https://calendly.com/heaps-smart/coffee-sessions-90mins"
                 rootElement={document.body}
                 text="Sign up now →"
-                className="inline-block px-8 py-3 bg-[#5A9367] text-white text-lg font-semibold rounded transition-opacity hover:bg-[#4A7D57]"
+                className="inline-block px-8 py-3 bg-[#007999] text-white text-lg font-semibold rounded hover:bg-[#004c73] transition-all"
               />
             </div>
         </Container>
       </div>
 
       <Container>
-        <div className="gap-8 mb-12">
+        <div className="gap-8 my-12">
           <h3
             className="text-3xl font-semibold mb-4 tracking-tight text-[#333333] cursor-pointer flex items-center"
             onClick={() => setShowLearn(!showLearn)}

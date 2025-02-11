@@ -8,7 +8,7 @@ interface CalendlyPopupProps {
 
 export default function CalendlyPopup({ variant = 'light' }: CalendlyPopupProps) {
   const buttonStyles = {
-    light: "inline-block px-8 py-3 bg-[#5A9367] text-white text-lg font-semibold rounded transition-opacity hover:bg-[#4A7D57]",
+    light: "inline-block px-8 py-3 bg-[#007999] text-white text-lg font-semibold rounded hover:bg-[#004c73] transition-all",
     dark: "inline-block px-8 py-3 bg-[#000000] text-[#FFFFFF] text-lg font-semibold rounded transition-opacity hover:opacity-80"
   };
 

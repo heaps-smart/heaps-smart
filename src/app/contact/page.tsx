@@ -12,8 +12,8 @@ export default function Contact() {
 
       <main className="flex-grow">
         <Container>
-          <section className="pt-8 pb-4" aria-labelledby="get-in-touch">
-            <h2 id="get-in-touch" className="text-4xl sm:text-5xl md:text-8xl font-bold mb-12 tracking-tighter text-black/80">
+          <section aria-labelledby="get-in-touch">
+            <h2 id="get-in-touch" className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-black/80">
               Get in touch
             </h2>
             <p className="tracking-tight md:text-3xl max-w-4xl mb-6 text-black/80 leading-tight">

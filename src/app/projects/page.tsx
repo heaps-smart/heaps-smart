@@ -48,58 +48,58 @@ export default function Projects() {
       </Container>
 
       <Container>
-          <h2 className="text-6xl md:text-7xl font-bold tracking-tighter text-black/80">
-            What we're working on
-          </h2>
-          <p className="text-lg md:text-xl max-w-3xl mb-8">
-            Heaps Smart builds digital experiences and online products for non-profits and purpose-driven organisations. Here's some of our latest work.
-          </p>
+        <h2 className="text-6xl md:text-7xl font-bold tracking-tighter text-black/80">
+          What we're working on
+        </h2>
+        <p className="text-lg md:text-xl max-w-3xl mb-8">
+          Heaps Smart builds digital experiences and online products for non-profits and purpose-driven organisations. Here's some of our latest work.
+        </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {projects.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all"
-                >
-                    <div className="relative w-full aspect-video">
-                      {item.video ? (
-                        <video
-                          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
-                          muted
-                          playsInline
-                          onMouseEnter={(e) => e.currentTarget.play()}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.pause();
-                            e.currentTarget.currentTime = 0;
-                          }}
-                        >
-                          <source src={item.video} type="video/mp4" />
-                        </video>
-                      ) : (
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className="object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
-                        />
-                      )}
-                    </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-2 tracking-tight">
-                    {item.title}
-                    </h3>
-                    <p className="text-base leading-relaxed mb-4">{item.content}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {item.tags.map((tag, index) => (
-                        <span key={index} className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          {projects.map((item, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all"
+              >
+                  <div className="relative w-full aspect-video">
+                    {item.video ? (
+                      <video
+                        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
+                        muted
+                        playsInline
+                        onMouseEnter={(e) => e.currentTarget.play()}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.pause();
+                          e.currentTarget.currentTime = 0;
+                        }}
+                      >
+                        <source src={item.video} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        className="object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
+                      />
+                    )}
+                  </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2 tracking-tight">
+                  {item.title}
+                  </h3>
+                  <p className="text-base leading-relaxed mb-4">{item.content}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {item.tags.map((tag, index) => (
+                      <span key={index} className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
-            ))}
-          </div>
+              </div>
+          ))}
+        </div>
       </Container>
 
       <div className="relative bg-[#f8f3ef] py-16 text-center">

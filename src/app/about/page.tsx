@@ -14,12 +14,12 @@ export default function About() {
 
       <Container>
         <section
-          className="py-16 flex flex-col md:flex-row items-center md:items-start gap-12"
+          className="flex flex-col md:flex-row items-center md:items-start mb-20"
           aria-labelledby="about-us-section"
         >
           <div className="flex-1">
-            <h2 id="about-us-section" className="text-4xl sm:text-5xl md:text-8xl font-bold tracking-tighter text-black/80">
-              About Us
+            <h2 id="about-us-section" className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-black/80">
+              About us
             </h2>
             <p className="tracking-tighter leading-tight md:text-3xl max-w-4xl mb-6 text-black/80">
               <b className="text-black/100">Heaps Smart</b> began with a mission to help women spend more time doing what they love by using online tools and modern technology.
@@ -38,7 +38,7 @@ export default function About() {
           </div>
 
           <div className="w-full md:w-1/3 h-auto relative">
-            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-lg shadow-lg">
+            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/assets/img/about.webp" 
                 alt="Heaps Smart Team in Mission Beach"
@@ -51,8 +51,8 @@ export default function About() {
           </div>
         </section>
 
-        <h2 className="text-4xl sm:text-5xl font-bold mb-8 tracking-tight text-black/80" id="our-mission-section">Our Mission</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-20" aria-label="Mission statements">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-8 tracking-tight text-black/80" id="our-mission-section">Our mission</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8" aria-label="Mission statements">
           <div className="bg-white/30 p-8 rounded-2xl transition-transform duration-300 hover:scale-105 backdrop-blur-sm">
             <h3 className="text-xl font-semibold mb-4 tracking-tight text-black/80">Use ethical technology</h3>
             <p className="text-md text-black/70">
