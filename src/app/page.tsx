@@ -42,10 +42,10 @@ export default function HeapsSmart() {
 
           <div className="relative mt-auto">
             <h2 className="text-4xl font-semibold mb-4 tracking-tight text-black/80" aria-labelledby="services-and-capabilities">What we do</h2>
-            <p className="text-lg mb-8">
-              We're passionate about building innovative solutions that provide technology for good. With over twenty years of experience crafting web and mobile products used by millions, we're always up for a challenge.
-              Check out our latest work on <a href="https://www.linkedin.com/company/heaps-smart" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80" aria-label="Visit Heaps Smart on LinkedIn">LinkedIn</a> or <a href="/training" className="underline hover:opacity-80" aria-label="Learn more about our training">join us for an AI training session</a>.
+            <p className="text-lg">
+              It's simple. We make tech that makes sense.
             </p>
+            <p className="text-lg mb-8">We build smart products that actually work for your organisation because the right tools, used well, create the biggest impact. We do <span className="italic">heaps</span> of things, but our special skills are in:</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="flex items-center justify-start text-left" aria-labelledby="ai-assisted-solutions">
                 <img src="/assets/svg/ai-solutions.svg" alt="AI and Machine Learning Solutions" className="w-20 h-20 mr-4" />
@@ -60,6 +60,7 @@ export default function HeapsSmart() {
                 <h4 className="text-xl font-semibold">Coaching and Capacity Building</h4>
               </div>
             </div>
+            <p className="text-lg mt-8">Check out our latest work on <a href="https://www.linkedin.com/company/heaps-smart" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80" aria-label="Visit Heaps Smart on LinkedIn">LinkedIn</a> or <a href="/training" className="underline hover:opacity-80" aria-label="Learn more about our training">join us for an AI training session</a>.</p>
           </div>
         </section>
       </Container>

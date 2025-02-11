@@ -39,7 +39,7 @@ export default function Training() {
         </Container>
 
         <Container>
-          <h2 id="technology-for-good" className="text-6xl md:text-7xl font-bold tracking-tighter text-black/80">
+          <h2 id="technology-for-good" className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
             What is AI? <span className="text-black/90">Start here.</span>
           </h2>
             <div className="relative mt-auto mb-12">
@@ -47,7 +47,7 @@ export default function Training() {
                 We're running relaxed, beginner-friendly online training that will get you started in the world of AI.
               </p>
               <p className="tracking-tight md:text-2xl max-w-4xl mb-8 text-black/80">
-                In just 90 mins, you’ll learn the basics and get hands-on with easy-to-use AI tools. Sessions run every Thursday, join us!
+                In just 90 mins, you'll learn the basics and get hands-on with easy-to-use AI tools. Sessions are $55 and run every Thursday &mdash; join us!
               </p>
               <CalendlyPopup
                 url="https://calendly.com/heaps-smart/coffee-sessions-90mins"

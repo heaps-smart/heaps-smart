@@ -48,7 +48,7 @@ export default function Projects() {
       </Container>
 
       <Container>
-        <h2 className="text-6xl md:text-7xl font-bold tracking-tighter text-black/80">
+        <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
           What we're working on
         </h2>
         <p className="text-lg md:text-xl max-w-3xl mb-8">
@@ -100,7 +100,7 @@ export default function Projects() {
           rel="noopener noreferrer"
           className="inline-block px-8 py-4 bg-white text-black text-lg font-bold rounded-lg hover:bg-gray-100 transition-all"
         >
-          See More On LinkedIn →
+          See more on LinkedIn →
         </a>
       </div>
 

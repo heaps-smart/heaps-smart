@@ -17,8 +17,8 @@ export default function About() {
           className="flex flex-col md:flex-row items-center md:items-start mb-20"
           aria-labelledby="about-us-section"
         >
-          <div className="flex-1">
-            <h2 id="about-us-section" className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-black/80">
+          <div className="flex-1 pb-8">
+            <h2 id="about-us-section" className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
               About us
             </h2>
             <p className="tracking-tighter leading-tight md:text-3xl max-w-4xl mb-6 text-black/80">
@@ -51,7 +51,7 @@ export default function About() {
           </div>
         </section>
 
-        <h2 className="text-4xl sm:text-5xl font-bold mb-8 tracking-tight text-black/80" id="our-mission-section">Our mission</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-4 tracking-tight text-black/80" id="our-mission-section">Our mission</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8" aria-label="Mission statements">
           <div className="bg-white/30 p-8 rounded-2xl transition-transform duration-300 hover:scale-105 backdrop-blur-sm">
             <h3 className="text-xl font-semibold mb-4 tracking-tight text-black/80">Use ethical technology</h3>
@@ -60,7 +60,7 @@ export default function About() {
             </p>
           </div>
           <div className="bg-white/30 p-8 rounded-2xl transition-transform duration-300 hover:scale-105 backdrop-blur-sm">
-            <h3 className="text-xl font-semibold mb-4 tracking-tight text-black/80">Build <span className="italic">Heaps Smart</span> tools</h3>
+            <h3 className="text-xl font-semibold mb-4 tracking-tight text-black/80">Build <span className="italic">heaps</span> smart tools</h3>
             <p className="text-md text-black/70">
               Our approach combines data, mapping, and AI to make work easier and more insightful.
             </p>
