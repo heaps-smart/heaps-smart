@@ -62,27 +62,18 @@ export default function Projects() {
                 className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all"
               >
                   <div className="relative w-full aspect-video">
-                    {item.video ? (
-                      <video
-                        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
-                        muted
-                        playsInline
-                        onMouseEnter={(e) => e.currentTarget.play()}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.pause();
-                          e.currentTarget.currentTime = 0;
-                        }}
-                      >
-                        <source src={item.video} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <Image
-                        src={item.image}
-                        alt={item.title}
-                        fill
-                        className="object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
-                      />
-                    )}
+                    <video
+                      className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
+                      muted
+                      playsInline
+                      onMouseEnter={(e) => e.currentTarget.play()}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.pause();
+                        e.currentTarget.currentTime = 0;
+                      }}
+                    >
+                      <source src={item.video} type="video/mp4" />
+                    </video>
                   </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2 tracking-tight">

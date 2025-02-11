@@ -45,7 +45,7 @@ export default function Training() {
         </Container>
 
         <Container>
-          <h2 id="technology-for-good" className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-black/80">
+          <h2 id="technology-for-good" className="text-6xl md:text-7xl font-bold tracking-tighter text-black/80">
             What is AI? <span className="text-black/90">Start here.</span>
           </h2>
             <div className="relative mt-auto mb-12">
