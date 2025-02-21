@@ -11,11 +11,14 @@ export function Logo({ fill = "white" }) {
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="50%" stopColor="#000000">
-              <animate attributeName="stop-color" values="#000000;#000000" dur="3s" repeatCount="indefinite" />
+            <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#111111">
+              <animate attributeName="stop-color" values="#111111;#333333;#111111" dur="3s" repeatCount="indefinite" />
             </stop>
-          </linearGradient>
+            <stop offset="100%" stopColor="#333333">
+              <animate attributeName="stop-color" values="#333333;#111111;#333333" dur="3s" repeatCount="indefinite" />
+            </stop>
+            </linearGradient>
           <mask id="cutout-mask">
             <rect width="100%" height="100%" fill={oppositeColor} />
             <g transform="translate(15, 15)">
