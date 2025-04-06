@@ -12,7 +12,7 @@ export default async function AllPosts() {
           <li key={post.slug} className="border rounded-lg overflow-hidden">
             <Link href={`/posts/${post.slug}`} className="block">
               <img
-                src={post.headerImage || "/assets/img/rainforest.jpg"}
+                src={post.coverImage || "/assets/img/rainforest.jpg"}
                 alt={post.title}
                 className="w-full aspect-[16/9] object-cover"
               />
