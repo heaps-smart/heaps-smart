@@ -13,3 +13,4 @@ const Container = ({ children, className = "", flex = false }: Props) => {
 };
 
 export default Container;
+export type Post

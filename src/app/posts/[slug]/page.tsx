@@ -30,7 +30,7 @@ export default async function PostPage({ params }: PageProps) {
 
       <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] my-8">
         <img
-          src={post.headerImage || "/assets/img/rainforest.jpg"}
+          src={post.coverImage || "/assets/img/rainforest.jpg"}
           alt={post.title}
           className="w-full aspect-[16/9] object-cover"
         />
