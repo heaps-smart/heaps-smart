@@ -5,6 +5,12 @@ import { CMS_NAME } from "@/lib/constants";
 import markdownToHtml from "@/lib/markdownToHtml";
 import Container from "@/app/_components/container";
 
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
 export default async function PostPage({ params }) {
   const { slug } = params;
   const post = await getPostBySlug(slug);

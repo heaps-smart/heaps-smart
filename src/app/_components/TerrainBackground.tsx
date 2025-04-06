@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { ImprovedNoise } from "three/addons/math/ImprovedNoise.js";
 
+const TERRAIN_BASE_COLOR = { r: 255, g: 185, b: 195 };
 
 function TerrainBackground() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -14,7 +15,6 @@ function TerrainBackground() {
   const TERRAIN_HEIGHT = 128;
   const TERRAIN_SIZE = 11000;
   const HEIGHT_MULTIPLIER = 75;
-  const TERRAIN_BASE_COLOR = { r: 255, g: 185, b: 195 };
 
   useEffect(() => {
     const container = containerRef.current;
