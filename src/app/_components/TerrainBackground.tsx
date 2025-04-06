@@ -4,19 +4,21 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { ImprovedNoise } from "three/addons/math/ImprovedNoise.js";
 
-const TerrainBackground: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
 
+function TerrainBackground() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  
   const FOG_COLOR = 0xf4e4d0;
   const FOG_DENSITY = 0.00029;
-  const TERRAIN_WIDTH = 128; 
+  const TERRAIN_WIDTH = 128;
   const TERRAIN_HEIGHT = 128;
   const TERRAIN_SIZE = 11000;
   const HEIGHT_MULTIPLIER = 75;
   const TERRAIN_BASE_COLOR = { r: 255, g: 185, b: 195 };
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    const container = containerRef.current;
+    if (!container) return;
 
     let camera: THREE.PerspectiveCamera;
     let scene: THREE.Scene;
@@ -24,58 +26,60 @@ const TerrainBackground: React.FC = () => {
     let animationFrameId: number;
     const clock = new THREE.Clock();
 
-    const generateHeight = (width: number, height: number) => {
+    const generateHeight = (width: number, height: number): Float32Array => {
       const size = width * height;
       const data = new Float32Array(size);
       const perlin = new ImprovedNoise();
-      const z = Math.random() * 100;  
+      const z = Math.random() * 100;
       let quality = 1;
 
       for (let j = 0; j < 3; j++) {
         for (let i = 0; i < size; i++) {
           const x = i % width;
-          const y = ~~(i / width); 
+          const y = ~~(i / width);
           const noise = perlin.noise(x / quality, y / quality, z);
-          const adjusted = Math.pow(Math.abs(noise), 1.2); 
+          const adjusted = Math.pow(Math.abs(noise), 1.2);
           data[i] += adjusted * quality * 0.9;
         }
-        quality *= 4; 
+        quality *= 4;
       }
 
       for (let i = 0; i < size; i++) {
         data[i] *= 0.75;
         if (data[i] > 10) {
-          data[i] += Math.random() * 6; 
+          data[i] += Math.random() * 6;
         }
       }
 
       return data;
     };
 
-    const generateTexture = (data: Float32Array, width: number, height: number) => {
-      const sun = new THREE.Vector3(1, 1, 1).normalize(); 
+    const generateTexture = (data: Float32Array, width: number, height: number): HTMLCanvasElement => {
+      const sun = new THREE.Vector3(1, 1, 1).normalize();
       const canvas = document.createElement("canvas");
       canvas.width = width;
       canvas.height = height;
 
-      const context = canvas.getContext("2d")!;
+      const context = canvas.getContext("2d");
+      if (!context) throw new Error("Failed to get canvas context");
+
       const image = context.getImageData(0, 0, canvas.width, canvas.height);
       const imageData = image.data;
       const vector3 = new THREE.Vector3();
 
       for (let i = 0, j = 0; i < imageData.length; i += 4, j++) {
         const dx = data[j - 2] - data[j + 2] || 0;
-        const dz = data[j - width * 2] - data[j + width * 2] || 0; 
+        const dz = data[j - width * 2] - data[j + width * 2] || 0;
 
         vector3.set(dx, 2, dz).normalize();
-        const shade = vector3.dot(sun); 
+        const shade = vector3.dot(sun);
         const elevation = data[j];
-        const scale = 0.5 + elevation * 0.02; 
+        const scale = 0.5 + elevation * 0.02;
 
         imageData[i] = Math.min(255, (TERRAIN_BASE_COLOR.r + shade * 50) * scale);
         imageData[i + 1] = Math.min(255, (TERRAIN_BASE_COLOR.g + shade * 20) * scale);
         imageData[i + 2] = Math.min(255, (TERRAIN_BASE_COLOR.b + shade * 10) * scale);
-        imageData[i + 3] = 255; 
+        imageData[i + 3] = 255;
       }
 
       context.putImageData(image, 0, 0);
@@ -85,8 +89,6 @@ const TerrainBackground: React.FC = () => {
     const data = generateHeight(TERRAIN_WIDTH, TERRAIN_HEIGHT);
 
     const init = () => {
-      const container = containerRef.current!;
-      
       scene = new THREE.Scene();
       scene.background = new THREE.Color(FOG_COLOR);
       scene.fog = new THREE.FogExp2(FOG_COLOR, FOG_DENSITY);
@@ -103,9 +105,9 @@ const TerrainBackground: React.FC = () => {
       );
       geometry.rotateX(-Math.PI / 2);
 
-      const vertices = geometry.attributes.position.array;
+      const vertices = geometry.attributes.position.array as Float32Array;
       for (let i = 0, j = 0; i < data.length; i++, j += 3) {
-        vertices[j + 1] = data[i] * HEIGHT_MULTIPLIER; 
+        vertices[j + 1] = data[i] * HEIGHT_MULTIPLIER;
       }
 
       const texture = new THREE.CanvasTexture(generateTexture(data, TERRAIN_WIDTH, TERRAIN_HEIGHT));
@@ -119,9 +121,9 @@ const TerrainBackground: React.FC = () => {
       scene.add(foregroundMesh);
 
       const bgGeometry = geometry.clone();
-      const bgVertices = bgGeometry.attributes.position.array;
+      const bgVertices = bgGeometry.attributes.position.array as Float32Array;
       for (let i = 0, j = 0; i < data.length; i++, j += 3) {
-        bgVertices[j + 1] = data[i] * (HEIGHT_MULTIPLIER * 0.6); 
+        bgVertices[j + 1] = data[i] * (HEIGHT_MULTIPLIER * 0.6);
       }
 
       const bgTexture = texture.clone();
@@ -168,15 +170,13 @@ const TerrainBackground: React.FC = () => {
     animate();
 
     return () => {
-      window.removeEventListener("resize", () => {});
       cancelAnimationFrame(animationFrameId);
-      if (containerRef.current) {
-        containerRef.current.innerHTML = "";
-      }
+      window.removeEventListener("resize", () => {});
+      if (container) container.innerHTML = "";
     };
   }, []);
 
   return <div ref={containerRef} className="absolute inset-0 w-full h-full z-0" />;
-};
+}
 
 export default TerrainBackground;
