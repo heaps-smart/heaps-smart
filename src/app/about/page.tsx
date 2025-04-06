@@ -3,7 +3,6 @@ import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import Image from "next/image";
 import Swell from "../_components/swell";
-import CalendlyPopup from "../_components/calendly";
 
 export default function About() {
   return (
@@ -82,10 +81,14 @@ export default function About() {
 
       <div className="relative text-black/80 py-16 text-center" aria-labelledby="get-started-section">
         <h2 id="get-started-section" className="text-[2rem] font-semibold mb-8 tracking-tight">Let's get started.</h2>
-        <CalendlyPopup
-          url="https://calendly.com/heaps-smart/discovery-call"
-          text="Schedule a time to chat →"
-        />
+        <a 
+          href="https://calendly.com/heaps-smart/discovery-call" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-[#fcbb1e] text-black font-medium rounded-lg transition-transform hover:scale-105"
+        >
+          Schedule a time to chat →
+        </a>
       </div>
       <Swell dark={true} />
       <Footer inverted={false} />

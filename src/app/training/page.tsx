@@ -3,7 +3,6 @@ import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
 import { useState } from "react";
-import CalendlyPopup from "../_components/calendly";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Swell from "../_components/swell";
 
@@ -49,11 +48,14 @@ export default function Training() {
               <p className="tracking-tight md:text-2xl max-w-4xl mb-8 text-black/80">
                 In just 90 mins, you'll learn the basics and get hands-on with easy-to-use AI tools. Group sessions are $55/pp and run every Thursday &mdash; join us!
               </p>
-              <CalendlyPopup
-                url="https://calendly.com/heaps-smart/coffee-sessions-90mins"
-                text="Sign up now →"
-                variant="light"
-              />
+              <a 
+                href="https://calendly.com/heaps-smart/discovery-call" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-[#fcbb1e] text-black font-medium rounded-lg transition-transform hover:scale-105"
+              >
+                Sign up now →
+              </a>
             </div>
         </Container>
       </div>
