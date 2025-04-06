@@ -1,35 +1,37 @@
+"use server";
+
 import { Post } from "@/interfaces/post";
-import fs from "fs";
+import fs from "fs/promises"; // Use the promise-based version of fs
 import matter from "gray-matter";
 import { join } from "path";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
-export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+export async function getPostSlugs() {
+  return await fs.readdir(postsDirectory);
 }
 
-export function getPostBySlug(slug: string) {
+export async function getPostBySlug(slug: string) {
   const realSlug = slug.replace(/\.md$/, "");
   const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = await fs.readFile(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
   return { ...data, slug: realSlug, content } as Post;
 }
 
-export function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
-  
-  const posts = slugs
-    .map((slug) => {
-      const post = getPostBySlug(slug);
+export async function getAllPosts(): Promise<Post[]> {
+  const slugs = await getPostSlugs();
+
+  const posts = await Promise.all(
+    slugs.map(async (slug) => {
+      const post = await getPostBySlug(slug);
       const fullPath = join(postsDirectory, `${slug}`);
-      const stats = fs.statSync(fullPath);
+      const stats = await fs.stat(fullPath);
       const lastModified = stats.mtime; // Get the last modified time
       return { ...post, lastModified };
     })
-    .sort((post1, post2) => (post1.lastModified > post2.lastModified ? -1 : 1));
+  );
 
-  return posts;
+  return posts.sort((post1, post2) => (post1.lastModified > post2.lastModified ? -1 : 1));
 }
