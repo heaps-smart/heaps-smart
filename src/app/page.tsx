@@ -78,10 +78,10 @@ export default function HeapsSmart() {
               >
                 <img
                   src="/assets/svg/web-development.svg"
-                  alt="Web Development"
+                  alt="Custom Software Development"
                   className="w-20 h-20 mr-4"
                 />
-                <h4 className="text-xl font-semibold">Web and Mobile Development</h4>
+                <h4 className="text-xl font-semibold">Custom Software Development</h4>
               </div>
               <div
                 className="flex items-center justify-start text-left"
