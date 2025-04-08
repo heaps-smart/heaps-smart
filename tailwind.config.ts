@@ -38,6 +38,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-public-sans)"],
+        inter: ["var(--font-inter)"],
       },
       boxShadow: {
         sm: "0 5px 10px rgba(0, 0, 0, 0.12)",

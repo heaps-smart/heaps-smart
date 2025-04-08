@@ -1,14 +1,14 @@
-import { getAllPosts } from "@/lib/api";
+// import { getAllPosts } from "@/lib/api";
 import Container from "@/app/_components/container";
 import Link from "next/link";
 
 export default async function AllPosts() {
-  const posts = await getAllPosts(); // Ensure this runs server-side
+  // const posts = await getAllPosts();
 
   return (
     <Container>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <li key={post.slug} className="border rounded-lg overflow-hidden">
             <Link href={`/posts/${post.slug}`} className="block">
               <img
@@ -21,7 +21,7 @@ export default async function AllPosts() {
               </div>
             </Link>
           </li>
-        ))}
+        ))} */}
       </ul>
     </Container>
   );

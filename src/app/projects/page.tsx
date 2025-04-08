@@ -98,7 +98,7 @@ export default function Projects() {
           href="https://www.linkedin.com/company/heaps-smart"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-8 py-4 bg-white text-black text-lg font-bold rounded-lg hover:bg-gray-100 transition-all"
+          className="inline-block px-6 py-3 bg-[#fcbb1e] text-black font-medium rounded-lg transition-transform hover:scale-105"
         >
           See more on LinkedIn →
         </a>

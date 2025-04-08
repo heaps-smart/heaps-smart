@@ -10,6 +10,8 @@
     "build": "next build && next export"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.5",
+    "@fontsource/public-sans": "^5.2.5",
     "classnames": "^2.5.1",
     "date-fns": "^4.0.0",
     "gray-matter": "^4.0.3",

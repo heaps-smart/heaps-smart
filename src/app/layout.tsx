@@ -1,17 +1,10 @@
-import { Inter, Public_Sans } from "next/font/google";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/public-sans/400.css";
+import "@fontsource/public-sans/600.css";
+import "@fontsource/public-sans/700.css";
 import Script from "next/script";
-
 import "../styles/globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const publicSans = Public_Sans({
-  subsets: ["latin"],
-  variable: "--font-public-sans",
-});
 
 export default function RootLayout({
   children,
@@ -68,7 +61,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={publicSans.className}>
+      <body className="font-inter">
         <div className="min-h-screen">{children}</div>
       </body>
     </html>
