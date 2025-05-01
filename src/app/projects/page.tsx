@@ -7,10 +7,6 @@ import Footer from "@/app/_components/footer";
 import Swell from "../_components/swell";
 import { ProjectList } from "@/app/_components/project-list";
 
-const TerrainNodes = dynamic(() => import("@/app/_components/TerrainNodes"), {
-  ssr: false,
-});
-
 export default function Projects() {
   return (
     <main className="bg-[#f8f3ef] text-black font-sans relative overflow-hidden">
