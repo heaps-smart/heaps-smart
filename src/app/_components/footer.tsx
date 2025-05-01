@@ -36,7 +36,7 @@ export function Footer({ inverted = false }) {
           </div>
           <p className="text-sm text-center md:text-left flex items-center space-x-2">
             <span>
-              This website was built on{" "}
+              Built on{" "}
               <a
                 href="https://cassowaryconservation.org/djiru-country/"
                 className="underline"

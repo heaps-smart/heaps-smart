@@ -4,8 +4,8 @@ import dynamic from "next/dynamic";
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import Image from "next/image";
 import Swell from "./_components/swell";
+
 const TerrainBackground = dynamic(
   () => import("./_components/TerrainBackground"),
   { ssr: false }
@@ -19,10 +19,11 @@ export default function HeapsSmart() {
           <TerrainBackground />
         </div>
 
-        <div className="relative z-10 h-full flex flex-col justify-between">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#F7F2EE]/40 via-transparent to-[#F7F2EE] pointer-events-none" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#F7F2EE]/40 via-transparent to-[#F7F2EE] pointer-events-none" />
+
+        <div className="relative z-20 h-full flex flex-col justify-between">
           <Container>
-            <Header />
+            <Header variant="light" />
           </Container>
         </div>
       </header>
@@ -31,112 +32,99 @@ export default function HeapsSmart() {
         <section className="py-4" aria-labelledby="technology-for-good">
           <h2
             id="technology-for-good"
-            className="text-4xl md:text-8xl font-sans font-bold mt-2 mb-8 tracking-tighter text-black/80"
+            className="text-4xl md:text-8xl font-sans font-bold mt-2 mb-2 tracking-tighter text-black/80"
           >
             Technology for good.
           </h2>
-          <div className="relative mt-auto mb-16">
-            <p className="tracking-tight md:text-3xl max-w-4xl text-black/80">
-              We are <b>creatives</b> and <b>technologists</b> that build{" "}
-              <b>digital experiences</b> and <b>online products</b> for{" "}
-              <u>non-profits</u> and <u>purpose-driven organisations</u> right
-              here, in Far North Queensland.
+          <div className="relative mt-auto mb-10">
+            <p className="tracking-tight text-2xl md:text-2xl leading-snug max-w-4xl text-black/80">
+              We're creatives and technologists who build and test ideas fast — from{" "}
+              prototypes to polished products.{" "}
+              Technical or not, <b>when you're ready to move, so are we.</b>
             </p>
           </div>
 
-          <div className="relative mt-auto">
-            <h2
-              className="text-4xl font-semibold mb-4 tracking-tight text-black/80"
-              aria-labelledby="services-and-capabilities"
+          <div className="mb-12">
+            <a
+              href="/contact"
+              className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
+              aria-label="Schedule a call with Heaps Smart"
             >
-              What we do
-            </h2>
-            <p className="text-lg">
-              It's simple. We make tech that makes sense.
-            </p>
-            <p className="text-lg mb-8">
-              We build smart products that actually work for your organisation
-              because the right tools, used well, create the biggest impact. We
-              do <span className="italic">heaps</span> of things, but our
-              special skills are in:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div
-                className="flex items-center justify-start text-left"
-                aria-labelledby="ai-assisted-solutions"
-              >
-                <img
-                  src="/assets/svg/ai-solutions.svg"
-                  alt="AI and Machine Learning Solutions"
-                  className="w-20 h-20 mr-4"
-                />
-                <h4 className="text-xl font-semibold">AI and Data Solutions</h4>
-              </div>
-              <div
-                className="flex items-center justify-start text-left"
-                aria-labelledby="web-development"
-              >
-                <img
-                  src="/assets/svg/web-development.svg"
-                  alt="Custom Software Development"
-                  className="w-20 h-20 mr-4"
-                />
-                <h4 className="text-xl font-semibold">Custom Software Development</h4>
-              </div>
-              <div
-                className="flex items-center justify-start text-left"
-                aria-labelledby="training-capacity-building"
-              >
-                <img
-                  src="/assets/svg/training-capacity-building.svg"
-                  alt="Training and Skill Development"
-                  className="w-20 h-20 mr-4"
-                />
-                <h4 className="text-xl font-semibold">
-                  Coaching and Capacity Building
-                </h4>
-              </div>
-            </div>
-            <p className="text-lg mt-8">
-              Check out our latest work on{" "}
+              Schedule a call →
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+            {[
+              {
+                href: "/innovation-labs",
+                title: "Innovation Labs",
+                desc: "Prototype solutions to real-world problems — fast.",
+                img: "/assets/svg/ai-solutions.svg",
+                alt: "Innovation Labs icon",
+              },
+              {
+                href: "/product-development",
+                title: "Product Development",
+                desc: "From idea to launch — we design, test, and build with purpose.",
+                img: "/assets/svg/web-development.svg",
+                alt: "Product Development icon",
+              },
+              {
+                href: "/training",
+                title: "Capacity Building",
+                desc: "Upskill your team with tech confidence and clarity.",
+                img: "/assets/svg/training-capacity-building.svg",
+                alt: "Coaching and Training icon",
+              },
+            ].map(({ href, title, desc, img, alt }) => (
               <a
-                href="https://www.linkedin.com/company/heaps-smart"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:opacity-80"
-                aria-label="Visit Heaps Smart on LinkedIn"
+                key={href}
+                href={href}
+                className="flex flex-col p-6 bg-white border border-black/10 rounded-lg shadow-sm hover:shadow-md transition text-left h-full"
+                aria-label={`Learn more about ${title}`}
               >
-                LinkedIn
-              </a>{" "}
-              or{" "}
-              <a
-                href="/training"
-                className="underline hover:opacity-80"
-                aria-label="Learn more about our training"
-              >
-                join us for an AI training session
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="text-xl font-semibold">{title}</h4>
+                  <img
+                    src={img}
+                    alt={alt}
+                    className="w-10 h-10 ml-4"
+                  />
+                </div>
+                <div className="flex-1 mt-2">
+                  <p className="text-sm text-black/60">{desc}</p>
+                </div>
               </a>
-              .
-            </p>
+            ))}
           </div>
         </section>
       </Container>
 
-      <div
-        className="relative text-[#000000] py-16 text-center"
-        aria-labelledby="get-started"
+      <Swell dark={true} />
+      <section
+        className="py-12 text-left"
+        aria-labelledby="partnerships-banner"
       >
-        <h2 id="get-started-section" className="text-[2rem] font-semibold mb-8 tracking-tight">Let's get started.</h2>
-        <a 
-          href="https://calendly.com/heaps-smart/discovery-call" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-[#fcbb1e] text-black font-medium rounded-lg transition-transform hover:scale-105"
-        >
-          Schedule a time to chat →
-        </a>
-      </div>
-
+        <Container>
+          <h2
+            id="partnerships-banner"
+            className="text-xl md:text-2xl font-semibold mb-4 tracking-tight"
+          >
+            Are you a non-profit doing <i>heaps</i> good things?
+          </h2>
+          <p className="text-base mb-4 text-black/80">
+            We're looking to support purpose-led organisations with practical digital help. If that's you, we'd love to hear about what you're working on.
+          </p>
+          <a
+            href="/partnerships"
+            className="text-sm text-black hover:underline transition"
+            aria-label="Learn about our non-profit partnerships"
+          >
+            Get in touch →
+          </a>
+        </Container>
+      </section>
       <Swell dark={true} />
       <Footer />
     </main>

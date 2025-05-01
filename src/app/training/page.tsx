@@ -2,10 +2,8 @@
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Swell from "../_components/swell";
-
+import { CTA } from "../_components/cta";
 
 export default function Training() {
   const testimonials = [
@@ -26,121 +24,50 @@ export default function Training() {
     },
   ];
 
-  const [showLearn, setShowLearn] = useState(false);
-  const [showHow, setShowHow] = useState(false);
-  const [showNeed, setShowNeed] = useState(false);
-
   return (
-    <div className="min-h-screen flex flex-col text-black font-sans" aria-label="About Us Page">
+    <div className="min-h-screen flex flex-col text-black font-sans" aria-label="Training Page">
       <div className="bg-[#F7F2EE]">
         <Container>
           <Header variant="light" />
         </Container>
 
         <Container>
-          <h2 id="technology-for-good" className="text-4xl md:text-6xl tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
-            <span className="font-bold">What is AI?</span> <span className="font-semibold">Start here.</span>
-          </h2>
-            <div className="relative mt-auto mb-12">
-              <p className="tracking-tight md:text-3xl max-w-4xl mb-4 text-black/80">
-                We're running relaxed, beginner-friendly online training that will get you started in the world of AI.
-              </p>
-              <p className="tracking-tight md:text-2xl max-w-4xl mb-8 text-black/80">
-                In just 90 mins, you'll learn the basics and get hands-on with easy-to-use AI tools. Group sessions are $55/pp and run every Thursday &mdash; join us!
-              </p>
-              <a 
-                href="https://calendly.com/heaps-smart/discovery-call" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-3 bg-[#fcbb1e] text-black font-medium rounded-lg transition-transform hover:scale-105"
-              >
-                Sign up now →
-              </a>
-            </div>
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
+            Build innovation from within.
+          </h1>
+          <p className="tracking-tight md:text-2xl max-w-4xl mb-12 text-black/80">
+            Empower your team to work smarter, faster, and more creatively.
+          </p>
+
+          <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
+            Our approach
+          </h3>
+          <p className="text-lg mb-8 max-w-3xl">
+            We train by doing. From strategy workshops to agile sprints, we work side-by-side with your team — solving their problems, building their confidence, and sharpening their technical toolkits.
+          </p>
         </Container>
       </div>
 
-      <Container>
-        <div className="gap-8 my-12">
-          <h3
-            className="text-3xl font-semibold mb-4 tracking-tight text-[#333333] cursor-pointer flex items-center"
-            onClick={() => setShowLearn(!showLearn)}
-          >
-            What You'll Learn
-            <div className="ml-2">
-              {showLearn ? <FaChevronUp size={26} /> : <FaChevronDown size={26} />}
-            </div>
-          </h3>
-          {showLearn && (
+      <div className="bg-[#BEB5B4]">
+        <Container>
+          <div className="gap-8 my-12">
+            <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
+              What you'll learn
+            </h3>
             <ul className="mb-6 list-disc pl-5">
-                <li className="text-lg">What is AI?</li>
-                <li className="text-lg">What is happening today in AI, and how does it impact me?</li>
-                <li className="text-lg">What is the current trajectory of AI and why is it so important?</li>
-                <li className="text-lg">How do I access and use AI tools?</li>
+              <li className="text-lg"><b>Strategy.</b> Cut through noise, prioritise what matters</li>
+              <li className="text-lg"><b>Agile.</b> Work flexibly, iterate quickly, and deliver value sooner</li>
+              <li className="text-lg"><b>AI.</b> Understand and apply emerging tech in real-world ways</li>
+              <li className="text-lg"><b>Tooling & Automation.</b> Set up systems that do the heavy lifting</li>
             </ul>
-          )}
-        </div>
+          </div>
+        </Container>
+      </div>
 
-        <div className="gap-8 mb-12">
-          <h3
-            className="text-3xl font-semibold mb-4 tracking-tight text-[#333333] cursor-pointer flex items-center"
-            onClick={() => setShowHow(!showHow)}
-          >
-            How It Works
-            <div className="ml-2">
-              {showHow ? <FaChevronUp size={26} /> : <FaChevronDown size={26} />}
-            </div>
-          </h3>
-          {showHow && (
-            <ol className="mb-6 list-decimal pl-5">
-              <li className="mb-2 text-lg">
-                <b>Sign Up</b>
-                <br />
-                Register online and pay the course fee. We'll follow up with an email to confirm your session options.
-              </li>
-              <li className="mb-2 text-lg">
-                <b>Bring friends or meet new ones!</b>
-                <br />
-                Each 90-minute session is held online with a small group of 2-5 participants.
-              </li>
-              <li className="mb-2 text-lg">
-                <b>Learn & discuss</b>
-                <br />
-                Get hands-on, ask questions, and discuss real-world AI topics during the session.
-              </li>
-              <li className="mb-2 text-lg">
-                <b>Tools & takeaways</b>
-                <br />
-                You'll leave with a handy cheat sheet of all the concepts, access to practical AI tools, and the confidence to start applying what you've learned straight away.
-              </li>
-            </ol>
-          )}
-        </div>
-
-        <div className="gap-8">
-          <h3
-            className="text-3xl font-semibold mb-4 tracking-tight text-[#333333] cursor-pointer flex items-center"
-            onClick={() => setShowNeed(!showNeed)}
-          >
-            What You'll Need
-            <div className="ml-2">
-              {showNeed ? <FaChevronUp size={26} /> : <FaChevronDown size={26} />}
-            </div>
-          </h3>
-          {showNeed && (
-            <ul className="mb-6 list-disc pl-5">
-              <li className="text-lg">A computer with a reliable Wi-Fi connection.</li>
-              <li className="text-lg">A quiet space where you can focus for 90 minutes.</li>
-              <li className="text-lg">A cup of coffee, tea, or water to enjoy during the session.</li>
-            </ul>
-          )}
-        </div>
-      </Container>
-
-      <div className="bg-[#F7F2EE] mt-8 pt-16">
+      <div className="bg-[#F7F2EE] pt-16">
         <Container>
           <h3 className="text-4xl font-bold text-center mb-12 tracking-tight text-black/80">
-            What People Are Saying
+            From our learners
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {testimonials.map((testimonial, index) => (
@@ -158,6 +85,8 @@ export default function Training() {
               </div>
             ))}
           </div>
+
+          <CTA heading="Get in touch to start learning" />
         </Container>
         <Swell dark />
         <Footer inverted={false} />

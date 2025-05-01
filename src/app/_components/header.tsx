@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./logo";
-
+import { Navbar } from "./navbar";
 
 type HeaderVariant = "light" | "dark" | "coffee";
 
@@ -23,7 +23,7 @@ export function Header({ variant = "light" }: HeaderProps) {
           bgColor: "bg-brown-900",
           logoFill: "brown",
         };
-      default: // light
+      default: 
         return {
           textColor: "text-black",
           bgColor: "bg-black",
@@ -36,7 +36,7 @@ export function Header({ variant = "light" }: HeaderProps) {
 
   return (
     <section
-      className={`flex-col md:flex-row flex items-center justify-between pt-16 mb-16 md:mb-12 ${textColor}`}
+      className={`flex-col md:flex-row flex items-center justify-between pt-16 mb-16 md:mb-12 z-10 ${textColor}`}
     >
       <Link href="/" aria-label="Go to homepage">
         {variant === "coffee" ? (
@@ -45,58 +45,7 @@ export function Header({ variant = "light" }: HeaderProps) {
           <Logo fill={logoFill} aria-label="Heaps Smart logo" />
         )}
       </Link>
-      <nav className="mt-5 md:mt-0">
-        <ul className="flex space-x-6 text-lg">
-            <li>
-            <Link
-              href="/about"
-              className={`font-semibold duration-200 transition-colors tracking-tight relative group ${textColor}`}
-              aria-label="About page"
-            >
-              About
-              <span
-              className={`absolute -bottom-1 left-0 w-0 h-[2px] ${bgColor} transition-all duration-300 group-hover:w-full`}
-              ></span>
-            </Link>
-            </li>
-            <li>
-            <Link
-              href="/projects"
-              className={`font-semibold duration-200 transition-colors tracking-tight relative group ${textColor}`}
-              aria-label="Projects page"
-            >
-              Projects
-              <span
-              className={`absolute -bottom-1 left-0 w-0 h-[2px] ${bgColor} transition-all duration-300 group-hover:w-full`}
-              ></span>
-            </Link>
-            </li>
-          <li>
-            <Link
-              href="/training"
-              className={`font-semibold duration-200 transition-colors tracking-tight relative group ${textColor}`}
-              aria-label="About page"
-            >
-              Training
-              <span
-                className={`absolute -bottom-1 left-0 w-0 h-[2px] ${bgColor} transition-all duration-300 group-hover:w-full`}
-              ></span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className={`font-semibold duration-200 transition-colors tracking-tight relative group ${textColor}`}
-              aria-label="Contact page"
-            >
-              Contact
-              <span
-                className={`absolute -bottom-1 left-0 w-0 h-[2px] ${bgColor} transition-all duration-300 group-hover:w-full`}
-              ></span>
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar textColor={textColor} bgColor={bgColor} />
     </section>
   );
 }
