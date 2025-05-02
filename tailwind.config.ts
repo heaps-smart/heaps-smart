@@ -45,7 +45,17 @@ const config: Config = {
         md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
       aspectRatio: {
-        '16/9': '16 / 9',
+        "16/9": "16 / 9",
+      },
+      animation: {
+        shimmer: "shimmer 1s ease-in-out infinite",
+      },
+      keyframes: {
+        shimmer: {
+          "0%": { backgroundPosition: "45% 50%" },
+          "50%": { backgroundPosition: "55% 50%" },
+          "100%": { backgroundPosition: "45% 50%" },
+        },
       },
     },
   },
@@ -59,4 +69,5 @@ const config: Config = {
   ],
   plugins: [],
 };
+
 export default config;

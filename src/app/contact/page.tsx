@@ -5,7 +5,7 @@ import Swell from "../_components/swell";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#F7F2EE] text-black font-sans" aria-label="Contact Page">
+    <div className="min-h-screen flex flex-col bg-[#F7F2EE] text-black font-sans" aria-label="Contact Us">
       <Container>
         <Header variant="light" />
       </Container>
@@ -13,8 +13,8 @@ export default function Contact() {
       <main className="flex-grow">
         <Container>
           <section aria-labelledby="get-in-touch">
-            <h1 id="get-in-touch" className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
-              Get in touch
+            <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4 gradient-hero">
+              Get in touch.
             </h1>
             <p className="tracking-tight md:text-3xl max-w-4xl mb-6 text-black/80 leading-tight">
               Have a question or want to collaborate? Whether you're a non-profit, a purpose-driven organisation, or someone who believes in technology for good, 

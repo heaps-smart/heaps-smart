@@ -46,9 +46,11 @@ export default function HeapsSmart() {
 
           <div className="mb-12">
             <a
-              href="/contact"
+              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
               className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
               aria-label="Schedule a call with Heaps Smart"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Schedule a call →
             </a>
@@ -117,7 +119,7 @@ export default function HeapsSmart() {
             We're looking to support purpose-led organisations with practical digital help. If that's you, we'd love to hear about what you're working on.
           </p>
           <a
-            href="/partnerships"
+            href="/contact"
             className="text-sm text-black hover:underline transition"
             aria-label="Learn about our non-profit partnerships"
           >
