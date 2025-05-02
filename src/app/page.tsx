@@ -14,12 +14,12 @@ const TerrainBackground = dynamic(
 export default function HeapsSmart() {
   return (
     <main className="bg-[#F7F2EE] text-[#111111] font-sans relative overflow-hidden">
-      <header className="relative h-[55vh] overflow-hidden">
+      <header className="relative h-[55vh] overflow-hidden z-0">
         <div className="absolute inset-0 z-0">
           <TerrainBackground />
         </div>
 
-        <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#F7F2EE]/40 via-transparent to-[#F7F2EE] pointer-events-none" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#F7F2EE]/40 via-transparent to-[#F7F2EE] pointer-events-none" />
 
         <div className="relative z-20 h-full flex flex-col justify-between">
           <Container>
