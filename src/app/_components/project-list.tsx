@@ -58,46 +58,49 @@ export function ProjectList({ featured, limit }: ProjectListProps) {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      {displayProjects.map((project) => (
-        <div
-          key={project.title}
-          className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all shadow-sm hover:shadow-md"
-        >
-          <div className="relative w-full aspect-video">
-            <video
-              className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
-              muted
-              playsInline
-              preload="metadata"
-              onMouseEnter={(e) => e.currentTarget.play()}
-              onMouseLeave={(e) => {
-                e.currentTarget.pause();
-                e.currentTarget.currentTime = 0;
-              }}
-            >
-              <source src={project.video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      {displayProjects.map((project) => {
+        return (
+          <div
+            key={project.title}
+            className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all shadow-sm hover:shadow-md"
+          >
+            <div className="relative w-full aspect-video">
+              <video
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
+                muted
+                playsInline
+                preload="auto"
+                onLoadedMetadata={(e) => e.currentTarget.currentTime = 0.001}
+                onMouseEnter={(e) => e.currentTarget.play()}
+                onMouseLeave={(e) => {
+                  e.currentTarget.pause();
+                  e.currentTarget.currentTime = 0;
+                }}
+              >
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
 
-          <div className="p-6 flex flex-col justify-between h-full">
-            <h3 className="text-xl md:text-2xl font-bold mb-2 tracking-tight">
-              {project.title}
-            </h3>
-            <div className="text-base leading-relaxed mb-4">{project.content}</div>
-            <div className="flex flex-wrap gap-2 mt-auto pt-4">
-              {project.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full"
-                >
-                  {tag}
-                </span>
-              ))}
+            <div className="p-6 flex flex-col justify-between h-full">
+              <h3 className="text-xl md:text-2xl font-bold mb-2 tracking-tight">
+                {project.title}
+              </h3>
+              <div className="text-base leading-relaxed mb-4">{project.content}</div>
+              <div className="flex flex-wrap gap-2 mt-auto pt-4">
+                {project.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
       {displayProjects.length === 0 && <p>No projects found.</p>}
     </div>
   );
