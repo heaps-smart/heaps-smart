@@ -67,24 +67,23 @@ export default function Training() {
         </ul>
       </Section>
 
-      <Section bg="bg-[#F7F2EE]">
-        <h3 className="text-4xl font-bold text-center mb-12 tracking-tight text-black/80">
+      <Section bg="bg-[#EFE9E5]">
+        <h3 className="text-4xl font-bold text-center tracking-tight text-black/80">
           From our learners
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-6 rounded-2xl transition-transform duration-300 hover:scale-105">
-              <p className="text-lg italic">{testimonial.quote}</p>
-              <div className="flex items-center mt-6 space-x-3">
-                <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-black/60">{testimonial.role}</p>
-                </div>
-              </div>
+        <div key={index} className="p-6 rounded-2xl transition-transform duration-300 hover:scale-105">
+          <p className="text-lg italic">{testimonial.quote}</p>
+          <div className="flex items-center mt-6 space-x-3">
+            <div>
+          <p className="font-semibold">{testimonial.name}</p>
+          <p className="text-sm text-black/60">{testimonial.role}</p>
             </div>
+          </div>
+        </div>
           ))}
         </div>
-
       </Section>
 
       <CTA heading="Get in touch to start learning." />
