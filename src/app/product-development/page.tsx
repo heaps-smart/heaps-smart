@@ -1,9 +1,10 @@
-import { Header } from "@/app/_components/header";
-import Footer from "@/app/_components/footer";
-import Swell from "@/app/_components/swell";
-import { CTA } from "../_components/cta";
-import Section from "@/app/_components/section";
+import AnimatedHeading from "@/app/_components/animated-heading";
 import Container from "@/app/_components/container";
+import CTA from "@/app/_components/cta";
+import Footer from "@/app/_components/footer";
+import Header from "@/app/_components/header";
+import Section from "@/app/_components/section";
+import Swell from "@/app/_components/swell";
 
 export default function ProductDevelopment() {
   return (
@@ -11,14 +12,13 @@ export default function ProductDevelopment() {
       <Container>
         <Header variant="light" />
 
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4 gradient-hero">
+        <AnimatedHeading>
           Bring your big idea to life.
-        </h1>
+        </AnimatedHeading>
         <h2 className="text-xl md:text-2xl font-medium text-gray-800 tracking-tight pb-4 mb-12">
           We work with your team to move from concept to production-ready product using proven innovation frameworks.
         </h2>
       </Container>
-
 
       <Section bg="bg-[#e8e4e1]">
         <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
@@ -59,7 +59,7 @@ export default function ProductDevelopment() {
             <div>
               <p className="font-semibold">Product Design & UX</p>
               <p className="text-base text-black/80">
-                We design for real users  — building intuitive, accessible interfaces and smooth user journeys that drive real engagement and clarity.
+                We design for real users — building intuitive, accessible interfaces and smooth user journeys that drive real engagement and clarity.
               </p>
             </div>
           </li>

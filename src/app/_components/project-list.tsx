@@ -49,7 +49,7 @@ const projectsData: Project[] = [
   },
 ];
 
-export function ProjectList({ featured, limit }: ProjectListProps) {
+export default function ProjectList({ featured, limit }: ProjectListProps) {
   let displayProjects = projectsData;
 
   if (limit) {

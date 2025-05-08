@@ -8,7 +8,7 @@ interface HeaderProps {
   variant?: HeaderVariant;
 }
 
-export function Header({ variant = "light" }: HeaderProps) {
+export default function Header({ variant = "light" }: HeaderProps) {
   const getStyles = (variant: HeaderVariant) => {
     switch (variant) {
       case "dark":

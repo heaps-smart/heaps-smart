@@ -1,10 +1,8 @@
-"use client";
-
 import dynamic from "next/dynamic";
 import Container from "@/app/_components/container";
-import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import Swell from "./_components/swell";
+import Header from "@/app/_components/header";
+import Swell from "@/app/_components/swell";
 
 const TerrainBackground = dynamic(
   () => import("./_components/TerrainBackground"),

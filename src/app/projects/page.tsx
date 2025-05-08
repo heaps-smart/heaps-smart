@@ -1,11 +1,8 @@
-'use client';
-
-import dynamic from "next/dynamic";
 import Container from "@/app/_components/container";
-import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
+import Header from "@/app/_components/header";
+import ProjectList  from "@/app/_components/project-list";
 import Swell from "../_components/swell";
-import { ProjectList } from "@/app/_components/project-list";
 
 export default function Projects() {
   return (

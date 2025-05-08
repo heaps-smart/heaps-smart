@@ -1,10 +1,8 @@
-"use client";
-
 interface CTAProps {
   heading: string;
 }
 
-export function CTA({ heading }: CTAProps) {
+export default function CTA({ heading }: CTAProps) {
   return (
     <div className="text-center py-10 md:py-16">
       <h3 id="get-started-section" className="text-3xl font-bold mb-6 tracking-tight">

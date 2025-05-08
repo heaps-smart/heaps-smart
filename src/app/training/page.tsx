@@ -1,10 +1,10 @@
-"use client";
+import AnimatedHeading from "@/app/_components/animated-heading";
 import Container from "@/app/_components/container";
-import { Header } from "@/app/_components/header";
+import CTA  from "../_components/cta";
 import Footer from "@/app/_components/footer";
-import Swell from "../_components/swell";
+import Header from "@/app/_components/header";
 import Section from "@/app/_components/section";
-import { CTA } from "../_components/cta";
+import Swell from "../_components/swell";
 
 export default function Training() {
   const testimonials = [
@@ -30,9 +30,10 @@ export default function Training() {
       <Container>
         <Header variant="light" />
 
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4 gradient-hero">
+        <AnimatedHeading>
           Build innovation from within.
-        </h1>
+        </AnimatedHeading>
+
         <h2 className="text-xl md:text-2xl mb-12 font-medium text-gray-800 tracking-tight pb-4">
           Empower your team to work smarter, faster, and more creatively.
         </h2>

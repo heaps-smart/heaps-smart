@@ -1,7 +1,8 @@
+import AnimatedHeading from "@/app/_components/animated-heading";
 import Container from "@/app/_components/container";
-import { Header } from "@/app/_components/header";
 import Footer from "@/app/_components/footer";
-import Swell from "../_components/swell";
+import Header from "@/app/_components/header";
+import Swell from "@/app/_components/swell";
 
 export default function Contact() {
   return (
@@ -13,9 +14,9 @@ export default function Contact() {
       <main className="flex-grow">
         <Container>
           <section aria-labelledby="get-in-touch">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4 gradient-hero">
+            <AnimatedHeading>
               Get in touch.
-            </h1>
+            </AnimatedHeading>
             <p className="tracking-tight md:text-3xl max-w-4xl mb-6 text-black/80 leading-tight">
               Have a question or want to collaborate? Whether you're a non-profit, a purpose-driven organisation, or someone who believes in technology for good, 
               we'd love to hear from you.

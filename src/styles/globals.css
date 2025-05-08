@@ -3,70 +3,89 @@
 @tailwind utilities;
 
 :root {
-	--font-inter: 'Inter', sans-serif;
-	--font-public-sans: 'Public Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-public-sans: 'Public Sans', sans-serif;
 }
 
 html,
 body {
-	overscroll-behavior: none;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-	height: 100%;
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 @keyframes wave {
-	0% {
-		d: path("M0,20 C120,10 240,30 360,20 C480,10 600,30 720,20 C840,10 960,30 1080,20 C1200,10 1320,30 1440,20");
-	}
+  0% {
+    d: path("M0,20 C120,10 240,30 360,20 C480,10 600,30 720,20 C840,10 960,30 1080,20 C1200,10 1320,30 1440,20");
+  }
 
-	25% {
-		d: path("M0,20 C120,12 240,28 360,18 C480,12 600,28 720,18 C840,12 960,28 1080,18 C1200,12 1320,28 1440,18");
-	}
+  25% {
+    d: path("M0,20 C120,12 240,28 360,18 C480,12 600,28 720,18 C840,12 960,28 1080,18 C1200,12 1320,28 1440,18");
+  }
 
-	50% {
-		d: path("M0,20 C120,15 240,25 360,20 C480,15 600,25 720,20 C840,15 960,25 1080,20 C1200,15 1320,25 1440,20");
-	}
+  50% {
+    d: path("M0,20 C120,15 240,25 360,20 C480,15 600,25 720,20 C840,15 960,25 1080,20 C1200,15 1320,25 1440,20");
+  }
 
-	75% {
-		d: path("M0,20 C120,18 240,22 360,20 C480,18 600,22 720,20 C840,18 960,22 1080,20 C1200,18 1320,22 1440,20");
-	}
+  75% {
+    d: path("M0,20 C120,18 240,22 360,20 C480,18 600,22 720,20 C840,18 960,22 1080,20 C1200,18 1320,22 1440,20");
+  }
 
-	100% {
-		d: path("M0,20 C120,10 240,30 360,20 C480,10 600,30 720,20 C840,10 960,30 1080,20 C1200,10 1320,30 1440,20");
-	}
+  100% {
+    d: path("M0,20 C120,10 240,30 360,20 C480,10 600,30 720,20 C840,10 960,30 1080,20 C1200,10 1320,30 1440,20");
+  }
 }
 
 @keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-12px);
-	}
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .swell {
-	animation: bob 12s ease-in-out infinite;
+  animation: bob 12s ease-in-out infinite;
 }
 
 .swell path {
-	animation: wave 8s ease-in-out infinite;
+  animation: wave 8s ease-in-out infinite;
 }
 
 .clip-diagonal {
-	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5%), 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5%), 0 100%);
 }
 
-@layer utilities {
-	.gradient-hero {
-			@apply text-transparent bg-clip-text bg-[length:200%_200%] animate-shimmer;
-			background-position: 45% 50%;
-			background-image: linear-gradient(90deg, #222, #2a2a2a, #333);
-			background-repeat: no-repeat;
-		}
+@keyframes shimmerFade {
+	0% {
+		background-image: linear-gradient(120deg,
+				rgba(10, 10, 10, 0.98) 0%,
+				rgba(20, 20, 20, 0.08) 49%,
+				rgba(40, 40, 40, 0.03) 50%,
+				rgba(20, 20, 20, 0.08) 51%,
+				rgba(10, 10, 10, 0.98) 100%);
+		background-position: -120% 0;
+	}
+
+	99% {
+		background-position: 120% 0;
+	}
+
+	100% {
+		background-image: linear-gradient(to right, #0a0a0a, #0a0a0a);
+		background-position: center;
+	}
+}
+
+.gradient-hero {
+  background: linear-gradient(to right, #111, #111);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerFade 6s ease-out 1 forwards;
 }
