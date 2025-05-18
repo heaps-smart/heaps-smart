@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Logo } from "./logo";
-import { Navbar } from "./navbar";
+import { Logo } from "./Logo";
+import { Navbar } from "./Navbar";
 
 type HeaderVariant = "light" | "dark" | "coffee";
 

@@ -1,10 +1,16 @@
-import Container from "@/app/_components/container";
-import CTA from "@/app/_components/cta";
-import Footer from "@/app/_components/footer";
-import Header from "@/app/_components/header";
-import ProjectList from "@/app/_components/project-list";
-import Section from "@/app/_components/section";
-import Swell from "@/app/_components/swell";
+import dynamic from "next/dynamic";
+import Container from "@/app/_components/Container";
+import CTA from "@/app/_components/CTA";
+import Footer from "@/app/_components/Footer";
+import Header from "@/app/_components/Header";
+import ProjectList from "@/app/_components/ProjectList";
+import Section from "@/app/_components/Section";
+import Swell from "@/app/_components/Swell";
+import CheckIcon from "@/app/_components/svg/CheckIcon"; // Import the new SVG component
+
+const TorusKnotCanvas = dynamic(() => import("@/app/_components/animations/Torus"), {
+  ssr: false,
+});
 
 export default function Page() {
   return (
@@ -12,8 +18,8 @@ export default function Page() {
       <Container>
         <Header variant="light" />
 
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8 mb-4 gradient-hero">
-          Prototype. Scale. Innovate.
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
+          Prototype. Innovate. Scale.
         </h1>
 
         <h2 className="text-xl md:text-2xl font-medium mb-4 text-gray-800 tracking-tight">
@@ -30,39 +36,42 @@ export default function Page() {
       </Container>
 
       <Section bg="bg-[#e8e4e1]">
-        <h3 className="text-2xl font-semibold mb-6 tracking-tight">Engage our Labs to:</h3>
-        <ul className="space-y-4">
-          <li className="flex items-start">
-            <div className="mr-3 mt-1 text-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <div>
-              <span className="font-semibold">Prototype fast.</span> Test bold ideas and emerging tech with low risk
-            </div>
-          </li>
-          <li className="flex items-start">
-            <div className="mr-3 mt-1 text-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <div>
-              <span className="font-semibold">Customise smart solutions.</span> Customise one of our proven tools to your unique needs
-            </div>
-          </li>
-          <li className="flex items-start">
-            <div className="mr-3 mt-1 text-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <div>
-              <span className="font-semibold">Empower your team.</span> Build in-house capability with hands-on training and fresh tools
-            </div>
-          </li>
-        </ul>
+        <div className="flex flex-col md:flex-row items-center md:items-start md:gap-8">
+          <div className="md:w-1/3 flex justify-center  ">
+            <TorusKnotCanvas />
+          </div>
+          <div className="md:w-2/3">
+            <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
+              Engage our Labs to:
+            </h3>
+            <ul className="space-y-4 text-lg max-w-3xl pb-4 text-black/90  max-w-[600px]">
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 text-primary">
+                  <CheckIcon />
+                </div>
+                <div>
+                  <span className="font-semibold">Prototype fast.</span> Test bold ideas and emerging tech with low risk
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 text-primary">
+                  <CheckIcon />
+                </div>
+                <div>
+                  <span className="font-semibold">Customise smart solutions.</span> Customise one of our proven tools to your unique needs
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="mr-3 mt-1 text-primary">
+                  <CheckIcon />
+                </div>
+                <div>
+                  <span className="font-semibold">Empower your team.</span> Build in-house capability with hands-on training and fresh tools
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </Section>
 
       <Container>

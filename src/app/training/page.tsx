@@ -1,25 +1,32 @@
-import AnimatedHeading from "@/app/_components/animated-heading";
-import Container from "@/app/_components/container";
-import CTA  from "../_components/cta";
-import Footer from "@/app/_components/footer";
-import Header from "@/app/_components/header";
-import Section from "@/app/_components/section";
-import Swell from "../_components/swell";
+import dynamic from "next/dynamic";
+import AnimatedHeading from "@/app/_components/AnimatedHeading";
+import Container from "@/app/_components/Container";
+import CTA from "../_components/CTA";
+import Footer from "@/app/_components/Footer";
+import Header from "@/app/_components/Header";
+import Section from "@/app/_components/Section";
+import Swell from "../_components/Swell";
+import CheckIcon from "@/app/_components/svg/CheckIcon";
+import TestimonialCarousel from "@/app/_components/TestimonialCarousel";
+
+const Rotary = dynamic(() => import("@/app/_components/animations/Rotary"), {
+  ssr: false,
+});
 
 export default function Training() {
   const testimonials = [
     {
-      quote: "I've learned more in the past 20 minutes than I've learned in the last six years.",
+      quote: "I can’t believe how much I’ve learned in such a short time — AI finally makes sense! This is going to save me so much time, and I’m excited to put it into practice and share it with my team.",
       name: "Amanda",
       role: "Customer Support",
     },
     {
-      quote: "This helped me understand the fundamentals and introduced me to the exciting new things happening in the world of technology.",
+      quote: "My 1x1 training with Kate helped me understand the fundamentals that I was missing and introduced me to the exciting new things happening in the world of technology. Before this, I was completely overwhelmed, had never had any formal tech training and kept getting myself in a big mess! But now, it’s starting to click. I’m starting to put the pieces together and for the first time, I actually feel confident working online and out of a traditional office setting. I feel like anything is possible now.",
       name: "Gayle",
       role: "School Counsellor",
     },
     {
-      quote: "ChatGPT is my new best friend.",
+      quote: "After more than 40 years in science and research, I thought I’d seen every tool under the sun — but project management was always the part I struggled with. This session opened my eyes to how the right digital tools can streamline everything. I’m now collaborating more easily with my remote team, cutting down the admin, and moving projects forward faster. It means more time for research, and a bit more time in the surf, too.",
       name: "Jack",
       role: "Research Scientist",
     },
@@ -30,7 +37,7 @@ export default function Training() {
       <Container>
         <Header variant="light" />
 
-        <AnimatedHeading>
+        <AnimatedHeading animatedWords={["innovation"]}>
           Build innovation from within.
         </AnimatedHeading>
 
@@ -38,53 +45,39 @@ export default function Training() {
           Empower your team to work smarter, faster, and more creatively.
         </h2>
       </Container>
-
       <Section bg="bg-[#e8e4e1]">
-        <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
-          Our approach
-        </h3>
-        <p className="text-lg max-w-3xl pb-4">
-          We train by doing. From strategy workshops to agile sprints, we work side-by-side with your team — solving their problems, building their confidence, and sharpening their technical toolkits.
-        </p>
-      </Section>
-
-      <Section bg="bg-[#BEB5B4]">
-        <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
-          What you'll learn
-        </h3>
-        <ul className="list-disc pl-5 space-y-3">
-          <li className="text-lg">
-            <b>Strategy.</b> Cut through noise, prioritise what matters
-          </li>
-          <li className="text-lg">
-            <b>Agile.</b> Work flexibly, iterate quickly, and deliver value sooner
-          </li>
-          <li className="text-lg">
-            <b>AI.</b> Understand and apply emerging tech in real-world ways
-          </li>
-          <li className="text-lg">
-            <b>Tooling & Automation.</b> Set up systems that do the heavy lifting
-          </li>
-        </ul>
+        <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
+          <div className="mt-8 md:mt-0 md:w-1/2 md:justify-start">
+            <Rotary />
+          </div>
+          <div className="md:w-1/2">
+            <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
+              What you'll learn
+            </h3>
+            <ul className="space-y-3">
+              <li className="text-lg flex items-start">
+                <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                <span><b>Strategy.</b> Cut through noise, prioritise what matters</span>
+              </li>
+              <li className="text-lg flex items-start">
+                <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                <span><b>Agile.</b> Work flexibly, iterate quickly, and deliver value sooner</span>
+              </li>
+              <li className="text-lg flex items-start">
+                <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                <span><b>AI.</b> Understand and apply emerging tech in real-world ways</span>
+              </li>
+              <li className="text-lg flex items-start">
+                <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+                <span><b>Tooling & Automation.</b> Set up systems that do the heavy lifting</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </Section>
 
       <Section bg="bg-[#EFE9E5]">
-        <h3 className="text-4xl font-bold text-center tracking-tight text-black/80">
-          From our learners
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-        <div key={index} className="p-6 rounded-2xl transition-transform duration-300 hover:scale-105">
-          <p className="text-lg italic">{testimonial.quote}</p>
-          <div className="flex items-center mt-6 space-x-3">
-            <div>
-          <p className="font-semibold">{testimonial.name}</p>
-          <p className="text-sm text-black/60">{testimonial.role}</p>
-            </div>
-          </div>
-        </div>
-          ))}
-        </div>
+        <TestimonialCarousel testimonials={testimonials} />
       </Section>
 
       <CTA heading="Get in touch to start learning." />

@@ -1,7 +1,7 @@
-import Avatar from "./avatar";
-import CoverImage from "./cover-image";
-import DateFormatter from "./date-formatter";
-import { PostTitle } from "@/app/_components/post-title";
+import Avatar from "./Avatar";
+import CoverImage from "./CoverImage";
+import DateFormatter from "./DateFormatter";
+import { PostTitle } from "@/app/_components/PostTitle";
 import { type Author } from "@/interfaces/author";
 
 type Props = {

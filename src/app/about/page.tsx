@@ -1,8 +1,8 @@
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
-import Footer from "@/app/_components/footer";
+import Container from "@/app/_components/Container";
+import Header from "@/app/_components/Header";
+import Footer from "@/app/_components/Footer";
 import Image from "next/image";
-import Swell from "../_components/swell";
+import Swell from "../_components/Swell";
 
 export default function About() {
   return (

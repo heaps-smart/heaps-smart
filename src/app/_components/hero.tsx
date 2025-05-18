@@ -1,8 +1,8 @@
-import Avatar from "@/app/_components/avatar";
-import CoverImage from "@/app/_components/cover-image";
+import Avatar from "@/app/_components/Avatar";
+import CoverImage from "@/app/_components/CoverImage";
 import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import DateFormatter from "./date-formatter";
+import DateFormatter from "./DateFormatter";
 
 type Props = {
   title: string;
@@ -13,7 +13,7 @@ type Props = {
   slug: string;
 };
 
-export function Hero({
+export default function Hero({
   title,
   coverImage,
   date,

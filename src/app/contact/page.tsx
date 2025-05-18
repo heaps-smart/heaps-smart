@@ -1,8 +1,8 @@
-import AnimatedHeading from "@/app/_components/animated-heading";
-import Container from "@/app/_components/container";
-import Footer from "@/app/_components/footer";
-import Header from "@/app/_components/header";
-import Swell from "@/app/_components/swell";
+import AnimatedHeading from "@/app/_components/AnimatedHeading";
+import Container from "@/app/_components/Container";
+import Footer from "@/app/_components/Footer";
+import Header from "@/app/_components/Header";
+import Swell from "@/app/_components/Swell";
 
 export default function Contact() {
   return (

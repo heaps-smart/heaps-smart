@@ -1,11 +1,11 @@
 import dynamic from "next/dynamic";
-import Container from "@/app/_components/container";
-import Footer from "@/app/_components/footer";
-import Header from "@/app/_components/header";
-import Swell from "@/app/_components/swell";
+import Container from "@/app/_components/Container";
+import Footer from "@/app/_components/Footer";
+import Header from "@/app/_components/Header";
+import Swell from "@/app/_components/Swell";
 
 const TerrainBackground = dynamic(
-  () => import("./_components/TerrainBackground"),
+  () => import("./_components/animations/Terrain"),
   { ssr: false }
 );
 
@@ -73,7 +73,7 @@ export default function HeapsSmart() {
               {
                 href: "/training",
                 title: "Capacity Building",
-                desc: "Upskill your team with tech confidence and clarity.",
+                desc: "Upskill your team for productivity, creativity, and innovation.",
                 img: "/assets/svg/training-capacity-building.svg",
                 alt: "Coaching and Training icon",
               },

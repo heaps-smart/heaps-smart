@@ -36,3 +36,4 @@ const CoverImage = ({ title, src, slug }: Props) => {
 };
 
 export default CoverImage;
+
