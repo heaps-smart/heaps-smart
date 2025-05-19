@@ -1,4 +1,4 @@
-import Avatar from "@/app/_components/Avatar";
+// import Avatar from "@/app/_components/Avatar";
 import CoverImage from "@/app/_components/CoverImage";
 import { type Author } from "@/interfaces/author";
 import Link from "next/link";
@@ -39,7 +39,7 @@ export default function Hero({
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
+          {/* <Avatar name={author.name} picture={author.picture} /> */}
         </div>
       </div>
     </section>
