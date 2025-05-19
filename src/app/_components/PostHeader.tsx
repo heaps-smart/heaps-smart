@@ -1,4 +1,4 @@
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
 import CoverImage from "./CoverImage";
 import DateFormatter from "./DateFormatter";
 import { PostTitle } from "@/app/_components/PostTitle";
