@@ -1,6 +1,6 @@
 import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
 import CoverImage from "./CoverImage";
 import DateFormatter from "./DateFormatter";
 
