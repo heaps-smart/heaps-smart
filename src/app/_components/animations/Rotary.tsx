@@ -15,11 +15,8 @@ export default function Rotary() {
 	
 	// Updated image URLs with flat SVG icons related to "training"
 	const imageURLs = [
-		// Book Icon
 		"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%234A5568%22%20width%3D%2232px%22%20height%3D%2232px%22%3E%3Cpath%20d%3D%22M18%202H6c-1.1%200-2%20.9-2%202v16c0%201.1.9%202%202%202h12c1.1%200%202-.9%202-2V4c0-1.1-.9-2-2-2zM6%204h5v8l-2.5-1.5L6%2012V4z%22%2F%3E%3C%2Fsvg%3E",
-		// Presentation/Chart Icon
 		"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%234A5568%22%20width%3D%2232px%22%20height%3D%2232px%22%3E%3Cpath%20d%3D%22M3.5%2018.49l6-6.01%204%204L22%206.92l-1.41-1.41-7.09%207.97-4-4L2%2016.99l1.5%201.5z%22%2F%3E%3C%2Fsvg%3E",
-		// Graduation Cap Icon
 		"data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%234A5568%22%20width%3D%2232px%22%20height%3D%2232px%22%3E%3Cpath%20d%3D%22M5%2013.18v4L12%2021l7-3.82v-4L12%2017l-7-3.82zM12%203L1%209l11%206%209-4.91V17h2V9L12%203z%22%2F%3E%3C%2Fsvg%3E"
 	];
 	
@@ -28,7 +25,6 @@ export default function Rotary() {
 		
 		const circle = circleRef.current;
 		
-		// Place images function - directly adapted from the original example
 		function placeImages() {
 			const angleIncrement = Math.PI * 2 / imageURLs.length;
 			const radius = circle.offsetWidth / 2;
@@ -55,7 +51,6 @@ export default function Rotary() {
 			return images;
 		}
 		
-		// Create images and animation
 		const images = placeImages();
 		const spin = gsap.timeline({
 			repeat: -1, 
@@ -100,7 +95,7 @@ export default function Rotary() {
 						timeScale: 1,
 						duration: 1.5,
 						ease: "power2.inOut",
-						onStart: () => spin.resume()
+						onStart: () => { spin.resume(); }
 					});
 				} catch (error) {
 					// Failsafe - always resume animation even if there was an error
