@@ -16,14 +16,14 @@
     "d3": "^7.9.0",
     "date-fns": "^4.0.0",
     "gray-matter": "^4.0.3",
+    "gsap": "^3.12.4",
     "next": "14.2.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^5.4.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "three": "^0.158.0",
-    "gsap": "^3.12.4"
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
@@ -32,6 +32,7 @@
     "@types/react-dom": "^18",
     "@types/three": "^0.175.0",
     "autoprefixer": "^10.4.20",
+    "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.11",
     "gh-pages": "^6.1.1",
