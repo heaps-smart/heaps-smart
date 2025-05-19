@@ -18,56 +18,43 @@ export default function Page() {
       <Container>
         <Header variant="light" />
 
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
-          Prototype. Innovate. Scale.
-        </h1>
-
-        <h2 className="text-xl md:text-2xl font-medium mb-4 text-gray-800 tracking-tight">
-          Partner with our Innovation Labs to solve bold challenges through rapid experimentation.
-        </h2>
-
-        <div className="prose prose-lg mb-12 max-w-none">
-          <p>
-            We are constantly building, testing, tinkering and learning using the latest technologies,
-            tools and automations. Forward-thinking organisations can tap into our Innovation Labs by
-            engaging our team on a fixed or long-term basis.
-          </p>
+        <div className="pt-8 pb:4 lg:pb-16">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
+            Prototype. Innovate. Scale.
+          </h1>
+          <h2 className="text-xl md:text-2xl font-medium text-gray-800 tracking-tight pb-4 mb-12 max-w-full md:max-w-4xl">
+            Partner with our Innovation Labs to solve bold challenges through rapid experimentation.
+          </h2>
         </div>
       </Container>
 
       <Section bg="bg-[#e8e4e1]">
         <div className="flex flex-col md:flex-row items-center md:items-start md:gap-8">
-          <div className="md:w-1/3 flex justify-center  ">
+          {/* <div className="md:w-1/3 flex justify-center  ">
             <TorusKnotCanvas />
-          </div>
+          </div> */}
           <div className="md:w-2/3">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               Engage our Labs to:
             </h3>
             <ul className="space-y-4 text-lg max-w-3xl pb-4 text-black/90  max-w-[600px]">
               <li className="flex items-start">
-                <div className="mr-3 mt-1 text-primary">
-                  <CheckIcon />
-                </div>
-                <div>
-                  <span className="font-semibold">Prototype fast.</span> Test bold ideas and emerging tech with low risk
-                </div>
+              <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+              <div>
+                <span className="font-semibold">Prototype fast.</span> Test bold ideas and emerging tech with low risk
+              </div>
               </li>
               <li className="flex items-start">
-                <div className="mr-3 mt-1 text-primary">
-                  <CheckIcon />
-                </div>
-                <div>
-                  <span className="font-semibold">Customise smart solutions.</span> Customise one of our proven tools to your unique needs
-                </div>
+              <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+              <div>
+                <span className="font-semibold">Customise smart solutions.</span> Customise one of our proven tools to your unique needs
+              </div>
               </li>
               <li className="flex items-start">
-                <div className="mr-3 mt-1 text-primary">
-                  <CheckIcon />
-                </div>
-                <div>
-                  <span className="font-semibold">Empower your team.</span> Build in-house capability with hands-on training and fresh tools
-                </div>
+              <CheckIcon className="h-5 w-5 text-emerald-500 mr-2 mt-1 flex-shrink-0" />
+              <div>
+                <span className="font-semibold">Empower your team.</span> Build in-house capability with hands-on training and fresh tools
+              </div>
               </li>
             </ul>
           </div>

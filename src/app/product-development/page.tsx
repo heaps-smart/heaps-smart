@@ -21,7 +21,7 @@ export default function ProductDevelopment() {
       <Container>
         <Header variant="light" />
 
-        <div className="pt-8 pb-24">
+        <div className="pt-8 pb:4 lg:pb-16">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
             Bring your big idea to life.
           </h1>
@@ -32,17 +32,17 @@ export default function ProductDevelopment() {
       </Container>
 
       <Section bg="bg-[#e8e4e1]">
-        <div className="flex flex-col md:flex-row items-center md:items-start">
-          <div className="md:w-1/2">
-            <BubbleGroupsCanvas />
-          </div>
+        <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+          {/* <div className="md:w-1/2 flex justify-center md:justify-start">
+        <BubbleGroupsCanvas />
+          </div> */}
           <div className="md:w-1/2">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               Our approach
             </h3>
             <p className="text-lg max-w-3xl pb-4">
-              Our approach to product development is fast, collaborative, and practical. We run design sprints, 
-              co-create with your team, and build working prototypes to test real-world impact early. 
+              Our approach to product development is fast, collaborative, and practical. We run design sprints,
+              co-create with your team, and build working prototypes to test real-world impact early.
               Whether you're technical or not, if you're ready to move, so are we.
             </p>
           </div>

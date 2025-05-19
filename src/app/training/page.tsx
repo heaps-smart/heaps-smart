@@ -37,19 +37,20 @@ export default function Training() {
       <Container>
         <Header variant="light" />
 
-        <AnimatedHeading animatedWords={["innovation"]}>
-          Build innovation from within.
-        </AnimatedHeading>
-
-        <h2 className="text-xl md:text-2xl mb-12 font-medium text-gray-800 tracking-tight pb-4">
-          Empower your team to work smarter, faster, and more creatively.
-        </h2>
+        <div className="pt-8 pb:4 lg:pb-16">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
+            Build innovation from within.
+          </h1>
+          <h2 className="text-xl md:text-2xl font-medium text-gray-800 tracking-tight pb-4 mb-12 max-w-full md:max-w-4xl">
+            We work with your team to move from concept to production-ready product using proven innovation frameworks.
+          </h2>
+        </div>
       </Container>
       <Section bg="bg-[#e8e4e1]">
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
-          <div className="mt-8 md:mt-0 md:w-1/2 md:justify-start">
+          {/* <div className="mt-8 md:mt-0 md:w-1/2 md:justify-start">
             <Rotary />
-          </div>
+          </div> */}
           <div className="md:w-1/2">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               What you'll learn
