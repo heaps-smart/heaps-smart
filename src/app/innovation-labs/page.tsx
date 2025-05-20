@@ -30,9 +30,9 @@ export default function Page() {
 
       <Section bg="bg-[#e8e4e1]">
         <div className="flex flex-col md:flex-row items-center md:items-start md:gap-8">
-          {/* <div className="md:w-1/3 flex justify-center  ">
+          <div className="md:w-1/3 flex justify-center  ">
             <TorusKnotCanvas />
-          </div> */}
+          </div>
           <div className="md:w-2/3">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               Engage our Labs to:

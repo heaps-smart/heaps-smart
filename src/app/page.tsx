@@ -3,6 +3,7 @@ import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
+import Headline from "@/app/_components/animations/Headline";
 
 const TerrainBackground = dynamic(
   () => import("./_components/animations/Terrain"),
@@ -28,12 +29,7 @@ export default function HeapsSmart() {
 
       <Container>
         <section className="py-4" aria-labelledby="technology-for-good">
-          <h2
-            id="technology-for-good"
-            className="text-4xl md:text-8xl font-sans font-bold mt-2 mb-2 tracking-tighter text-black/80"
-          >
-            Technology for good.
-          </h2>
+          <Headline />
           <div className="relative mt-auto mb-10">
             <p className="tracking-tight text-2xl md:text-2xl leading-snug max-w-4xl text-black/80">
               We're creatives and technologists who build and test ideas fast — from{" "}

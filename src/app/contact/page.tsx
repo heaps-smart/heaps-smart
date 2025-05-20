@@ -14,9 +14,9 @@ export default function Contact() {
       <main className="flex-grow">
         <Container>
           <section aria-labelledby="get-in-touch">
-            <AnimatedHeading>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
               Get in touch.
-            </AnimatedHeading>
+            </h1>
             <p className="tracking-tight md:text-3xl max-w-4xl mb-6 text-black/80 leading-tight">
               Have a question or want to collaborate? Whether you're a non-profit, a purpose-driven organisation, or someone who believes in technology for good, 
               we'd love to hear from you.

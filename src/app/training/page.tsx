@@ -48,9 +48,9 @@ export default function Training() {
       </Container>
       <Section bg="bg-[#e8e4e1]">
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
-          {/* <div className="mt-8 md:mt-0 md:w-1/2 md:justify-start">
+          <div className="mt-8 md:mt-0 md:w-1/2 md:justify-start">
             <Rotary />
-          </div> */}
+          </div>
           <div className="md:w-1/2">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               What you'll learn

@@ -33,9 +33,9 @@ export default function ProductDevelopment() {
 
       <Section bg="bg-[#e8e4e1]">
         <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
-          {/* <div className="md:w-1/2 flex justify-center md:justify-start">
-        <BubbleGroupsCanvas />
-          </div> */}
+          <div className="md:w-1/3 flex justify-center md:justify-start mb-8 md:mb-0">
+            <BubbleGroupsCanvas />
+          </div>
           <div className="md:w-1/2">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               Our approach
