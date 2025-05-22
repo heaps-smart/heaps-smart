@@ -34,7 +34,7 @@ const projectsData: Project[] = [
     tags: ["Training", "Gen AI"],
   },
   {
-    title: "Redefining MVP: Most Valuable Poo!",
+    title: "Redefining MVP: most valuable poo!",
     content:
       "We're using Vision AI to identify seeds in cassowary poo and help support rainforest regeneration for a quirky yet impactful citizen science project.",
     video: "/assets/video/wall-of-poo.mp4",

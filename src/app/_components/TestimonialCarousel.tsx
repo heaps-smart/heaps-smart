@@ -37,7 +37,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
 
   return (
     <div className="relative flex items-center">
-      {/* Previous button - vertically centered */}
       <button 
         onClick={prevTestimonial}
         className="absolute left-0 sm:left-2 z-10 p-2 sm:p-3 rounded-full bg-white/80 hover:bg-white transition-colors shadow-md"
@@ -48,7 +47,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         </svg>
       </button>
       
-      {/* Testimonial carousel */}
       <div className="w-full overflow-hidden px-8 sm:px-12">
         <div className="min-h-[350px] sm:min-h-[300px] flex items-center justify-center">
           {testimonials.map((testimonial, index) => (
@@ -88,7 +86,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         </div>
       </div>
       
-      {/* Next button - vertically centered */}
       <button 
         onClick={nextTestimonial}
         className="absolute right-0 sm:right-2 z-10 p-2 sm:p-3 rounded-full bg-white/80 hover:bg-white transition-colors shadow-md"
@@ -99,7 +96,6 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
         </svg>
       </button>
       
-      {/* Indicators at bottom */}
       <div className="absolute -bottom-4 sm:-bottom-8 left-0 right-0 flex justify-center space-x-3 pb-2 sm:pb-4">
         {testimonials.map((_, index) => (
           <button

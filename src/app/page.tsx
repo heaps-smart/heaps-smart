@@ -3,11 +3,36 @@ import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
+import InnovationProjectCard from "@/app/_components/InnovationProjectCard";
 
 const TerrainBackground = dynamic(
   () => import("./_components/animations/Terrain"),
   { ssr: false }
 );
+
+const projects = [
+	{
+		slug: "redefining-mvp",
+		title: "Redefining MVP: most valuable poo",
+		description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
+		tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
+		video: "/assets/video/wall-of-poo.mp4", // Added video path
+	},
+	{
+		slug: "how-to-save-a-dinosaur-bird",
+		title: "How to save a dinosaur bird",
+		description: "Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
+		tags: ["Conservation", "Citizen Science", "Data"],
+		video: "/assets/video/cassowary-web.mp4", // Added video path
+	},
+	{
+		slug: "meet-casey",
+		title: "Meet Casey: our cassowary expert",
+		description: "We built Casey, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
+		tags: ["AI", "Agents", "Accessibility"],
+		video: "/assets/video/casey.mp4", // Added video path
+	},
+];
 
 export default function HeapsSmart() {
   return (
@@ -36,9 +61,7 @@ export default function HeapsSmart() {
           </h2>
           <div className="relative mt-auto mb-10">
             <p className="tracking-tight text-2xl md:text-2xl leading-snug max-w-4xl text-black/80">
-              We're creatives and technologists who build and test ideas fast — from{" "}
-              prototypes to polished products.{" "}
-              Technical or not, <b>when you're ready to move, so are we.</b>
+              We work with teams doing good — helping them move faster and smarter with digital strategy, AI tools, and custom-built tech. Whether you're technical or not, we'll help you get the systems and skills to go further.
             </p>
           </div>
 
@@ -54,26 +77,45 @@ export default function HeapsSmart() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Work with us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
             {[
               {
-                href: "/innovation-labs",
+                href: "/innovation",
                 title: "Innovation Labs",
-                desc: "Prototype solutions to real-world problems — fast.",
+                desc: (
+                  <>
+                    <p className="text-base mb-3">Design sprints to spark ideas and test what’s possible.</p>
+                    <p className= "text-sm mb-1"><span className="font-bold">Best for:</span> Exploring new concepts, rapid prototyping, digital strategy and funding applications</p>
+                    <p className="text-sm"><span className="font-bold">Engagement:</span> 2–4 weeks</p>
+                  </>
+                ),
                 img: "/assets/svg/ai-solutions.svg",
                 alt: "Innovation Labs icon",
               },
               {
                 href: "/product-development",
                 title: "Product Development",
-                desc: "From idea to launch — we design, test, and build with purpose.",
+                desc: (
+                  <>
+                    <p className="text-base mb-3">Retainer based support to build, refine and launch digital solutions.</p>
+                    <p className="text-sm mb-1"><span className="font-bold">Best for:</span> Building and implementing custom software, AI tools, data platforms, internal systems</p>
+                    <p className="text-sm"><span className="font-bold">Engagement:</span> 6+ months</p>
+                  </>
+                ),
                 img: "/assets/svg/web-development.svg",
                 alt: "Product Development icon",
               },
               {
                 href: "/training",
                 title: "Capacity Building",
-                desc: "Upskill your team for productivity, creativity, and innovation.",
+                desc: (
+                  <>
+                    <p className="text-base mb-3">Practical sessions to level up your team and tooling.</p>
+                    <p className="text-sm mb-1"><span className="font-bold">Best for:</span> Upskilling your team’s digital skills, process efficiency and digital strategy</p>
+                    <p className="text-sm"><span className="font-bold">Engagement:</span> One-off or ongoing sessions</p>
+                  </>
+                ),
                 img: "/assets/svg/training-capacity-building.svg",
                 alt: "Coaching and Training icon",
               },
@@ -93,12 +135,23 @@ export default function HeapsSmart() {
                   />
                 </div>
                 <div className="flex-1 mt-2">
-                  <p className="text-sm text-black/60">{desc}</p>
+                  <div className="text-black/60">{desc}</div>
                 </div>
               </a>
             ))}
           </div>
         </section>
+      </Container>
+
+      <Container>
+        <div className="my-16">
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Our latest labs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <InnovationProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
       </Container>
 
       <Swell dark={true} />

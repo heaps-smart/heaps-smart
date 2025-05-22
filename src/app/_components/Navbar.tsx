@@ -12,7 +12,7 @@ export function Navbar({ textColor, bgColor }: NavbarProps) {
   const pathname = usePathname();
 
   const navItems = [
-    { label: "Innovation", href: "/innovation-labs" },
+    { label: "Innovation", href: "/innovation" },
     { label: "Development", href: "/product-development" },
     { label: "Training", href: "/training" },
     { label: "Contact", href: "/contact" },
