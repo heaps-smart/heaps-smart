@@ -33,9 +33,8 @@ export default function InnovationProjectCard({ project }: InnovationProjectCard
           className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
           muted
           playsInline
-          preload="auto"
+          preload="none"
           poster={project.poster}
-          onLoadedMetadata={(e) => (e.currentTarget.currentTime = 0.001)}
           onMouseEnter={(e) => e.currentTarget.play()}
           onMouseLeave={(e) => {
             if (e.currentTarget.readyState >= 3) {
