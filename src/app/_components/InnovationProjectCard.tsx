@@ -15,6 +15,7 @@ interface Project {
   description: string;
   tags: string[];
   video: string;
+  poster: string;
 }
 
 interface InnovationProjectCardProps {
@@ -33,6 +34,7 @@ export default function InnovationProjectCard({ project }: InnovationProjectCard
           muted
           playsInline
           preload="auto"
+          poster={project.poster}
           onLoadedMetadata={(e) => (e.currentTarget.currentTime = 0.001)}
           onMouseEnter={(e) => e.currentTarget.play()}
           onMouseLeave={(e) => {
@@ -43,7 +45,6 @@ export default function InnovationProjectCard({ project }: InnovationProjectCard
           }}
         >
           <source src={project.video} type="video/mp4" />
-          Your browser does not suppttt the video tag.
         </video>
       </div>
       <div className="p-6 flex flex-col flex-grow">

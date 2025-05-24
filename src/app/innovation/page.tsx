@@ -20,6 +20,7 @@ const projects = [
     description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
     tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
     video: "/assets/video/wall-of-poo.mp4",
+    poster: "/assets/video/posters/wall-of-poo.webp",
   },
   {
     slug: "how-to-save-a-dinosaur-bird",
@@ -27,6 +28,7 @@ const projects = [
     description: "Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
     tags: ["Conservation", "Citizen Science", "Data"],
     video: "/assets/video/cassowary-web.mp4",
+    poster: "/assets/video/posters/cassowary-web.webp",
   },
   {
     slug: "meet-casey",
@@ -34,6 +36,7 @@ const projects = [
     description: "We built Casey, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
     tags: ["AI", "Agents", "Accessibility"],
     video: "/assets/video/casey.mp4",
+    poster: "/assets/video/posters/casey.webp",
   },
 ];
 

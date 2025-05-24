@@ -16,27 +16,30 @@ const projects = [
 		title: "Redefining MVP: most valuable poo",
 		description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
 		tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
-		video: "/assets/video/wall-of-poo.mp4", // Added video path
+		video: "/assets/video/wall-of-poo.mp4",
+    poster: "/assets/video/posters/wall-of-poo.webp",
 	},
 	{
 		slug: "how-to-save-a-dinosaur-bird",
 		title: "How to save a dinosaur bird",
 		description: "Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
 		tags: ["Conservation", "Citizen Science", "Data"],
-		video: "/assets/video/cassowary-web.mp4", // Added video path
+		video: "/assets/video/cassowary-web.mp4",
+    poster: "/assets/video/posters/cassowary-web.webp",
 	},
 	{
 		slug: "meet-casey",
 		title: "Meet Casey: our cassowary expert",
 		description: "We built Casey, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
 		tags: ["AI", "Agents", "Accessibility"],
-		video: "/assets/video/casey.mp4", // Added video path
+		video: "/assets/video/casey.mp4",
+    poster: "/assets/video/posters/casey.webp",
 	},
 ];
 
 export default function HeapsSmart() {
   return (
-    <main className="bg-[#F7F2EE] text-[#111111] font-sans relative overflow-hidden">
+    <main className="bg-[#F7F2EE] text-[#111111] font-sans relative">
       <header className="relative h-[55vh] overflow-hidden z-0">
         <div className="absolute inset-0 z-0">
           <TerrainBackground />
@@ -120,12 +123,12 @@ export default function HeapsSmart() {
                 alt: "Coaching and Training icon",
               },
             ].map(({ href, title, desc, img, alt }) => (
-              <a
-                key={href}
-                href={href}
-                className="flex flex-col p-6 bg-white border border-black/10 rounded-lg shadow-sm hover:shadow-md transition text-left h-full"
-                aria-label={`Learn more about ${title}`}
-              >
+                <a
+                  key={href}
+                  href={href}
+                  className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 p-6 border border-black/10 text-left h-full"
+                  aria-label={`Learn more about ${title}`}
+                >
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="text-xl font-semibold">{title}</h4>
                   <img
@@ -134,10 +137,10 @@ export default function HeapsSmart() {
                     className="w-10 h-10 ml-4"
                   />
                 </div>
-                <div className="flex-1 mt-2">
-                  <div className="text-black/60">{desc}</div>
-                </div>
-              </a>
+                  <div className="flex-1 mt-2">
+                    <div className="text-black/60">{desc}</div>
+                  </div>
+                </a>
             ))}
           </div>
         </section>

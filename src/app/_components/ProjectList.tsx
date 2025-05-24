@@ -12,6 +12,7 @@ type Project = {
   content: string | React.ReactNode;
   video: string;
   tags: string[];
+  poster?: string;
 };
 
 const projectsData: Project[] = [
@@ -21,6 +22,7 @@ const projectsData: Project[] = [
       "Many hands (or eyes) make short work of recording observational data on the endangered and misunderstood Southern Cassowary in Australia.",
     video: "/assets/video/cassowary-web.mp4",
     tags: ["Data", "Mapping", "Citizen Science"],
+    poster: "/assets/video/posters/cassowary-web.webp",
   },
   {
     title: "Hello, AI",
@@ -32,6 +34,7 @@ const projectsData: Project[] = [
     ),
     video: "/assets/video/hello-ai.mp4",
     tags: ["Training", "Gen AI"],
+    poster: "/assets/video/posters/hello-ai.webp",
   },
   {
     title: "Redefining MVP: most valuable poo!",
@@ -39,6 +42,7 @@ const projectsData: Project[] = [
       "We're using Vision AI to identify seeds in cassowary poo and help support rainforest regeneration for a quirky yet impactful citizen science project.",
     video: "/assets/video/wall-of-poo.mp4",
     tags: ["Vision AI", "Citizen Science"],
+    poster: "/assets/video/posters/wall-of-poo.webp",
   },
   {
     title: "Meet 'Casey'",
@@ -46,6 +50,7 @@ const projectsData: Project[] = [
       "She's smart, responsive, and ready to collaborate on cassowary conservation. As an AI Agent powered by RAG, she helps the team analyse data, uncover insights, and make sense of complete reporting.",
     video: "/assets/video/casey.mp4",
     tags: ["AI Agents", "Workflow", "RAG", "Social Media"],
+    poster: "/assets/video/posters/casey.webp",
   },
 ];
 
@@ -70,6 +75,7 @@ export default function ProjectList({ featured, limit }: ProjectListProps) {
                 muted
                 playsInline
                 preload="auto"
+                poster={project.poster}
                 onLoadedMetadata={(e) => e.currentTarget.currentTime = 0.001}
                 onMouseEnter={(e) => e.currentTarget.play()}
                 onMouseLeave={(e) => {
