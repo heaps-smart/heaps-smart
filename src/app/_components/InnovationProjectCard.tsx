@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
+import ResponsiveVideo from "./ResponsiveVideo";
 
 const Tag = ({ children }: { children: React.ReactNode }) => (
   <span className="inline-block bg-gray-100 text-gray-800 text-xs font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">
@@ -29,22 +30,11 @@ export default function InnovationProjectCard({ project }: InnovationProjectCard
       className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1"
     >
       <div className="relative w-full aspect-video">
-        <video
-          className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
-          muted
-          playsInline
-          preload="none"
+        <ResponsiveVideo
+          src={project.video}
           poster={project.poster}
-          onMouseEnter={(e) => e.currentTarget.play()}
-          onMouseLeave={(e) => {
-            if (e.currentTarget.readyState >= 3) {
-              e.currentTarget.pause();
-              e.currentTarget.currentTime = 0;
-            }
-          }}
-        >
-          <source src={project.video} type="video/mp4" />
-        </video>
+          className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+        />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold mb-3 text-black/90 group-hover:text-[#333] transition-colors">

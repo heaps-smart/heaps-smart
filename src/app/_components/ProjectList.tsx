@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ResponsiveVideo from "./ResponsiveVideo";
 
 interface ProjectListProps {
   featured?: boolean;
@@ -70,22 +71,11 @@ export default function ProjectList({ featured, limit }: ProjectListProps) {
             className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all shadow-sm hover:shadow-md"
           >
             <div className="relative w-full aspect-video">
-              <video
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
-                muted
-                playsInline
-                preload="auto"
+              <ResponsiveVideo
+                src={project.video}
                 poster={project.poster}
-                onLoadedMetadata={(e) => e.currentTarget.currentTime = 0.001}
-                onMouseEnter={(e) => e.currentTarget.play()}
-                onMouseLeave={(e) => {
-                  e.currentTarget.pause();
-                  e.currentTarget.currentTime = 0;
-                }}
-              >
-                <source src={project.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-75 hover:opacity-100"
+              />
             </div>
 
             <div className="p-6 flex flex-col justify-between h-full">

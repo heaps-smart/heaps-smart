@@ -6,6 +6,7 @@ import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import Image from "next/image";
 import GalleryVideo from "@/app/_components/GalleryVideo";
+import ResponsiveVideo from "@/app/_components/ResponsiveVideo";
 import { ReactNode } from "react";
 
 type Section = {
@@ -67,23 +68,26 @@ export default function InnovationPageTemplate({
           {galleryImages.map((img) => {
             const isVideo = /\.(mp4|webm)$/i.test(img.src);
             return (
-                <div
-                  key={img.id}
-                  className="flex-shrink-0 h-[45vh] flex items-center"
-                >
+              <div
+                key={img.id}
+                className="flex-shrink-0 h-[45vh] flex items-center"
+              >
                 <div className="h-[45vh] flex items-center justify-center overflow-hidden">
                   {isVideo ? (
-                    <GalleryVideo src={img.src} alt={img.alt} />
+                    <ResponsiveVideo
+                      src={img.src}
+                      className="transition-transform duration-300 ease-in-out hover:scale-102"
+                    />
                   ) : (
                     <Image
                       src={img.src}
                       alt={img.alt}
                       fill={false}
                       style={{
-                        height: '45vh',
-                        width: 'auto',
-                        objectFit: 'cover',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.08)'
+                        height: "45vh",
+                        width: "auto",
+                        objectFit: "cover",
+                        boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
                       }}
                       width={800}
                       height={450}
@@ -101,12 +105,18 @@ export default function InnovationPageTemplate({
         <div className="pb-16 md:pb-24 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
           <aside className="space-y-12">
             <section>
-              <h4 className="text-xl font-semibold tracking-tight text-[#111]">Location</h4>
-              <p className="text-lg leading-relaxed text-black/80">{location}</p>
+              <h4 className="text-xl font-semibold tracking-tight text-[#111]">
+                Location
+              </h4>
+              <p className="text-lg leading-relaxed text-black/80">
+                {location}
+              </p>
             </section>
             <section>
-              <h4 className="text-xl font-semibold tracking-tight mb-3 text-[#111]">Core technologies</h4>
-                <ul className="flex flex-col gap-1">
+              <h4 className="text-xl font-semibold tracking-tight mb-3 text-[#111]">
+                Core technologies
+              </h4>
+              <ul className="flex flex-col gap-1">
                 {techStack.map((tech) => (
                   <li
                     key={tech}
@@ -115,12 +125,16 @@ export default function InnovationPageTemplate({
                     {tech}
                   </li>
                 ))}
-                </ul>
+              </ul>
             </section>
             {acknowledgements && (
               <section>
-                <h4 className="text-xl font-semibold tracking-tight mb-3 text-[#111]">Acknowledgements</h4>
-                <div className="text-base text-black/60 space-y-1">{acknowledgements}</div>
+                <h4 className="text-xl font-semibold tracking-tight mb-3 text-[#111]">
+                  Acknowledgements
+                </h4>
+                <div className="text-base text-black/60 space-y-1">
+                  {acknowledgements}
+                </div>
               </section>
             )}
           </aside>
@@ -130,7 +144,9 @@ export default function InnovationPageTemplate({
                 <h3 className="text-2xl md:text-3xl font-semibold tracking-tight mb-4 text-[#111]">
                   {section.title}
                 </h3>
-                <div className="text-lg leading-relaxed text-black/80 text-left">{section.content}</div>
+                <div className="text-lg leading-relaxed text-black/80 text-left">
+                  {section.content}
+                </div>
               </section>
             ))}
           </div>

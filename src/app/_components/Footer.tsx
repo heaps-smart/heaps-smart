@@ -35,7 +35,7 @@ export function Footer({ inverted = false }) {
             </a>
           </div>
           <p className="text-sm text-center md:text-left flex items-center space-x-2">
-            <span>
+            <span className="text-neutral-500">
               Built on{" "}
               <a
                 href="https://cassowaryconservation.org/djiru-country/"

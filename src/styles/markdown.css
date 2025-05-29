@@ -1,0 +1,139 @@
+/* Beautiful markdown typography using plain CSS */
+.markdown {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: #18181b;
+  max-width: none;
+  margin-bottom: 4rem;
+  letter-spacing: -0.01em;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.markdown p {
+  color: #232323;
+  font-size: 1.1rem;
+  line-height: 1.85;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.markdown h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .markdown h1 {
+    font-size: 4.5rem;
+    padding-right: 2rem;
+  }
+}
+
+.markdown h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.markdown h4 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.markdown a {
+  color: #059669;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.markdown a:hover {
+  color: #065f46;
+}
+
+.markdown blockquote {
+  border-left: 4px solid #a7f3d0;
+  background: #f0fdfa;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #27272a;
+}
+
+.markdown li::marker {
+  color: #059669;
+}
+
+.markdown img {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  margin: 2rem 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.markdown strong {
+  color: #18181b;
+  font-weight: 600;
+}
+
+.markdown code {
+  background: #f1f5f9;
+  padding: 0.125em 0.375em;
+  border-radius: 0.25em;
+  font-size: 1em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.markdown table {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 2rem 0;
+  border-collapse: separate;
+  width: 100%;
+}
+
+.markdown th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: #18181b;
+  padding: 0.75em 1em;
+}
+
+.markdown td {
+  background: #fff;
+  color: #18181b;
+  padding: 0.75em 1em;
+}
+
+.markdown hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}

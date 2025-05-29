@@ -80,68 +80,31 @@ export default function HeapsSmart() {
             </a>
           </div>
 
-          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Work with us</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
-            {[
-              {
-                href: "/innovation",
-                title: "Innovation Labs",
-                desc: (
-                  <>
-                    <p className="text-base mb-3">Design sprints to spark ideas and test what’s possible.</p>
-                    <p className= "text-sm mb-1"><span className="font-bold">Best for:</span> Exploring new concepts, rapid prototyping, digital strategy and funding applications</p>
-                    <p className="text-sm"><span className="font-bold">Engagement:</span> 2–4 weeks</p>
-                  </>
-                ),
-                img: "/assets/svg/ai-solutions.svg",
-                alt: "Innovation Labs icon",
-              },
-              {
-                href: "/product-development",
-                title: "Product Development",
-                desc: (
-                  <>
-                    <p className="text-base mb-3">Retainer based support to build, refine and launch digital solutions.</p>
-                    <p className="text-sm mb-1"><span className="font-bold">Best for:</span> Building and implementing custom software, AI tools, data platforms, internal systems</p>
-                    <p className="text-sm"><span className="font-bold">Engagement:</span> 6+ months</p>
-                  </>
-                ),
-                img: "/assets/svg/web-development.svg",
-                alt: "Product Development icon",
-              },
-              {
-                href: "/training",
-                title: "Capacity Building",
-                desc: (
-                  <>
-                    <p className="text-base mb-3">Practical sessions to level up your team and tooling.</p>
-                    <p className="text-sm mb-1"><span className="font-bold">Best for:</span> Upskilling your team’s digital skills, process efficiency and digital strategy</p>
-                    <p className="text-sm"><span className="font-bold">Engagement:</span> One-off or ongoing sessions</p>
-                  </>
-                ),
-                img: "/assets/svg/training-capacity-building.svg",
-                alt: "Coaching and Training icon",
-              },
-            ].map(({ href, title, desc, img, alt }) => (
-                <a
-                  key={href}
-                  href={href}
-                  className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 p-6 border border-black/10 text-left h-full"
-                  aria-label={`Learn more about ${title}`}
-                >
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="text-xl font-semibold">{title}</h4>
-                  <img
-                    src={img}
-                    alt={alt}
-                    className="w-10 h-10 ml-4"
-                  />
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest from the blog</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+            <a
+              href="/posts/doing-more-with-less"
+              className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 p-6 border border-black/10 text-left h-full"
+              aria-label="Read Doing more with less: How I automated our non-profit digital comms using n8n"
+            >
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="text-xl font-semibold">Doing more with less: How I automated our non-profit digital comms using n8n</h4>
+                <img
+                  src="/assets/blog/doing-more-with-less/cover.jpg"
+                  alt="Cover for Doing more with less"
+                  className="w-14 h-14 ml-4 rounded-md object-cover"
+                />
+              </div>
+              <div className="flex-1 mt-2">
+                <div className="text-black/60 text-base mb-2">How a non-developer built an n8n workflow that turns one blog post into multiple communications, customised by audience and format.</div>
+                <div className="flex items-center gap-2 mt-4">
+                  <img src="/assets/blog/authors/kate-blank.jpg" alt="Kate Blank" className="w-8 h-8 rounded-full border border-slate-200" />
+                  <span className="text-sm text-black/80 font-medium">Kate Blank</span>
+                  <span className="h-5 border-l border-slate-200 mx-2" aria-hidden="true"></span>
+                  <span className="text-sm text-black/60">29 May 2025</span>
                 </div>
-                  <div className="flex-1 mt-2">
-                    <div className="text-black/60">{desc}</div>
-                  </div>
-                </a>
-            ))}
+              </div>
+            </a>
           </div>
         </section>
       </Container>

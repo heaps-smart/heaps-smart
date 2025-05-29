@@ -18,8 +18,6 @@ export default function GalleryVideo({ src, alt }: GalleryVideoProps) {
 			aria-label={alt}
 			onMouseEnter={e => e.currentTarget.play()}
 			onMouseLeave={e => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
-		>
-			Sorry, your browser does not support embedded videos.
-		</video>
+		/>
   );
 }
