@@ -22,7 +22,7 @@ export default function ProductDevelopment() {
 
         <div className="pt-8 pb:4 lg:pb-16">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
-            Bring your big idea to life.
+            Bring big ideas to life.
           </h1>
           <h2 className="text-xl md:text-2xl font-medium text-gray-800 tracking-tight pb-4 mb-12 max-w-full md:max-w-4xl">
             We work with your team to move from concept to production-ready product using proven innovation frameworks.

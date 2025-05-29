@@ -3,7 +3,7 @@ import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 export default function RedefiningMvpPage() {
   const tags = ["Conservation", "Citizen Science", "Data", "Vision AI"];
   const pageTitle = "Redefining MVP: most valuable poo";
-  const techStack = ["Python", "Landing Lens (Vision AI)", "PostgreSQL", "Digital Ocean"];
+  const techStack = ["Python", "Landing Lens (Vision AI)", "PostgreSQL"];
   
   const galleryImages = [
     { id: 1, src: "/assets/img/poo-1.webp", alt: "Cassowary in Mission Beach rainforest" },

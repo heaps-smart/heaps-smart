@@ -80,7 +80,7 @@ export default function HeapsSmart() {
             </a>
           </div>
 
-          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest from the blog</h2>
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
             <a
               href="/posts/doing-more-with-less"
@@ -90,7 +90,7 @@ export default function HeapsSmart() {
               <div className="flex items-center justify-between mb-2">
                 <h4 className="text-xl font-semibold">Doing more with less: How I automated our non-profit digital comms using n8n</h4>
                 <img
-                  src="/assets/blog/doing-more-with-less/cover.jpg"
+                  src="/assets/posts/doing-more-with-less/cover.jpg"
                   alt="Cover for Doing more with less"
                   className="w-14 h-14 ml-4 rounded-md object-cover"
                 />
@@ -98,7 +98,7 @@ export default function HeapsSmart() {
               <div className="flex-1 mt-2">
                 <div className="text-black/60 text-base mb-2">How a non-developer built an n8n workflow that turns one blog post into multiple communications, customised by audience and format.</div>
                 <div className="flex items-center gap-2 mt-4">
-                  <img src="/assets/blog/authors/kate-blank.jpg" alt="Kate Blank" className="w-8 h-8 rounded-full border border-slate-200" />
+                  <img src="/assets/posts/authors/kate-blank.jpg" alt="Kate Blank" className="w-8 h-8 rounded-full border border-slate-200" />
                   <span className="text-sm text-black/80 font-medium">Kate Blank</span>
                   <span className="h-5 border-l border-slate-200 mx-2" aria-hidden="true"></span>
                   <span className="text-sm text-black/60">29 May 2025</span>
@@ -111,7 +111,7 @@ export default function HeapsSmart() {
 
       <Container>
         <div className="my-16">
-          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Our latest labs</h2>
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest labs</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project) => (
               <InnovationProjectCard key={project.slug} project={project} />
