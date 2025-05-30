@@ -18,68 +18,65 @@ published: true
 
 ## Understanding the real costs of automation tooling
 
-Despite my efficiency euphoria, one question kept popping up: **what will this cost to run?**
+Despite my efficiency euphoria, one question kept popping up: what will this cost to run?
 
-The thing about digital tools is you rarely use just one. You **stack** them. And each tool in that stack adds its own costs. So I started looking into how to keep those under control as I move this experiment into production.
-
+The thing about digital tools is you rarely use just one. You stack them. And each tool in that stack adds its own costs. So I started looking into how to keep those under control as I move this experiment into production.
 
 ![What it looks like to run out of AI-tokens](/assets/posts/doing-more-with-less-part-2/token-error.webp)<figcaption class="caption">What it looks like to run out of AI tokens on n8n</figcaption>
 
 ### Platform Costs
 
-In my experience, tools with a more technical interface (like those resembling a developer terminal) often deliver better value and greater flexibility. Platforms like [Supabase](https://supabase.com/) and [n8n](https://n8n.io/) fall into this category. In contrast, user-friendly tools such as [Airtable](https://airtable.com/), [Jotform](https://jotform.com/), and [Zapier](https://zapier.com/) offer clean and accessible interfaces for non-technical users, but that simplicity often comes with a higher price tag.
-
-I've been testing n8n because you can run it for free by hosting it yourself on your laptop. It's brilliant for experimenting and building flows without worrying about usage limits. The catch? When your laptop is closed, so is your automation. To run things on a schedule or while you sleep, you'll need to move it to the cloud. n8n's hosted plans currently start at around AUD$42/month.
+In my experience, the more a tool looks like a developer terminal (dark screen, blinking text, scary) the better value it tends to be. Think [Supabase](https://supabase.com/) and [n8n](https://n8n.io/). On the flip side, cheerful tools like [Airtable](https://www.airtable.com/), [Jotform](https://www.jotform.com/), and [Zapier](https://zapier.com/) are clean, friendly, and seemingly easy to use, but that usually means you end up paying more. I've been testing n8n because you can run it for free by hosting it yourself on your laptop. It's great for experimenting and building flows without worrying about usage limits. The catch is that when your laptop is closed, so is your automation. To run things on a schedule or while you sleep, you'll need to move it to the cloud. n8n's hosted plans currently start at AUD$42 per month.
 
 ### 3rd Party App Costs
 
-Your automation won't work in isolation. It needs to talk to your tools — email, calendar, drive, forms, CRMs, etc. For me, that meant giving it access to Gmail so it could send and receive comms.
-
-If you're using a free Gmail account, you'll hit API limits pretty quickly. Google doesn't provide full API access without a Workspace subscription. As a Workspace user, I already pay AUD$18 per user per month — but it's worth knowing this up front.
+Now, when your automation needs to interact with the tools you already use, like email, calendar, drive, forms, CRMs etc, you need to give it access to information within these systems. In my case, that meant integrating Gmail so the automation could send and receive comms on my behalf. If you're using a free Gmail account, you'll hit limitations quickly as Google doesn't provide full API access without a Workspace subscription. As a Google Workspace customer, I already pay for this access which is currently AUD$18 per user per month.
 
 ### AI Costs
 
-Now let's stack again. Add an AI step and you'll encounter **tokens**. Tokens are chunks of words the AI processes, and when using third-party AI models, they cost real computing power — which means real money. Each task might cost cents, but frequent automations or large content volumes can add up fast. And unlike platform costs, AI usage can fluctuate — so it's worth setting some guardrails.
+Let's keep stacking! If you choose to add an AI step to your workflow, like asking it to summarise, rewrite, or generate content, you'll run into something called "tokens." Tokens are chunks of words the AI processes and importantly, they cost real money. Each task shouldn't cost much but if your automations run frequently or handle lots of content, those costs can add up quickly and unlike the other costs mentioned here, AI-costs can fluctuate so it's important to add controls:
 
-#### 1. **Use your own key**
+#### 1. For greater control, use your own key
 
 <div class="tip-body">
 
-Automation tools like Zapier and [Make](https://www.make.com/) often include built-in AI steps that run through their own gateway, not your personal API key. That feels convenient — but:
+If you're using AI in your workflows, it's worth taking a moment to understand how costs are handled by platforms such as [n8n](https://n8n.io/), [Zapier](https://zapier.com/) and [Make](https://www.make.com/).
 
-- You don't see actual token usage;
-- You're likely paying a markup;
-- You have less control.
+Automation tools like Zapier and Make often include built-in AI steps which run through their custom gateway, not your personal key, which seem convenient but means that:
 
-n8n, on the other hand, lets you bring your own key. Just sign up at [OpenAI](https://openai.com/), generate a key, paste it into your workflow, and you're away.
+- You don't see the actual token usage;
+- You're paying a markup, often wrapped into your monthly subscription or per-task fees;
+- You have less control over how and when the AI is used.
+
+By contrast, tools like n8n let you connect with your own key. And it's very simple to set up: sign up at [OpenAI](https://openai.com/), hand over your credit card, generate a key, and paste it into your automation platform.
 
 </div>
 
-#### 2. **Set limits**
+#### 2. Set limits
 
 <div class="tip-body">
 
-In n8n, you can name each workflow — e.g. *Monthly Comms: newsletter, LinkedIn posts, media pitches* — and track its costs. You can even set hard cost limits, so the flow stops if it gets too expensive. Want deeper controls? Set monthly spend caps in your OpenAI account — especially useful if multiple people are using the same API key.
+In n8n, you can give each workflow a specific name, like "Monthly Comms: newsletter, LinkedIn posts, media pitches" and monitor the running costs on a dashboard. This level of monitoring makes it easy to clearly associate a cost to an outcome, and determine if and where refinements are needed. 
+
+You can also set cost limits on each workflow, so it stops automatically if it gets too expensive. If you need even more control, you can also set spending limits directly in your OpenAI account, including a maximum monthly budget. This is especially useful if you have a team using one AI account. 
 
 </div>
 
-#### 3. **Be specific**
+#### 3. Be specific
 
 <div class="tip-body">
 
-Keep your prompts tight. The more precise you are, the less it costs — and the better the results.
+My tip here is to keep your prompts tight and avoid asking for more than you need. The more precise you are, the less it costs, and the better the results.
 
-Also, don't keep repeating the same tasks. If your workflow processes the same blog post every month, you're wasting both time and tokens. Add a filter. Mine only grabs posts from the previous month.
+Also, don't repeat tasks over and over. If your workflow keeps pulling the same blog posts every month, you're wasting both time and TOKENS. Add a filter. In mine, I set my automation to run on the first of the month, and the task to only grab content from the previous month. That way, I'm only working with what's new and not reprocessing something I already turned into content last month.
 
 </div>
 
-#### 4. **Batch it**
+#### 4. Batch it
 
 <div class="tip-body">
 
-If you've ever worked near a dev team, you've probably heard "we should batch that." There's a reason.
-
-If you're turning 50 blog posts into social content, don't run them all at once. Break them into **batches**. That way, if something breaks or the cost spikes, you can stop, tweak, and restart — without a disaster. n8n makes batching easy. (It even suggested it to me!)
+If you've ever been in earshot of a dev team or read their work diary, you've probably seen and heard "enable batching", "batch process" or "we should batch that!" (It's a thing.) And for good reason. If you're turning 50 blog posts into social content, don't run them all at once. Break it into smaller batches. That way, if something goes wrong, or the token usage starts creeping up, you can hit the big red button, make changes, and avoid things turning into a big red problem. n8n makes breaking content into batches super-simple, in fact it suggested it to me and all I had to do was agree.
 
 </div>
 
@@ -87,13 +84,13 @@ If you're turning 50 blog posts into social content, don't run them all at once.
 
 ## Final thoughts
 
-- **Automate thoughtfully.** Start with the repetitive stuff that doesn't add much value. For us, repackaging the same message for different audiences was an easy win.
+- **Automate thoughtfully.** Start by identifying where you or your team spend time on repetitive work that doesn't add much value. In our case, recreating the same messaging for different audiences was a clear candidate for automation.
 
-- **Review platform pricing before you build.** Tools like n8n can be run locally, free forever. That makes them perfect for testing before committing to cloud plans. Start small and scale up only when needed.
+- **Review platform pricing carefully before you build.** Tools like n8n can be run locally for free forever, making them ideal for testing before committing to paid cloud plans or full rollouts. Start small and upgrade your plan as you really need it.
 
-- **Control your AI usage.** Use your own OpenAI API key to keep costs visible and under control. Add token limits, filter what content gets processed, and batch your automations. Always test first — is it actually helpful? Refine it.
+- **Control your AI usage.** Connect your own OpenAI API key for full visibility and cost control. It's often cheaper and gives you more flexibility than bundled AI features in platforms like [Zapier](https://zapier.com/) or [Make](https://www.make.com/). Add caps on token usage, filter what content gets processed, and run your automations in small batches. Always test your setup first — is it actually helpful? Get feedback and refine.
 
-- **Get advice early.** If budget is a concern, talk to someone who knows the landscape. The right setup can save you hours — and money — later on.
+- **Get professional advice early.** If cost is a major factor, consult with someone who knows the automation landscape. The right tool stack from the start can save you hours — and dollars — down the track.
 
 ---
 
