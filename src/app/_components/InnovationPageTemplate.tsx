@@ -18,6 +18,8 @@ type GalleryImage = {
   id: number;
   src: string;
   alt: string;
+  type?: string; // Added optional type property
+  poster?: string; // Added optional poster property
 };
 
 type Props = {
@@ -66,32 +68,28 @@ export default function InnovationPageTemplate({
       <div className="overflow-hidden max-h-[50vh] bg-[#f8f3ef] mb-12 md:mb-16">
         <div className="flex overflow-x-auto space-x-4 py-4 scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-transparent">
           {galleryImages.map((img) => {
-            const isVideo = /\.(mp4|webm)$/i.test(img.src);
+            const isVideo = img.type === "video";
             return (
               <div
                 key={img.id}
-                className="flex-shrink-0 h-[45vh] flex items-center"
+                // Set explicit height and aspect ratio for the gallery item slot
+                className="flex-shrink-0 h-[45vh] aspect-video flex items-center justify-center overflow-hidden bg-gray-200 rounded-md" // Added bg-gray-200 and rounded-md for visibility
               >
-                <div className="h-[45vh] flex items-center justify-center overflow-hidden">
+                {/* This div is the relative container for Image/Video, takes full dimensions of its parent */}
+                <div className="h-full w-full relative">
                   {isVideo ? (
                     <ResponsiveVideo
                       src={img.src}
-                      className="transition-transform duration-300 ease-in-out hover:scale-102"
+                      poster={img.poster}
+                      className="transition-transform duration-300 ease-in-out hover:scale-102 w-full h-full object-cover"
                     />
                   ) : (
                     <Image
                       src={img.src}
                       alt={img.alt}
-                      fill={false}
-                      style={{
-                        height: "45vh",
-                        width: "auto",
-                        objectFit: "cover",
-                        boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-                      }}
-                      width={800}
-                      height={450}
-                      className="transition-transform duration-300 ease-in-out hover:scale-102"
+                      fill={true}
+                      className="transition-transform duration-300 ease-in-out hover:scale-102 object-cover"
+                      sizes="(max-width: 768px) 80vw, 40vw" // Adjusted sizes attribute
                     />
                   )}
                 </div>
