@@ -68,7 +68,7 @@ You can also set cost limits on each workflow, so it stops automatically if it g
 
 My tip here is to keep your prompts tight and avoid asking for more than you need. The more precise you are, the less it costs, and the better the results.
 
-Also, don't repeat tasks over and over. If your workflow keeps pulling the same blog posts every month, you're wasting both time and TOKENS. Add a filter. In mine, I set my automation to run on the first of the month, and the task to only grab content from the previous month. That way, I'm only working with what's new and not reprocessing something I already turned into content last month.
+Also, don't repeat tasks over and over. If your workflow keeps pulling the same blog posts every month, you're wasting both time and tokens. Instead, add a filter. In mine, I set my automation to run on the first of the month, and the task to only grab content from the previous month. That way, I'm only working with what's new and not reprocessing something I already turned into content last month.
 
 </div>
 
