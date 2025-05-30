@@ -15,6 +15,7 @@ export default function TerrainBackground() {
   const TERRAIN_HEIGHT = 128;
   const TERRAIN_SIZE = 11000;
   const HEIGHT_MULTIPLIER = 75;
+  const LOOP_DISTANCE = 4000;
 
   useEffect(() => {
     const container = containerRef.current;
@@ -25,6 +26,7 @@ export default function TerrainBackground() {
     let renderer: THREE.WebGLRenderer;
     let animationFrameId: number;
     const clock = new THREE.Clock();
+    let cameraTravel = 0;
 
     const generateHeight = (width: number, height: number): Float32Array => {
       const size = width * height;
@@ -161,7 +163,13 @@ export default function TerrainBackground() {
 
     const animate = () => {
       const delta = clock.getDelta();
-      camera.position.z += delta * 40;
+      const move = delta * 40;
+      camera.position.z += move;
+      cameraTravel += move;
+      if (cameraTravel > LOOP_DISTANCE) {
+        camera.position.z -= LOOP_DISTANCE;
+        cameraTravel = 0;
+      }
       renderer.render(scene, camera);
       animationFrameId = requestAnimationFrame(animate);
     };
