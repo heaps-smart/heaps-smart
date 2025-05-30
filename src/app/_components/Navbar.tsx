@@ -20,7 +20,7 @@ export function Navbar({ textColor, bgColor }: NavbarProps) {
 
   return (
     <nav className="mt-5 md:mt-0 w-full">
-      <ul className="flex flex-col items-center md:flex-row md:justify-end gap-y-3 md:gap-x-6 text-lg">
+      <ul className="flex flex-col items-center md:items-start md:flex-row md:justify-end gap-y-3 md:gap-x-6 text-lg">
         {navItems.map(({ label, href }) => {
           const isActive = new RegExp(`^${href}/?$`).test(pathname);
 

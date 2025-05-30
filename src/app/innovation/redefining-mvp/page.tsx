@@ -7,7 +7,7 @@ export default function RedefiningMvpPage() {
   
   const galleryImages = [
     { id: 1, src: "/assets/img/poo-1.webp", alt: "Cassowary in Mission Beach rainforest" },
-    { id: 2, src: "/assets/video/poo-vid.mp4", alt: "Video demo of Casey AI answering cassowary questions", type: "video" },
+    { id: 2, src: "/assets/video/poo-vid.mp4", alt: "Video demo of Casey AI answering cassowary questions", type: "video", poster: "/assets/video/poo-vid.jpg" },
     { id: 3, src: "/assets/img/poo-2.webp", alt: "Mission Beach Cassowaries team using Casey AI" },
     { id: 4, src: "/assets/img/poo-3.webp", alt: "Visualisation of AI-powered knowledge search" },
     { id: 5, src: "/assets/img/poo-4.webp", alt: "Cassowary character illustration for children's book" },

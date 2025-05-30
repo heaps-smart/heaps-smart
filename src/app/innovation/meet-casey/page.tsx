@@ -10,7 +10,7 @@ export default function MeetCaseyPage() {
   const techStack = ["Python (LangChain)", "OpenAI API", "React - Next.js", "Pinecone (Vector DB)"];
   
   const galleryImages = [
-    { id: 1, src: "/assets/video/casey.mp4", alt: "Video demo of Casey AI answering cassowary questions", type: "video" },
+    { id: 1, src: "/assets/video/casey.mp4", alt: "Video demo of Casey AI answering cassowary questions", type: "video", poster: "/assets/video/casey.jpg" },
   ];
 
   const sections = [
