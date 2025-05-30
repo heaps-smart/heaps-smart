@@ -1,11 +1,11 @@
 ---
-title: "Doing more with less: How I automated our non-profit digital comms using n8n"
+title: "Doing more with less: How we automated non-profit digital comms using n8n"
 excerpt: "How a non-developer built an n8n workflow that turns one blog post into multiple communications, customised by audience and format."
 coverImage: "/assets/posts/doing-more-with-less/cover.jpg"
-date: "2025-5-29"
+date: "2025-05-29"
 author:
   name: Kate Blank
-  picture: "/assets/posts/authors/kate-blank.jpg"
+  picture: "/assets/team/kate-blank.jpg"
 ogImage:
   url: "/assets/posts/doing-more-with-less/cover.jpg"
 tags: ["Automation", "n8n", "Non-profits"]
@@ -44,4 +44,3 @@ With **n8n**, **OpenAI** and **Google**, I was able to take one piece of writing
 
 Unlike other automation tools I've worked with, I experienced almost no blockers or failed executions. This was almost entirely due to my using ChatGPT as my copilot. The only issue I ran into was running out of tokens so quickly. We'll get into managing costs in Part 2.
 
-![What it looks like to run out of AI-tokens](/assets/posts/doing-more-with-less/token-error.webp)
