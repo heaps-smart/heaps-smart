@@ -9,6 +9,7 @@ import Swell from "@/app/_components/Swell";
 import LightningIcon from "@/app/_components/svg/LightningIcon";
 import HeartIcon from "@/app/_components/svg/HeartIcon";
 import CodeIcon from "@/app/_components/svg/CodeIcon";
+import LatestPosts from "@/app/_components/LatestPosts";
 
 const BubbleGroupsCanvas = dynamic(() => import("@/app/_components/animations/Bubble"), {
   ssr: false,
@@ -31,7 +32,7 @@ export default function ProductDevelopment() {
       </Container>
 
       <Section bg="bg-[#e8e4e1]">
-        <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start md:space-x-8 mb-8">
           <div className="md:w-1/2">
             <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
               Our approach
@@ -43,8 +44,10 @@ export default function ProductDevelopment() {
             </p>
           </div>
         </div>
+
+        <LatestPosts limit={2} />
       </Section>
-      
+
       <Section bg="bg-[#BEB5B4]">
         <h3 className="text-3xl font-semibold mb-4 tracking-tight text-[#333333]">
           What we offer

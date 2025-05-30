@@ -42,5 +42,13 @@ First, I **defined my workflow** (what needed to be done):
 
 With **n8n**, **OpenAI** and **Google**, I was able to take one piece of writing and repurpose it in multiple ways, for four different audiences, on a defined schedule. While the results weren't always perfect during my test, they were a solid starting point, and I can already see how I would refine this flow to suit our needs better. And next time, I would be faster.
 
-Unlike other automation tools I've worked with, I experienced almost no blockers or failed executions. This was almost entirely due to my using ChatGPT as my copilot. The only issue I ran into was running out of tokens so quickly. We'll get into managing costs in Part 2.
+Unlike other automation tools I've worked with, I experienced almost no blockers or failed executions. This was almost entirely due to my using ChatGPT as my copilot. The only issue I ran into was running out of tokens so quickly. We'll get into managing costs in [Part 2](https://heaps-smart.com/posts/doing-more-with-less-part-2/).
+
+---
+
+> Want to save time on digital comms, or get more value from the content you already create? Heaps Smart helps non-profits and purpose-driven teams automate repetitive communications, repurpose content for different audiences, and build smarter workflows.
+>
+> [Get in touch](https://heaps-smart.com/contact) to chat about your comms challenges, or [follow us on LinkedIn](https://www.linkedin.com/company/heaps-smart/) for more practical tips on digital transformation for non-profits.
+
+
 

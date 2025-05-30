@@ -42,46 +42,43 @@ function getLatestPosts(limit = 2): PostMeta[] {
 export default function LatestPosts({ limit = 2 }: { limit?: number }) {
   const posts = getLatestPosts(limit);
   return (
-    <>
-      <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest posts</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
-        {posts.map((post) => (
-          <Link
-            key={post.slug}
-            href={`/posts/${post.slug}`}
-            className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 p-6 border border-black/10 text-left h-full justify-between"
-            aria-label={`Read ${post.title}`}
-          >
-            <div>
-              <div className="flex items-center justify-between mb-2">
-                <h4 className="text-xl font-semibold">{post.title}</h4>
-                {post.coverImage && (
-                  <img
-                    src={post.coverImage}
-                    alt={`Cover for ${post.title}`}
-                    className="w-14 h-14 ml-4 rounded-md object-cover"
-                  />
-                )}
-              </div>
-              <div className="mt-2">
-                <div className="text-black/60 text-base mb-2">{post.excerpt}</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-2 mt-4 pt-2 border-t border-slate-100">
-              {post.author.picture && (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+      {posts.map((post) => (
+        <Link
+          key={post.slug}
+          href={`/posts/${post.slug}`}
+          className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 p-6 border border-black/10 text-left h-full justify-between"
+          aria-label={`Read ${post.title}`}
+        >
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="text-xl font-semibold">{post.title}</h4>
+              {post.coverImage && (
                 <img
-                  src={post.author.picture}
-                  alt={post.author.name}
-                  className="w-8 h-8 rounded-full border border-slate-200"
+                  src={post.coverImage}
+                  alt={`Cover for ${post.title}`}
+                  className="w-14 h-14 ml-4 rounded-md object-cover"
                 />
               )}
-              <span className="text-sm text-black/80 font-medium">{post.author.name}</span>
-              <span className="h-5 border-l border-slate-200 mx-2" aria-hidden="true"></span>
-              <span className="text-sm text-black/60">{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</span>
             </div>
-          </Link>
-        ))}
-      </div>
-    </>
+            <div className="mt-2">
+              <div className="text-black/60 text-base mb-2">{post.excerpt}</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 mt-4 pt-2 border-t border-slate-100">
+            {post.author.picture && (
+              <img
+                src={post.author.picture}
+                alt={post.author.name}
+                className="w-8 h-8 rounded-full border border-slate-200"
+              />
+            )}
+            <span className="text-sm text-black/80 font-medium">{post.author.name}</span>
+            <span className="h-5 border-l border-slate-200 mx-2" aria-hidden="true"></span>
+            <span className="text-sm text-black/60">{new Date(post.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}</span>
+          </div>
+        </Link>
+      ))}
+    </div>
   );
 }

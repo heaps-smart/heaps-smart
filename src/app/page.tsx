@@ -81,6 +81,7 @@ export default function HeapsSmart() {
             </a>
           </div>
 
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest posts</h2>
           <LatestPosts limit={2} />
         </section>
       </Container>
