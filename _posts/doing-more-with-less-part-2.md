@@ -20,13 +20,13 @@ published: true
 
 Despite my efficiency euphoria, one question kept popping up: what will this cost to run?
 
-The thing about digital tools is you rarely use just one. You stack them. And each tool in that stack adds its own costs. So I started looking into how to keep those under control as I move this experiment into production.
+The thing about digital tools is you rarely use just one. You **stack** them. And each tool in that stack adds its own costs. So I started looking into how to keep those under control as I move this experiment into production.
 
 ![What it looks like to run out of AI-tokens](/assets/posts/doing-more-with-less-part-2/token-error.webp)<figcaption class="caption">What it looks like to run out of AI tokens on n8n</figcaption>
 
 ### Platform Costs
 
-In my experience, the more a tool looks like a developer terminal (dark screen, blinking text, scary) the better value it tends to be. Think [Supabase](https://supabase.com/) and [n8n](https://n8n.io/). On the flip side, cheerful tools like [Airtable](https://www.airtable.com/), [Jotform](https://www.jotform.com/), and [Zapier](https://zapier.com/) are clean, friendly, and seemingly easy to use, but that usually means you end up paying more. I've been testing n8n because you can run it for free by hosting it yourself on your laptop. It's great for experimenting and building flows without worrying about usage limits. The catch is that when your laptop is closed, so is your automation. To run things on a schedule or while you sleep, you'll need to move it to the cloud. n8n's hosted plans currently start at AUD$42 per month.
+In my experience, the more a tool looks like a developer terminal (dark screen, blinking text, scary) the better value it tends to be. Think [Supabase](https://supabase.com/) and [n8n](https://n8n.io/). On the flip side, cheerful tools like [Airtable](https://www.airtable.com/), [Jotform](https://www.jotform.com/), and [Zapier](https://zapier.com/) are clean, friendly, and seemingly easy to use for a non-developer, but that usually means you end up paying more. I've been testing n8n because you can run it for free by hosting it yourself on your laptop. It's great for experimenting and building flows without worrying about usage limits. The catch is that when your laptop is closed, so is your automation. To run things on a schedule or while you sleep, you'll need to move it to the cloud. n8n's hosted plans currently start at AUD$42 per month.
 
 ### 3rd Party App Costs
 
