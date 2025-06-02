@@ -11,13 +11,12 @@ export default function GalleryVideo({ src, alt }: GalleryVideoProps) {
 			src={src}
 			width={800}
 			height={450}
-			className="h-[45vh] w-auto object-cover shadow-md transition-transform duration-300 ease-in-out hover:scale-102"
+			className="h-[45vh] w-auto object-cover shadow-md"
 			muted
 			loop
+			autoPlay
 			playsInline
 			aria-label={alt}
-			onMouseEnter={e => e.currentTarget.play()}
-			onMouseLeave={e => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
 		/>
   );
 }

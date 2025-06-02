@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 interface ResponsiveVideoProps {
   src: string;
@@ -8,60 +8,54 @@ interface ResponsiveVideoProps {
   className?: string;
 }
 
-function isMobile() {
-  if (typeof window === "undefined") return false;
-  return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
 export default function ResponsiveVideo({ src, poster, className = "" }: ResponsiveVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  React.useEffect(() => {
-    if (isMobile() && videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  }, []);
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
 
-  const handlePlayDesktop = () => {
-    if (!isMobile() && videoRef.current) {
-      videoRef.current.play();
-    }
-  };
+    video.load();
+    setIsLoaded(true);
 
-  const handlePauseDesktop = () => {
-    if (!isMobile() && videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  };
+    const playVideo = () => {
+      if (video && isLoaded) {
+        const playPromise = video.play();
 
-  const handleClickMobile = () => {
-    if (isMobile() && videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
+        if (playPromise !== undefined) {
+          playPromise.catch((err) => {
+            setError("Video playback prevented. Please ensure your browser allows autoplay.");
+            console.error("Video playback prevented:", err);
+          });
+        }
       }
-    }
-  };
+    };
+
+    video.addEventListener("loadedmetadata", playVideo);
+
+    return () => {
+      video.removeEventListener("loadedmetadata", playVideo);
+      video.pause();
+    };
+  }, [isLoaded]);
 
   return (
-    <video
-      ref={videoRef}
-      className={className}
-      muted
-      playsInline
-      preload="none"
-      poster={poster}
-      onMouseEnter={handlePlayDesktop}
-      onMouseLeave={handlePauseDesktop}
-      onClick={handleClickMobile}
-      tabIndex={isMobile() ? 0 : -1}
-    >
-      <source src={src} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div className="relative w-full h-full">
+      <video
+        ref={videoRef}
+        className={className}
+        muted
+        playsInline
+        autoPlay
+        loop
+        preload="metadata"
+        poster={poster}
+        tabIndex={-1}
+      >
+        <source src={src} type="video/mp4" />
+      </video>
+    </div>
   );
 }

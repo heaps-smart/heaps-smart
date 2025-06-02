@@ -4,8 +4,6 @@ import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
-import Image from "next/image";
-import GalleryVideo from "@/app/_components/GalleryVideo";
 import ResponsiveVideo from "@/app/_components/ResponsiveVideo";
 import { ReactNode } from "react";
 
@@ -18,8 +16,8 @@ type GalleryImage = {
   id: number;
   src: string;
   alt: string;
-  type?: string; // Added optional type property
-  poster?: string; // Added optional poster property
+  type?: string;
+  poster?: string;
 };
 
 type Props = {
@@ -72,24 +70,20 @@ export default function InnovationPageTemplate({
             return (
               <div
                 key={img.id}
-                // Set explicit height and aspect ratio for the gallery item slot
-                className="flex-shrink-0 h-[45vh] aspect-video flex items-center justify-center overflow-hidden bg-gray-200 rounded-md" // Added bg-gray-200 and rounded-md for visibility
+                className="flex-shrink-0 h-[45vh] flex items-center"
               >
-                {/* This div is the relative container for Image/Video, takes full dimensions of its parent */}
-                <div className="h-full w-full relative">
+                <div className="h-[45vh] flex items-center justify-center overflow-hidden relative rounded-none">
                   {isVideo ? (
                     <ResponsiveVideo
                       src={img.src}
                       poster={img.poster}
-                      className="transition-transform duration-300 ease-in-out hover:scale-102 w-full h-full object-cover"
+                      className="w-full h-full object-cover rounded-none"
                     />
                   ) : (
-                    <Image
+                    <img
                       src={img.src}
                       alt={img.alt}
-                      fill={true}
-                      className="transition-transform duration-300 ease-in-out hover:scale-102 object-cover"
-                      sizes="(max-width: 768px) 80vw, 40vw" // Adjusted sizes attribute
+                      className="h-full w-auto object-cover rounded-none"
                     />
                   )}
                 </div>

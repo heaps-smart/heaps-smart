@@ -1,16 +1,14 @@
-import Container from "@/app/_components/Container";
-import Footer from "@/app/_components/Footer";
-import Header from "@/app/_components/Header";
-import Swell from "@/app/_components/Swell";
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 
 export default function MeetCaseyPage() {
-  const tags = ["AI", "Agents", "Accessibility"];
+  const tags = ["AI", "Agents", "Conservation", "Community"];
   const pageTitle = "Meet Casey: our cassowary expert";
   const techStack = ["Python (LangChain)", "OpenAI API", "React - Next.js", "Pinecone (Vector DB)"];
   
   const galleryImages = [
+    { id: 2, src: "/assets/img/casey-1.webp", alt: "Cassowary in Mission Beach rainforest" },
     { id: 1, src: "/assets/video/casey.mp4", alt: "Video demo of Casey AI answering cassowary questions", type: "video", poster: "/assets/video/casey.jpg" },
+    { id: 3, src: "/assets/img/casey-2.webp", alt: "Mission Beach Cassowaries team using Casey AI" },
   ];
 
   const sections = [

@@ -46,7 +46,7 @@ export default function Page() {
       <Container>
         <Header variant="light" />
 
-        <div className="pt-8 pb:4 lg:pb-16">
+        <div className="pt-8 pb:4 lg:pb-8">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8 mb-4">
             Prototype. Innovate. Scale.
           </h1>
