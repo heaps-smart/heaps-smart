@@ -36,7 +36,7 @@ export default function Header({ variant = "light" }: HeaderProps) {
 
   return (
     <section
-      className={`flex-col md:flex-row flex items-center justify-between pt-16 mb-16 md:mb-12 z-10 ${textColor}`}
+      className={`flex-col md:flex-row flex items-center justify-between pt-8 md:pt-16 mb-8 md:mb-12 z-10 ${textColor}`}
     >
       <Link href="/" aria-label="Go to homepage">
         {variant === "coffee" ? (

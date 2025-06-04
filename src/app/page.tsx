@@ -41,14 +41,14 @@ const projects = [
 export default function HeapsSmart() {
   return (
     <main className="bg-[#F7F2EE] text-[#111111] font-sans relative">
-      <header className="relative h-[55vh] overflow-hidden">
+      <header className="relative h-auto min-h-[55vh] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <TerrainBackground />
         </div>
 
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#F7F2EE]/40 via-transparent to-[#F7F2EE] pointer-events-none" />
 
-        <div className="relative z-10 h-full flex flex-col justify-between">
+        <div className="relative z-10 h-full flex flex-col">
           <Container>
             <Header variant="light" />
           </Container>
@@ -83,6 +83,15 @@ export default function HeapsSmart() {
 
           <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest posts</h2>
           <LatestPosts limit={2} />
+          <div className="flex justify-between items-center my-6">
+            <a
+              href="/posts"
+              className="text-sm text-black hover:underline transition"
+              aria-label="View all blog posts"
+            >
+              View all posts →
+            </a>
+          </div>
         </section>
       </Container>
 

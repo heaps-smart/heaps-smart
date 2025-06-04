@@ -175,7 +175,7 @@ export default function TerrainBackground() {
 
     const bgTexture = generateTexture(bgData, TERRAIN_WIDTH, TERRAIN_HEIGHT);
     const bgMesh = createTerrainMesh(bgData, TERRAIN_WIDTH, TERRAIN_HEIGHT, TERRAIN_SIZE, HEIGHT_MULTIPLIER * 0.6, bgTexture);
-    
+
     if (bgMesh.material instanceof THREE.Material) {
       bgMesh.material.opacity = 0.4;
       bgMesh.material.transparent = true;
@@ -191,20 +191,31 @@ export default function TerrainBackground() {
     return () => {
       stop();
       window.removeEventListener("resize", handleResize);
+
       if (rendererRef.current) {
         rendererRef.current.dispose();
+        if (rendererRef.current.domElement.parentNode) {
+          rendererRef.current.domElement.parentNode.removeChild(rendererRef.current.domElement);
+        }
       }
+
       if (fgMesh.geometry) {
         fgMesh.geometry.dispose();
       }
       if (fgMesh.material instanceof THREE.Material) {
         fgMesh.material.dispose();
       }
+      if (texture instanceof THREE.Texture) {
+        texture.dispose();
+      }
       if (bgMesh.geometry) {
         bgMesh.geometry.dispose();
       }
       if (bgMesh.material instanceof THREE.Material) {
         bgMesh.material.dispose();
+      }
+      if (bgTexture instanceof THREE.Texture) {
+        bgTexture.dispose();
       }
     };
   }, [handleResize]);
