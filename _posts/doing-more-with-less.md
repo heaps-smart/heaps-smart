@@ -15,7 +15,7 @@ published: true
 **tl;dr**  
 **The problem:** Non-profits spend hours rewriting the same content for different audiences, formats and schedules. This work isn't creative, it's time consuming.
 
-**The experiment:** As a non-developer, I built a no-code n8n workflow that turns one blog post into a LinkedIn series of posts, traditional media pitches, and a member newsletter. It runs on a schedule, customises the outputs by audience and format, and gives me control through a review step. I don't have to think about it anymore, at the end of the month it's all there, I just have to hit send. 
+**The experiment:** With no formal coding background, I built a no-code n8n workflow that turns one blog post into a LinkedIn series of posts, traditional media pitches, and a member newsletter. It runs on a schedule, customises the outputs by audience and format, and gives me control through a review step. I don't have to think about it anymore, at the end of the month it's all there, I just have to hit send. 
 
 **The learning:** Automation costs can *stack* up: AI tokens, 3rd party apps, platform and cloud hosting. With the right tool selection, design and monitoring, it can scale affordably and save *so* much time. 
 
@@ -40,9 +40,9 @@ First, I **defined my workflow** (what needed to be done):
 * Summarise and combine all posts into a branded member newsletter (customise for Audience D)  
 * Email me the outputs to review
 
-With **n8n**, **OpenAI** and **Google**, I was able to take one piece of writing and repurpose it in multiple ways, for four different audiences, on a defined schedule. While the results weren't always perfect during my test, they were a solid starting point, and I can already see how I would refine this flow to suit our needs better. And next time, I would be faster.
+With **n8n**, **OpenAI** and **Google**, I was able to take one piece of writing and repurpose it in multiple ways, for four different audiences, on a defined schedule. The results weren't always perfect, but they were a solid starting point—and next time, I'll be faster, with a clearer idea of where to refine the flow.
 
-Unlike other automation tools I've worked with, I experienced almost no blockers or failed executions. This was almost entirely due to my using ChatGPT as my copilot. The only issue I ran into was running out of tokens so quickly. We'll get into managing costs in [Part 2](https://heaps-smart.com/posts/doing-more-with-less-part-2/).
+Unlike other automation tools I've worked with, I experienced almost no blockers or failed executions. This was almost entirely due to my using ChatGPT as my copilot. The only issue was how quickly token usage and costs can add up when summarising long-form content across multiple audiences. We'll get into managing costs in [Part 2](https://heaps-smart.com/posts/doing-more-with-less-part-2/).
 
 ---
 

@@ -38,7 +38,8 @@ We used a real-world example for this flow. The idea was to make creating a mont
 
 ## How the Automation Works
 
-![The workflow running n8n locally](/assets/posts/local-n8n-and-ollama/local-n8n.jpg)<figcaption class="caption">The workflow running n8n locally</figcaption>
+![The workflow running n8n locally](/assets/posts/local-n8n-and-ollama/local-n8n.jpg)
+<figcaption class="caption text-sm text-center mt-2">The workflow running n8n locally</figcaption>
 
 The core of this workflow uses **n8n** to automate the process. It's pretty simple: retrieve blog posts from WordPress, summarise them with an LLM, and then format the results into email-ready HTML. This flow can be scheduled to run at any interval (like the first day of every month), and the HTML output could be sent directly via email or another service for even further automation.
 

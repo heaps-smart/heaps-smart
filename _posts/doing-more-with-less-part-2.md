@@ -30,11 +30,11 @@ In my experience, the more a tool looks like a developer terminal (dark screen, 
 
 ### 3rd Party App Costs
 
-Now, when your automation needs to interact with the tools you already use, like email, calendar, drive, forms, CRMs etc, you need to give it access to information within these systems. In my case, that meant integrating Gmail so the automation could send and receive comms on my behalf. If you're using a free Gmail account, you'll hit limitations quickly as Google doesn't provide full API access without a Workspace subscription. As a Google Workspace customer, I already pay for this access which is currently AUD$18 per user per month.
+Now, when your automation needs to interact with the tools you already use, like email, calendar, drive, forms, CRMs etc, you need to give it access to information within these systems. In my case, that meant integrating Gmail so the automation could send and receive comms on my behalf. If you're using a free Gmail account, you may hit limitations quickly as free Gmail accounts don't offer reliable API access at scale (Workspace is required for full integration.) As a Google Workspace customer, I already pay for this access which is currently AUD$18 per user per month.
 
 ### AI Costs
 
-Let's keep stacking! If you choose to add an AI step to your workflow, like asking it to summarise, rewrite, or generate content, you'll run into something called "tokens." Tokens are chunks of words the AI processes and importantly, they cost real money. Each task shouldn't cost much but if your automations run frequently or handle lots of content, those costs can add up quickly and unlike the other costs mentioned here, AI-costs can fluctuate so it's important to add controls:
+Let's keep stacking! If you choose to add an AI step to your workflow, like asking it to summarise, rewrite, or generate content, you'll run into something called "tokens." Tokens are chunks of words the AI processes and importantly, they cost real money. While each task is inexpensive on its own, frequent automations or long-form content can drive costs up quickly. Unlike other costs mentioned here, cloud-based AI costs can fluctuate, so it's important to add controls:
 
 #### 1. For greater control, use your own key
 
@@ -76,7 +76,7 @@ Also, don't repeat tasks over and over. If your workflow keeps pulling the same 
 
 <div class="tip-body">
 
-If you've ever been in earshot of a dev team or read their work diary, you've probably seen and heard "enable batching", "batch process" or "we should batch that!" (It's a thing.) And for good reason. If you're turning 50 blog posts into social content, don't run them all at once. Break it into smaller batches. That way, if something goes wrong, or the token usage starts creeping up, you can hit the big red button, make changes, and avoid things turning into a big red problem. n8n makes breaking content into batches super-simple, in fact it suggested it to me and all I had to do was agree.
+If you've ever been in earshot of a dev team or read their work diary, you've probably seen and heard "enable batching", "batch process" or "we should batch that!" (It's a thing.) And for good reason. If you're turning 50 blog posts into social content, don't run them all at once. Break it into smaller batches. That way, if something goes wrong, or the token usage starts creeping up, you can hit the big red button, make changes, and avoid things turning into a big red problem. n8n makes breaking content into batches super-simple, in fact it suggested it to me, and all I had to do was agree.
 
 </div>
 
