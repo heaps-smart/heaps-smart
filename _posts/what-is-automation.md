@@ -21,9 +21,6 @@ Across Australia, business leaders are facing the same challenge: teams are work
 Automation is the use of technology to perform tasks with minimal human input. Think about the jobs you do every week that are repetitive and rule-based—like copying data from a spreadsheet into a report, moving content from a blog into an email newsletter, or renaming and filing dozens of documents. These are all tasks that software can now handle with precision and speed.
 
 Automation can be as simple as a workflow that saves email attachments into the right folder, or as advanced as an AI tool that digests long reports and produces executive summaries and strategic insight. Crucially, by implementing automation, you don't need to cut headcount. You're able to elevate your workforce by allowing people to focus on strategic and creative work that delivers genuine value.
-<div style="width: 100%; max-width: 80%; margin: 0 auto;">
-<img src="/assets/posts/what-is-automation/automation.webp" alt="A woman using a computer with a robot" style="width: 100%; height: auto;"/>
-</div>
 
 ## “I've heard of agents, is that the same thing?”
 
