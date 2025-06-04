@@ -52,6 +52,15 @@ Running LLMs locally with Ollama offers major benefits:
 - **Control**: We can fine-tune prompts or swap models as needed.
 - **Zero cost**: Ollama is free, open-source software, while n8n is free to self-host for internal or personal use.
 
+It should be noted that running an LLM locally requires a machine with sufficient hardware capabilities. Here's what to consider:
+
+- **CPU**: Modern multi-core processors can handle smaller models, but performance may be slower compared to GPUs.
+- **GPU**: A dedicated GPU with at least 8GB of VRAM is recommended for running larger models like Llama 3 efficiently. NVIDIA GPUs with CUDA support are commonly used.
+- **RAM**: At least 16GB of system memory is ideal, though more may be needed for larger models or multitasking.
+- **Storage**: Model files themselves can range from a few gigabytes to over 100GB depending on the model size.
+
+MacBook M1/M2 laptops with 8GB RAM can also run local models, but 16GB or more is recommended for better results. Performance depends on model complexity and input size. Techniques like quantisation (reducing model precision) and batching (processing multiple inputs at once) can optimize speed and efficiency, even on mid-range hardware.
+
 ---
 
 ## What's Next?
