@@ -49,12 +49,23 @@ const config: Config = {
       },
       animation: {
         shimmer: "shimmer 1s ease-in-out infinite",
+        fadeIn: "fadeIn 0.8s ease-in-out forwards",
+        pulseRing: "pulseRing 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite",
       },
       keyframes: {
         shimmer: {
           "0%": { backgroundPosition: "45% 50%" },
           "50%": { backgroundPosition: "55% 50%" },
           "100%": { backgroundPosition: "45% 50%" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        pulseRing: {
+          "0%": { boxShadow: "0 0 0 0 rgba(251, 191, 36, 0.7)" },
+          "70%": { boxShadow: "0 0 0 10px rgba(251, 191, 36, 0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(251, 191, 36, 0)" },
         },
       },
       scale: {

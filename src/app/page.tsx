@@ -5,6 +5,8 @@ import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import InnovationProjectCard from "@/app/_components/InnovationProjectCard";
 import LatestPosts from "@/app/_components/LatestPosts";
+import Carousel from "@/app/_components/Carousel";
+import Timeline from "@/app/_components/Timeline";
 
 const TerrainBackground = dynamic(
   () => import("./_components/animations/Terrain"),
@@ -56,16 +58,16 @@ export default function HeapsSmart() {
       </header>
 
       <Container>
-        <section className="py-4 relative z-10 bg-[#F7F2EE]" aria-labelledby="technology-for-good">
+        <section className="py-4 relative z-10 bg-[#F7F2EE]" aria-labelledby="work-smarter">
           <h2
-            id="technology-for-good"
-            className="text-4xl md:text-8xl font-sans font-bold mt-2 mb-2 tracking-tighter text-black/80"
+            id="work-smarter"
+            className="text-4xl md:text-8xl font-sans font-bold tracking-tighter text-black/80"
           >
-            Technology for good.
+            <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Work, smarter.</span>
           </h2>
           <div className="relative mt-auto mb-10">
             <p className="tracking-tight text-2xl md:text-2xl leading-snug max-w-4xl text-black/80">
-              We work with teams doing good — helping them move faster and smarter with digital strategy, AI tools, and custom-built tech. Whether you're technical or not, we'll help you get the systems and skills to go further.
+              Productivity the easy way with <span className="font-semibold">AI tools and automations.</span>
             </p>
           </div>
 
@@ -81,23 +83,56 @@ export default function HeapsSmart() {
             </a>
           </div>
 
-          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest posts</h2>
-          <LatestPosts limit={2} />
-          <div className="flex justify-between items-center my-6">
-            <a
-              href="/posts"
-              className="text-sm text-black hover:underline transition"
-              aria-label="View all blog posts"
-            >
-              View all posts →
-            </a>
-          </div>
+          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Customised tools and workflows for your teams.</h2>
+          
+          <Timeline items={[
+            {
+              title: "Automate repetitive tasks",
+              description: "Replace clunky, manual processes with streamlined workflows. From content creation to inventory tracking, we build automations that take repetitive work off your team's plate so they can focus on the work that matters.",
+              tags: ["Operations", "Automation", "Efficiency"],
+              alignment: "left",
+              link: {
+                url: "/blog/what-is-automation",
+                text: "Learn about automation"
+              }
+            },
+            {
+              title: "Streamline your communication",
+              description: "Get the right information to the right people, automatically. Build intelligent systems that pull from your CRM, docs, and knowledge bases to generate clear responses, deliver updates, and bring relevant data to the people who need it.",
+              tags: ["Communications", "AI", "Team Sync"],
+              alignment: "right",
+              link: {
+                url: "/blog/doing-more-with-less",
+                text: "See communication solutions"
+              }
+            },
+            {
+              title: "Visualise and transform data",
+              description: "Build dashboards, reports and internal tools that connect with your CRM, spreadsheets, docs or databases. Generate board decks, campaign recaps or sales reports directly from your live data, scheduled or on-demand.",
+              tags: ["Data", "Reporting", "Insights"],
+              alignment: "left",
+              link: {
+                url: "/blog/doing-more-with-less-part-2",
+                text: "Explore data solutions"
+              }
+            },
+            {
+              title: "Empower your operations team",
+              description: "Give operations teams simple tools to update prices, edit content, manage workflows, and automate processes without raising tickets or writing code. Simplify onboarding, approvals, and recurring communications.",
+              tags: ["Internal Tools", "Ops", "No-Code"],
+              alignment: "right",
+              link: {
+                url: "/innovation",
+                text: "Discover innovation tools"
+              }
+            }
+          ]} />
         </section>
       </Container>
 
       <Container>
         <div className="my-16">
-          <h2 className="text-3xl font-semibold mb-8 tracking-tight">Latest labs</h2>
+          <h2 className="text-3xl mb-8 tracking-tighter"><span className="font-semibold">Spotlight:</span> building AI tools for conservation</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project) => (
               <InnovationProjectCard key={project.slug} project={project} />
@@ -106,31 +141,12 @@ export default function HeapsSmart() {
         </div>
       </Container>
 
-      <Swell dark={true} />
-      <section
-        className="py-12 text-left"
-        aria-labelledby="partnerships-banner"
-      >
-        <Container>
-          <h2
-            id="partnerships-banner"
-            className="text-xl md:text-2xl font-semibold mb-4 tracking-tight"
-          >
-            Are you a non-profit doing <i>heaps</i> good things?
-          </h2>
-          <p className="text-base mb-4 text-black/80">
-            We're looking to support purpose-led organisations with practical digital help. If that's you, we'd love to hear about what you're working on.
-          </p>
-          <a
-            href="/contact"
-            className="text-sm text-black hover:underline transition"
-            aria-label="Learn about our non-profit partnerships"
-          >
-            Get in touch →
-          </a>
-        </Container>
-      </section>
-      <Swell dark={true} />
+      <Container>
+        <div className="my-16">
+          <h2 className="text-3xl mb-8 tracking-tighter"><span className="font-semibold">Labs:</span> testing shiny new things</h2>
+          <LatestPosts limit={2} />
+        </div>
+      </Container>
       <Footer />
     </main>
   );

@@ -12,9 +12,8 @@ export function Navbar({ textColor, bgColor }: NavbarProps) {
   const pathname = usePathname();
 
   const navItems = [
-    { label: "Innovation", href: "/innovation" },
-    { label: "Development", href: "/product-development" },
-    { label: "Training", href: "/training" },
+    { label: "Projects", href: "/projects" },
+    { label: "Labs", href: "/labs" },
     { label: "Contact", href: "/contact" },
   ];
 

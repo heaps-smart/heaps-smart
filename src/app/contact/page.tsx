@@ -13,23 +13,35 @@ export default function Contact() {
 
       <main className="flex-grow">
         <Container>
-          <section aria-labelledby="get-in-touch">
+          <section aria-labelledby="lets-talk">
             <AnimatedHeading>
-              Get in touch.
+              Let's talk.
             </AnimatedHeading>
             <p className="tracking-tight md:text-3xl max-w-4xl mb-6 text-black/80 leading-tight">
-              Have a question or want to collaborate? Whether you're a non-profit, a purpose-driven organisation, or someone who believes in technology for good, 
-              we'd love to hear from you.
+              Whether you're just starting out with automation or already deep in the tools and need a hand, we're here to help.
             </p>
-            <p className="text-4xl md:text-5xl font-semibold mb-8">
-              <a
-                href="mailto:hello@heaps-smart.com"
-                className="hover:underline"
-                aria-label="Send email to hello@heaps-smart.com"
-              >
-                hello@heaps-smart.com
-              </a>
-            </p>
+            <div className="mb-8">
+              <h3 className="text-3xl font-semibold mb-4">Email us</h3>
+              <p>
+                Reach us directly: <a href="mailto:hello@heaps-smart.com" className="hover:underline text-black" aria-label="Send email to hello@heaps-smart.com">hello@heaps-smart.com</a>
+              </p>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-3xl font-semibold mb-4">Schedule a call</h3>
+              <p>
+                Schedule a free 30-minute call to talk through what you're working on and how we can help.
+              </p>
+              <a href="[scheduling link]" className="hover:underline text-black" aria-label="Schedule a call">Schedule a call →</a>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-3xl font-semibold mb-4">Follow our work</h3>
+              <p>
+                Stay in the loop with smart tools, case studies, and ideas for working better.
+              </p>
+              <a href="[LinkedIn link]" className="hover:underline text-black" aria-label="Visit LinkedIn">LinkedIn →</a>
+              <br />
+              <a href="[blog link]" className="hover:underline text-black" aria-label="Visit blog">Our latest from The Lab →</a>
+            </div>
           </section>
         </Container>
       </main>
