@@ -46,7 +46,7 @@ export default function LatestPosts({ limit = 2 }: { limit?: number }) {
       {posts.map((post) => (
         <Link
           key={post.slug}
-          href={`/posts/${post.slug}`}
+          href={`/labs/${post.slug}`}
           className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 p-6 border border-black/10 text-left h-full justify-between"
           aria-label={`Read ${post.title}`}
         >

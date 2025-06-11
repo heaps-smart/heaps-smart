@@ -21,20 +21,28 @@ export default function Contact() {
               Whether you're just starting out with automation or already deep in the tools and need a hand, we're here to help.
             </p>
             <div className="mb-8">
-              <h3 className="text-3xl font-semibold mb-4">Email us</h3>
+              <h3 className="text-3xl font-semibold mb-4 tracking-tighter">Email us</h3>
               <p>
                 Reach us directly: <a href="mailto:hello@heaps-smart.com" className="hover:underline text-black" aria-label="Send email to hello@heaps-smart.com">hello@heaps-smart.com</a>
               </p>
             </div>
             <div className="mb-8">
-              <h3 className="text-3xl font-semibold mb-4">Schedule a call</h3>
-              <p>
+              <h3 className="text-3xl font-semibold mb-4 tracking-tighter">Schedule a call</h3>
+              <p className="mb-4">
                 Schedule a free 30-minute call to talk through what you're working on and how we can help.
               </p>
-              <a href="[scheduling link]" className="hover:underline text-black" aria-label="Schedule a call">Schedule a call →</a>
+              <a
+                href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
+                className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
+                aria-label="Schedule a call with Heaps Smart"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule a call →
+              </a>
             </div>
             <div className="mb-8">
-              <h3 className="text-3xl font-semibold mb-4">Follow our work</h3>
+              <h3 className="text-3xl font-semibold mb-4 tracking-tighter">Follow our work</h3>
               <p>
                 Stay in the loop with smart tools, case studies, and ideas for working better.
               </p>
