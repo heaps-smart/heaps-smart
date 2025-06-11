@@ -67,7 +67,7 @@ export default function HeapsSmart() {
 
           <h2 className="text-3xl mb-8 tracking-tighter">Be more productive with <span className="font-semibold">AI tools and automations.</span></h2>
           
-          <div className="flex flex-col md:flex-row justify-between items-center bg-[#fcd34d] p-8 rounded-lg space-y-8 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-center bg-[#f9fafb] p-8 rounded-lg space-y-8 md:space-y-0">
             <div className="flex items-center space-x-4">
               <img src="/assets/svg/data-infrastructure.svg" alt="Eliminate busywork icon" className="w-12 h-12 text-yellow-400 mx-2" />
               <div>
