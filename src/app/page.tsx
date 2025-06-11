@@ -62,10 +62,10 @@ export default function HeapsSmart() {
             id="work-smarter"
             className="text-4xl md:text-8xl font-sans font-bold tracking-tighter text-black/80"
           >
-            <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Work, smarter.</span>
+            <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Work smarter.</span>
           </h1>
 
-          <h2 className="text-3xl mb-8 tracking-tighter">Be more productive the easy way with <span className="font-semibold">AI tools and automations.</span></h2>
+          <h2 className="text-3xl mb-8 tracking-tighter">Be more productive with <span className="font-semibold">AI tools and automations.</span></h2>
           
           <div className="flex flex-col md:flex-row justify-between items-center bg-[#fcd34d] p-8 rounded-lg space-y-8 md:space-y-0">
             <div className="flex items-center space-x-4">
@@ -158,23 +158,19 @@ export default function HeapsSmart() {
                   <YellowBullet />
                   <span className="text-[#111111]/80">LangChain</span>
                 </li>
-                <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Custom AI Agents</span>
-                </li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Data & Comms</h3>
+              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Data</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
                   <YellowBullet />
-                  <span className="text-[#111111]/80">Google Workspace</span>
+                  <span className="text-[#111111]/80">Google</span>
                 </li>
                 <li className="flex items-center">
                   <YellowBullet />
-                  <span className="text-[#111111]/80">CRMs</span>
+                  <span className="text-[#111111]/80">HubSpot</span>
                 </li>
                 <li className="flex items-center">
                   <YellowBullet />
