@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import ResponsiveVideo from "./ResponsiveVideo";
 
 interface ProjectListProps {
@@ -14,6 +15,7 @@ type Project = {
   video: string;
   tags: string[];
   poster?: string;
+  slug: string;
 };
 
 const projectsData: Project[] = [
@@ -24,6 +26,7 @@ const projectsData: Project[] = [
     video: "/assets/video/cassowary-web.mp4",
     tags: ["Data", "Mapping", "Citizen Science"],
     poster: "/assets/video/posters/cassowary-web.webp",
+    slug: "how-to-save-a-dinosaur-bird"
   },
   {
     title: "Hello, AI",
@@ -36,6 +39,7 @@ const projectsData: Project[] = [
     video: "/assets/video/hello-ai.mp4",
     tags: ["Training", "Gen AI"],
     poster: "/assets/video/posters/hello-ai.webp",
+    slug: "training"
   },
   {
     title: "Redefining MVP: most valuable poo!",
@@ -44,6 +48,7 @@ const projectsData: Project[] = [
     video: "/assets/video/wall-of-poo.mp4",
     tags: ["Vision AI", "Citizen Science"],
     poster: "/assets/video/posters/wall-of-poo.webp",
+    slug: "redefining-mvp"
   },
   {
     title: "Meet 'Casey'",
@@ -52,6 +57,7 @@ const projectsData: Project[] = [
     video: "/assets/video/casey.mp4",
     tags: ["AI Agents", "Workflow", "RAG", "Social Media"],
     poster: "/assets/video/posters/casey.webp",
+    slug: "meet-casey"
   },
 ];
 
@@ -63,14 +69,15 @@ export default function ProjectList({ featured, limit }: ProjectListProps) {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pb-6 mb-4">
       {displayProjects.map((project) => {
         return (
-          <div
+          <Link
+            href={`/innovation/${project.slug}`}
             key={project.title}
-            className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-hidden transition-all shadow-sm hover:shadow-md"
+            className="flex flex-col w-full bg-[#f0ebe7] rounded-lg overflow-visible transition-all shadow-sm hover:shadow-lg hover:-translate-y-1 duration-300"
           >
-            <div className="relative w-full aspect-video">
+            <div className="relative w-full aspect-video overflow-hidden rounded-t-lg">
               <ResponsiveVideo
                 src={project.video}
                 poster={project.poster}
@@ -79,7 +86,7 @@ export default function ProjectList({ featured, limit }: ProjectListProps) {
             </div>
 
             <div className="p-6 flex flex-col justify-between h-full">
-              <h3 className="text-xl md:text-2xl font-bold mb-2 tracking-tight">
+              <h3 className="text-xl md:text-2xl font-bold mb-2 tracking-tight group-hover:text-[#333]">
                 {project.title}
               </h3>
               <div className="text-base leading-relaxed mb-4">{project.content}</div>
@@ -94,7 +101,7 @@ export default function ProjectList({ featured, limit }: ProjectListProps) {
                 ))}
               </div>
             </div>
-          </div>
+          </Link>
         );
       })}
       {displayProjects.length === 0 && <p>No projects found.</p>}

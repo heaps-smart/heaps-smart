@@ -48,35 +48,35 @@ export default function PostsIndex() {
         </Container>
 
         <Container>
-          <div className="w-full md:w-3/4 text-left my-12">
-            <ul className="space-y-16">
+          <div className="w-full md:w-3/4 text-left my-8">
+            <ul className="space-y-10">
               {posts.map((post) => (
-                <li key={post.slug} className="group bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300">
-                  <Link href={`/posts/${post.slug}`} className="block">
-                    <h2 className="text-2xl md:text-3xl font-semibold mb-5 text-black/90 tracking-tight group-hover:underline decoration-2 underline-offset-2">
+                <li key={post.slug} className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                  <Link href={`/labs/${post.slug}`} className="block">
+                    <h2 className="text-2xl md:text-3xl font-semibold mb-3 text-black/90 tracking-tight group-hover:underline decoration-2 underline-offset-2 leading-tight">
                       {post.title}
                     </h2>
-                    <p className="text-lg text-black/80 mb-8 leading-relaxed">
+                    <p className="text-lg text-black/80 mb-5 leading-relaxed">
                       {post.excerpt}
                     </p>
-                    <div className="text-lg text-black/70 border-t border-gray-200 pt-6 mt-2">
+                    <div className="text-lg text-black/70 border-t border-gray-200 pt-4 mt-2">
                       {post.author && (
-                        <div className="flex items-center gap-4 mt-2">
+                        <div className="flex items-center gap-3 mt-1">
                           {post.author.picture && (
                             <img
                               src={post.author.picture}
                               alt={post.author.name}
-                              className="w-12 h-12 rounded-full border border-slate-100 shadow-sm"
+                              className="w-10 h-10 rounded-full border border-slate-100 shadow-sm"
                             />
                           )}
-                          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                            <span className="text-base text-black/80 font-medium">
+                          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                            <span className="text-sm text-black/80 font-medium">
                               {post.author.name}
                             </span>
                             {post.date && (
                               <>
                                 <span className="hidden sm:inline mx-1 text-black/30">|</span>
-                                <span className="text-base text-black/60">
+                                <span className="text-sm text-black/60">
                                   {new Date(post.date).toLocaleDateString(undefined, {
                                     year: "numeric",
                                     month: "long",

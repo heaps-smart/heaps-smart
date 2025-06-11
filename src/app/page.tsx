@@ -5,6 +5,7 @@ import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import InnovationProjectCard from "@/app/_components/InnovationProjectCard";
 import LatestPosts from "@/app/_components/LatestPosts";
+import YellowBullet from "@/app/_components/YellowBullet";
 
 const TerrainBackground = dynamic(
   () => import("./_components/animations/Terrain"),
@@ -113,54 +114,53 @@ export default function HeapsSmart() {
       </Container>
 
       <Container>
-        <section className="py-12 bg-[#F7F2EE]">
-          <h2 className="text-3xl font-semibold mb-6 tracking-tighter">Our stack</h2>
+        <section className="pt-6 pb-16 bg-[#F7F2EE]">
+          <h2 className="text-3xl font-semibold mb-2 tracking-tighter">Tools we work with</h2>
+          <p className="text-lg mb-8 text-black/70">
+            We use a range of tools to help teams work smarter. Here are some of the platforms and technologies we frequently integrate with:
+          </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8">
             <div>
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Automation Platforms</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">Zapier</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">n8n</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">Make</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">Retool</span>
                 </li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">AI & Language Models</h3>
+              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">AI & LLMs</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">OpenAI</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">Ollama</span>
+                </li>
+                <li className="flex items-center">
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">LangChain</span>
+                </li>
+                <li className="flex items-center">
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">Custom AI Agents</span>
                 </li>
               </ul>
             </div>
@@ -169,34 +169,39 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Data & Comms</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">Google Workspace</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
+                  <YellowBullet />
                   <span className="text-[#111111]/80">CRMs</span>
+                </li>
+                <li className="flex items-center">
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">Airtable</span>
+                </li>
+                <li className="flex items-center">
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">Supabase</span>
                 </li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Databases</h3>
+              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Custom Development</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
-                  <span className="text-[#111111]/80">Airtable</span>
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">Websites and Mobile Apps</span>
+                </li>
+
+                <li className="flex items-center">
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">React/React Native/Node.js</span>
                 </li>
                 <li className="flex items-center">
-                  <div className="w-5 h-5 mr-3 text-[#fcd34d]">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/></svg>
-                  </div>
-                  <span className="text-[#111111]/80">Supabase</span>
+                  <YellowBullet />
+                  <span className="text-[#111111]/80">iOS/Android app development</span>
                 </li>
               </ul>
             </div>
