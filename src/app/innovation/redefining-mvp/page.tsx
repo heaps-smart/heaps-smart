@@ -7,8 +7,8 @@ export default function RedefiningMvpPage() {
   
   const galleryImages = [
     { id: 1, src: "/assets/img/poo-1.webp", alt: "Cassowary in Mission Beach rainforest" },
-    { id: 2, src: "/assets/video/poo-vid.mp4", alt: "Video demo of Casey AI answering cassowary questions", type: "video", poster: "/assets/video/poo-vid.jpg" },
-    { id: 3, src: "/assets/img/poo-2.webp", alt: "Mission Beach Cassowaries team using Casey AI" },
+    { id: 2, src: "/assets/video/poo-vid.mp4", alt: "Video demo of Cassie AI answering cassowary questions", type: "video", poster: "/assets/video/poo-vid.jpg" },
+    { id: 3, src: "/assets/img/poo-2.webp", alt: "Mission Beach Cassowaries team using Cassie AI" },
     { id: 4, src: "/assets/img/poo-3.webp", alt: "Visualisation of AI-powered knowledge search" },
     { id: 5, src: "/assets/img/poo-4.webp", alt: "Cassowary character illustration for children's book" },
   ];
@@ -22,7 +22,7 @@ export default function RedefiningMvpPage() {
     {
       title: "Our response",
       content:
-        "Heaps Smart helped turn cassowary poo into a science communication tool. We developed a digital cataloguing system to log, label and visualise data from scat samples collected by locals. We also helped design the ‘Wall of Poo’ — an interactive education experience that brings together ecology, tech, and humour to make data accessible and unforgettable.",
+        "Heaps Smart helped turn cassowary poo into a science communication tool. We developed a digital cataloguing system to log, label and visualise data from scat samples collected by locals. We also helped design the ‘Wall of Poo’, an interactive education experience that brings together ecology, tech, and humour to make data accessible and unforgettable.",
     },
     {
       title: "Impact",

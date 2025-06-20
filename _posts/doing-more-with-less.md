@@ -40,7 +40,7 @@ First, I **defined my workflow** (what needed to be done):
 * Summarise and combine all posts into a branded member newsletter (customise for Audience D)  
 * Email me the outputs to review
 
-With **n8n**, **OpenAI** and **Google**, I was able to take one piece of writing and repurpose it in multiple ways, for four different audiences, on a defined schedule. The results weren't always perfect, but they were a solid starting point—and next time, I'll be faster, with a clearer idea of where to refine the flow.
+With **n8n**, **OpenAI** and **Google**, I was able to take one piece of writing and repurpose it in multiple ways, for four different audiences, on a defined schedule. The results weren't always perfect, but they were a solid starting point, and next time, I'll be faster, with a clearer idea of where to refine the flow.
 
 Unlike other automation tools I've worked with, I experienced almost no blockers or failed executions. This was almost entirely due to my using ChatGPT as my copilot. The only issue was how quickly token usage and costs can add up when summarising long-form content across multiple audiences. We'll get into managing costs in [Part 2](https://heaps-smart.com/posts/doing-more-with-less-part-2/).
 

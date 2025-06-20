@@ -51,13 +51,13 @@ const projectsData: Project[] = [
     slug: "redefining-mvp"
   },
   {
-    title: "Meet 'Casey'",
+    title: "Meet 'Cassie'",
     content:
       "She's smart, responsive, and ready to collaborate on cassowary conservation. As an AI Agent powered by RAG, she helps the team analyse data, uncover insights, and make sense of complete reporting.",
-    video: "/assets/video/casey.mp4",
+    video: "/assets/video/cassie.mp4",
     tags: ["AI Agents", "Workflow", "RAG", "Social Media"],
-    poster: "/assets/video/posters/casey.webp",
-    slug: "meet-casey"
+    poster: "/assets/video/posters/cassie.webp",
+    slug: "meet-cassie"
   },
 ];
 

@@ -55,7 +55,7 @@ export default function ProductDevelopment() {
         <div>
           <p className="font-semibold">Product Design & UX</p>
           <p className="text-base text-black/80">
-            We design for real users — building intuitive, accessible interfaces and smooth user journeys that drive real engagement and clarity.<br />Our product backgrounds are centered on years of <b>usability experience</b> and <b>user research</b>.
+            We design for real users, building accessible interfaces and smooth user journeys that drive real engagement and clarity.<br />Our product backgrounds are centered on years of <b>usability experience</b> and <b>user research</b>.
           </p>
         </div>
           </li>
@@ -67,8 +67,8 @@ export default function ProductDevelopment() {
         <div>
           <p className="font-semibold">Custom Software Development</p>
             <p className="text-base text-black/80">
-          Need something custom? We build web apps, internal tools, and platforms tailored to your needs—fast, scalable, and maintainable.<br />
-          We are experts in building full-stack cross-platform solutions for both web and mobile using <b>JavaScript</b>, <b>Python</b>, <b>SQL</b>, and beyond.
+              Need something custom? We build web apps, internal tools, and platforms tailored to your needs. Fast, scalable, and maintainable.<br />
+              We are experts in building full-stack cross-platform solutions for both web and mobile using <b>JavaScript</b>, <b>Python</b>, <b>SQL</b>, and beyond.
             </p>
         </div>
           </li>

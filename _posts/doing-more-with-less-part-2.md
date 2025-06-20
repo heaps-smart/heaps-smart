@@ -1,6 +1,6 @@
 ---
 title: "Doing more with less Part 2: What it costs to automate your comms with n8n"
-excerpt: "Automation can save time—but what's the real cost? What we learned running n8n with AI, Gmail and Google Workspace for our non-profit communications."
+excerpt: "Automation can save time, but what's the real cost? What we learned running n8n with AI, Gmail and Google Workspace for our non-profit communications."
 coverImage: "/assets/posts/doing-more-with-less-part-2/cover.jpg"
 date: "2025-05-30"
 author:
@@ -88,9 +88,9 @@ If you've ever been in earshot of a dev team or read their work diary, you've pr
 
 - **Review platform pricing carefully before you build.** Tools like n8n can be run locally for free forever, making them ideal for testing before committing to paid cloud plans or full rollouts. Start small and upgrade your plan as you really need it.
 
-- **Control your AI usage.** Connect your own OpenAI API key for full visibility and cost control. It's often cheaper and gives you more flexibility than bundled AI features in platforms like [Zapier](https://zapier.com/) or [Make](https://www.make.com/). Add caps on token usage, filter what content gets processed, and run your automations in small batches. Always test your setup first — is it actually helpful? Get feedback and refine.
+- **Control your AI usage.** Connect your own OpenAI API key for full visibility and cost control. It's often cheaper and gives you more flexibility than bundled AI features in platforms like [Zapier](https://zapier.com/) or [Make](https://www.make.com/). Add caps on token usage, filter what content gets processed, and run your automations in small batches. Always test your setup first: is it actually helpful? Get feedback and refine.
 
-- **Get professional advice early.** If cost is a major factor, consult with someone who knows the automation landscape. The right tool stack from the start can save you hours — and dollars — down the track.
+- **Get professional advice early.** If cost is a major factor, consult with someone who knows the automation landscape. The right tool stack from the start can save you hours and dollars down the track.
 
 ---
 

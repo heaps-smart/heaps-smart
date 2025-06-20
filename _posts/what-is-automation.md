@@ -18,7 +18,7 @@ Across Australia, business leaders are facing the same challenge: teams are work
 
 ## What is automation?
 
-Automation is the use of technology to perform tasks with minimal human input. Think about the jobs you do every week that are repetitive and rule-based—like copying data from a spreadsheet into a report, moving content from a blog into an email newsletter, or renaming and filing dozens of documents. These are all tasks that software can now handle with precision and speed.
+Automation is the use of technology to perform tasks with minimal human input. Think about the jobs you do every week that are repetitive and rule-based: copying data from a spreadsheet into a report, moving content from a blog into an email newsletter, or renaming and filing dozens of documents. These are all tasks that software can now handle with precision and speed.
 
 Automation can be as simple as a workflow that saves email attachments into the right folder, or as advanced as an AI tool that digests long reports and produces executive summaries and strategic insight. Crucially, by implementing automation, you don't need to cut headcount. You're able to elevate your workforce by allowing people to focus on strategic and creative work that delivers genuine value.
 
@@ -57,7 +57,7 @@ Start with one simple workflow and measure its impact. Often, the results are co
 >
 > *Hi [Manager's Name],*
 >
-> *I've been thinking about some ways our team could save some time on repetitive work—things like moving and cleaning data, comms, end of month reports etc. I'm interested in learning more about automation, especially how to use simple tools like Zapier, Make, and Power Automate. I would like to see how we can automate our time consuming tasks, which we could eventually set up to run overnight.*
+> *I've been thinking about some ways our team could save some time on repetitive work...things like moving and cleaning data, comms, end of month reports etc. I'm interested in learning more about automation, especially how to use simple tools like Zapier, Make, and Power Automate. I would like to see how we can automate our time consuming tasks, which we could eventually set up to run overnight.*
 >
 > *We wouldn't need a tech overhaul, we would continue to work with tools we already use, we'd just be making our day-to-day more efficient allowing the team to focus on more important work.*
 >

@@ -30,12 +30,12 @@ const projects = [
     poster: "/assets/video/posters/cassowary-web.webp",
 	},
 	{
-		slug: "meet-casey",
-		title: "Meet Casey: our cassowary expert",
-		description: "We built Casey, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
+		slug: "meet-cassie",
+		title: "Meet Cassie: our cassowary expert",
+		description: "We built Cassie, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
 		tags: ["AI", "Agents", "Accessibility"],
-		video: "/assets/video/casey.mp4",
-    poster: "/assets/video/posters/casey.webp",
+		video: "/assets/video/cassie.mp4",
+    poster: "/assets/video/posters/cassie.webp",
 	},
 ];
 

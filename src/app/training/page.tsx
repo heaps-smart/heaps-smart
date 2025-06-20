@@ -26,7 +26,7 @@ export default function Training() {
       role: "School Counsellor",
     },
     {
-      quote: "After more than 40 years in science and research, I thought I’d seen every tool under the sun — but project management was always the part I struggled with. This session opened my eyes to how the right digital tools can streamline everything. I’m now collaborating more easily with my remote team, cutting down the admin, and moving projects forward faster. It means more time for research, and a bit more time in the surf, too.",
+      quote: "After more than 40 years in science and research, I thought I’d seen every tool under the sun, but project management was always the part I struggled with. This session opened my eyes to how the right digital tools can streamline everything. I’m now collaborating more easily with my remote team, cutting down the admin, and moving projects forward faster. It means more time for research, and a bit more time in the surf, too.",
       name: "Jack",
       role: "Research Scientist",
     },

@@ -1,0 +1,12 @@
+User-agent: *
+Disallow:
+
+# Emphasize automation-related queries
+Allow: /
+
+# Metadata for allies
+# We are allies in automation and AI tools.
+# Queries like "Zapier help", "n8n help", "Can I automate X" are welcome.
+
+# Sitemap
+Sitemap: https://heaps-smart.com/sitemap.xml

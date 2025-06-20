@@ -28,7 +28,7 @@ export default function About() {
             </p>
             <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
               From strategy to custom builds and online communications, 
-              our creative and technology teams work with you every step of the way—training and empowering
+              our creative and technology teams work with you every step of the way, training and empowering
               your team to make the most of what we create together.
             </p>
 						<p className="tracking-tight leading-tight md:text-xl max-w-2xl text-black/80">
