@@ -5,30 +5,38 @@ import InnovationProjectCard from "@/app/_components/InnovationProjectCard";
 import Swell from "../_components/Swell";
 
 const projects = [
-	{
-		slug: "redefining-mvp",
-		title: "Redefining MVP: most valuable poo",
-		description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
-		tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
-		video: "/assets/video/wall-of-poo.mp4",
+  {
+    slug: "c4-digital-transformation",
+    title: "C4 Digital Transformation",
+    description: "We worked with C4 to overhaul their digital ecosystem, creating a modern brand extension, new website, and integrated tools to scale their conservation mission.",
+    tags: ["Website Development", "Digital Strategy", "Conservation"],
+    video: "/assets/video/c4-walkthru.mp4",
+    poster: "/assets/video/posters/c4.webp",
+  },
+  {
+    slug: "redefining-mvp",
+    title: "Redefining MVP: most valuable poo",
+    description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
+    tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
+    video: "/assets/video/wall-of-poo.mp4",
     poster: "/assets/video/posters/wall-of-poo.webp",
-	},
-	{
-		slug: "how-to-save-a-dinosaur-bird",
-		title: "How to save a dinosaur bird",
-		description: "Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
-		tags: ["Conservation", "Citizen Science", "Data"],
-		video: "/assets/video/cassowary-web.mp4",
+  },
+  {
+    slug: "how-to-save-a-dinosaur-bird",
+    title: "How to save a dinosaur bird",
+    description: "Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
+    tags: ["Conservation", "Citizen Science", "Data"],
+    video: "/assets/video/cassowary-web.mp4",
     poster: "/assets/video/posters/cassowary-web.webp",
-	},
-	{
-		slug: "meet-cassie",
-		title: "Meet Cassie: our cassowary expert",
-		description: "We built Cassie, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
-		tags: ["AI", "Agents", "Accessibility"],
-		video: "/assets/video/cassie.mp4",
+  },
+  {
+    slug: "meet-cassie",
+    title: "Meet Cassie: our cassowary expert",
+    description: "We built Cassie, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
+    tags: ["AI", "Agents", "Accessibility"],
+    video: "/assets/video/cassie.mp4",
     poster: "/assets/video/posters/cassie.webp",
-	}
+  }
 ];
 
 export default function Projects() {
@@ -49,7 +57,7 @@ export default function Projects() {
           <div className="h-1 w-24 bg-yellow-400 mt-4 mb-6 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-8">
           {projects.map((project) => (
             <InnovationProjectCard key={project.slug} project={project} />
           ))}

@@ -20,6 +20,15 @@ type Project = {
 
 const projectsData: Project[] = [
   {
+    title: "C4 Digital Transformation",
+    content:
+      "We worked with C4 to overhaul their digital ecosystem, creating a modern brand extension, new website, and integrated tools to scale their conservation mission.",
+    video: "/assets/img/c4-walkthru.mp4",
+    tags: ["Website Development", "Digital Strategy", "Conservation"],
+    poster: "/assets/video/posters/c4.webp",
+    slug: "c4-digital-transformation"
+  },
+  {
     title: "How to save a dinosaur bird",
     content:
       "Many hands (or eyes) make short work of recording observational data on the endangered and misunderstood Southern Cassowary in Australia.",
