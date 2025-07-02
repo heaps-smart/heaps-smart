@@ -4,7 +4,7 @@ export default function C4DigitalTransformationPage() {
   const tags = ["Website Development", "Digital Strategy", "Conservation", "Automation"];
   const pageTitle = "C4 Digital Transformation";
   const techStack = ["WordPress", "Next.js/React", "Airtable", "Stripe", "Zapier", "Google Workspace", "Canva"];
-  
+
   const galleryImages = [
     { id: 1, src: "/assets/video/c4-walkthru.mp4", alt: "C4 digital transformation walkthrough", type: "video", poster: "/assets/img/c4.webp" },
     { id: 2, src: "/assets/video/c4-cassowary.mp4", alt: "C4 digital transformation cassowary", type: "video", poster: "/assets/img/c4-cassowary-poster.webp" },
@@ -65,6 +65,24 @@ export default function C4DigitalTransformationPage() {
       title: "Impact",
       content: (
         <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <b>Helped put C4 and cassowaries on the national stage</b>
+            <p>
+              Our comms overhaul sparked media attention, leading to a feature on ABC Back Roads and a recurring segment on 4KZ radio dedicated to cassowary conservation.
+            </p>
+          </li>
+          <li>
+            <b>Brought the right eyes to the right place</b>
+            <p>
+              C4's work was showcased as a feature field trip during the ALCA national conference, connecting the mission with top environment leaders from across Australia.
+            </p>
+          </li>
+          <li>
+            <b>Positioned C4 as a leader in place-based conservation</b>
+            <p>
+              Through a clearer digital voice and renewed strategy, C4 gained recognition as a go-to model for community-driven environmental stewardship in the Far North.
+            </p>
+          </li>
           <li>
             Modernised and extended three decades of brand heritage into an engaging, adaptable identity that works across digital platforms, print materials, and on-the-ground activations
           </li>

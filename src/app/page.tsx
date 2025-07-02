@@ -54,7 +54,7 @@ export default function HeapsSmart() {
             id="work-smarter"
             className="text-4xl md:text-8xl font-sans font-bold tracking-tighter text-black/80"
           >
-            <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Work smarter.</span>
+            <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Technology for good.</span>
           </h1>
 
           <h2 className="text-3xl mb-8 tracking-tighter">Be more productive with <span className="font-semibold">AI tools and automations.</span></h2>
