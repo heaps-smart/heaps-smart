@@ -91,9 +91,18 @@ export default function HeapsSmart() {
         <div className="my-16">
           <h2 className="text-3xl mb-8 tracking-tighter font-semibold">Latest projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.map((project) => (
-              <InnovationProjectCard key={project.slug} project={project} />
-            ))}
+        {projects.map((project) => (
+          <InnovationProjectCard key={project.slug} project={project} />
+        ))}
+          </div>
+          <div className="mt-8">
+            <a
+              href="/projects"
+              className="inline-block text-black font-medium rounded-lg transition-colors focus:outline-none"
+              aria-label="Explore more projects"
+            >
+              Explore more projects →
+            </a>
           </div>
         </div>
       </Container>
@@ -102,6 +111,15 @@ export default function HeapsSmart() {
         <div className="my-16">
           <h2 className="text-3xl mb-8 tracking-tighter font-semibold">Latest labs</h2>
           <LatestPosts limit={2} />
+          <div className="mt-8">
+            <a
+              href="/labs"
+              className="inline-block text-black font-medium rounded-lg transition-colors focus:outline-none"
+              aria-label="Explore more labs"
+            >
+              Explore more labs →
+            </a>
+          </div>
         </div>
       </Container>
 
