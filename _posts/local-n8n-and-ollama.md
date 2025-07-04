@@ -12,7 +12,7 @@ tags: ["Automation", "n8n", "Local AI"]
 published: true
 ---
 
-We wanted to take the cloud-based workflows we explored in the [Doing More with Less](https://heaps-smart.com/posts/doing-more-with-less/) series and see if we could run them entirely locally. By <b>"local,"</b> we mean everything runs on your own machine: no third-party servers, no cloud dependencies, and complete control over the data. And most importantly, local usually means free. This post details how we did just that using n8n and a locally-hosted LLM, all running privately on our own machines.
+We wanted to take the cloud-based workflows we explored in the [Doing More with Less](https://heaps-smart.com/labs/doing-more-with-less/) series and see if we could run them entirely locally. By <b>"local,"</b> we mean everything runs on your own machine: no third-party servers, no cloud dependencies, and complete control over the data. And most importantly, local usually means free. This post details how we did just that using n8n and a locally-hosted LLM, all running privately on our own machines.
 
 ---
 

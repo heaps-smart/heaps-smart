@@ -12,7 +12,7 @@ tags: ["Automation", "n8n", "Non-profits", "AI"]
 published: true
 ---
 
-*If you haven't read Part 1, start here → [Doing more with less: How I automated our non-profit digital comms using n8n](https://heaps-smart.com/posts/doing-more-with-less/)*
+*If you haven't read Part 1, start here → [Doing more with less: How I automated our non-profit digital comms using n8n](https://heaps-smart.com/labs/doing-more-with-less/)*
 
 ---
 
