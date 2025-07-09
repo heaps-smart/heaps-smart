@@ -1,0 +1,1157 @@
+[
+  {
+    "name": "Security",
+    "description": "Tools tagged under Security",
+    "tools": [
+      {
+        "name": "1Password",
+        "description": "Securely stores team passwords and sensitive documents — perfect for sharing login access to donor platforms without risk.",
+        "image": "/assets/svg/digital-communications.svg",
+        "link": "",
+        "tags": ["Security"],
+        "pricing": "Yes – Up to 50% for eligible non-profits",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "$5",
+        "non_profit_discount_view": "1Password for Non-Profits",
+        "non_profit_discount": "Up to 50% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://1password.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Database",
+    "description": "Tools tagged under Database",
+    "tools": [
+      {
+        "name": "Airtable",
+        "description": "Combines spreadsheet simplicity with database power — ideal for tracking volunteer applications or event RSVPs.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://airtable.com/invite/r/skZPOGer",
+        "tags": ["Database"],
+        "pricing": "Yes - 50% off for Team plans",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "https://support.airtable.com/docs/nonprofit-and-educational-plans-faqs",
+        "non_profit_discount": "50% Off for Team plans",
+        "hs_recommended": "Yes",
+        "original_website": "https://airtable.com/",
+        "affiliate_link": "https://airtable.com/invite/r/skZPOGer"
+      },
+      {
+        "name": "Google Sheets",
+        "description": "Versatile spreadsheet tool for budgets, tracking impact, or maintaining mailing lists — easy to share with collaborators.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Database"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Free with Google Non-Profit Workspace",
+        "hs_recommended": "Yes",
+        "original_website": "https://sheets.google.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Supabase",
+        "description": "Open-source Firebase alternative — ideal for building scalable applications with authentication, databases, and APIs.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://supabase.com/",
+        "tags": ["Database"],
+        "pricing": "Yes - Free tier available",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "$0",
+        "non_profit_discount_view": "https://supabase.com/pricing",
+        "non_profit_discount": "Free tier available",
+        "hs_recommended": "Yes",
+        "original_website": "https://supabase.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Project Management",
+    "description": "Tools tagged under Project Management",
+    "tools": [
+      {
+        "name": "Asana",
+        "description": "Helps teams manage projects and tasks — for example, planning a fundraising campaign from idea to launch.",
+        "image": "/assets/svg/technical-strategic-consultation.svg",
+        "link": "",
+        "tags": ["Project Management"],
+        "pricing": "Yes - 50% off",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$21",
+        "non_profit_discount_view": "https://asana.com/industry/nonprofit",
+        "non_profit_discount": "50% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://asana.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "ClickUp",
+        "description": "All-in-one task and project management platform — perfect for coordinating a small team’s outreach, admin, and reporting tasks.",
+        "image": "/assets/svg/technical-strategic-consultation.svg",
+        "link": "https://clickup.com/",
+        "tags": ["Project Management"],
+        "pricing": "Yes - 10 free seats; 70% off additional seats",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$16",
+        "non_profit_discount_view": "https://clickup.com/teams/non-profit/discount",
+        "non_profit_discount": "10 Free Seats; 70% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://clickup.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Monday.com",
+        "description": "Visual project and task management tool — ideal for organising campaigns, grant applications, or team workflows.",
+        "image": "/assets/svg/technical-strategic-consultation.svg",
+        "link": "",
+        "tags": ["CRM", "Project Management"],
+        "pricing": "Yes – 10 free Pro seats, 70% off additional seats",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "monday.com Nonprofits",
+        "non_profit_discount": "10 Free Pro Seats; 70% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "monday.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Trello",
+        "description": "Visual project management using cards and boards — ideal for tracking to-dos across fundraising, events, or programs.",
+        "image": "/assets/svg/technical-strategic-consultation.svg",
+        "link": "",
+        "tags": ["Project Management"],
+        "pricing": "No - Generous free plan available",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$9",
+        "non_profit_discount_view": "",
+        "non_profit_discount": "Generous Free Plan Available",
+        "hs_recommended": "Yes",
+        "original_website": "https://trello.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Design",
+    "description": "Tools tagged under Design",
+    "tools": [
+      {
+        "name": "Balsamiq",
+        "description": "Quickly creates wireframes and mockups — useful when scoping a new website or donor portal.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://balsamiq.com/",
+        "tags": ["Design"],
+        "pricing": "Yes - Free for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://balsamiq.com/company/support/nonprofits/",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://balsamiq.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Canva",
+        "description": "Easy-to-use design tool for creating social media posts, flyers, or grant presentations without needing a graphic designer.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Design", "Marketing", "AI"],
+        "pricing": "Yes - Free Pro plan for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://www.canva.com/canva-for-nonprofits/",
+        "non_profit_discount": "Free Pro Plan for non-profits",
+        "hs_recommended": "Yes",
+        "original_website": "https://www.canva.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Marketing",
+    "description": "Tools tagged under Marketing",
+    "tools": [
+      {
+        "name": "Canva",
+        "description": "Easy-to-use design tool for creating social media posts, flyers, or grant presentations without needing a graphic designer.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Design", "Marketing", "AI"],
+        "pricing": "Yes - Free Pro plan for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://www.canva.com/canva-for-nonprofits/",
+        "non_profit_discount": "Free Pro Plan for non-profits",
+        "hs_recommended": "Yes",
+        "original_website": "https://www.canva.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Hootsuite",
+        "description": "Schedules and monitors social media posts — helps comms teams plan consistent messaging across platforms.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "hootsuite.com",
+        "tags": ["Marketing"],
+        "pricing": "Yes – up to 75% off via HootGiving Program",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$156",
+        "non_profit_discount_view": "Hootsuite Nonprofit Discount",
+        "non_profit_discount": "Yes – up to 75% off via HootGiving Program",
+        "hs_recommended": "",
+        "original_website": "hootsuite.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "HubSpot",
+        "description": "A CRM with built-in marketing tools — used by non-profits to track donor relationships and send automated email updates.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["CRM", "Marketing"],
+        "pricing": "Yes – 40% off for non profits",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "HubSpot for Nonprofits",
+        "non_profit_discount": "40% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://hubspot.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Mailchimp",
+        "description": "Email marketing platform to design, send, and track campaigns — perfect for monthly donor updates or appeal drives.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://mailchimp.com/",
+        "tags": ["Marketing"],
+        "pricing": "15% discount",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$21",
+        "non_profit_discount_view": "https://mailchimp.com/help/about-mailchimp-discounts/",
+        "non_profit_discount": "15% discount",
+        "hs_recommended": "",
+        "original_website": "https://mailchimp.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "MailPoet Plugin",
+        "description": "WordPress plugin for sending newsletters and automations — great for small non-profits managing emails directly from their website.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "mailpoet.com",
+        "tags": ["Marketing"],
+        "pricing": "Yes – 20% off for non-profits",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$16",
+        "non_profit_discount_view": "MailPoet Non-Profit Discount",
+        "non_profit_discount": "20% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "mailpoet.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "AI",
+    "description": "Tools tagged under AI",
+    "tools": [
+      {
+        "name": "Canva",
+        "description": "Easy-to-use design tool for creating social media posts, flyers, or grant presentations without needing a graphic designer.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Design", "Marketing", "AI"],
+        "pricing": "Yes - Free Pro plan for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://www.canva.com/canva-for-nonprofits/",
+        "non_profit_discount": "Free Pro Plan for non-profits",
+        "hs_recommended": "Yes",
+        "original_website": "https://www.canva.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "ChatGPT",
+        "description": "Assists with drafting grant applications, summarising reports, or generating volunteer outreach emails in seconds.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "openai.com",
+        "tags": ["AI", "Productivity"],
+        "pricing": "Yes – 20% off Team Plans; 50% off Enterprise Plans",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "OpenAI for Nonprofits",
+        "non_profit_discount": "20% Off Nonprofit Discount; 50% Off Enterprise Plans",
+        "hs_recommended": "",
+        "original_website": "https://openai.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Gemini",
+        "description": "AI assistant for generating reports, drafting documents, or brainstorming project ideas — ideal for overstretched teams.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["AI", "Productivity"],
+        "pricing": "Yes - 75% off plans for non-profits upgrading for AI features",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "https://support.google.com/a/answer/9752995?sjid=4326752495032023799-NC#discounts",
+        "non_profit_discount": "75% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "gemini.google.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Notion",
+        "description": "All-in-one workspace for notes, databases, and wikis — used by non-profits to track goals, manage board documents, or plan events.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://www.notion.so/",
+        "tags": ["Productivity", "CRM", "AI"],
+        "pricing": "Yes - 50% off Plus Plan for non-profits",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$15",
+        "non_profit_discount_view": "https://www.notion.com/nonprofits?utm_feeditemid=&utm_device=c&utm_term=&utm_source=Google&utm_medium=paidsearch&utm_campaign=RL_PMax_Global_EPD_MetadataAudiences&gad_source=1&gad_campaignid=22720918035&gbraid=0AAAAAot8BGXwBKRusq_ugG4eN_Moff0-c&gclid=CjwKCAjwsZPDBhBWEiwADuO6y18XCL9uHRs2mIuItbsklQkNw_lys2OImx5Nku3bFVyQ8HdKyAoBQxoCetEQAvD_BwE",
+        "non_profit_discount": "50% Off Plus plan for non-profits",
+        "hs_recommended": "Yes",
+        "original_website": "https://www.notion.so/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Sanity",
+        "description": "Flexible content platform — used to manage dynamic web content like project updates, blog posts, or case studies collaboratively.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://www.sanity.io/",
+        "tags": ["Content Management", "AI"],
+        "pricing": "Yes - Free Growth Plan for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://www.sanity.io/docs/platform-management/non-profit-plan",
+        "non_profit_discount": "Free Growth Plan for non-profits",
+        "hs_recommended": "",
+        "original_website": "https://www.sanity.io/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Tactiq",
+        "description": "Captures and summarises video calls — helps staff quickly pull meeting notes or action items from board or partner calls.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://tactiq.io/?via=heaps-smart",
+        "tags": ["Transcription", "AI"],
+        "pricing": "No",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$13",
+        "non_profit_discount_view": "Tactiq Pricing",
+        "non_profit_discount": "",
+        "hs_recommended": "",
+        "original_website": "tactiq.io",
+        "affiliate_link": "https://tactiq.io/?via=heaps-smart"
+      },
+      {
+        "name": "Zapier",
+        "description": "Connects apps to automate workflows — helps automate email lists, form responses, or CRM updates without code.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Automation", "AI"],
+        "pricing": "Yes - 15% off",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$47",
+        "non_profit_discount_view": "https://zapier.com/non-profits",
+        "non_profit_discount": "15% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://zapier.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Productivity",
+    "description": "Tools tagged under Productivity",
+    "tools": [
+      {
+        "name": "ChatGPT",
+        "description": "Assists with drafting grant applications, summarising reports, or generating volunteer outreach emails in seconds.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "openai.com",
+        "tags": ["AI", "Productivity"],
+        "pricing": "Yes – 20% off Team Plans; 50% off Enterprise Plans",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "OpenAI for Nonprofits",
+        "non_profit_discount": "20% Off Nonprofit Discount; 50% Off Enterprise Plans",
+        "hs_recommended": "",
+        "original_website": "openai.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Gemini",
+        "description": "AI assistant for generating reports, drafting documents, or brainstorming project ideas — ideal for overstretched teams.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["AI", "Productivity"],
+        "pricing": "Yes - 75% off plans for non-profits upgrading for AI features",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "https://support.google.com/a/answer/9752995?sjid=4326752495032023799-NC#discounts",
+        "non_profit_discount": "75% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "gemini.google.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Notion",
+        "description": "All-in-one workspace for notes, databases, and wikis — used by non-profits to track goals, manage board documents, or plan events.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://www.notion.so/",
+        "tags": ["Productivity", "CRM", "AI"],
+        "pricing": "Yes - 50% off Plus Plan for non-profits",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$15",
+        "non_profit_discount_view": "https://www.notion.com/nonprofits?utm_feeditemid=&utm_device=c&utm_term=&utm_source=Google&utm_medium=paidsearch&utm_campaign=RL_PMax_Global_EPD_MetadataAudiences&gad_source=1&gad_campaignid=22720918035&gbraid=0AAAAAot8BGXwBKRusq_ugG4eN_Moff0-c&gclid=CjwKCAjwsZPDBhBWEiwADuO6y18XCL9uHRs2mIuItbsklQkNw_lys2OImx5Nku3bFVyQ8HdKyAoBQxoCetEQAvD_BwE",
+        "non_profit_discount": "50% Off Plus plan for non-profits",
+        "hs_recommended": "Yes",
+        "original_website": "https://www.notion.so/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Fundraising",
+    "description": "Tools tagged under Fundraising",
+    "tools": [
+      {
+        "name": "Chuffed",
+        "description": "A crowdfunding platform built for social causes — great for running a grassroots campaign to fund a specific local project.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "chuffed.org",
+        "tags": ["Fundraising"],
+        "pricing": "Yes – No platform fees",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "Chuffed Pricing",
+        "non_profit_discount": "No platform fees for non-profits",
+        "hs_recommended": "",
+        "original_website": "https://chuffed.org",
+        "affiliate_link": ""
+      },
+      {
+        "name": "GiveNow",
+        "description": "Free platform for collecting online donations — ideal for small Australian charities wanting to fundraise without monthly fees.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "givenow.com.au",
+        "tags": ["Fundraising"],
+        "pricing": "Yes – Lower transaction fees, about 1.75%",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "GiveNow Pricing",
+        "non_profit_discount": "Lower Transaction Fees Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://givenow.com.au",
+        "affiliate_link": ""
+      },
+      {
+        "name": "GoFundMe",
+        "description": "Crowdfunding tool for one-off campaigns — great for rallying community support after an emergency or local crisis.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "gofundme.com",
+        "tags": ["Fundraising"],
+        "pricing": "Yes – Lower transaction fees for charities 2.2% + $0.30",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "GoFundMe for Nonprofits",
+        "non_profit_discount": "Lower Transaction Fees Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://gofundme.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Raisely",
+        "description": "All-in-one fundraising platform — great for running donation campaigns, peer-to-peer events, or long-term supporter drives.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://www.raisely.com/",
+        "tags": ["Fundraising"],
+        "pricing": "Yes - Free for non-profits",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "https://support.raisely.com/article/254-pricing-and-fees",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://www.raisely.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "CRM",
+    "description": "Tools tagged under CRM",
+    "tools": [
+      {
+        "name": "Copper",
+        "description": "A lightweight CRM that integrates seamlessly with Google Workspace — useful for tracking supporter engagement directly from Gmail.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "copper.com",
+        "tags": ["CRM"],
+        "pricing": "No",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$36",
+        "non_profit_discount_view": "",
+        "non_profit_discount": "",
+        "hs_recommended": "",
+        "original_website": "https://copper.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "HubSpot",
+        "description": "A CRM with built-in marketing tools — used by non-profits to track donor relationships and send automated email updates.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["CRM", "Marketing"],
+        "pricing": "Yes – 40% off for non profits",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "HubSpot for Nonprofits",
+        "non_profit_discount": "40% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://hubspot.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Monday.com",
+        "description": "Visual project and task management tool — ideal for organising campaigns, grant applications, or team workflows.",
+        "image": "/assets/svg/technical-strategic-consultation.svg",
+        "link": "",
+        "tags": ["CRM", "Project Management"],
+        "pricing": "Yes – 10 free Pro seats, 70% off additional seats",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "monday.com Nonprofits",
+        "non_profit_discount": "10 Free Pro Seats; 70% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "monday.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Notion",
+        "description": "All-in-one workspace for notes, databases, and wikis — used by non-profits to track goals, manage board documents, or plan events.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://www.notion.so/",
+        "tags": ["Productivity", "CRM", "AI"],
+        "pricing": "Yes - 50% off Plus Plan for non-profits",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$15",
+        "non_profit_discount_view": "https://www.notion.com/nonprofits?utm_feeditemid=&utm_device=c&utm_term=&utm_source=Google&utm_medium=paidsearch&utm_campaign=RL_PMax_Global_EPD_MetadataAudiences&gad_source=1&gad_campaignid=22720918035&gbraid=0AAAAAot8BGXwBKRusq_ugG4eN_Moff0-c&gclid=CjwKCAjwsZPDBhBWEiwADuO6y18XCL9uHRs2mIuItbsklQkNw_lys2OImx5Nku3bFVyQ8HdKyAoBQxoCetEQAvD_BwE",
+        "non_profit_discount": "50% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://www.notion.so/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Salesforce Sales Cloud",
+        "description": "Highly customisable CRM — ideal for large non-profits managing complex donor databases, grants, and outreach at scale.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "salesforce.org",
+        "tags": ["CRM"],
+        "pricing": "Yes – discounted through Salesforce.org",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$40",
+        "non_profit_discount_view": "Salesforce Nonprofits",
+        "non_profit_discount": "Discounted through Salesforce.org",
+        "hs_recommended": "",
+        "original_website": "https://salesforce.org",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Zoho CRM",
+        "description": "Budget-friendly CRM with AI features — ideal for tracking donors, automating comms, and managing supporter data.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "zoho.com/crm",
+        "tags": ["CRM"],
+        "pricing": "Yes – up to 15% off for non profits",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "https://help.zoho.com/portal/en/kb/social/faqs/plan-and-pricing/articles/is-there-a-discount-provided-for-non-profit-organizations",
+        "non_profit_discount": "Up to 15% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://zoho.com/crm",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Website Builder",
+    "description": "Tools tagged under Website Builder",
+    "tools": [
+      {
+        "name": "Ghost",
+        "description": "Simple, elegant platform for publishing blog posts or newsletters — great for showcasing impact stories on your website.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Website Builder", "Communication"],
+        "pricing": "No - But can be self-hosted for Free (open-source)",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$31",
+        "non_profit_discount_view": "https://ghost.org/help/ghostpro-discounts/",
+        "non_profit_discount": "No - But can be self-hosted for Free (open-source)",
+        "hs_recommended": "Yes",
+        "original_website": "https://ghost.org",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Softr",
+        "description": "No-code builder for websites and internal portals — perfect for creating a volunteer dashboard or project directory from Airtable data.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Website Builder"],
+        "pricing": "Yes – 30% off for non profits",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$77",
+        "non_profit_discount_view": "Softr Non-Profit Discount",
+        "non_profit_discount": "30% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://softr.io",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Wix",
+        "description": "Drag-and-drop website builder — easy for small non-profits to create a polished site without coding.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Website Builder"],
+        "pricing": "Yes – 70% off 2-year Premium plan via TechSoup",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "Wix Nonprofit Discount",
+        "non_profit_discount": "70% Off 2-Year Premium Plan Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://wix.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Mapping",
+    "description": "Tools tagged under Mapping",
+    "tools": [
+      {
+        "name": "Google Maps",
+        "description": "Embeds interactive maps on your website — helpful for showing project locations or listing environmental restoration sites.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Mapping"],
+        "pricing": "Yes — $250/month in credits",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Yes — $250/month in credits",
+        "hs_recommended": "Yes",
+        "original_website": "https://developers.google.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Queensland Globe",
+        "description": "Interactive GIS tool for exploring local land, planning, and environmental data — ideal for conservation groups or advocacy mapping.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "qldglobe.information.qld.gov.au",
+        "tags": ["Mapping"],
+        "pricing": "Free",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "$0",
+        "non_profit_discount_view": "Queensland Globe Help",
+        "non_profit_discount": "Free",
+        "hs_recommended": "",
+        "original_website": "https://qldglobe.information.qld.gov.au",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Communication",
+    "description": "Tools tagged under Communication",
+    "tools": [
+      {
+        "name": "Google Meet",
+        "description": "Simple, secure video meetings — used by remote teams or volunteer coordinators to host planning sessions and interviews.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Communication"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$9",
+        "non_profit_discount_view": "https://www.google.com/nonprofits/offerings/workspace/",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://meet.google.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Google GMail",
+        "description": "Email platform for daily communication — commonly used by non-profits to manage donor, partner, and internal emails.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Communication"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://mail.google.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Slack",
+        "description": "Real-time messaging platform — useful for coordinating distributed teams, volunteers, and program leads in shared channels.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://slack.com/",
+        "tags": ["Communication"],
+        "pricing": "Yes - Free (upgraded) Pro Plan for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$20",
+        "non_profit_discount_view": "https://slack.com/nonprofits",
+        "non_profit_discount": "Free (Upgraded) Pro Plan Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://slack.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Twilio",
+        "description": "Communication API for SMS, calls, and WhatsApp — useful for sending donation reminders or event alerts to supporters.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "twilio.org",
+        "tags": ["Communication"],
+        "pricing": "Yes – $500 credits",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "Twilio Impact Access Program",
+        "non_profit_discount": "$500 Credits Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://twilio.org",
+        "affiliate_link": ""
+      },
+      {
+        "name": "WhatsApp",
+        "description": "Direct messaging app — allows rapid updates and engagement with communities, especially where email is underused.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Communication"],
+        "pricing": "No",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "",
+        "non_profit_discount": "",
+        "hs_recommended": "",
+        "original_website": "https://whatsapp.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Zoom",
+        "description": "Video meeting platform — widely used for virtual board meetings, webinars, and training sessions.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "zoom.us",
+        "tags": ["Communication"],
+        "pricing": "Yes – 50% off for non profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$24",
+        "non_profit_discount_view": "Zoom for Nonprofits",
+        "non_profit_discount": "50% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://zoom.us",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Form Builder",
+    "description": "Tools tagged under Form Builder",
+    "tools": [
+      {
+        "name": "Google Forms",
+        "description": "Creates surveys and forms — perfect for volunteer sign-ups, event RSVPs, or collecting post-program feedback.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Form Builder"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://forms.google.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Jotform",
+        "description": "Easy-to-use form builder for registrations, donations, or surveys — commonly used for collecting volunteer sign-ups or program feedback.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "Can sign up here: https://www.jotform.com/partnership/affiliate/application/",
+        "tags": ["Form Builder"],
+        "pricing": "Yes – 50% off all paid plans",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$62",
+        "non_profit_discount_view": "Jotform Nonprofit Pricing",
+        "non_profit_discount": "50% Off Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://jotform.com",
+        "affiliate_link": "https://www.jotform.com/partnership/affiliate/application/"
+      },
+      {
+        "name": "Tally",
+        "description": "Free, simple form builder — great for collecting volunteer interest, feedback, or workshop sign-ups without limits.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://tally.cello.so/wJ2k6jDb1S8",
+        "tags": ["Form Builder"],
+        "pricing": "Yes – 30% off Tally Pro",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$46",
+        "non_profit_discount_view": "Tally Non-Profit Discount",
+        "non_profit_discount": "30% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://tally.so",
+        "affiliate_link": "https://tally.cello.so/wJ2k6jDb1S8"
+      },
+      {
+        "name": "Typeform",
+        "description": "Sleek, interactive forms — perfect for donor surveys or onboarding forms that feel personal and engaging.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "typeform.com",
+        "tags": ["Form Builder"],
+        "pricing": "Yes – 25% off monthly, 40% off yearly plans",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$40",
+        "non_profit_discount_view": "Typeform Nonprofit Discounts",
+        "non_profit_discount": "25% Off Monthly; 40% Off Yearly Plans",
+        "hs_recommended": "",
+        "original_website": "https://typeform.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Cloud Storage",
+    "description": "Tools tagged under Cloud Storage",
+    "tools": [
+      {
+        "name": "Google Drive",
+        "description": "Cloud storage that keeps files organised and accessible — useful for storing funding applications, reports, and assets in one place.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Cloud Storage"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://drive.google.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Events",
+    "description": "Tools tagged under Events",
+    "tools": [
+      {
+        "name": "Humanitix",
+        "description": "Event ticketing platform that directs booking fees to charity — great for hosting fundraising dinners, workshops, or community events.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "humanitix.com",
+        "tags": ["Events"],
+        "pricing": "Yes – discounted booking fees for non profits",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "Humanitix NFP Rate",
+        "non_profit_discount": "Discounted Booking Fees Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://humanitix.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Collaboration",
+    "description": "Tools tagged under Collaboration",
+    "tools": [
+      {
+        "name": "Microsoft Teams",
+        "description": "Communication and file-sharing hub — helps internal teams and boards stay connected across locations with chat and video.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "microsoft.com",
+        "tags": ["Collaboration"],
+        "pricing": "Yes – Free for up to 10 users, discounted pricing for additional users",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$6",
+        "non_profit_discount_view": "Microsoft Nonprofits",
+        "non_profit_discount": "Free for Up to 10 Users Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://microsoft.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Transcription",
+    "description": "Tools tagged under Transcription",
+    "tools": [
+      {
+        "name": "Otter.ai",
+        "description": "Records and transcribes meetings or interviews — useful for documenting board discussions or recording oral histories.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://otter.ai/",
+        "tags": ["Transcription"],
+        "pricing": "No - but free plan available",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$16",
+        "non_profit_discount_view": "",
+        "non_profit_discount": "No - but free plan available",
+        "hs_recommended": "",
+        "original_website": "https://otter.ai/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Tactiq",
+        "description": "Captures and summarises video calls — helps staff quickly pull meeting notes or action items from board or partner calls.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://tactiq.io/?via=heaps-smart",
+        "tags": ["Transcription", "AI"],
+        "pricing": "No",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$13",
+        "non_profit_discount_view": "Tactiq Pricing",
+        "non_profit_discount": "",
+        "hs_recommended": "",
+        "original_website": "tactiq.io",
+        "affiliate_link": "https://tactiq.io/?via=heaps-smart"
+      }
+    ]
+  },
+  {
+    "name": "Content Management",
+    "description": "Tools tagged under Content Management",
+    "tools": [
+      {
+        "name": "Sanity",
+        "description": "Flexible content platform — used to manage dynamic web content like project updates, blog posts, or case studies collaboratively.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://www.sanity.io/",
+        "tags": ["Content Management", "AI"],
+        "pricing": "Yes - Free Growth Plan for non-profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://www.sanity.io/docs/platform-management/non-profit-plan",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://www.sanity.io/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Payments",
+    "description": "Tools tagged under Payments",
+    "tools": [
+      {
+        "name": "Square",
+        "description": "Point-of-sale and online payment solution — used at events, op shops, or donation stations to process payments quickly.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "squareup.com",
+        "tags": ["Payments"],
+        "pricing": "No",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "Square for Nonprofits",
+        "non_profit_discount": "",
+        "hs_recommended": "Yes",
+        "original_website": "https://squareup.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Stripe",
+        "description": "Secure online payments platform — commonly used to accept one-off or recurring donations via a website or campaign page.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://stripe.com/",
+        "tags": ["Payments"],
+        "pricing": "Yes - Discounted transaction fees ~1.4%+30c / transaction",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "https://stripe.com/en-au/partners/nonprofits",
+        "non_profit_discount": "Discounted Transaction Fees Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://stripe.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Data",
+    "description": "Tools tagged under Data",
+    "tools": [
+      {
+        "name": "Tableau",
+        "description": "Data visualisation tool — turns program outcomes, survey data, or donor metrics into interactive, shareable dashboards.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "tableau.com",
+        "tags": ["Data"],
+        "pricing": "Yes – free licenses for eligible non-profits",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$111",
+        "non_profit_discount_view": "Tableau for Nonprofits",
+        "non_profit_discount": "Free Licenses Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://tableau.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Video Hosting",
+    "description": "Tools tagged under Video Hosting",
+    "tools": [
+      {
+        "name": "Vimeo",
+        "description": "High-quality video hosting — used to present campaigns, testimonials, or virtual events in a polished format.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Video Hosting"],
+        "pricing": "No - discounts only offered to US-based non profits",
+        "raw_pricing": "$$$",
+        "monthly_pricing_aud": "$19",
+        "non_profit_discount_view": "https://help.vimeo.com/hc/en-us/articles/12425463134865-Discounts-and-Programs",
+        "non_profit_discount": "No - discounts only offered to US-based non profits",
+        "hs_recommended": "Yes",
+        "original_website": "https://vimeo.com",
+        "affiliate_link": ""
+      },
+      {
+        "name": "YouTube",
+        "description": "Public video sharing platform — great for showcasing your mission, stories, and program impact to a broad audience.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Video Hosting"],
+        "pricing": "Yes - Free platform",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "",
+        "non_profit_discount_view": "https://www.google.com/nonprofits/offerings/youtube-nonprofit-program/",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "",
+        "original_website": "https://www.youtube.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Website CMS",
+    "description": "Tools tagged under Website CMS",
+    "tools": [
+      {
+        "name": "WordPress",
+        "description": "Open-source CMS — widely used for building scalable non-profit websites with donation, blog, and volunteer features.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "wordpress.org",
+        "tags": ["Website CMS"],
+        "pricing": "Yes - Free platform (open-source); Hosting is not free",
+        "raw_pricing": "$",
+        "monthly_pricing_aud": "$0",
+        "non_profit_discount_view": "",
+        "non_profit_discount": "Free platform (open-source); Hosting is not free",
+        "hs_recommended": "",
+        "original_website": "https://wordpress.org",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Automation",
+    "description": "Tools tagged under Automation",
+    "tools": [
+      {
+        "name": "Zapier",
+        "description": "Connects apps to automate workflows — helps automate email lists, form responses, or CRM updates without code.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Automation", "AI"],
+        "pricing": "Yes - 15% off",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$47",
+        "non_profit_discount_view": "https://zapier.com/non-profits",
+        "non_profit_discount": "15% Off Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://zapier.com/",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Bookings",
+    "description": "Tools tagged under Bookings",
+    "tools": [
+      {
+        "name": "Calendly",
+        "description": "Public scheduling link — makes it easy for partners or volunteers to book time with you, with automatic reminders.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Bookings", "Scheduling"],
+        "pricing": "Yes - 25% discount on their Standard or Team plans for non profits",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$10",
+        "non_profit_discount_view": "https://calendly.com/pricing",
+        "non_profit_discount": "25% Off Standard or Team Plans Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://calendly.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Google Calendar",
+        "description": "Built-in scheduling tool — lets people book from your calendar using defined time slots, ideal for intake calls or donor chats.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://calendar.google.com",
+        "tags": ["Bookings", "Scheduling"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://calendar.google.com",
+        "affiliate_link": ""
+      }
+    ]
+  },
+  {
+    "name": "Scheduling",
+    "description": "Tools tagged under Scheduling",
+    "tools": [
+      {
+        "name": "Calendly",
+        "description": "Public scheduling link — makes it easy for partners or volunteers to book time with you, with automatic reminders.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "",
+        "tags": ["Bookings", "Scheduling"],
+        "pricing": "Yes - 25% discount on their Standard or Team plans for non profits",
+        "raw_pricing": "$$",
+        "monthly_pricing_aud": "$10",
+        "non_profit_discount_view": "https://calendly.com/pricing",
+        "non_profit_discount": "25% Off Standard or Team Plans Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://calendly.com/",
+        "affiliate_link": ""
+      },
+      {
+        "name": "Google Calendar",
+        "description": "Built-in scheduling tool — lets people book from your calendar using defined time slots, ideal for intake calls or donor chats.",
+        "image": "/assets/svg/data-infrastructure.svg",
+        "link": "https://calendar.google.com",
+        "tags": ["Bookings", "Scheduling"],
+        "pricing": "Yes - Free with Google Non-Profit Workspace",
+        "raw_pricing": "$$$$",
+        "monthly_pricing_aud": "$32",
+        "non_profit_discount_view": "Google Maps Platform for Nonprofits",
+        "non_profit_discount": "Free Nonprofit Discount",
+        "hs_recommended": "Yes",
+        "original_website": "https://calendar.google.com",
+        "affiliate_link": ""
+      }
+    ]
+  }
+]
