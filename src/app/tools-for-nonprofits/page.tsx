@@ -39,7 +39,9 @@ export default function ToolsPage() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const shadowClass = "shadow-sm hover:shadow-md";
 
+  // Debounce search input to avoid excessive renders while typing
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedSearch(search);
@@ -149,8 +151,6 @@ export default function ToolsPage() {
       .sort((a, b) => a.name.localeCompare(b.name));
   }, [debouncedSearch, searchResults, selectedTag]);
 
-  const shadowClass = "shadow-sm hover:shadow-md";
-
   const handleClickOutside = (event: MouseEvent) => {
     if (
       dropdownRef.current &&
@@ -168,6 +168,7 @@ export default function ToolsPage() {
     }
   };
 
+  // Setup event listeners to close dropdown when clicking outside or pressing Escape/Enter
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
@@ -187,6 +188,7 @@ export default function ToolsPage() {
   const getToolLink = (tool: Tool) =>
     tool.affiliate_link?.startsWith('https') ? tool.affiliate_link : tool.original_website;
 
+  // Auto-select category tag when search matches a category name exactly
   useEffect(() => {
     if (debouncedSearch.trim().length > 1) {
       const matchingCategory = toolCategoriesData.find(
