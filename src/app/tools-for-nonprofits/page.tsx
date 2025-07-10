@@ -70,12 +70,12 @@ export default function ToolsPage() {
 
   const fuse = useMemo(() =>
     new Fuse(allTools, {
-      keys: ["name", "description", "tags", "category"],
+      keys: ["name", "tags"],
       threshold: 0.3,
       ignoreLocation: true,
     }), [allTools]);
 
-  const searchResults =
+  const searchResults = useMemo(() => 
     debouncedSearch.trim().length > 1
       ? Array.from(
           new Map(
@@ -94,27 +94,60 @@ export default function ToolsPage() {
             return (a.score || 0) - (b.score || 0);
           })
           .slice(0, 6)
-      : [];
+      : []
+  , [debouncedSearch, fuse]);
 
-  const filteredCategories = useMemo(() =>
-    toolCategoriesData
+  const filteredCategories = useMemo(() => {
+    if (debouncedSearch.trim().length > 1) {
+      const matchingCategory = toolCategoriesData.find(
+        (category) =>
+          category.name.toLowerCase() === debouncedSearch.trim().toLowerCase()
+      );
+
+      if (matchingCategory) {
+        return [{
+          name: matchingCategory.name,
+          description: matchingCategory.description,
+          tools: matchingCategory.tools,
+        }];
+      }
+
+      return [{
+        name: "",
+        description: "",
+        tools: searchResults.map((result) => result.item),
+      }];
+    }
+
+    if (selectedTag) {
+      return toolCategoriesData
+        .map((category: ToolCategory) => {
+          if (category.name === selectedTag) {
+            return {
+              ...category,
+              tools: category.tools,
+            };
+          }
+          return null;
+        })
+        .filter(Boolean) as ToolCategory[];
+    }
+
+    return toolCategoriesData
       .map((category: ToolCategory) => {
         const filteredTools = category.tools.filter((tool: Tool) => {
           const matchesSearch =
             tool.name.toLowerCase().includes(debouncedSearch.toLowerCase()) ||
             tool.description.toLowerCase().includes(debouncedSearch.toLowerCase());
 
-          const matchesTag =
-            !selectedTag || tool.tags.includes(selectedTag);
-
-          return matchesSearch && matchesTag;
+          return matchesSearch;
         });
 
         return { ...category, tools: filteredTools };
       })
       .filter((category) => category.tools.length > 0)
-      .sort((a, b) => a.name.localeCompare(b.name))
-  , [debouncedSearch, selectedTag]);
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [debouncedSearch, searchResults, selectedTag]);
 
   const shadowClass = "shadow-sm hover:shadow-md";
 
@@ -130,7 +163,7 @@ export default function ToolsPage() {
   };
 
   const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" || event.key === "Enter") {
       setIsDropdownVisible(false);
     }
   };
@@ -146,11 +179,31 @@ export default function ToolsPage() {
   }, []);
 
   const handleTagClick = (tag: string) => {
+    setSearch("");
+    setDebouncedSearch(""); 
     setSelectedTag((prev) => (prev === tag ? null : tag));
   };
 
   const getToolLink = (tool: Tool) =>
     tool.affiliate_link?.startsWith('https') ? tool.affiliate_link : tool.original_website;
+
+  useEffect(() => {
+    if (debouncedSearch.trim().length > 1) {
+      const matchingCategory = toolCategoriesData.find(
+        (category) =>
+          category.name.toLowerCase() === debouncedSearch.trim().toLowerCase()
+      );
+
+      if (matchingCategory) {
+        setSelectedTag(matchingCategory.name);
+        return;
+      }
+
+      if (selectedTag) {
+        setSelectedTag(null);
+      }
+    }
+  }, [debouncedSearch, selectedTag]);
 
   return (
     <main className="bg-[#F7F2EE] text-black font-sans">
