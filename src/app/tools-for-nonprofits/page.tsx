@@ -24,6 +24,9 @@ interface Tool {
   category?: string;
   affiliate_link?: string;
   original_website?: string;
+  hs_recommended_details?: string;
+  pricing_details?: string;
+  slug?: string;
 }
 
 interface ToolCategory {
@@ -185,9 +188,6 @@ export default function ToolsPage() {
     setSelectedTag((prev) => (prev === tag ? null : tag));
   };
 
-  const getToolLink = (tool: Tool) =>
-    tool.affiliate_link?.startsWith('https') ? tool.affiliate_link : tool.original_website;
-
   // Auto-select category tag when search matches a category name exactly
   useEffect(() => {
     if (debouncedSearch.trim().length > 1) {
@@ -261,14 +261,12 @@ export default function ToolsPage() {
               >
                 {searchResults.map((result) => {
                   const tool = result.item;
-                  const toolLink = getToolLink(tool);
                   return (
-                    <a
+                    <Link
                       key={tool.name}
-                      href={toolLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`/tools-for-nonprofits/${tool.slug}`}
                       className="block px-4 py-3 hover:bg-yellow-100 transition-colors flex justify-between items-center"
+                      onClick={() => setIsDropdownVisible(false)}
                     >
                       <div>
                         <div className="font-semibold text-black/90">{tool.name}</div>
@@ -277,7 +275,7 @@ export default function ToolsPage() {
                         </div>
                       </div>
                       <span className="text-black/50">→</span>
-                    </a>
+                    </Link>
                   );
                 })}
               </div>
@@ -320,8 +318,9 @@ export default function ToolsPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {category.tools.map((tool: Tool) => (
-                  <div
+                  <Link
                     key={tool.name}
+                    href={`/tools-for-nonprofits/${tool.slug}`}
                     className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col border border-gray-200"
                   >
                     <div className="flex items-center mb-4">
@@ -343,15 +342,12 @@ export default function ToolsPage() {
 
                     <p className="text-black/70 mb-4 flex-grow leading-relaxed">{tool.description}</p>
 
-                    <a
-                      href={getToolLink(tool)}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <div
                       className={`inline-block text-center w-full px-4 py-2 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none ${shadowClass}`}
                     >
-                      View non-profit pricing →
-                    </a>
-                  </div>
+                      View details →
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>
