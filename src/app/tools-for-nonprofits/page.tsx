@@ -7,26 +7,22 @@ import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import Link from "next/link";
-import toolCategoriesData from './tool-categories-full.json';
+import toolsData from './tools_database_markdown.json';
 
 interface Tool {
   name: string;
   description: string;
-  image: string;
   link: string;
-  tags: string[];
-  pricing: string;
-  raw_pricing: string;
+  category: string;
   monthly_pricing_aud: string;
-  non_profit_discount_view: string;
+  raw_pricing: string;
   non_profit_discount: string;
+  non_profit_discount_link: string;
+  pricing_details: string;
   hs_recommended: string;
-  category?: string;
-  affiliate_link?: string;
-  original_website?: string;
-  hs_recommended_details?: string;
-  pricing_details?: string;
-  slug?: string;
+  hs_recommended_details: string;
+  affiliate_link: string;
+  slug: string;
 }
 
 interface ToolCategory {
@@ -58,24 +54,16 @@ export default function ToolsPage() {
   const allTags = useMemo(() => (
     Array.from(
       new Set(
-        toolCategoriesData.flatMap((category: ToolCategory) =>
-          category.tools.flatMap((tool) => tool.tags)
-        )
+        toolsData.map((tool: Tool) => tool.category)
       )
     ).sort()
   ), []);
 
-  const allTools = useMemo(() =>
-    toolCategoriesData.flatMap((category) =>
-      category.tools.map((tool) => ({
-        ...tool,
-        category: category.name,
-      }))
-    ), []);
+  const allTools = useMemo(() => toolsData, []);
 
   const fuse = useMemo(() =>
     new Fuse(allTools, {
-      keys: ["name", "tags"],
+      keys: ["name", "category"],
       threshold: 0.3,
       ignoreLocation: true,
     }), [allTools]);
@@ -104,16 +92,16 @@ export default function ToolsPage() {
 
   const filteredCategories = useMemo(() => {
     if (debouncedSearch.trim().length > 1) {
-      const matchingCategory = toolCategoriesData.find(
+      const matchingCategory = allTags.find(
         (category) =>
-          category.name.toLowerCase() === debouncedSearch.trim().toLowerCase()
+          category.toLowerCase() === debouncedSearch.trim().toLowerCase()
       );
 
       if (matchingCategory) {
         return [{
-          name: matchingCategory.name,
-          description: matchingCategory.description,
-          tools: matchingCategory.tools,
+          name: matchingCategory,
+          description: "",
+          tools: toolsData.filter(tool => tool.category === matchingCategory),
         }];
       }
 
@@ -125,34 +113,37 @@ export default function ToolsPage() {
     }
 
     if (selectedTag) {
-      return toolCategoriesData
-        .map((category: ToolCategory) => {
-          if (category.name === selectedTag) {
-            return {
-              ...category,
-              tools: category.tools,
-            };
-          }
-          return null;
-        })
-        .filter(Boolean) as ToolCategory[];
+      return [{
+        name: selectedTag,
+        description: "",
+        tools: toolsData.filter(tool => tool.category === selectedTag),
+      }];
     }
 
-    return toolCategoriesData
-      .map((category: ToolCategory) => {
-        const filteredTools = category.tools.filter((tool: Tool) => {
+    // Group tools by category
+    const categoryMap = new Map<string, Tool[]>();
+    toolsData.forEach((tool: Tool) => {
+      const category = tool.category;
+      if (!categoryMap.has(category)) {
+        categoryMap.set(category, []);
+      }
+      categoryMap.get(category)!.push(tool);
+    });
+
+    return Array.from(categoryMap.entries())
+      .map(([categoryName, tools]) => ({
+        name: categoryName,
+        description: "",
+        tools: tools.filter((tool: Tool) => {
           const matchesSearch =
             tool.name.toLowerCase().includes(debouncedSearch.toLowerCase()) ||
             tool.description.toLowerCase().includes(debouncedSearch.toLowerCase());
-
           return matchesSearch;
-        });
-
-        return { ...category, tools: filteredTools };
-      })
+        }),
+      }))
       .filter((category) => category.tools.length > 0)
       .sort((a, b) => a.name.localeCompare(b.name));
-  }, [debouncedSearch, searchResults, selectedTag]);
+  }, [debouncedSearch, searchResults, selectedTag, allTags]);
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
@@ -191,13 +182,13 @@ export default function ToolsPage() {
   // Auto-select category tag when search matches a category name exactly
   useEffect(() => {
     if (debouncedSearch.trim().length > 1) {
-      const matchingCategory = toolCategoriesData.find(
+      const matchingCategory = allTags.find(
         (category) =>
-          category.name.toLowerCase() === debouncedSearch.trim().toLowerCase()
+          category.toLowerCase() === debouncedSearch.trim().toLowerCase()
       );
 
       if (matchingCategory) {
-        setSelectedTag(matchingCategory.name);
+        setSelectedTag(matchingCategory);
         return;
       }
 
@@ -205,7 +196,7 @@ export default function ToolsPage() {
         setSelectedTag(null);
       }
     }
-  }, [debouncedSearch, selectedTag]);
+  }, [debouncedSearch, selectedTag, allTags]);
 
   return (
     <main className="bg-[#F7F2EE] text-black font-sans">
@@ -325,7 +316,7 @@ export default function ToolsPage() {
                   >
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 mr-4 bg-[#F7F2EE] rounded-full p-2 flex items-center justify-center">
-                        <img src={tool.image || "/placeholder-icon.png"} alt={tool.name || "Tool icon"} className="w-6 h-6" />
+                        <div className="w-6 h-6 bg-gray-300 rounded"></div>
                       </div>
                       <div className="flex flex-col">
                         <h3 className="text-xl font-semibold text-black/80">{tool.name}</h3>

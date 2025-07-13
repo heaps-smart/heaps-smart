@@ -148,7 +148,7 @@ export default function ToolPageTemplate({
               <div className="space-y-2">
                 {monthlyPricing && (
                   <div className="text-sm text-black/80">
-                    <span className="font-medium">From:</span> {monthlyPricing}
+                    {monthlyPricing}
                   </div>
                 )}
                 {nonprofitDiscount && (
@@ -222,7 +222,17 @@ export default function ToolPageTemplate({
                   <div>
                     <h4 className="font-semibold mb-2">How to Apply for Non-Profit Pricing:</h4>
                     <div className="whitespace-pre-line text-base">
-                      {pricingDetails}
+                      {pricingDetails.split('\n').map((line, index) => {
+                        if (line.includes('**How to apply:**')) {
+                          const parts = line.split('**How to apply:**');
+                          return (
+                            <div key={index}>
+                              {parts[0]}<strong>How to apply:</strong>{parts[1]}
+                            </div>
+                          );
+                        }
+                        return <div key={index}>{line}</div>;
+                      })}
                     </div>
                   </div>
                 )}

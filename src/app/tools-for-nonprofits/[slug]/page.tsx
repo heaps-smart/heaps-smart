@@ -1,47 +1,45 @@
 import { notFound } from 'next/navigation';
 import ToolPageTemplate from '@/app/_components/ToolPageTemplate';
-import toolCategoriesData from '@/app/tools-for-nonprofits/tool-categories-full.json';
+import toolsData from '@/app/tools-for-nonprofits/tools_database_markdown.json';
 
 interface Tool {
   name: string;
   description: string;
-  image: string;
   link: string;
-  tags: string[];
-  pricing: string;
-  raw_pricing: string;
+  category: string;
   monthly_pricing_aud: string;
-  non_profit_discount_view: string;
+  raw_pricing: string;
   non_profit_discount: string;
+  non_profit_discount_link: string;
+  pricing_details: string;
   hs_recommended: string;
-  category?: string;
-  affiliate_link?: string;
-  original_website?: string;
-  hs_recommended_details?: string;
-  pricing_details?: string;
+  hs_recommended_details: string;
+  affiliate_link: string;
   slug: string;
-  galleryImages?: string[];
 }
 
 type Params = { slug: string };
 
 export async function generateStaticParams(): Promise<Params[]> {
-  return toolCategoriesData.flatMap((category) =>
-    category.tools.map((tool) => ({ slug: tool.slug }))
-  );
+  return toolsData.map((tool) => ({ slug: tool.slug }));
 }
 
 export default function ToolPage({ params }: { params: Params }) {
-  const tool = toolCategoriesData
-    .flatMap((category) => category.tools)
-    .find((t: Tool) => t.slug === params.slug);
+  const tool = toolsData.find((t: Tool) => t.slug === params.slug);
 
   if (!tool) notFound();
 
   const sections = [
     { title: 'Overview', content: tool.description },
-    { title: 'Pricing', content: tool.pricing },
   ];
+
+  // Add pricing information if available
+  if (tool.monthly_pricing_aud || tool.raw_pricing) {
+    const pricingContent = tool.monthly_pricing_aud 
+      ? `Monthly pricing: ${tool.monthly_pricing_aud} AUD`
+      : `Pricing tier: ${tool.raw_pricing}`;
+    sections.push({ title: 'Pricing', content: pricingContent });
+  }
 
   // Only add non-profit discount to main content if no detailed pricing info is in sidebar
   if (tool.non_profit_discount && !tool.pricing_details) {
@@ -54,7 +52,7 @@ export default function ToolPage({ params }: { params: Params }) {
   return (
     <ToolPageTemplate
       toolName={tool.name}
-      tags={tool.tags || []}
+      tags={[tool.category]}
       sections={sections}
       galleryImages={[
         { id: 1, src: "https://picsum.photos/800/600?random=1", alt: tool.name },
@@ -62,10 +60,10 @@ export default function ToolPage({ params }: { params: Params }) {
         { id: 3, src: "https://picsum.photos/800/600?random=3", alt: `${tool.name} - 3` },
         { id: 4, src: "https://picsum.photos/800/600?random=4", alt: `${tool.name} - 4` }
       ]}
-      website={tool.original_website || tool.link}
-      monthlyPricing={tool.monthly_pricing_aud}
+      website={tool.link}
+      monthlyPricing={tool.raw_pricing}
       nonprofitDiscount={tool.non_profit_discount}
-      nonprofitPricingUrl={tool.non_profit_discount_view}
+      nonprofitPricingUrl={tool.non_profit_discount_link}
       affiliateLink={tool.affiliate_link}
       hsRecommended={tool.hs_recommended === 'Yes'}
       pricingDetails={tool.pricing_details}
