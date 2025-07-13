@@ -5,7 +5,8 @@ import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import ResponsiveVideo from "@/app/_components/ResponsiveVideo";
-import { ReactNode } from "react";
+import markdownToHtml from "@/lib/markdownToHtml";
+import { ReactNode, useEffect, useState } from "react";
 
 type Section = {
   title: string;
@@ -49,6 +50,23 @@ export default function ToolPageTemplate({
   pricingDetails,
   hsRecommendedDetails,
 }: Props) {
+  const [renderedPricingDetails, setRenderedPricingDetails] = useState<string>("");
+  const [renderedHsDetails, setRenderedHsDetails] = useState<string>("");
+
+  useEffect(() => {
+    const convertMarkdown = async () => {
+      if (pricingDetails) {
+        const htmlContent = await markdownToHtml(pricingDetails);
+        setRenderedPricingDetails(htmlContent);
+      }
+      if (hsRecommendedDetails) {
+        const htmlContent = await markdownToHtml(hsRecommendedDetails);
+        setRenderedHsDetails(htmlContent);
+      }
+    };
+    
+    convertMarkdown();
+  }, [pricingDetails, hsRecommendedDetails]);
   return (
     <main className="bg-[#f8f3ef] text-black font-sans">
       <Container>
@@ -57,36 +75,52 @@ export default function ToolPageTemplate({
 
       <Container>
         <header className="pt-8 pb-12 md:pb-8 mb-4">
-          <div className="flex items-center gap-4 mb-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+          {/* <div className="mb-6">
+            <a 
+              href="/tools-for-nonprofits"
+              className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              <svg 
+                className="w-4 h-4 mr-2" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Tools for Non-profits
+            </a>
+          </div> */}
+          <div className="flex flex-col md:flex-row md:items-center md:gap-4 mb-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-2 md:mb-0 md:pr-8">
               {toolName}
             </h1>
             {hsRecommended && (
-              <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+              <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full self-start md:self-center">
                 HS Recommended
               </span>
             )}
           </div>
-						<div className="flex flex-wrap gap-4">
-							<a 
-								href={website} 
-								target="_blank" 
-								rel="noopener noreferrer"
-								className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
-							>
-								{website}
-							</a>
-							{nonprofitPricingUrl && (
-								<a 
-								href={nonprofitPricingUrl} 
-								target="_blank" 
-								rel="noopener noreferrer"
-								className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
-								>
-								Non-profit pricing
-								</a>
-							)}
-						</div>
+          <div className="flex flex-wrap gap-4">
+            <a 
+              href={website} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
+            >
+              {website}
+            </a>
+            {nonprofitPricingUrl && (
+              <a 
+                href={nonprofitPricingUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
+              >
+                Non-profit pricing
+              </a>
+            )}
+          </div>
         </header>
       </Container>
 
@@ -127,43 +161,47 @@ export default function ToolPageTemplate({
           <aside className="space-y-8">
             {/* Website Section */}
             <section>
-              <h4 className="text-xl font-semibold tracking-tight mb-3 text-[#111]">
-                Website
-              </h4>
               <a 
                 href={website} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-gray-700 hover:text-gray-900 underline transition-colors"
+                className="block hover:text-gray-900 transition-colors"
               >
-                Visit website
+                <h4 className="text-lg font-semibold text-black/80 mb-1">
+                  Official Website
+                </h4>
+                <p className="text-sm text-black/60">
+                  Explore more about {toolName}
+                </p>
               </a>
             </section>
 
             {/* Pricing Section */}
             <section>
-              <h4 className="text-xl font-semibold tracking-tight mb-3 text-[#111]">
-                Pricing
-              </h4>
-              <div className="space-y-2">
-                {monthlyPricing && (
-                  <div className="text-sm text-black/80">
-                    {monthlyPricing}
-                  </div>
-                )}
-                {nonprofitDiscount && (
-                  <div className="text-sm text-green-700 font-medium">
-                    Non-profit discount available
-                  </div>
-                )}
-                <a 
-                  href={nonprofitPricingUrl || website}
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-700 hover:text-gray-900 underline transition-colors"
-                >
-                  View pricing 
-                </a>
+              <div>
+                <h4 className="text-lg font-semibold text-black/80 mb-2">
+                  Pricing Details
+                </h4>
+                <div className="space-y-2">
+                  {monthlyPricing && (
+                    <div className="text-sm text-black/80 font-mono">
+                      {monthlyPricing}
+                    </div>
+                  )}
+                  {nonprofitDiscount && (
+                    <div className="text-sm text-green-600 font-medium">
+                      Non-profit discount available
+                    </div>
+                  )}
+                  <a 
+                    href={nonprofitPricingUrl || website}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-black/70 hover:text-black/90 underline transition-colors"
+                  >
+                    View full pricing details
+                  </a>
+                </div>
               </div>
             </section>
 
@@ -173,14 +211,19 @@ export default function ToolPageTemplate({
                 href={nonprofitPricingUrl || website} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-sm text-gray-700 hover:text-gray-900 underline transition-colors font-medium"
+                className="block hover:text-gray-900 transition-colors"
               >
-                Get started
+                <h4 className="text-lg font-semibold text-black/80 mb-1">
+                  Get Started
+                </h4>
+                <p className="text-sm text-black/60">
+                  Begin your journey with {toolName} today
+                </p>
               </a>
             </section>
 
-						{/* Tool Tags */}
-						<section>
+            {/* Tool Tags */}
+            <section>
               <div className="space-y-2">
                 {tags.map((tag) => (
                   <div key={tag} className="text-sm text-black/70 border-l-2 border-gray-300 pl-2">
@@ -194,9 +237,6 @@ export default function ToolPageTemplate({
           <div className="col-span-2 space-y-14">
             {/* Overview Section */}
             <section>
-              <h3 className="text-2xl font-semibold tracking-tight mb-4 text-[#111]">
-                Overview
-              </h3>
               <div className="text-lg leading-relaxed text-black/80">
                 {sections.find(s => s.title === 'Description')?.content || sections[0]?.content}
               </div>
@@ -205,36 +245,19 @@ export default function ToolPageTemplate({
             {/* Pricing & Discounts Section */}
             <section>
               <h3 className="text-2xl font-semibold tracking-tight mb-4 text-[#111]">
-                Pricing & Non-Profit Discounts
+                Non-profit discount
               </h3>
               <div className="text-lg leading-relaxed text-black/80 space-y-4">
                 {nonprofitDiscount && (
-                  <div>
-                    <p><strong>Non-Profit Discount:</strong> {nonprofitDiscount}</p>
+                  <div className="font-semibold text-green-600">
+                    {nonprofitDiscount}
                   </div>
                 )}
-                {monthlyPricing && (
-                  <div>
-                    <p><strong>Monthly Pricing (AUD):</strong> {monthlyPricing}</p>
-                  </div>
-                )}
-                {pricingDetails && (
-                  <div>
-                    <h4 className="font-semibold mb-2">How to Apply for Non-Profit Pricing:</h4>
-                    <div className="whitespace-pre-line text-base">
-                      {pricingDetails.split('\n').map((line, index) => {
-                        if (line.includes('**How to apply:**')) {
-                          const parts = line.split('**How to apply:**');
-                          return (
-                            <div key={index}>
-                              {parts[0]}<strong>How to apply:</strong>{parts[1]}
-                            </div>
-                          );
-                        }
-                        return <div key={index}>{line}</div>;
-                      })}
-                    </div>
-                  </div>
+                {pricingDetails && renderedPricingDetails && (
+                  <div 
+                    className="prose prose-gray max-w-none text-base [&_a]:text-gray-700 [&_a:hover]:text-gray-900 [&_a]:underline [&_a]:transition-colors [&_strong]:font-semibold [&_p]:mb-2 [&_ul]:mb-2 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-1"
+                    dangerouslySetInnerHTML={{ __html: renderedPricingDetails }}
+                  />
                 )}
               </div>
               <div className="mt-6">
@@ -250,14 +273,15 @@ export default function ToolPageTemplate({
             </section>
 
             {/* HS Recommendation if available */}
-            {hsRecommendedDetails && (
+            {hsRecommendedDetails && renderedHsDetails && (
               <section>
                 <h3 className="text-2xl font-semibold tracking-tight mb-4 text-[#111]">
-                  Our Recommendation
+                  Our recommendation
                 </h3>
-                <div className="text-lg leading-relaxed text-black/80 whitespace-pre-line">
-                  {hsRecommendedDetails}
-                </div>
+                <div 
+                  className="prose prose-gray max-w-none text-lg leading-relaxed text-black/80 [&_a]:text-gray-700 [&_a:hover]:text-gray-900 [&_a]:underline [&_a]:transition-colors [&_strong]:font-semibold [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-2"
+                  dangerouslySetInnerHTML={{ __html: renderedHsDetails }}
+                />
               </section>
             )}
           </div>
