@@ -49,25 +49,20 @@ export default function ToolPage({ params }: { params: Params }) {
     });
   }
 
-  return (
-    <ToolPageTemplate
-      toolName={tool.name}
-      tags={[tool.category]}
-      sections={sections}
-      galleryImages={[
-        { id: 1, src: "https://picsum.photos/800/600?random=1", alt: tool.name },
-        { id: 2, src: "https://picsum.photos/800/600?random=2", alt: `${tool.name} - 2` },
-        { id: 3, src: "https://picsum.photos/800/600?random=3", alt: `${tool.name} - 3` },
-        { id: 4, src: "https://picsum.photos/800/600?random=4", alt: `${tool.name} - 4` }
-      ]}
-      website={tool.link}
-      monthlyPricing={tool.raw_pricing}
-      nonprofitDiscount={tool.non_profit_discount}
-      nonprofitPricingUrl={tool.non_profit_discount_link}
-      affiliateLink={tool.affiliate_link}
-      hsRecommended={tool.hs_recommended === 'Yes'}
-      pricingDetails={tool.pricing_details}
-      hsRecommendedDetails={tool.hs_recommended_details}
-    />
-  );
+	return (
+		<ToolPageTemplate
+			toolName={tool.name}
+			tags={[tool.category]}
+			sections={sections}
+      galleryImages={tool.gallery_images || []}
+			website={tool.link}
+			monthlyPricing={tool.raw_pricing}
+			nonprofitDiscount={tool.non_profit_discount}
+			nonprofitPricingUrl={tool.non_profit_discount_link}
+			affiliateLink={tool.affiliate_link}
+			hsRecommended={tool.hs_recommended === 'Yes'}
+			pricingDetails={tool.pricing_details}
+			hsRecommendedDetails={tool.hs_recommended_details}
+		/>
+	);
 }
