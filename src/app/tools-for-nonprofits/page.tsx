@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 import Container from "@/app/_components/Container";
@@ -54,7 +54,7 @@ const toolBelongsToCategory = (tool: Tool, categoryName: string): boolean => {
   return categories.includes(categoryName);
 };
 
-export default function ToolsPage() {
+function ToolsPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   
@@ -443,5 +443,33 @@ export default function ToolsPage() {
       <Swell dark />
       <Footer />
     </main>
+  );
+}
+
+function ToolsPageLoading() {
+  return (
+    <main className="bg-[#F7F2EE] text-black font-sans">
+      <Container>
+        <Header variant="light" />
+      </Container>
+      <Container>
+        <div className="py-8 md:py-12">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
+            Tools for non-profits
+          </h1>
+          <div className="h-1 w-24 bg-yellow-400 mt-4 mb-6 rounded-full"></div>
+        </div>
+      </Container>
+      <Swell dark />
+      <Footer />
+    </main>
+  );
+}
+
+export default function ToolsPage() {
+  return (
+    <Suspense fallback={<ToolsPageLoading />}>
+      <ToolsPageContent />
+    </Suspense>
   );
 }
