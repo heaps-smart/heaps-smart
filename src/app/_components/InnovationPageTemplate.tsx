@@ -23,7 +23,7 @@ type GalleryImage = {
 type Props = {
   pageTitle: string;
   tags: string[];
-  techStack: string[];
+  techStack: ReactNode[];
   sections: Section[];
   galleryImages: GalleryImage[];
   location: string;
@@ -243,10 +243,11 @@ export default function InnovationPageTemplate({
                 Core technologies
               </h4>
               <ul className="flex flex-col gap-1">
-                {techStack.map((tech) => (
+                {techStack.map((tech, index) => (
                   <li
-                    key={tech}
-                    className="text-base text-[#333] font-medium border-l-4 border-slate-300 pl-3 hover:text-gray-900 hover:border-slate-400 transition-colors block"                    >
+                    key={index}
+                    className="text-base text-[#333] font-medium border-l-4 border-slate-300 pl-3 hover:text-gray-900 hover:border-slate-400 transition-colors block"
+                  >
                     {tech}
                   </li>
                 ))}
