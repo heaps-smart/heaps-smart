@@ -1996,6 +1996,26 @@
     "hs_recommended_details": "n8n is a powerful automation tool for non-profits that want to connect different apps and systems without relying on expensive platforms. It's similar to Zapier in what it can do \u2014 moving data between tools, triggering emails, updating databases \u2014 but with more flexibility and no per-task pricing.\n\nWhere n8n really shines is if your non-profit has a tech-savvy team member or developer who can set up workflows. You can host it yourself for free, or use the cloud version, and it works with hundreds of tools like Airtable, Google Sheets, Mailchimp, and CRMs. We've used it to automate newsletters, sync volunteer sign-up data, and even route HR requests into Kanban boards.\n\nIt's not the best option if you're looking for a plug-and-play interface. But if you want full control over your automations and are ready to get a bit technical, n8n is one of the most affordable and flexible options out there.",
     "affiliate_link": "",
     "slug": "n8n",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/n8n.mp4",
+        "alt": "n8n interface video 1",
+        "type": "video"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/n8n-3.webp",
+        "alt": "n8n interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/n8n-2.webp",
+        "alt": "n8n interface screenshot 1",
+        "type": "image"
+      }
+    ],
     "description_singlepage": "n8n is an open-source automation tool that lets teams connect apps and create custom workflows without writing code. Non-profits use it to automate tasks like syncing contact forms with email lists or sending alerts when new donations come in."
   },
   {

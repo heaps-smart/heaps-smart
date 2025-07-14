@@ -60,8 +60,8 @@ export default function ToolsPage() {
   
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
-  
-  // Calculate allTags first so we can validate the category parameter
+
+  // Calculate allTags first
   const allTags = useMemo(() => {
     const allCategories = new Set<string>();
     toolsData.forEach((tool: Tool) => {
@@ -84,7 +84,7 @@ export default function ToolsPage() {
     }
     return null;
   });
-  
+
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);

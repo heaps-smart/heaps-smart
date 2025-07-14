@@ -8,5 +8,12 @@ export default async function markdownToHtml(markdown: string) {
     })
     .process(markdown);
   
-  return result.toString();
+
+  const htmlString = result.toString();
+  const updatedHtml = htmlString.replace(
+    /<a /g,
+    '<a target="_blank" rel="noopener noreferrer" '
+  );
+  
+  return updatedHtml;
 }
