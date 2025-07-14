@@ -354,7 +354,8 @@ function ToolsPageContent() {
             )}
           </div>
 
-          <div className="flex flex-wrap gap-3 mb-12">
+          {/* Desktop: Category Pills */}
+          <div className="hidden md:flex flex-wrap gap-3 mb-12  ">
             <button
               onClick={() => setSelectedTag(null)}
               className={`px-4 py-2 text-sm rounded-full font-medium transition-colors shadow ${
@@ -378,6 +379,33 @@ function ToolsPageContent() {
                 {tag}
               </button>
             ))}
+          </div>
+
+          {/* Mobile: Category Dropdown */}
+          <div className="md:hidden mb-12">
+            <label htmlFor="category-select" className="block text-sm font-medium text-black/70 mb-3">
+              Filter by category:
+            </label>
+            <select
+              id="category-select"
+              value={selectedTag || ""}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value === "") {
+                  setSelectedTag(null);
+                } else {
+                  handleTagClick(value);
+                }
+              }}
+              className="w-full px-4 py-3 text-base border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 bg-white appearance-none cursor-pointer"
+            >
+              <option value="">All categories</option>
+              {allTags.map((tag) => (
+                <option key={tag} value={tag}>
+                  {tag}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
 
@@ -426,14 +454,14 @@ function ToolsPageContent() {
           ))}
         </div>
 
-        <div className={`bg-white p-8 rounded-lg ${shadowClass} mb-16 border border-gray-200`}>
+        <div className="bg-white p-8 rounded-lg shadow-sm mb-16 border border-gray-200">
           <h2 className="text-2xl font-semibold mb-4 text-black/80">Need help choosing the right tools?</h2>
           <p className="mb-6 text-black/70 leading-relaxed">
             Every organisation has unique needs. We can help you select and implement the right tools for your specific requirements.
           </p>
           <Link
             href="/contact"
-            className={`inline-block px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-medium rounded-lg transition-colors focus:outline-none ${shadowClass}`}
+            className="inline-block px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-medium rounded-lg transition-colors focus:outline-none shadow-sm hover:shadow-md"
           >
             Get in touch →
           </Link>
