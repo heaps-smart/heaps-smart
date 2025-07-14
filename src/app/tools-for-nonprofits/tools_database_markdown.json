@@ -3,7 +3,7 @@
     "name": "1Password",
     "link": "https://1password.com",
     "category": "Password Management",
-    "description": "Securely stores team passwords and sensitive documents — perfect for sharing login access to donor platforms without risk.",
+    "description": "Securely stores team passwords and sensitive documents \u2014 perfect for sharing login access to donor platforms without risk.",
     "monthly_pricing_aud": "$5",
     "raw_pricing": "$",
     "non_profit_discount": "Up to 50% off for non-profits",
@@ -39,7 +39,7 @@
     "name": "Airtable",
     "link": "https://airtable.com",
     "category": "Data Management",
-    "description": "Combines spreadsheet simplicity with database power — ideal for tracking volunteer applications or event RSVPs.",
+    "description": "Combines spreadsheet simplicity with database power \u2014 ideal for tracking volunteer applications or event RSVPs.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$",
     "non_profit_discount": "50% off Team plans for non-profits",
@@ -75,7 +75,7 @@
     "name": "Asana",
     "link": "https://asana.com",
     "category": "Project Management",
-    "description": "Helps teams manage projects and tasks — for example, planning a fundraising campaign from idea to launch.",
+    "description": "Helps teams manage projects and tasks \u2014 for example, planning a fundraising campaign from idea to launch.",
     "monthly_pricing_aud": "$21",
     "raw_pricing": "$$$",
     "non_profit_discount": "50% off for non-profits",
@@ -91,6 +91,12 @@
         "src": "/assets/img/tools-for-nonprofits/asana-ui-2.webp",
         "alt": "Asana interface screenshot 1",
         "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/asana-ui.gif",
+        "alt": "Asana interface screenshot 2",
+        "type": "image"
       }
     ],
     "description_singlepage": "Asana is a project management tool that helps teams plan, track and manage their work. Non-profits use it to stay on top of campaigns, events or funding deadlines with clear tasks and timelines."
@@ -99,7 +105,7 @@
     "name": "Balsamiq",
     "link": "https://balsamiq.com",
     "category": "Design",
-    "description": "Quickly creates wireframes and mockups — useful when scoping a new website or donor portal.",
+    "description": "Quickly creates wireframes and mockups \u2014 useful when scoping a new website or donor portal.",
     "monthly_pricing_aud": "$19",
     "raw_pricing": "$$$",
     "non_profit_discount": "Free for non-profits",
@@ -112,8 +118,20 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/balsamiq-ui.webp",
+        "src": "/assets/img/tools-for-nonprofits/balsamiq-drag-and-drop.gif",
         "alt": "Balsamiq interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/balsamiq-ui-2.webp",
+        "alt": "Balsamiq interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/balsamiq-ui.webp",
+        "alt": "Balsamiq interface screenshot 3",
         "type": "image"
       }
     ],
@@ -133,7 +151,15 @@
     "hs_recommended_details": "We love Canva because it's so versatile. Whether we're designing posters, presentations, videos or social posts, it's a one-stop shop. The fact that it's completely free for nonprofits is a huge win, and we love how easy their end-to-end features like the Print Shop are, making designing and printing assets for events and fundraising easy-breezy. That said, we do wish it were a bit easier to navigate. For what it offers, it's an amazing tool we turn to daily.",
     "affiliate_link": "N/A - Canva have stopped their affiliate program",
     "slug": "canva",
-    "description_singlepage": "Canva is a graphic design tool that makes it easy to create posters, social media posts, presentations and more. Non-profits use it to design professional-looking materials without needing a designer on staff."
+    "description_singlepage": "Canva is a graphic design tool that makes it easy to create posters, social media posts, presentations and more. Non-profits use it to design professional-looking materials without needing a designer on staff.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/canva-walkthru.mp4",
+        "alt": "Canva interface screenshot 1",
+        "type": "video"
+      }
+    ]
   },
   {
     "name": "ChatGPT",
@@ -161,6 +187,12 @@
         "src": "/assets/img/tools-for-nonprofits/chat-gpt-tools.webp",
         "alt": "ChatGPT interface screenshot 2",
         "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/chat-gpt-ui.mp4",
+        "alt": "ChatGPT interface screenshot 3",
+        "type": "video"
       }
     ],
     "description_singlepage": "ChatGPT is an AI-powered assistant that can help you write, edit and brainstorm content easily. Non-profits use it to draft grant applications, generate social media posts or personalise communications."
@@ -169,7 +201,7 @@
     "name": "Chuffed",
     "link": "https://chuffed.org",
     "category": "Fundraising",
-    "description": "A crowdfunding platform built for social causes — great for running a grassroots campaign to fund a specific local project.",
+    "description": "A crowdfunding platform built for social causes \u2014 great for running a grassroots campaign to fund a specific local project.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "No platform fees for non-profits",
@@ -205,7 +237,7 @@
     "name": "ClickUp",
     "link": "https://clickup.com",
     "category": "Project Management",
-    "description": "All-in-one task and project management platform — perfect for coordinating a small team's outreach, admin, and reporting tasks.",
+    "description": "All-in-one task and project management platform \u2014 perfect for coordinating a small team's outreach, admin, and reporting tasks.",
     "monthly_pricing_aud": "$16",
     "raw_pricing": "$$",
     "non_profit_discount": "10 free seats and 70% off additional seats for non-profits",
@@ -241,7 +273,7 @@
     "name": "Copper",
     "link": "https://copper.com",
     "category": "CRM",
-    "description": "A lightweight CRM that integrates seamlessly with Google Workspace — useful for tracking supporter engagement directly from Gmail.",
+    "description": "A lightweight CRM that integrates seamlessly with Google Workspace \u2014 useful for tracking supporter engagement directly from Gmail.",
     "monthly_pricing_aud": "$36",
     "raw_pricing": "$$$",
     "non_profit_discount": "",
@@ -254,14 +286,20 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/copper-quick-actions.webp",
+        "src": "/assets/img/tools-for-nonprofits/copper-mobile-talk-to-text.gif",
         "alt": "Copper interface screenshot 1",
         "type": "image"
       },
       {
         "id": 2,
-        "src": "/assets/img/tools-for-nonprofits/copper-ui-1.webp",
+        "src": "/assets/img/tools-for-nonprofits/copper-quick-actions.webp",
         "alt": "Copper interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/copper-ui-1.webp",
+        "alt": "Copper interface screenshot 3",
         "type": "image"
       }
     ],
@@ -271,7 +309,7 @@
     "name": "Google Gemini",
     "link": "https://gemini.google.com",
     "category": "AI Assistant",
-    "description": "AI assistant for generating reports, drafting documents, or brainstorming project ideas — ideal for overstretched teams.",
+    "description": "AI assistant for generating reports, drafting documents, or brainstorming project ideas \u2014 ideal for overstretched teams.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$",
     "non_profit_discount": "75% off plans for non-profits upgrading for AI features",
@@ -287,7 +325,7 @@
     "name": "Ghost.org",
     "link": "https://ghost.org",
     "category": "Website Builder",
-    "description": "Simple, elegant platform for publishing blog posts or newsletters — great for showcasing impact stories on your website.",
+    "description": "Simple, elegant platform for publishing blog posts or newsletters \u2014 great for showcasing impact stories on your website.",
     "monthly_pricing_aud": "$31",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Self-hosting is free (open-source)",
@@ -303,6 +341,12 @@
         "src": "/assets/img/tools-for-nonprofits/ghost-org-themes.webp",
         "alt": "Ghost.org interface screenshot 1",
         "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/ghost-org-vid.mp4",
+        "alt": "Ghost.org interface screenshot 2",
+        "type": "video"
       }
     ],
     "description_singlepage": "Ghost is an open-source publishing platform for creating blogs, newsletters and websites. Non-profits use it to share stories, updates and campaign news with supporters in a clean, professional format."
@@ -311,7 +355,7 @@
     "name": "GiveNow",
     "link": "https://givenow.com.au",
     "category": "Fundraising",
-    "description": "Free platform for collecting online donations — ideal for small Australian charities wanting to fundraise without monthly fees.",
+    "description": "Free platform for collecting online donations \u2014 ideal for small Australian charities wanting to fundraise without monthly fees.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "Lower transaction fees (~1.75%) for non-profits",
@@ -341,18 +385,18 @@
         "type": "image"
       }
     ],
-    "description_singlepage": "GiveNow is an online donation platform that enables secure one‑off and recurring gifts directly on your website. Non‑profits use it to streamline fundraising and make it easy for supporters to give at any time."
+    "description_singlepage": "GiveNow is an online donation platform that enables secure one\u2011off and recurring gifts directly on your website. Non\u2011profits use it to streamline fundraising and make it easy for supporters to give at any time."
   },
   {
     "name": "GoFundMe",
     "link": "https://gofundme.com",
     "category": "Fundraising",
-    "description": "Crowdfunding tool for one-off campaigns — great for rallying community support after an emergency or local crisis.",
+    "description": "Crowdfunding tool for one-off campaigns \u2014 great for rallying community support after an emergency or local crisis.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "Lower transaction fees (2.2% + $0.30) for non-profits",
     "non_profit_discount_link": "https://www.gofundme.com/c/charity-fundraising",
-    "pricing_details": "Non-profits can apply for GoFundMe's non-profit program to create a free page, enabling direct donations, supporter-led fundraising, and access to donor insights.\n\n**How to apply:**\n- Visit the GoFundMe for Non-profits page  \n- Click “[Claim my Non-profit Page](https://www.gofundme.com/sign-up?redirect=/charity-sign-up)” and create an account  \n- Submit the requested documentation to verify your non-profit status  \n- Once approved (typically within 1–2 business days), your non-profit page will be live, and you can start fundraising immediately  \n\n\nNote: GoFundMe charges no platform fees for non-profits; however, standard payment processing fees apply (typically 2.2%–2.5% + $0.30 per transaction). Donors are also invited to leave an optional tip to support GoFundMe's operations.",
+    "pricing_details": "Non-profits can apply for GoFundMe's non-profit program to create a free page, enabling direct donations, supporter-led fundraising, and access to donor insights.\n\n**How to apply:**\n- Visit the GoFundMe for Non-profits page  \n- Click \u201c[Claim my Non-profit Page](https://www.gofundme.com/sign-up?redirect=/charity-sign-up)\u201d and create an account  \n- Submit the requested documentation to verify your non-profit status  \n- Once approved (typically within 1\u20132 business days), your non-profit page will be live, and you can start fundraising immediately  \n\n\nNote: GoFundMe charges no platform fees for non-profits; however, standard payment processing fees apply (typically 2.2%\u20132.5% + $0.30 per transaction). Donors are also invited to leave an optional tip to support GoFundMe's operations.",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "",
@@ -377,18 +421,18 @@
         "type": "image"
       }
     ],
-    "description_singlepage": "GoFundMe is a personal and cause-driven crowdfunding platform for individuals, charities and community projects. Non‑profits use it to raise funds for initiatives like hardship relief, special events or community outreach campaigns."
+    "description_singlepage": "GoFundMe is a personal and cause-driven crowdfunding platform for individuals, charities and community projects. Non\u2011profits use it to raise funds for initiatives like hardship relief, special events or community outreach campaigns."
   },
   {
     "name": "Google Maps",
     "link": "https://developers.google.com",
     "category": "Mapping",
-    "description": "Embeds interactive maps on your website — helpful for showing project locations or listing environmental restoration sites.",
+    "description": "Embeds interactive maps on your website \u2014 helpful for showing project locations or listing environmental restoration sites.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": " USD $250/month in credits for non-profits",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Maps Platform credits through the Google for non-profits programme, receiving up to USD $250/month in Maps API credit to help build location-based services and tools.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Maps Platform credits through the Google for non-profits programme, receiving up to USD $250/month in Maps API credit to help build location-based services and tools.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Maps Platform can be a powerful resource for non-profits working with place-based data. We've used the Maps API in our citizen science apps and community reporting forms, helping people log sightings, issues, or activities in specific locations. It's also useful for building maps of service areas, visualising impact, or helping donors and volunteers find local projects. The $250 USD monthly credit through Google for Nonprofits covers a lot of usage, especially for small to medium-scale projects. There is some setup involved, and you may need a developer to get started, but once it's in place, it opens up a lot of possibilities for interactive, map-based tools.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -396,15 +440,27 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/google-maps-ui-1.webp",
+        "src": "/assets/img/tools-for-nonprofits/google-maps-sightings.mp4",
         "alt": "Google Maps interface screenshot 1",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 2,
-        "src": "/assets/img/tools-for-nonprofits/google-maps-ui-2.webp",
+        "src": "/assets/img/tools-for-nonprofits/google-maps-ui-1.webp",
         "alt": "Google Maps interface screenshot 2",
         "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/google-maps-ui-2.webp",
+        "alt": "Google Maps interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/google-maps-ui.mp4",
+        "alt": "Google Maps interface screenshot 4",
+        "type": "video"
       }
     ],
     "description_singlepage": "Google Maps is a tool that lets you add interactive maps and location features to websites or apps. Non-profits use it to show project locations, help people find nearby services or map out conservation areas."
@@ -413,87 +469,193 @@
     "name": "Google Meet",
     "link": "https://meet.google.com/",
     "category": "Communication",
-    "description": "Simple, secure video meetings — used by remote teams or volunteer coordinators to host planning sessions and interviews.",
+    "description": "Simple, secure video meetings \u2014 used by remote teams or volunteer coordinators to host planning sessions and interviews.",
     "monthly_pricing_aud": "$9",
     "raw_pricing": "$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Meet is a reliable, no-fuss video conferencing tool that's included for free with Google Workspace for Nonprofits. It works seamlessly with other Google tools like Calendar and Gmail, so scheduling and joining meetings is simple for staff, volunteers, and board members. It's a solid choice for team check-ins, remote collaboration, or even hosting webinars. If you've activated Gemini in your Workspace, you can also access features like live transcription, recordings, and AI-generated summaries. This is especially useful for governance meetings, saving time on note-taking and follow-ups. For non-profits already using Google tools, it's an easy win.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "google-meet",
-    "description_singlepage": "Google Meet is a video conferencing tool that's part of Google Workspace. Non-profits use it to run virtual meetings, workshops or volunteer catch-ups from anywhere."
+    "description_singlepage": "Google Meet is a video conferencing tool that's part of Google Workspace. Non-profits use it to run virtual meetings, workshops or volunteer catch-ups from anywhere.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/google-meet-gayle.mp4",
+        "alt": "Google Meet interface screenshot 1",
+        "type": "video"
+      }
+    ]
   },
   {
     "name": "Google Gmail",
     "link": "https://mail.google.com",
     "category": "Communication",
-    "description": "Email platform for daily communication — commonly used by non-profits to manage donor, partner, and internal emails.",
+    "description": "Email platform for daily communication \u2014 commonly used by non-profits to manage donor, partner, and internal emails.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Gmail is included for free with Google Workspace for Nonprofits, and it's much more than just email. It gives your team a professional setup with the option to use your own domain (like info@yourorganisation.org) instead of a personal @gmail.com address, which is great for building trust and keeping things consistent. It's easy to manage even without an IT team, and perfect for onboarding staff, volunteers, or board members.\n\nBeyond email, Gmail comes with useful built-in features like templates for no-code newsletters and event invites, automated filters and labels, and scheduled sending. It connects seamlessly with Google Calendar and Drive, making it simple to stay organised and collaborative. If you're still using personal email accounts to run your non-profit, this is an easy and free upgrade that makes a big difference.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "google-gmail",
-    "description_singlepage": "Gmail is the email service in Google Workspace that lets teams send and receive communications. Non-profits use it to coordinate with volunteers, share news and manage correspondence."
+    "description_singlepage": "Gmail is the email service in Google Workspace that lets teams send and receive communications. Non-profits use it to coordinate with volunteers, share news and manage correspondence.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/google-gmail-1.webp",
+        "alt": "Google Gmail interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/google-gmail-2.webp",
+        "alt": "Google Gmail interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/google-gmail-3.webp",
+        "alt": "Google Gmail interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Google Sheets",
     "link": "https://sheets.google.com",
     "category": "Data Management",
-    "description": "Versatile spreadsheet tool for budgets, tracking impact, or maintaining mailing lists — easy to share with collaborators.",
+    "description": "Versatile spreadsheet tool for budgets, tracking impact, or maintaining mailing lists \u2014 easy to share with collaborators.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Ah, Sheets! One of our favourite tools. Google Sheets is more than just a spreadsheet. It can be a database, a planning tool, a reporting dashboard, or an organising space for anything your non-profit needs. You can use it to manage volunteer rosters, grant pipelines, contact lists, budgets, project plans, or survey responses. And because it's part of Google Workspace for Nonprofits, it's free and integrates easily with Gmail, Forms, Calendar, and Drive.\n\nOne of the best things about Sheets is how easily it connects with other platforms. It works with hundreds of automation tools, so you can pull in data from forms, sync with email lists, or trigger actions without writing any code. If your organisation doesn't need a full CRM, Sheets is often more than enough. It's flexible, powerful, and easy for anyone on your team to use.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "google-sheets",
-    "description_singlepage": "Google Sheets is a spreadsheet tool in Google Workspace that lets teams organise and share data online. Non-profits use it to track budgets, manage contact lists or collect form responses in real time."
+    "description_singlepage": "Google Sheets is a spreadsheet tool in Google Workspace that lets teams organise and share data online. Non-profits use it to track budgets, manage contact lists or collect form responses in real time.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/google-sheets-1.webp",
+        "alt": "Google Sheets interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/google-sheets-2.webp",
+        "alt": "Google Sheets interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/google-sheets-3.webp",
+        "alt": "Google Sheets interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/google-sheets-4.webp",
+        "alt": "Google Sheets interface screenshot 4",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Google Forms",
     "link": "https://forms.google.com",
     "category": "Form Builder",
-    "description": "Creates surveys and forms — perfect for volunteer sign-ups, event RSVPs, or collecting post-program feedback.",
+    "description": "Creates surveys and forms \u2014 perfect for volunteer sign-ups, event RSVPs, or collecting post-program feedback.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "Google Forms is one of the simplest and most useful tools available to non-profits. Whether you're collecting RSVPs, feedback, volunteer sign-ups, survey responses, or grant data, it just works. It's easy to set up, easy to share, and all the responses feed straight into a connected Google Sheet. That makes reporting and follow-up a breeze, especially when combined with automation tools or conditional logic.\n\nIt's included for free as part of Google Workspace for Nonprofits, so there's no cost barrier to getting started. The only thing we don't love is the limited design options — your forms won't win any style awards. But for functionality, flexibility, and ease of use, it's hard to beat. If your organisation needs to collect information from your community or team, Forms is a great place to start.",
+    "hs_recommended_details": "Google Forms is one of the simplest and most useful tools available to non-profits. Whether you're collecting RSVPs, feedback, volunteer sign-ups, survey responses, or grant data, it just works. It's easy to set up, easy to share, and all the responses feed straight into a connected Google Sheet. That makes reporting and follow-up a breeze, especially when combined with automation tools or conditional logic.\n\nIt's included for free as part of Google Workspace for Nonprofits, so there's no cost barrier to getting started. The only thing we don't love is the limited design options \u2014 your forms won't win any style awards. But for functionality, flexibility, and ease of use, it's hard to beat. If your organisation needs to collect information from your community or team, Forms is a great place to start.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "google-forms",
-    "description_singlepage": "Google Forms is a forms builder in Google Workspace that teams use to create surveys, sign-up forms and feedback questionnaires. Non-profits use it to collect volunteer information, event RSVPs or community feedback (right into Google Sheets!)."
+    "description_singlepage": "Google Forms is a forms builder in Google Workspace that teams use to create surveys, sign-up forms and feedback questionnaires. Non-profits use it to collect volunteer information, event RSVPs or community feedback (right into Google Sheets!).",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/google-forms-1.webp",
+        "alt": "Google Forms interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/google-forms-3.webp",
+        "alt": "Google Forms interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/google-forms-gemini-create.mp4",
+        "alt": "Google Forms interface screenshot 3",
+        "type": "video"
+      }
+    ]
   },
   {
     "name": "Google Drive",
     "link": "https://drive.google.com",
     "category": "Knowledge Management",
-    "description": "Cloud storage that keeps files organised and accessible — useful for storing funding applications, reports, and assets in one place.",
+    "description": "Cloud storage that keeps files organised and accessible \u2014 useful for storing funding applications, reports, and assets in one place.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Drive is a must-have for non-profits that need a simple, secure place to store and share their files. It comes free with Google Workspace for Nonprofits and helps teams keep everything in one place, whether you're managing funding applications, photos from events, policies, or meeting notes.\n\nYou can organise files into shared folders for staff, volunteers, or board members, and control who can view or edit each item. It's especially handy for remote teams or part-time staff who need access to documents without digging through inboxes or hard drives. You can also collaborate in real time on Docs, Sheets, and Slides, which means no more version control issues or lost changes.\n\nIt's easy to use, works on any device, and reduces the need for expensive file storage or clunky email chains. If your non-profit is still juggling USB sticks or shared desktop folders, Google Drive is a simple step forward.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "google-drive",
-    "description_singlepage": "Google Drive is a cloud storage tool in Google Workspace where teams can save, share and work on files together online. Non-profits use it to keep documents, photos and project plans organised and easy to access from anywhere."
+    "description_singlepage": "Google Drive is a cloud storage tool in Google Workspace where teams can save, share and work on files together online. Non-profits use it to keep documents, photos and project plans organised and easy to access from anywhere.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/google-drive-1.gif",
+        "alt": "Google Drive interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/google-drive-2.webp",
+        "alt": "Google Drive interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/google-drive-3.webp",
+        "alt": "Google Drive interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/google-drive-4.webp",
+        "alt": "Google Drive interface screenshot 4",
+        "type": "image"
+      },
+      {
+        "id": 5,
+        "src": "/assets/img/tools-for-nonprofits/google-drive-5.webp",
+        "alt": "Google Drive interface screenshot 5",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Hootsuite",
     "link": "https://hootsuite.com",
     "category": "Social Media Management",
-    "description": "Schedules and monitors social media posts — helps comms teams plan consistent messaging across platforms.",
+    "description": "Schedules and monitors social media posts \u2014 helps comms teams plan consistent messaging across platforms.",
     "monthly_pricing_aud": "$156",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Up to 75% off via HootGiving for non-profits",
@@ -503,13 +665,33 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "hootsuite",
-    "description_singlepage": "Hootsuite is a social media management tool that helps teams plan, schedule and monitor posts across multiple platforms. Non-profits use it to stay active online, share updates and track engagement all in one place."
+    "description_singlepage": "Hootsuite is a social media management tool that helps teams plan, schedule and monitor posts across multiple platforms. Non-profits use it to stay active online, share updates and track engagement all in one place.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/hootsuite-1.webp",
+        "alt": "Hootsuite interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/hootsuite-2.webp",
+        "alt": "Hootsuite interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/hootsuite-3.webp",
+        "alt": "Hootsuite interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "HubSpot",
     "link": "https://hubspot.com",
     "category": "CRM",
-    "description": "A CRM with built-in marketing tools — used by non-profits to track donor relationships and send automated email updates.",
+    "description": "A CRM with built-in marketing tools \u2014 used by non-profits to track donor relationships and send automated email updates.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "40% off for non profits",
@@ -545,7 +727,7 @@
     "name": "Humanitix",
     "link": "https://humanitix.com",
     "category": "Event Management",
-    "description": "Event ticketing platform that directs booking fees to charity — great for hosting fundraising dinners, workshops, or community events.",
+    "description": "Event ticketing platform that directs booking fees to charity \u2014 great for hosting fundraising dinners, workshops, or community events.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "Discounted booking fees for non-profits",
@@ -561,12 +743,12 @@
     "name": "Jotform",
     "link": "https://jotform.com",
     "category": "Form Builder",
-    "description": "Easy-to-use form builder for registrations, donations, or surveys — commonly used for collecting volunteer sign-ups or program feedback.",
+    "description": "Easy-to-use form builder for registrations, donations, or surveys \u2014 commonly used for collecting volunteer sign-ups or program feedback.",
     "monthly_pricing_aud": "$62",
     "raw_pricing": "$$$$",
     "non_profit_discount": "50% off all paid plans for non-profits",
     "non_profit_discount_link": "https://www.jotform.com/nonprofit/pricing/",
-    "pricing_details": "Non-profits can apply for Jotform's non-profit program to receive a 50% discount on Bronze, Silver, or Gold plans.\n\n**How to apply:**\n- Set up your free Jotform account  \n- Visit the [Jotform non-profit Pricing page](https://www.jotform.com/nonprofit/pricing/)  \n- Click “Claim Your Discount” and complete the application form, including proof of your non-profit status  \n- Once verified (typically within 24–48 hours), Jotform will apply the discount to your account and notify you by email  ",
+    "pricing_details": "Non-profits can apply for Jotform's non-profit program to receive a 50% discount on Bronze, Silver, or Gold plans.\n\n**How to apply:**\n- Set up your free Jotform account  \n- Visit the [Jotform non-profit Pricing page](https://www.jotform.com/nonprofit/pricing/)  \n- Click \u201cClaim Your Discount\u201d and complete the application form, including proof of your non-profit status  \n- Once verified (typically within 24\u201348 hours), Jotform will apply the discount to your account and notify you by email  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "Can sign up here: https://www.jotform.com/partnership/affiliate/application/",
@@ -574,8 +756,14 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/jotform-ui-mobile.webp",
+        "src": "/assets/img/tools-for-nonprofits/jotform-templates.mp4",
         "alt": "Jotform interface screenshot 1",
+        "type": "video"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/jotform-ui-mobile.webp",
+        "alt": "Jotform interface screenshot 2",
         "type": "image"
       }
     ],
@@ -585,7 +773,7 @@
     "name": "Mailchimp",
     "link": "https://mailchimp.com",
     "category": "Email Management",
-    "description": "Email marketing platform to design, send, and track campaigns — perfect for monthly donor updates or appeal drives.",
+    "description": "Email marketing platform to design, send, and track campaigns \u2014 perfect for monthly donor updates or appeal drives.",
     "monthly_pricing_aud": "$21",
     "raw_pricing": "$$$",
     "non_profit_discount": "15% off for non-profits",
@@ -615,7 +803,7 @@
     "name": "MailPoet",
     "link": "https://mailpoet.com",
     "category": "Email Management",
-    "description": "WordPress plugin for sending newsletters and automations — great for small non-profits managing emails directly from their website.",
+    "description": "WordPress plugin for sending newsletters and automations \u2014 great for small non-profits managing emails directly from their website.",
     "monthly_pricing_aud": "$16",
     "raw_pricing": "$$",
     "non_profit_discount": "20% off for non-profits",
@@ -625,18 +813,38 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "mailpoet",
-    "description_singlepage": "MailPoet is an email plugin for WordPress that lets teams design and send newsletters straight from their own site. Non-profits use it to share news and donation appeals with supporters without leaving the WordPress dashboard."
+    "description_singlepage": "MailPoet is an email plugin for WordPress that lets teams design and send newsletters straight from their own site. Non-profits use it to share news and donation appeals with supporters without leaving the WordPress dashboard.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/mailpoet-1.webp",
+        "alt": "MailPoet interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/mailpoet-2.webp",
+        "alt": "MailPoet interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/mailpoet-3.webp",
+        "alt": "MailPoet interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Microsoft Teams",
     "link": "https://microsoft.com",
     "category": "Communication",
-    "description": "Communication and file-sharing hub — helps internal teams and boards stay connected across locations with chat and video.",
+    "description": "Communication and file-sharing hub \u2014 helps internal teams and boards stay connected across locations with chat and video.",
     "monthly_pricing_aud": "$6",
     "raw_pricing": "$$",
     "non_profit_discount": "10 free seats with discounts for additional users for non-profits",
     "non_profit_discount_link": "https://www.microsoft.com/en-us/nonprofits/microsoft-365",
-    "pricing_details": "Non-profits can apply for Microsoft's non-profit program to receive free and discounted access to Microsoft 365, Azure, Dynamics 365, and other cloud services. Eligible organisations may receive grants for Microsoft 365 Business Basic (up to 300 users) and discounts of up to 75% on Microsoft 365 Business Premium and other plans.\n\n**How to apply:**\n- Visit the Microsoft Non-profits Portal  \n- Click “Register Now” to begin the application process  \n- Provide details about your organisation, including proof of non-profit status (e.g., charity registration or equivalent documentation)  \n- Microsoft will verify your eligibility, often in partnership with TechSoup  \n- Once approved (typically within 3–7 business days), you can access grants and discounts through your non-profit dashboard  ",
+    "pricing_details": "Non-profits can apply for Microsoft's non-profit program to receive free and discounted access to Microsoft 365, Azure, Dynamics 365, and other cloud services. Eligible organisations may receive grants for Microsoft 365 Business Basic (up to 300 users) and discounts of up to 75% on Microsoft 365 Business Premium and other plans.\n\n**How to apply:**\n- Visit the Microsoft Non-profits Portal  \n- Click \u201cRegister Now\u201d to begin the application process  \n- Provide details about your organisation, including proof of non-profit status (e.g., charity registration or equivalent documentation)  \n- Microsoft will verify your eligibility, often in partnership with TechSoup  \n- Once approved (typically within 3\u20137 business days), you can access grants and discounts through your non-profit dashboard  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "",
@@ -667,28 +875,48 @@
     "name": "Monday.com",
     "link": "https://monday.com",
     "category": "CRM",
-    "description": "Visual project and task management tool — ideal for organising campaigns, grant applications, or team workflows.",
+    "description": "Visual project and task management tool \u2014 ideal for organising campaigns, grant applications, or team workflows.",
     "monthly_pricing_aud": "$19",
     "raw_pricing": "$$$",
     "non_profit_discount": "10 free Pro seats with 70% off additional seats for non-profits",
     "non_profit_discount_link": "https://monday.com/nonprofits",
-    "pricing_details": "Non-profits can apply for monday.com's non-profit program to receive 10 free Pro plan seats and a 70% discount on additional seats.\n\n**How to apply:**\n- Set up your free monday.com account  \n- Visit the [monday.com non-profit page](https://monday.com/nonprofits)  \n- Click “Check your eligibility” and complete the application form with your organisation's details and proof of non-profit status  \n- Once verified (typically within 2–3 business days), monday.com will apply the non-profit plan to your account and notify you by email  ",
+    "pricing_details": "Non-profits can apply for monday.com's non-profit program to receive 10 free Pro plan seats and a 70% discount on additional seats.\n\n**How to apply:**\n- Set up your free monday.com account  \n- Visit the [monday.com non-profit page](https://monday.com/nonprofits)  \n- Click \u201cCheck your eligibility\u201d and complete the application form with your organisation's details and proof of non-profit status  \n- Once verified (typically within 2\u20133 business days), monday.com will apply the non-profit plan to your account and notify you by email  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "Pending Via Partnerstack",
     "slug": "monday",
-    "description_singlepage": "Monday.com is a CRM and project management tool that helps teams plan, track and manage their work with custom boards and workflows. Non-profits use it to organise campaigns, monitor grant progress or manage volunteer tasks in one visual place."
+    "description_singlepage": "Monday.com is a CRM and project management tool that helps teams plan, track and manage their work with custom boards and workflows. Non-profits use it to organise campaigns, monitor grant progress or manage volunteer tasks in one visual place.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/monday-com-1.webp",
+        "alt": "Monday.com interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/monday-com-2.webp",
+        "alt": "Monday.com interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/monday-com-3.webp",
+        "alt": "Monday.com interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Notion",
     "link": "https://notion.so",
     "category": "Knowledge Management",
-    "description": "All-in-one workspace for notes, databases, and wikis — used by non-profits to track goals, manage board documents, or plan events.",
+    "description": "All-in-one workspace for notes, databases, and wikis \u2014 used by non-profits to track goals, manage board documents, or plan events.",
     "monthly_pricing_aud": "$15",
     "raw_pricing": "$$",
     "non_profit_discount": "50% off Plus plan for non-profits",
     "non_profit_discount_link": "https://www.notion.com/nonprofits?utm_feeditemid=&utm_device=c&utm_term=&utm_source=Google&utm_medium=paidsearch&utm_campaign=RL_PMax_Global_EPD_MetadataAudiences&gad_source=1&gad_campaignid=22720918035&gbraid=0AAAAAot8BGXwBKRusq_ugG4eN_Moff0-c&gclid=CjwKCAjwsZPDBhBWEiwADuO6y18XCL9uHRs2mIuItbsklQkNw_lys2OImx5Nku3bFVyQ8HdKyAoBQxoCetEQAvD_BwE",
-    "pricing_details": "Non-profits can apply for Notion's non-profit program to receive 50% off the Plus plan.\n\n**How to apply:**\n- Set up your free Notion account  \n- Visit the [Notion for Nonprofits page](https://www.notion.com/nonprofits), click “[Apply now](https://www.techsoup.org/notion)”  \n- Complete the application form, which includes verifying your non-profit status  \n- Once verified (typically within 3–5 business days), you'll receive a unique discount code via email  \n- Apply the discount code to your Notion workspace to activate the 50% discount on the Plus Plan  ",
+    "pricing_details": "Non-profits can apply for Notion's non-profit program to receive 50% off the Plus plan.\n\n**How to apply:**\n- Set up your free Notion account  \n- Visit the [Notion for Nonprofits page](https://www.notion.com/nonprofits), click \u201c[Apply now](https://www.techsoup.org/notion)\u201d  \n- Complete the application form, which includes verifying your non-profit status  \n- Once verified (typically within 3\u20135 business days), you'll receive a unique discount code via email  \n- Apply the discount code to your Notion workspace to activate the 50% discount on the Plus Plan  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Notion is a flexible workspace tool that can be shaped to fit how your team works. For non-profits, that might mean building a central hub for policies and onboarding, tracking grant applications, managing content calendars, or keeping meeting notes and project plans in one place.\n\nIt's part document editor, part database, and part task manager, and it shines when you need one tool to do a bit of everything. We've seen non-profits use it to create public dashboards for transparency, internal knowledge bases, and even lightweight CRMs. The 50% nonprofit discount makes the paid plan more affordable, especially if you're working across multiple teams or want access to advanced features.\n\nIt can take a bit of experimentation to set up your workspace in a way that works for your team, but once it's in place, Notion becomes a calm, organised home base for everything you're working on.",
     "affiliate_link": "",
@@ -713,7 +941,7 @@
     "name": "Otter.ai",
     "link": "https://otter.ai",
     "category": "Transcription",
-    "description": "Records and transcribes meetings or interviews — useful for documenting board discussions or recording oral histories.",
+    "description": "Records and transcribes meetings or interviews \u2014 useful for documenting board discussions or recording oral histories.",
     "monthly_pricing_aud": "$16",
     "raw_pricing": "$$$",
     "non_profit_discount": "",
@@ -723,13 +951,33 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "otter-ai",
-    "description_singlepage": "Otter.ai is an AI-powered transcription tool that creates transcripts and summaries from meetings and recordings. Non-profits use it to capture verbal insights from volunteer debriefs, board meetings or community interviews and turn them into easy-to-share notes"
+    "description_singlepage": "Otter.ai is an AI-powered transcription tool that creates transcripts and summaries from meetings and recordings. Non-profits use it to capture verbal insights from volunteer debriefs, board meetings or community interviews and turn them into easy-to-share notes",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/otter-ai-1.webp",
+        "alt": "Otter.ai interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/otter-ai-2.webp",
+        "alt": "Otter.ai interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/otter-ai-3.webp",
+        "alt": "Otter.ai interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Queensland Globe",
     "link": "https://qldglobe.information.qld.gov.au",
     "category": "Mapping",
-    "description": "Interactive GIS tool for exploring local land, planning, and environmental data — ideal for conservation groups or advocacy mapping.",
+    "description": "Interactive GIS tool for exploring local land, planning, and environmental data \u2014 ideal for conservation groups or advocacy mapping.",
     "monthly_pricing_aud": "$0",
     "raw_pricing": "$",
     "non_profit_discount": "Free tool for all",
@@ -739,13 +987,27 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "queensland-globe",
-    "description_singlepage": "Queensland Globe is a free online mapping tool from the Queensland Government that shows spatial data like land use, topography and infrastructure. Non-profits use it to explore things like flood zones, property boundaries or conservation areas when planning local projects."
+    "description_singlepage": "Queensland Globe is a free online mapping tool from the Queensland Government that shows spatial data like land use, topography and infrastructure. Non-profits use it to explore things like flood zones, property boundaries or conservation areas when planning local projects.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/queensland-globe-1.webp",
+        "alt": "Queensland Globe interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/queensland-globe-2.webp",
+        "alt": "Queensland Globe interface screenshot 2",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Raisely",
     "link": "https://raisely.com",
     "category": "Fundraising",
-    "description": "All-in-one fundraising platform — great for running donation campaigns, peer-to-peer events, or long-term supporter drives.",
+    "description": "All-in-one fundraising platform \u2014 great for running donation campaigns, peer-to-peer events, or long-term supporter drives.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "Free for non-profits",
@@ -755,29 +1017,81 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "raisely",
-    "description_singlepage": "Raisely is an online fundraising platform that lets organisations build donation pages and campaigns without coding. Non-profits use it to run peer-to-peer events or regular giving drives and track donations in real time."
+    "description_singlepage": "Raisely is an online fundraising platform that lets organisations build donation pages and campaigns without coding. Non-profits use it to run peer-to-peer events or regular giving drives and track donations in real time.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/raisely-1-global-settings.webp",
+        "alt": "Raisely interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/raisely-2-express-donations.webp",
+        "alt": "Raisely interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/raisely-3-reports.webp",
+        "alt": "Raisely interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/raisely-4.gif",
+        "alt": "Raisely interface screenshot 4",
+        "type": "image"
+      },
+      {
+        "id": 5,
+        "src": "/assets/img/tools-for-nonprofits/raisely-5-settings.webp",
+        "alt": "Raisely interface screenshot 5",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Salesforce",
     "link": "https://salesforce.org",
     "category": "CRM",
-    "description": "Highly customisable CRM — ideal for large non-profits managing complex donor databases, grants, and outreach at scale.",
+    "description": "Highly customisable CRM \u2014 ideal for large non-profits managing complex donor databases, grants, and outreach at scale.",
     "monthly_pricing_aud": "$40",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Discounted through Salesforce.org",
     "non_profit_discount_link": "https://www.salesforce.com/nonprofit/",
-    "pricing_details": "Non-profits can apply for Salesforce's Power of Us program to receive 10 free Enterprise Edition licences and significant discounts on additional products and services.\n\n**How to apply:**\n- Visit the [Power of Us Program page](https://www.salesforce.com/company/power-of-us/)  \n- Click “Log in to apply” and sign in with your Trailblazer ID  \n- Complete the application form, providing details about your organisation and proof of non-profit status  \n- Once approved (typically within 2–3 weeks), you'll gain access to the Power of Us Portal to select your products and manage your subscriptions  ",
+    "pricing_details": "Non-profits can apply for Salesforce's Power of Us program to receive 10 free Enterprise Edition licences and significant discounts on additional products and services.\n\n**How to apply:**\n- Visit the [Power of Us Program page](https://www.salesforce.com/company/power-of-us/)  \n- Click \u201cLog in to apply\u201d and sign in with your Trailblazer ID  \n- Complete the application form, providing details about your organisation and proof of non-profit status  \n- Once approved (typically within 2\u20133 weeks), you'll gain access to the Power of Us Portal to select your products and manage your subscriptions  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "salesforce",
-    "description_singlepage": "Salesforce is a powerful customer relationship management (CRM) platform that helps manage supporter data, donations and communications. Large non-profits use it to build detailed records of donors, track engagement and run targeted fundraising campaigns."
+    "description_singlepage": "Salesforce is a powerful customer relationship management (CRM) platform that helps manage supporter data, donations and communications. Large non-profits use it to build detailed records of donors, track engagement and run targeted fundraising campaigns.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/salesforce-1.webp",
+        "alt": "Salesforce interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/salesforce-2.webp",
+        "alt": "Salesforce interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/salesforce-3.gif",
+        "alt": "Salesforce interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Sanity",
     "link": "https://sanity.io",
     "category": "Content Management",
-    "description": "Flexible content platform — used to manage dynamic web content like project updates, blog posts, or case studies collaboratively.",
+    "description": "Flexible content platform \u2014 used to manage dynamic web content like project updates, blog posts, or case studies collaboratively.",
     "monthly_pricing_aud": "$19",
     "raw_pricing": "$$$",
     "non_profit_discount": "Free Growth Plan for non-profits",
@@ -787,29 +1101,75 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "sanity",
-    "description_singlepage": "Sanity is a content management system (CMS) that lets teams structure, edit and publish content across websites and apps. Non-profits use it to manage website updates, share stories and keep information current without relying on a developer."
+    "description_singlepage": "Sanity is a content management system (CMS) that lets teams structure, edit and publish content across websites and apps. Non-profits use it to manage website updates, share stories and keep information current without relying on a developer.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/sanity-1.webp",
+        "alt": "Sanity interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/sanity-2.webp",
+        "alt": "Sanity interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/sanity-3.webp",
+        "alt": "Sanity interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Slack",
     "link": "https://slack.com",
     "category": "Communication",
-    "description": "Real-time messaging platform — useful for coordinating distributed teams, volunteers, and program leads in shared channels.",
+    "description": "Real-time messaging platform \u2014 useful for coordinating distributed teams, volunteers, and program leads in shared channels.",
     "monthly_pricing_aud": "$20",
     "raw_pricing": "$$$",
     "non_profit_discount": "Free upgrade to Pro plan for non-profits",
     "non_profit_discount_link": "https://slack.com/intl/en-gb/help/articles/204368833-Apply-for-the-Slack-for-Charities-discount",
-    "pricing_details": "Non-profits can apply for Slack's non-profit program to receive a free upgrade to the Pro plan for workspaces with up to 250 members, or an 85% discount on the Pro or Business+ plans for larger workspaces.\n\n**How to apply:**\n- Set up your [free Slack workspace](https://slack.com/intl/en-au/)  \n- Visit the [Slack for Nonprofits application page](https://slack.com/intl/en-gb/help/articles/204368833-Apply-for-the-Slack-for-Charities-discount)  \n- Complete the application form, providing details about your organisation and proof of nonprofit status  \n- Once verified (typically within 3–5 business days), Slack will apply the appropriate discount to your account and notify you by email  ",
+    "pricing_details": "Non-profits can apply for Slack's non-profit program to receive a free upgrade to the Pro plan for workspaces with up to 250 members, or an 85% discount on the Pro or Business+ plans for larger workspaces.\n\n**How to apply:**\n- Set up your [free Slack workspace](https://slack.com/intl/en-au/)  \n- Visit the [Slack for Nonprofits application page](https://slack.com/intl/en-gb/help/articles/204368833-Apply-for-the-Slack-for-Charities-discount)  \n- Complete the application form, providing details about your organisation and proof of nonprofit status  \n- Once verified (typically within 3\u20135 business days), Slack will apply the appropriate discount to your account and notify you by email  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "slack",
-    "description_singlepage": "Slack is a messaging tool for teams that brings conversations, files and updates together in one place. Non-profits use it to stay connected across teams, share quick updates and reduce email clutter."
+    "description_singlepage": "Slack is a messaging tool for teams that brings conversations, files and updates together in one place. Non-profits use it to stay connected across teams, share quick updates and reduce email clutter.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/slack-1-views.gif",
+        "alt": "Slack interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/slack-2-create-menu.gif",
+        "alt": "Slack interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/slack-3-workspace.gif",
+        "alt": "Slack interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/slack-4.webp",
+        "alt": "Slack interface screenshot 4",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Softr",
     "link": "https://softr.io",
     "category": "Website Builder",
-    "description": "No-code builder for websites and internal portals — perfect for creating a volunteer dashboard or project directory from Airtable data.",
+    "description": "No-code builder for websites and internal portals \u2014 perfect for creating a volunteer dashboard or project directory from Airtable data.",
     "monthly_pricing_aud": "$77",
     "raw_pricing": "$$$$",
     "non_profit_discount": "30% off for non-profits",
@@ -819,13 +1179,51 @@
     "hs_recommended_details": "",
     "affiliate_link": "Available in Partnerstack, need to have Softr products to showcase",
     "slug": "softr",
-    "description_singlepage": "Softr is a no-code website and app builder that turns Airtable data into interactive pages. Non-profits use it to create directories, member portals or project dashboards without needing to write code."
+    "description_singlepage": "Softr is a no-code website and app builder that turns Airtable data into interactive pages. Non-profits use it to create directories, member portals or project dashboards without needing to write code.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/softr-1.webp",
+        "alt": "Softr interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/softr-2.webp",
+        "alt": "Softr interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/softr-3.webp",
+        "alt": "Softr interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/softr-4.webp",
+        "alt": "Softr interface screenshot 4",
+        "type": "image"
+      },
+      {
+        "id": 5,
+        "src": "/assets/img/tools-for-nonprofits/softr-5.webp",
+        "alt": "Softr interface screenshot 5",
+        "type": "image"
+      },
+      {
+        "id": 6,
+        "src": "/assets/img/tools-for-nonprofits/softr-6.webp",
+        "alt": "Softr interface screenshot 6",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Square",
     "link": "https://squareup.com",
     "category": "Payments",
-    "description": "Point-of-sale and online payment solution — used at events, op shops, or donation stations to process payments quickly.",
+    "description": "Point-of-sale and online payment solution \u2014 used at events, op shops, or donation stations to process payments quickly.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "",
@@ -835,18 +1233,38 @@
     "hs_recommended_details": "We love Square for its transparent pricing and flexibility, especially for non-profits that need to take payments in different ways. The mobile app is a standout feature because you can take donations or sell merch straight from your phone without needing any extra equipment. This is especially useful at events, markets, or anywhere you're on the move.\n\nSquare also offers point-of-sale systems and terminals if you need something more permanent, but starting with the free app is a great option. It integrates with a wide range of other tools, so you can easily add secure payment processing to online forms, booking systems, or donation pages. ",
     "affiliate_link": "",
     "slug": "square",
-    "description_singlepage": "Square is a payment and point-of-sale tool that helps businesses and organisations take payments in person and online. Non-profits use it to sell merchandise, accept donations or run event payments with ease."
+    "description_singlepage": "Square is a payment and point-of-sale tool that helps businesses and organisations take payments in person and online. Non-profits use it to sell merchandise, accept donations or run event payments with ease.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/square-online-store.webp",
+        "alt": "Square interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/square-payment-types.webp",
+        "alt": "Square interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/square-pos.webp",
+        "alt": "Square interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Stripe",
     "link": "https://stripe.com",
     "category": "Payments",
-    "description": "Secure online payments platform — commonly used to accept one-off or recurring donations via a website or campaign page.",
+    "description": "Secure online payments platform \u2014 commonly used to accept one-off or recurring donations via a website or campaign page.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "Discounted transaction fees (~1.4% +30c) for non-profits",
     "non_profit_discount_link": "https://support.stripe.com/questions/fee-discount-for-nonprofit-organizations",
-    "pricing_details": "Non-profits can apply for Stripe's non-profit discount to receive reduced payment processing fees, helping to maximise the impact of online donations.\n\n**How to apply:**\n- Set up your free Stripe account  \n- Email nonprofit@stripe.com with the following information:  \n- Proof of your nonprofit status (e.g., ABN or a link to your listing on the ACNC register)  \n- Your Stripe account ID  \n- The primary email address associated with your Stripe account  \n- Confirmation that more than 80% of your payment volume will be tax-deductible donations  \n- Once verified (typically within 5–10 business days), Stripe will apply the discounted rates to your account and notify you by email  \n\nNote: In Australia, the discounted rate is 1.4% + A$0.30 for domestic Visa and MasterCard transactions. International and American Express transactions may incur higher fees. This discount applies only to donations; other transactions like ticket sales or membership fees are not eligible.",
+    "pricing_details": "Non-profits can apply for Stripe's non-profit discount to receive reduced payment processing fees, helping to maximise the impact of online donations.\n\n**How to apply:**\n- Set up your free Stripe account  \n- Email nonprofit@stripe.com with the following information:  \n- Proof of your nonprofit status (e.g., ABN or a link to your listing on the ACNC register)  \n- Your Stripe account ID  \n- The primary email address associated with your Stripe account  \n- Confirmation that more than 80% of your payment volume will be tax-deductible donations  \n- Once verified (typically within 5\u201310 business days), Stripe will apply the discounted rates to your account and notify you by email  \n\nNote: In Australia, the discounted rate is 1.4% + A$0.30 for domestic Visa and MasterCard transactions. International and American Express transactions may incur higher fees. This discount applies only to donations; other transactions like ticket sales or membership fees are not eligible.",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Stripe is a solid choice if your non-profit needs to accept payments online. It's especially useful for things like managing memberships, collecting donations through your website, or sending out invoices for programs or venue hire. You can set up recurring payments for monthly donors or create custom checkout pages without needing to build everything from scratch.\n\nWhat we like about Stripe is that it handles the complexity in the background and lets you focus on running your organisation. It connects easily with other tools you might already be using, and there's a nonprofit discount if most of your payments are donations.\n\nIt does require a bit of setup though, and if you're not comfortable with the tech side (or the financial side), you might want help from a developer or someone who's used it before. But once it's in place, it's reliable and flexible, and makes it easier to handle the financial side of things without a big admin burden.",
     "affiliate_link": "",
@@ -871,23 +1289,43 @@
     "name": "Tableau",
     "link": "https://tableau.com",
     "category": "Data Visualisation",
-    "description": "Data visualisation tool — turns program outcomes, survey data, or donor metrics into interactive, shareable dashboards.",
+    "description": "Data visualisation tool \u2014 turns program outcomes, survey data, or donor metrics into interactive, shareable dashboards.",
     "monthly_pricing_aud": "$111",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free licenses for non-profits",
     "non_profit_discount_link": "https://www.tableau.com/foundation/license-donations",
-    "pricing_details": "Non-profits can apply for Tableau's non-profit program to receive free Tableau Desktop licences, enabling them to visualise and analyse data to drive impact.\n\n**How to apply:**\n- Visit the Tableau Foundation Licence Donations page  \n- Click “Request donated licences” and complete the application form with your organisation's details  \n- Provide proof of your nonprofit status, such as a charity registration certificate  \n- Once verified (typically within 14 business days), Tableau will provide access to the donated licences and notify you by email  \n\nNote: Eligible organisations must be officially recognised as tax-exempt in their country, operate with an annual budget under $5 million, and not be a school, college, healthcare organisation, government agency, or religious organisation incorporated exclusively for the promotion of religion.",
+    "pricing_details": "Non-profits can apply for Tableau's non-profit program to receive free Tableau Desktop licences, enabling them to visualise and analyse data to drive impact.\n\n**How to apply:**\n- Visit the Tableau Foundation Licence Donations page  \n- Click \u201cRequest donated licences\u201d and complete the application form with your organisation's details  \n- Provide proof of your nonprofit status, such as a charity registration certificate  \n- Once verified (typically within 14 business days), Tableau will provide access to the donated licences and notify you by email  \n\nNote: Eligible organisations must be officially recognised as tax-exempt in their country, operate with an annual budget under $5 million, and not be a school, college, healthcare organisation, government agency, or religious organisation incorporated exclusively for the promotion of religion.",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "tableau",
-    "description_singlepage": "Tableau is a data visualisation and analytics tool that transforms raw data into interactive charts and dashboards. Non-profits use it to analyse impact data, donor trends or survey results and present insights clearly to stakeholders."
+    "description_singlepage": "Tableau is a data visualisation and analytics tool that transforms raw data into interactive charts and dashboards. Non-profits use it to analyse impact data, donor trends or survey results and present insights clearly to stakeholders.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/tableau-1.webp",
+        "alt": "Tableau interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/tableau-2.webp",
+        "alt": "Tableau interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/tableau-3.gif",
+        "alt": "Tableau interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Tactiq",
     "link": "https://tactiq.io",
     "category": "Transcription",
-    "description": "Captures and summarises video calls — helps staff quickly pull meeting notes or action items from board or partner calls.",
+    "description": "Captures and summarises video calls \u2014 helps staff quickly pull meeting notes or action items from board or partner calls.",
     "monthly_pricing_aud": "$13",
     "raw_pricing": "$$",
     "non_profit_discount": "",
@@ -897,29 +1335,81 @@
     "hs_recommended_details": "",
     "affiliate_link": "https://tactiq.io/?via=heaps-smart",
     "slug": "tactiq",
-    "description_singlepage": "Tactiq is a browser extension that captures transcripts and highlights from video meetings. Non-profits use it to save key discussion points and decisions from online meetings, making it easier to share meeting summaries with the whole team."
+    "description_singlepage": "Tactiq is a browser extension that captures transcripts and highlights from video meetings. Non-profits use it to save key discussion points and decisions from online meetings, making it easier to share meeting summaries with the whole team.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/tactiq-onboarding.webp",
+        "alt": "Tactiq interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/tactiq-prompts.webp",
+        "alt": "Tactiq interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/tactiq-recording.mp4",
+        "alt": "Tactiq interface screenshot 3",
+        "type": "video"
+      }
+    ]
   },
   {
     "name": "Tally Forms",
     "link": "https://tally.so",
     "category": "Form Builder",
-    "description": "Free, simple form builder — great for collecting volunteer interest, feedback, or workshop sign-ups without limits.",
+    "description": "Free, simple form builder \u2014 great for collecting volunteer interest, feedback, or workshop sign-ups without limits.",
     "monthly_pricing_aud": "$46",
     "raw_pricing": "$$$$",
     "non_profit_discount": "30% off an annual Pro license for non-profits",
     "non_profit_discount_link": "https://tally.so/help/tally-for-non-profit",
-    "pricing_details": "Non-profits can apply for Tally's non-profit program to receive a 30% lifetime discount on Tally Pro plans.\n\n**How to apply:**\n- Set up your [free Tally account](https://tally.cello.so/wJ2k6jDb1S8)  \n- Visit the [Tally for non-profit page](https://tally.so/help/tally-for-non-profit) and click “Apply here” and complete the application form  \n- Once verified, Tally will apply the discount to your account and notify you by email  ",
+    "pricing_details": "Non-profits can apply for Tally's non-profit program to receive a 30% lifetime discount on Tally Pro plans.\n\n**How to apply:**\n- Set up your [free Tally account](https://tally.cello.so/wJ2k6jDb1S8)  \n- Visit the [Tally for non-profit page](https://tally.so/help/tally-for-non-profit) and click \u201cApply here\u201d and complete the application form  \n- Once verified, Tally will apply the discount to your account and notify you by email  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Tally is one of our favourite tools. It's fresh, clean, and surprisingly powerful for something that feels so simple. It's perfect for non-profits that need to collect and work with data but don't want to deal with clunky, overcomplicated form builders.\n\nYou can use Tally to handle volunteer sign-ups, program evaluations, event RSVPs, grant reporting, or anything else where you need to gather structured information. Responses can be fed straight into spreadsheets or connected to other tools using integrations, so you don't end up copying and pasting between systems. It's especially handy when you want your forms to look good and feel easy for the people filling them out.\n\nTally offers a nonprofit discount too, which brings the cost down even further. If you've ever found yourself wrangling Google Forms or manually consolidating data from five places, Tally might be the clean slate you need.",
     "affiliate_link": "https://tally.cello.so/wJ2k6jDb1S8",
     "slug": "tally-forms",
-    "description_singlepage": "Tally is a simple online form builder that lets you create surveys, quizzes and signup forms without code. Non‑profits use it to gather feedback, collect event registrations or measure impact quickly and easily."
+    "description_singlepage": "Tally is a simple online form builder that lets you create surveys, quizzes and signup forms without code. Non\u2011profits use it to gather feedback, collect event registrations or measure impact quickly and easily.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/tally-simple-rsvp.mp4",
+        "alt": "Tally interface video 1",
+        "type": "video"
+      },
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/tally-1.webp",
+        "alt": "Tally Forms interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/tally-do-you-work-at-a-non-profit.mp4",
+        "alt": "Tally interface video 1",
+        "type": "video"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/tally-2.webp",
+        "alt": "Tally Forms interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/tally-3.webp",
+        "alt": "Tally Forms interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Trello",
     "link": "https://trello.com",
     "category": "Project Management",
-    "description": "Visual project management using cards and boards — ideal for tracking to-dos across fundraising, events, or programs.",
+    "description": "Visual project management using cards and boards \u2014 ideal for tracking to-dos across fundraising, events, or programs.",
     "monthly_pricing_aud": "$9",
     "raw_pricing": "$$",
     "non_profit_discount": "Generous free plan available for all",
@@ -949,29 +1439,49 @@
         "type": "image"
       }
     ],
-    "description_singlepage": "Trello is a visual task management tool that uses boards, lists and cards to help teams organise work. Non‑profits use it to track projects like event planning, volunteer coordination or grant applications with clear, flexible workflows."
+    "description_singlepage": "Trello is a visual task management tool that uses boards, lists and cards to help teams organise work. Non\u2011profits use it to track projects like event planning, volunteer coordination or grant applications with clear, flexible workflows."
   },
   {
     "name": "Twilio",
     "link": "https://twilio.org",
     "category": "Communication",
-    "description": "Communication API for SMS, calls, and WhatsApp — useful for sending donation reminders or event alerts to supporters.",
+    "description": "Communication API for SMS, calls, and WhatsApp \u2014 useful for sending donation reminders or event alerts to supporters.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "$500 credits for non-profits",
     "non_profit_discount_link": "https://www.twilio.org/en-us/support-and-resources/impact-access-program",
-    "pricing_details": "Non-profits can apply for Twilio's Impact Access Program to receive a one-time USD$100 product credit and ongoing discounts on Twilio services.\n\n**How to apply:**\n- Set up your free Twilio account  \n- Visit the [Impact Access Program page](https://www.twilio.org/en-us/support-and-resources/impact-access-program)  \n- Complete the application form with your organisation's details and proof of non-profit status  \n- Once verified (typically within 2–5 business days), Twilio will apply the credit and discounts to your account and notify you by email  ",
+    "pricing_details": "Non-profits can apply for Twilio's Impact Access Program to receive a one-time USD$100 product credit and ongoing discounts on Twilio services.\n\n**How to apply:**\n- Set up your free Twilio account  \n- Visit the [Impact Access Program page](https://www.twilio.org/en-us/support-and-resources/impact-access-program)  \n- Complete the application form with your organisation's details and proof of non-profit status  \n- Once verified (typically within 2\u20135 business days), Twilio will apply the credit and discounts to your account and notify you by email  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "twilio",
-    "description_singlepage": "Twilio is a cloud communications platform that enables sending texts, voice calls and emails via programmable APIs. Non‑profits use it to automate volunteer reminders, send donation acknowledgements or run SMS campaigns to engage their communities."
+    "description_singlepage": "Twilio is a cloud communications platform that enables sending texts, voice calls and emails via programmable APIs. Non\u2011profits use it to automate volunteer reminders, send donation acknowledgements or run SMS campaigns to engage their communities.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/twilio-1.webp",
+        "alt": "Twilio interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/twilio-2.webp",
+        "alt": "Twilio interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/twilio-3.webp",
+        "alt": "Twilio interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Typeform",
     "link": "https://typeform.com",
     "category": "Form Builder",
-    "description": "Sleek, interactive forms — perfect for donor surveys or onboarding forms that feel personal and engaging.",
+    "description": "Sleek, interactive forms \u2014 perfect for donor surveys or onboarding forms that feel personal and engaging.",
     "monthly_pricing_aud": "$40",
     "raw_pricing": "$$$$",
     "non_profit_discount": "25% off monthly plans and 40% off yearly plans for non-profits",
@@ -981,13 +1491,33 @@
     "hs_recommended_details": "",
     "affiliate_link": "https://typeform.cello.so/Uj2ciKxoSAv",
     "slug": "typeform",
-    "description_singlepage": "Typeform is an online form and survey builder that offers interactive, user-friendly designs and branching logic. Non-profits use it to create engaging surveys, event registrations or feedback tools that feel more personal for respondents."
+    "description_singlepage": "Typeform is an online form and survey builder that offers interactive, user-friendly designs and branching logic. Non-profits use it to create engaging surveys, event registrations or feedback tools that feel more personal for respondents.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-1.gif",
+        "alt": "Typeform interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-2.gif",
+        "alt": "Typeform interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-3.gif",
+        "alt": "Typeform interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Vimeo",
     "link": "https://vimeo.com",
     "category": "Video Hosting",
-    "description": "High-quality video hosting — used to present campaigns, testimonials, or virtual events in a polished format.",
+    "description": "High-quality video hosting \u2014 used to present campaigns, testimonials, or virtual events in a polished format.",
     "monthly_pricing_aud": "$19",
     "raw_pricing": "$$$",
     "non_profit_discount": "",
@@ -997,13 +1527,33 @@
     "hs_recommended_details": "Vimeo is a great option for non-profits looking for a clean, ad-free way to host and share videos. While there's no nonprofit discount at the moment, the free plan is still a solid starting point, especially if you're just getting into video content.\n\nOne of the reasons we prefer Vimeo over YouTube is the viewing experience. There are no ads, no distractions, and you have more control over how your videos are embedded and displayed on your website. This makes it a great choice for hosting things like campaign videos, project updates, training materials, or board inductions.\n\nYou can also password-protect videos or make them private, which is handy for internal comms, member-only content, or sharing updates with funders. If your team is starting to build a content library and wants a more polished home for video, Vimeo is a solid choice that keeps things professional and distraction-free.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "vimeo",
-    "description_singlepage": "Vimeo is a video hosting and sharing platform that lets teams upload, embed and manage videos in a clean, ad-free environment. Non-profits use it to share project stories, training videos or event highlights in a professional way that engages their audience."
+    "description_singlepage": "Vimeo is a video hosting and sharing platform that lets teams upload, embed and manage videos in a clean, ad-free environment. Non-profits use it to share project stories, training videos or event highlights in a professional way that engages their audience.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/vimeo-1.webp",
+        "alt": "Vimeo interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/vimeo-2.webp",
+        "alt": "Vimeo interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/vimeo-3.webp",
+        "alt": "Vimeo interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "WhatsApp",
     "link": "https://whatsapp.com",
     "category": "Communication",
-    "description": "Direct messaging app — allows rapid updates and engagement with communities, especially where email is underused.",
+    "description": "Direct messaging app \u2014 allows rapid updates and engagement with communities, especially where email is underused.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "",
@@ -1039,7 +1589,7 @@
     "name": "Wix",
     "link": "https://wix.com",
     "category": "Website Builder",
-    "description": "Drag-and-drop website builder — easy for small non-profits to create a polished site without coding.",
+    "description": "Drag-and-drop website builder \u2014 easy for small non-profits to create a polished site without coding.",
     "monthly_pricing_aud": "$19",
     "raw_pricing": "$$$",
     "non_profit_discount": "70% off 2-year Premium plan for non-profits",
@@ -1075,7 +1625,7 @@
     "name": "WordPress",
     "link": "https://wordpress.org",
     "category": "Website Builder",
-    "description": "Open-source CMS — widely used for building scalable non-profit websites with donation, blog, and volunteer features.",
+    "description": "Open-source CMS \u2014 widely used for building scalable non-profit websites with donation, blog, and volunteer features.",
     "monthly_pricing_aud": "$0",
     "raw_pricing": "$",
     "non_profit_discount": "Free platform for all (open-source); Hosting is not free",
@@ -1085,18 +1635,38 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "wordpress",
-    "description_singlepage": "WordPress.org is a free, open-source platform for building and managing websites with full control and customisation. Non-profits use it to create powerful websites for storytelling, fundraising and community engagement."
+    "description_singlepage": "WordPress.org is a free, open-source platform for building and managing websites with full control and customisation. Non-profits use it to create powerful websites for storytelling, fundraising and community engagement.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/wordpress-1.webp",
+        "alt": "WordPress interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/wordpress-2.webp",
+        "alt": "WordPress interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/wordpress-3.webp",
+        "alt": "WordPress interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "YouTube",
     "link": "https://youtube.com",
     "category": "Video Hosting",
-    "description": "Public video hosting platform — great for showcasing your mission, stories, and program impact to a broad audience.",
+    "description": "Public video hosting platform \u2014 great for showcasing your mission, stories, and program impact to a broad audience.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
     "non_profit_discount": "Free platform for all",
     "non_profit_discount_link": "https://www.google.com/nonprofits/offerings/youtube-nonprofit-program/",
-    "pricing_details": "Non-profits can apply for the YouTube non-profit program to access special features that help amplify their mission, including donation buttons, link overlays, and access to YouTube Spaces (in select locations).\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for the YouTube non-profit program to access special features that help amplify their mission, including donation buttons, link overlays, and access to YouTube Spaces (in select locations).\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "",
     "hs_recommended_details": "",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -1127,7 +1697,7 @@
     "name": "Zapier",
     "link": "https://zapier.com",
     "category": "Automation",
-    "description": "Connects apps to automate workflows — helps automate email lists, form responses, or CRM updates without code.",
+    "description": "Connects apps to automate workflows \u2014 helps automate email lists, form responses, or CRM updates without code.",
     "monthly_pricing_aud": "$47",
     "raw_pricing": "$$$$",
     "non_profit_discount": "15% off for non-profits",
@@ -1146,8 +1716,14 @@
       },
       {
         "id": 2,
-        "src": "/assets/img/tools-for-nonprofits/zapier-visual-editor.webp",
+        "src": "/assets/img/tools-for-nonprofits/zapier-ui-create-a-zap.webp",
         "alt": "Zapier interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/zapier-visual-editor.webp",
+        "alt": "Zapier interface screenshot 3",
         "type": "image"
       }
     ],
@@ -1157,7 +1733,7 @@
     "name": "Zoho CRM",
     "link": "https://zoho.com/crm",
     "category": "CRM",
-    "description": "Budget-friendly CRM with AI features — ideal for tracking donors, automating comms, and managing supporter data.",
+    "description": "Budget-friendly CRM with AI features \u2014 ideal for tracking donors, automating comms, and managing supporter data.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Up to 15% off for non-profits",
@@ -1167,29 +1743,57 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "zoho-crm",
-    "description_singlepage": "Zoho CRM is a budget-friendly customer relationship management tool that helps teams track contacts, emails and supporter activity. Non-profits use it to manage donor relationships, follow up with leads and keep supporter data organised."
+    "description_singlepage": "Zoho CRM is a budget-friendly customer relationship management tool that helps teams track contacts, emails and supporter activity. Non-profits use it to manage donor relationships, follow up with leads and keep supporter data organised.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/zoho-crm-interface.webp",
+        "alt": "Zoho CRM interface screenshot 1",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Zoom",
     "link": "https://zoom.us",
     "category": "Communication",
-    "description": "Video meeting platform — widely used for virtual board meetings, webinars, and training sessions.",
+    "description": "Video meeting platform \u2014 widely used for virtual board meetings, webinars, and training sessions.",
     "monthly_pricing_aud": "$24",
     "raw_pricing": "$$$",
     "non_profit_discount": " 50% off for non-profits",
     "non_profit_discount_link": "https://www.zoom.com/en/zoom-cares/",
-    "pricing_details": "Non-profits can apply for Zoom's non-profit discount to receive 50% off select Zoom products, including Zoom Workplace Pro, Zoom Workplace Business, Zoom Webinars, and Large Meeting add-ons.\n\n**How to apply:**\n- Set up your free Zoom account  \n- Visit the Zoom Cares page  \n- Under the \"Get 50% off select Zoom products\" section, select your operating budget  \n- Complete the non-profit verification process through Zoom's partner, Goodstack, by providing your organisation's details and proof of status  \n- Once verified (typically within 2–3 business days), you'll receive a coupon code to apply the discount to your account  ",
+    "pricing_details": "Non-profits can apply for Zoom's non-profit discount to receive 50% off select Zoom products, including Zoom Workplace Pro, Zoom Workplace Business, Zoom Webinars, and Large Meeting add-ons.\n\n**How to apply:**\n- Set up your free Zoom account  \n- Visit the Zoom Cares page  \n- Under the \"Get 50% off select Zoom products\" section, select your operating budget  \n- Complete the non-profit verification process through Zoom's partner, Goodstack, by providing your organisation's details and proof of status  \n- Once verified (typically within 2\u20133 business days), you'll receive a coupon code to apply the discount to your account  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Zoom is a premium video conferencing option that really shines when you're hosting larger meetings, webinars, or virtual events. While it's not free like Google Meet, the nonprofit discount makes it more accessible, and you get extra features that can be worth it depending on how you run your programs or engage your community.\n\nIt's great for board meetings, donor updates, training sessions, or multi-session events. Zoom's webinar and breakout room features give you more control over the experience, which can make things feel more polished and professional. You can run Q&As, take polls, split participants into smaller groups, or stream to Facebook or YouTube.\n\nCompared to Google Meet, Zoom gives you more options for customisation and managing large groups, but it does come with a bit more setup and cost. For non-profits running public events, training sessions, or multi-organisation meetings, Zoom is often the better fit.",
     "affiliate_link": "",
     "slug": "zoom",
-    "description_singlepage": "Zoom is a video conferencing tool that lets people meet online through video, audio and chat. Non-profits use it to run virtual events, hold team meetings or connect with partners and volunteers remotely."
+    "description_singlepage": "Zoom is a video conferencing tool that lets people meet online through video, audio and chat. Non-profits use it to run virtual events, hold team meetings or connect with partners and volunteers remotely.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/zoom-1.webp",
+        "alt": "Zoom interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/zoom-2.webp",
+        "alt": "Zoom interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/zoom-3.webp",
+        "alt": "Zoom interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Calendly",
     "link": "https://calendly.com",
     "category": "Communication",
-    "description": "Public scheduling link — makes it easy for partners or volunteers to book time with you, with automatic reminders.",
+    "description": "Public scheduling link \u2014 makes it easy for partners or volunteers to book time with you, with automatic reminders.",
     "monthly_pricing_aud": "$10",
     "raw_pricing": "$$",
     "non_profit_discount": "25% off the Standard or Team plan for non-profits",
@@ -1219,17 +1823,43 @@
     "name": "Google Calendar",
     "link": "https://calendar.google.com",
     "category": "Communication",
-    "description": "Built-in scheduling tool — lets people book from your calendar using defined time slots, ideal for intake calls or donor chats.",
+    "description": "Built-in scheduling tool \u2014 lets people book from your calendar using defined time slots, ideal for intake calls or donor chats.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Calendar is one of those tools that seems simple at first, but ends up solving all sorts of problems for non-profits. It's included with Google Workspace for Nonprofits and works beautifully across teams, making it easy to stay on top of meetings, events, and deadlines.\n\nOne use we love is turning Calendar into a booking system for shared spaces. For example, we recently helped a non-profit use it to manage room hire for their community space. No more manual bookings, phone calls, or chasing up payments. It streamlined the whole process.\n\nBeyond that, shared calendars are great for scheduling all-staff events, volunteer shifts, board meetings, or public-facing events like workshops and community gatherings. You can create different calendars for different teams or locations, and embed public calendars into your website so the community always knows what's on. It's simple, free, and surprisingly powerful once you start using it fully.",
     "affiliate_link": "",
     "slug": "google-calendar",
-    "description_singlepage": "Google Calendar is a scheduling tool in Google Workspace that helps teams organise events, meetings and reminders. Non-profits use it to plan campaigns, book meetings and keep everyone on the same page."
+    "description_singlepage": "Google Calendar is a scheduling tool in Google Workspace that helps teams organise events, meetings and reminders. Non-profits use it to plan campaigns, book meetings and keep everyone on the same page.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/google-calendar-1.webp",
+        "alt": "Google Calendar interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/google-calendar-2.webp",
+        "alt": "Google Calendar interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/google-calendar-3.webp",
+        "alt": "Google Calendar interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/google-calendar-4.webp",
+        "alt": "Google Calendar interface screenshot 4",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Supabase",
@@ -1278,10 +1908,18 @@
     "non_profit_discount_link": "https://buffer.com/nonprofits",
     "pricing_details": "Non-profits receive 50% off all paid plans.\n\n**How to apply:**\n- Start a [free trial](https://buffer.com/join/ab5dc7ac8208fd661ed747ab8d0ad5f144dc78a788be3f50367ae705c8e6604e)  \n- Complete the [non-profit discount request form](https://buffer.com/nonprofits#completeform)  \n- Provide documentation verifying your non-profit status  \n- Once verified, Buffer will apply the discount to your account and notify you by email  ",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "Buffer is a helpful tool for non-profits managing social media across multiple platforms. It lets you draft, schedule, and publish posts ahead of time, so you're not scrambling to post on the day of your event or campaign. If you're working with a small team or volunteers helping with communications, Buffer makes it easy to plan and review content in one place.\n\nIt's great not just for managing your organisation's accounts, but also for supporting key team members who have a public presence — like your CEO, Community Lead, or program managers. You can queue up posts for their profiles, maintain consistent messaging, and help them stay visible without needing to be online every day.\n\nThe free plan covers a lot, and the nonprofit discount helps if you need more features like analytics or team access. It's not the most advanced platform out there, but its simplicity is part of the appeal. If you're juggling Facebook, Instagram, LinkedIn, and maybe even Threads or X, Buffer keeps things clear and manageable for everyone involved.",
+    "hs_recommended_details": "Buffer is a helpful tool for non-profits managing social media across multiple platforms. It lets you draft, schedule, and publish posts ahead of time, so you're not scrambling to post on the day of your event or campaign. If you're working with a small team or volunteers helping with communications, Buffer makes it easy to plan and review content in one place.\n\nIt's great not just for managing your organisation's accounts, but also for supporting key team members who have a public presence \u2014 like your CEO, Community Lead, or program managers. You can queue up posts for their profiles, maintain consistent messaging, and help them stay visible without needing to be online every day.\n\nThe free plan covers a lot, and the nonprofit discount helps if you need more features like analytics or team access. It's not the most advanced platform out there, but its simplicity is part of the appeal. If you're juggling Facebook, Instagram, LinkedIn, and maybe even Threads or X, Buffer keeps things clear and manageable for everyone involved.",
     "affiliate_link": "",
     "slug": "buffer",
-    "description_singlepage": "Buffer is a social media scheduling tool that helps teams plan, publish and analyse posts across platforms. Non-profits use it to stay consistent online, schedule content in advance and track what works best."
+    "description_singlepage": "Buffer is a social media scheduling tool that helps teams plan, publish and analyse posts across platforms. Non-profits use it to stay consistent online, schedule content in advance and track what works best.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/buffer-walkthru.mp4",
+        "alt": "Buffer interface screenshot 1",
+        "type": "video"
+      }
+    ]
   },
   {
     "name": "n8n",
@@ -1294,7 +1932,7 @@
     "non_profit_discount_link": "https://n8n.io/pricing/",
     "pricing_details": "There are no non-profit discounts.",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "n8n is a powerful automation tool for non-profits that want to connect different apps and systems without relying on expensive platforms. It's similar to Zapier in what it can do — moving data between tools, triggering emails, updating databases — but with more flexibility and no per-task pricing.\n\nWhere n8n really shines is if your non-profit has a tech-savvy team member or developer who can set up workflows. You can host it yourself for free, or use the cloud version, and it works with hundreds of tools like Airtable, Google Sheets, Mailchimp, and CRMs. We've used it to automate newsletters, sync volunteer sign-up data, and even route HR requests into Kanban boards.\n\nIt's not the best option if you're looking for a plug-and-play interface. But if you want full control over your automations and are ready to get a bit technical, n8n is one of the most affordable and flexible options out there.",
+    "hs_recommended_details": "n8n is a powerful automation tool for non-profits that want to connect different apps and systems without relying on expensive platforms. It's similar to Zapier in what it can do \u2014 moving data between tools, triggering emails, updating databases \u2014 but with more flexibility and no per-task pricing.\n\nWhere n8n really shines is if your non-profit has a tech-savvy team member or developer who can set up workflows. You can host it yourself for free, or use the cloud version, and it works with hundreds of tools like Airtable, Google Sheets, Mailchimp, and CRMs. We've used it to automate newsletters, sync volunteer sign-up data, and even route HR requests into Kanban boards.\n\nIt's not the best option if you're looking for a plug-and-play interface. But if you want full control over your automations and are ready to get a bit technical, n8n is one of the most affordable and flexible options out there.",
     "affiliate_link": "",
     "slug": "n8n",
     "description_singlepage": "n8n is an open-source automation tool that lets teams connect apps and create custom workflows without writing code. Non-profits use it to automate tasks like syncing contact forms with email lists or sending alerts when new donations come in."
@@ -1308,7 +1946,7 @@
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2–14 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Docs is probably already part of your toolkit, but it's worth getting to know a few of the lesser-known features that make it especially useful for non-profits. It's a good tool for collaboration, especially if your team is spread out or working part-time.\n\nYou can add checklists to documents, which is helpful for shared agendas, action items, or onboarding steps. There's also a simple eSignature tool built in, which can be a quick solution for signing internal documents without needing a separate platform. If you're reviewing policies or writing grants as a group, the commenting and suggestion tools help keep everyone on the same page.\n\nDocs isn't flashy, but it does a lot quietly in the background. It's free with Google Workspace for Nonprofits and gives your team a shared space to work together without worrying about version control or who has the latest file.",
     "affiliate_link": "",
@@ -1379,7 +2017,21 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "quickbooks",
-    "description_singlepage": "QuickBooks is an accounting software that helps manage invoices, expenses and financial reports. Non-profits use it to track donations, prepare budgets and stay on top of their finances."
+    "description_singlepage": "QuickBooks is an accounting software that helps manage invoices, expenses and financial reports. Non-profits use it to track donations, prepare budgets and stay on top of their finances.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/quickbooks-1.webp",
+        "alt": "Quickbooks interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/quickbooks-2.webp",
+        "alt": "Quickbooks interface screenshot 2",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "MYOB",
@@ -1395,7 +2047,27 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "myob",
-    "description_singlepage": "MYOB is an accounting and payroll software designed to help manage finances, staff and reporting. Non-profits use it to handle day-to-day bookkeeping, pay employees and meet compliance requirements."
+    "description_singlepage": "MYOB is an accounting and payroll software designed to help manage finances, staff and reporting. Non-profits use it to handle day-to-day bookkeeping, pay employees and meet compliance requirements.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/myob-1.webp",
+        "alt": "MYOB interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/myob-2.webp",
+        "alt": "MYOB interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/myob-3.webp",
+        "alt": "MYOB interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Squarespace",
@@ -1411,13 +2083,45 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "squarespace",
-    "description_singlepage": "Squarespace is a no-code website builder with customisable templates for creating modern, mobile-friendly sites. Non-profits use it to share their mission, collect donations and promote events without needing a developer."
+    "description_singlepage": "Squarespace is a no-code website builder with customisable templates for creating modern, mobile-friendly sites. Non-profits use it to share their mission, collect donations and promote events without needing a developer.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/squarespace-1.webp",
+        "alt": "Squarespace interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/squarespace-2.webp",
+        "alt": "Squarespace interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/squarespace-3.webp",
+        "alt": "Squarespace interface screenshot 3",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/squarespace-4.webp",
+        "alt": "Squarespace interface screenshot 4",
+        "type": "image"
+      },
+      {
+        "id": 5,
+        "src": "/assets/img/tools-for-nonprofits/squarespace-5.webp",
+        "alt": "Squarespace interface screenshot 5",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Keela",
     "link": "https://keela.co/",
     "category": "CRM",
-    "description": "All-in-one fundraising CRM designed specifically for non-profits — helps manage donors, track giving patterns, and run targeted campaigns.",
+    "description": "All-in-one fundraising CRM designed specifically for non-profits \u2014 helps manage donors, track giving patterns, and run targeted campaigns.",
     "monthly_pricing_aud": "$125",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Built for non-profits with scaled pricing",
@@ -1427,6 +2131,20 @@
     "hs_recommended_details": "Keela is purpose-built for non-profits, which means it understands the unique needs of fundraising organizations right out of the box. Unlike general CRMs that you have to adapt, Keela includes features like donor segmentation, gift tracking, campaign management, and reporting dashboards designed specifically for fundraising teams.\n\nIt's particularly strong for organizations that are ready to move beyond spreadsheets and basic tools but aren't quite ready for enterprise-level platforms like Salesforce. The built-in email marketing, online donation forms, and volunteer management features mean you can consolidate several tools into one platform.\n\nThe pricing is higher than general CRMs, but it includes specialized features that would otherwise require multiple subscriptions. It's worth considering if fundraising is a major part of your operations and you want a system that speaks your language from day one.",
     "affiliate_link": "",
     "slug": "keela",
-    "description_singlepage": "Keela is an AI‑enhanced CRM and donor management platform designed specifically for non‑profits. Non‑profits use it to store supporter details, automate thank‑you emails and campaign planning, and track donations and volunteer engagement all in one place."
+    "description_singlepage": "Keela is an AI\u2011enhanced CRM and donor management platform designed specifically for non\u2011profits. Non\u2011profits use it to store supporter details, automate thank\u2011you emails and campaign planning, and track donations and volunteer engagement all in one place.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/keela-1.webp",
+        "alt": "Keela interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/keela-2.webp",
+        "alt": "Keela interface screenshot 2",
+        "type": "image"
+      }
+    ]
   }
 ]
