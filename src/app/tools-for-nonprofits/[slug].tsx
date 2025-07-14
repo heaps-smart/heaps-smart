@@ -14,6 +14,8 @@ interface Tool {
   non_profit_discount_view: string;
   non_profit_discount: string;
   hs_recommended: string;
+  hs_recommended_details: string; 
+  pricing_details: string; 
   category?: string;
   affiliate_link?: string;
   original_website?: string;
@@ -48,27 +50,27 @@ export default function ToolDetailsPage({ tool }: { tool: Tool }) {
 		<InnovationPageTemplate
 			pageTitle={tool.name}
 			tags={tool.tags || []}
-			techStack={[]}
+			techStack={[]}Off
 			sections={[
 				{
 					title: "Description",
 					content: tool.description,
 				},
 				{
-					title: "Pricing",
-					content: tool.pricing,
+					title: "Non-profit discount",
+					content: tool.pricing_details,
 				},
 				{
-					title: "Non-Profit Discount",
-					content: tool.non_profit_discount,
+					title: "Heaps Smart recommended",
+					content: tool.hs_recommended_details,
 				},
 			]}
-      galleryImages={[
-        { id: 1, src: "https://picsum.photos/800/600?random=1", alt: tool.name },
-        { id: 2, src: "https://picsum.photos/800/600?random=2", alt: `${tool.name} - 2` },
-        { id: 3, src: "https://picsum.photos/800/600?random=3", alt: `${tool.name} - 3` },
-        { id: 4, src: "https://picsum.photos/800/600?random=4", alt: `${tool.name} - 4` }
-      ]}
+			galleryImages={[
+				{ id: 1, src: "https://picsum.photos/800/600?random=1", alt: tool.name },
+				{ id: 2, src: "https://picsum.photos/800/600?random=2", alt: `${tool.name} - 2` },
+				{ id: 3, src: "https://picsum.photos/800/600?random=3", alt: `${tool.name} - 3` },
+				{ id: 4, src: "https://picsum.photos/800/600?random=4", alt: `${tool.name} - 4` }
+			]}
 			location={tool.original_website || ""}
 		/>
 	);

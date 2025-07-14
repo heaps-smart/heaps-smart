@@ -57,11 +57,19 @@ export default function ToolPageTemplate({
     const convertMarkdown = async () => {
       if (pricingDetails) {
         const htmlContent = await markdownToHtml(pricingDetails);
-        setRenderedPricingDetails(htmlContent);
+        const updatedHtmlContent = htmlContent.replace(
+          /<a /g,
+          '<a target="_blank" rel="noopener noreferrer" '
+        );
+        setRenderedPricingDetails(updatedHtmlContent);
       }
       if (hsRecommendedDetails) {
         const htmlContent = await markdownToHtml(hsRecommendedDetails);
-        setRenderedHsDetails(htmlContent);
+        const updatedHtmlContent = htmlContent.replace(
+          /<a /g,
+          '<a target="_blank" rel="noopener noreferrer" '
+        );
+        setRenderedHsDetails(updatedHtmlContent);
       }
     };
     
@@ -75,7 +83,17 @@ export default function ToolPageTemplate({
 
       <Container>
         <header className="pt-8 pb-12 md:pb-8 mb-4">
-          {/* <div className="mb-6">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-4">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-2 md:mb-0 md:pr-8">
+              {toolName}
+            </h1>
+            {hsRecommended && (
+              <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full self-start md:self-center">
+                HS Recommended
+              </span>
+            )}
+          </div>
+          <div className="mt-2">
             <a 
               href="/tools-for-nonprofits"
               className="inline-flex items-center text-sm text-gray-600 hover:text-gray-900 transition-colors"
@@ -90,36 +108,6 @@ export default function ToolPageTemplate({
               </svg>
               Back to Tools for Non-profits
             </a>
-          </div> */}
-          <div className="flex flex-col md:flex-row md:items-center md:gap-4 mb-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight mb-2 md:mb-0 md:pr-8">
-              {toolName}
-            </h1>
-            {hsRecommended && (
-              <span className="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full self-start md:self-center">
-                HS Recommended
-              </span>
-            )}
-          </div>
-          <div className="flex flex-wrap gap-4">
-            <a 
-              href={website} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
-            >
-              {website}
-            </a>
-            {nonprofitPricingUrl && (
-              <a 
-                href={nonprofitPricingUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
-              >
-                Non-profit pricing
-              </a>
-            )}
           </div>
         </header>
       </Container>
@@ -168,11 +156,13 @@ export default function ToolPageTemplate({
                 className="block hover:text-gray-900 transition-colors"
               >
                 <h4 className="text-lg font-semibold text-black/80 mb-1">
-                  Official Website
+                  Website
                 </h4>
-                <p className="text-sm text-black/60">
-                  Explore more about {toolName}
-                </p>
+                <span 
+                  className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
+                >
+                  {website}
+                </span>
               </a>
             </section>
 
@@ -180,7 +170,7 @@ export default function ToolPageTemplate({
             <section>
               <div>
                 <h4 className="text-lg font-semibold text-black/80 mb-2">
-                  Pricing Details
+                  Pricing
                 </h4>
                 <div className="space-y-2">
                   {monthlyPricing && (
@@ -199,37 +189,21 @@ export default function ToolPageTemplate({
                     rel="noopener noreferrer"
                     className="text-sm text-black/70 hover:text-black/90 underline transition-colors"
                   >
-                    View full pricing details
+                    View full pricing details for {toolName} →
                   </a>
                 </div>
               </div>
             </section>
 
-            {/* CTA Link */}
+            {/* Category Section */}
             <section>
-              <a 
-                href={nonprofitPricingUrl || website} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block hover:text-gray-900 transition-colors"
-              >
-                <h4 className="text-lg font-semibold text-black/80 mb-1">
-                  Get Started
+              <div>
+                <h4 className="text-lg font-semibold text-black/80 mb-2">
+                  Category
                 </h4>
-                <p className="text-sm text-black/60">
-                  Begin your journey with {toolName} today
-                </p>
-              </a>
-            </section>
-
-            {/* Tool Tags */}
-            <section>
-              <div className="space-y-2">
-                {tags.map((tag) => (
-                  <div key={tag} className="text-sm text-black/70 border-l-2 border-gray-300 pl-2">
-                    {tag}
-                  </div>
-                ))}
+                <div className="text-sm text-black/70">
+                  {tags.join(", ")}
+                </div>
               </div>
             </section>
           </aside>
@@ -247,7 +221,7 @@ export default function ToolPageTemplate({
               <h3 className="text-2xl font-semibold tracking-tight mb-4 text-[#111]">
                 Non-profit discount
               </h3>
-              <div className="text-lg leading-relaxed text-black/80 space-y-4">
+              <div className="text-lg leading-relaxed tracking-tight text-black/80 space-y-4">
                 {nonprofitDiscount && (
                   <div className="font-semibold text-green-600">
                     {nonprofitDiscount}
@@ -267,7 +241,7 @@ export default function ToolPageTemplate({
                   rel="noopener noreferrer"
                   className="text-gray-700 hover:text-gray-900 underline transition-colors font-medium"
                 >
-                  View non-profit pricing
+                  View non-profit pricing for {toolName} 
                 </a>
               </div>
             </section>
@@ -276,7 +250,7 @@ export default function ToolPageTemplate({
             {hsRecommendedDetails && renderedHsDetails && (
               <section>
                 <h3 className="text-2xl font-semibold tracking-tight mb-4 text-[#111]">
-                  Our recommendation
+                  Heaps Smart recommended
                 </h3>
                 <div 
                   className="prose prose-gray max-w-none text-lg leading-relaxed text-black/80 [&_a]:text-gray-700 [&_a:hover]:text-gray-900 [&_a]:underline [&_a]:transition-colors [&_strong]:font-semibold [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-2"
