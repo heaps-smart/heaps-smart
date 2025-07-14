@@ -34,6 +34,7 @@ type Props = {
   hsRecommended?: boolean;
   pricingDetails?: string;
   hsRecommendedDetails?: string;
+  descriptionSinglepage?: string;
 };
 
 export default function ToolPageTemplate({
@@ -49,6 +50,7 @@ export default function ToolPageTemplate({
   hsRecommended,
   pricingDetails,
   hsRecommendedDetails,
+	descriptionSinglepage,
 }: Props) {
   const [renderedPricingDetails, setRenderedPricingDetails] = useState<string>("");
   const [renderedHsDetails, setRenderedHsDetails] = useState<string>("");
@@ -63,6 +65,7 @@ export default function ToolPageTemplate({
         );
         setRenderedPricingDetails(updatedHtmlContent);
       }
+
       if (hsRecommendedDetails) {
         const htmlContent = await markdownToHtml(hsRecommendedDetails);
         const updatedHtmlContent = htmlContent.replace(
@@ -209,12 +212,13 @@ export default function ToolPageTemplate({
           </aside>
 
           <div className="col-span-2 space-y-14">
-            {/* Overview Section */}
-            <section>
-              <div className="text-lg leading-relaxed text-black/80">
-                {sections.find(s => s.title === 'Description')?.content || sections[0]?.content}
-              </div>
-            </section>
+            {descriptionSinglepage && (
+              <section>
+                <p className="text-lg leading-relaxed text-black/80">
+                  {descriptionSinglepage}
+                </p>
+              </section>
+            )}
 
             {/* Pricing & Discounts Section */}
             <section>

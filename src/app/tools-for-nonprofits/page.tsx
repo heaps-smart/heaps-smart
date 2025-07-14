@@ -63,32 +63,48 @@ export default function ToolsPage() {
 
   const fuse = useMemo(() =>
     new Fuse(allTools, {
-      keys: ["name", "category"],
+      keys: [
+        { name: "name", weight: 0.7 }, // Higher weight for exact matches on name
+        { name: "category", weight: 0.5 },
+        { name: "description", weight: 0.3 }, // Lower weight for partial matches in description
+      ],
       threshold: 0.3,
       ignoreLocation: true,
     }), [allTools]);
 
-  const searchResults = useMemo(() => 
-    debouncedSearch.trim().length > 1
-      ? Array.from(
-          new Map(
-            fuse.search(debouncedSearch).map((result) => [
-              result.item.name.toLowerCase(), result
-            ])
-          ).values()
-        )
-          .sort((a, b) => {
-            const query = debouncedSearch.trim().toLowerCase();
-            const aExactMatch = a.item.name.toLowerCase() === query;
-            const bExactMatch = b.item.name.toLowerCase() === query;
+  const searchResults = useMemo(() => {
+    if (debouncedSearch.trim().length <= 1) return [];
+    
+    const query = debouncedSearch.trim().toLowerCase();
+    
+    // First, check for exact matches in tool names
+    const exactMatch = allTools.find(tool => 
+      tool.name.toLowerCase() === query
+    );
+    
+    // If we have an exact match, return only that tool
+    if (exactMatch) {
+      return [{ item: exactMatch, score: 0 }];
+    }
+    
+    // Otherwise, return fuzzy search results
+    return Array.from(
+      new Map(
+        fuse.search(debouncedSearch).map((result) => [
+          result.item.name.toLowerCase(), result
+        ])
+      ).values()
+    )
+      .sort((a, b) => {
+        const aExactMatch = a.item.name.toLowerCase() === query;
+        const bExactMatch = b.item.name.toLowerCase() === query;
 
-            if (aExactMatch && !bExactMatch) return -1;
-            if (!aExactMatch && bExactMatch) return 1;
-            return (a.score || 0) - (b.score || 0);
-          })
-          .slice(0, 6)
-      : []
-  , [debouncedSearch, fuse]);
+        if (aExactMatch && !bExactMatch) return -1;
+        if (!aExactMatch && bExactMatch) return 1;
+        return (a.score || 0) - (b.score || 0);
+      })
+      .slice(0, 6);
+  }, [debouncedSearch, fuse, allTools]);
 
   const filteredCategories = useMemo(() => {
     if (debouncedSearch.trim().length > 1) {

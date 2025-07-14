@@ -63,6 +63,7 @@ export default function ToolPage({ params }: { params: Params }) {
 			hsRecommended={tool.hs_recommended === 'Yes'}
 			pricingDetails={tool.pricing_details}
 			hsRecommendedDetails={tool.hs_recommended_details}
+			descriptionSinglepage={tool.description_singlepage}
 		/>
 	);
 }
