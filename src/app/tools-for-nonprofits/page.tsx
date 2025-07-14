@@ -99,6 +99,62 @@ const getFilteredTools = (tools: Tool[], categoryName: string): Tool[] => {
   return tools.filter(tool => toolBelongsToCategory(tool, categoryName));
 };
 
+// Icon mapping configuration
+const CATEGORY_ICON_MAP = {
+  'ai-solutions': {
+    icon: '/assets/svg/ai-solutions.svg',
+    keywords: ['ai', 'llm', 'artificial', 'assistant', 'machine learning', 'openai', 'chatgpt', 'gemini']
+  },
+  'data-infrastructure': {
+    icon: '/assets/svg/data-infrastructure.svg',
+    keywords: ['data', 'database', 'analytics', 'visualisation', 'crm', 'spreadsheet', 'sheets', 'airtable']
+  },
+  'digital-communications': {
+    icon: '/assets/svg/digital-communications.svg',
+    keywords: ['communication', 'email', 'social', 'messaging', 'newsletter', 'marketing', 'slack', 'teams']
+  },
+  'automation': {
+    icon: '/assets/svg/technical-strategic-consultation.svg',
+    keywords: ['automation', 'workflow', 'zapier', 'integration', 'process']
+  },
+  'mapping': {
+    icon: '/assets/svg/geospatial-mapping-solutions.svg',
+    keywords: ['mapping', 'gis', 'location', 'geographic', 'spatial', 'maps']
+  },
+  'mobile': {
+    icon: '/assets/svg/mobile-applications.svg',
+    keywords: ['mobile', 'app', 'ios', 'android', 'smartphone']
+  },
+  'web': {
+    icon: '/assets/svg/web-development.svg',
+    keywords: ['web', 'website', 'builder', 'cms', 'wordpress', 'squarespace', 'wix']
+  },
+  'training': {
+    icon: '/assets/svg/training-capacity-building.svg',
+    keywords: ['training', 'education', 'learning', 'course', 'tutorial', 'teaching']
+  },
+  'media': {
+    icon: '/assets/svg/sound-engineering.svg',
+    keywords: ['sound', 'audio', 'video', 'media', 'recording', 'streaming', 'podcast']
+  }
+} as const;
+
+// Get appropriate icon for a category
+const getCategoryIcon = (category: string | string[]): string => {
+  const categoryString = Array.isArray(category) ? category[0] : category;
+  const categoryLower = categoryString.toLowerCase();
+  
+  // Find matching icon based on keywords
+  for (const [, config] of Object.entries(CATEGORY_ICON_MAP)) {
+    if (config.keywords.some(keyword => categoryLower.includes(keyword))) {
+      return config.icon;
+    }
+  }
+  
+  // Default fallback icon
+  return '/assets/svg/technical-strategic-consultation.svg';
+};
+
 // Error boundary and validation for tools data
 const validateToolsData = (data: unknown): Tool[] => {
   if (!Array.isArray(data)) {
@@ -558,7 +614,11 @@ function ToolsPageContent() {
                   >
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 mr-4 bg-[#F7F2EE] rounded-full p-2 flex items-center justify-center">
-                        <div className="w-6 h-6 bg-gray-300 rounded"></div>
+                        <img 
+                          src={getCategoryIcon(tool.category)} 
+                          alt={`${Array.isArray(tool.category) ? tool.category[0] : tool.category} icon`}
+                          className="w-6 h-6"
+                        />
                       </div>
                       <div className="flex flex-col">
                         <h3 className="text-xl font-semibold text-black/80">{tool.name}</h3>

@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
@@ -125,30 +126,33 @@ export default function HeapsSmart() {
 
       <Container>
         <section className="pt-6 pb-16 bg-[#F7F2EE]">
-          <h2 className="text-3xl font-semibold mb-2 tracking-tighter">Tools we work with</h2>
-          <p className="text-lg mb-8 text-black/70">
+          <h2 className="text-3xl font-semibold mb-2 tracking-tighter">Tools for non-profits</h2>
+          <p className="text-lg mb-8 text-black/70 tracking tight">
             We use a range of tools to help teams work smarter. Here are some of the platforms and technologies we frequently integrate with:
           </p>
+          
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8">
             <div>
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Automation Platforms</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Zapier</span>
+                  <Link href="/tools-for-nonprofits/zapier" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Zapier</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">n8n</span>
+                  <Link href="/tools-for-nonprofits/n8n" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">n8n</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Make</span>
-                </li>
-                <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Retool</span>
+                  <Link href="/tools-for-nonprofits/hubspot" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">HubSpot</span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -157,16 +161,22 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">AI & LLMs</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">OpenAI</span>
+                  <Link href="/tools-for-nonprofits/chatgpt" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">OpenAI/ChatGPT</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Ollama</span>
+                  <Link href="https://ollama.com/" target="_blank" rel="noopener noreferrer" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Ollama</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">LangChain</span>
+                  <Link href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Langchain</span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -175,20 +185,22 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Data</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Google</span>
+                  <Link href="/tools-for-nonprofits/google-sheets" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Google Workspace</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">HubSpot</span>
+                  <Link href="/tools-for-nonprofits/airtable" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Airtable</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Airtable</span>
-                </li>
-                <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Supabase</span>
+                  <Link href="/tools-for-nonprofits/supabase" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Supabase</span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -197,19 +209,33 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Custom Development</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">Websites and Mobile Apps</span>
-                </li>
-
-                <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">React/React Native/Node.js</span>
+                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Websites and Mobile Apps</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
-                  <YellowBullet />
-                  <span className="text-[#111111]/80">iOS/Android app development</span>
+                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">React/React Native/Node.js</span>
+                  </Link>
+                </li>
+                <li className="flex items-center">
+                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">iOS/Android app development</span>
+                  </Link>
                 </li>
               </ul>
+            </div>
+            <div className="mt-2">
+              <a
+                href="/tools-for-nonprofits"
+                className="inline-block text-black font-medium rounded-lg transition-colors focus:outline-none"
+                aria-label="Explore more non-profit tools"
+              >
+                Explore all non-profit tools →
+              </a>
             </div>
           </div>
         </section>
