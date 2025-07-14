@@ -34,10 +34,12 @@ interface ToolCategory {
 
 // Helper functions for URL-friendly category slugs
 const categoryToSlug = (category: string): string => {
+  if (category === "HS Recommended") return "hs-recommended";
   return category.toLowerCase().replace(/\s+/g, '-');
 };
 
 const slugToCategory = (slug: string): string => {
+  if (slug === "hs-recommended") return "HS Recommended";
   return slug.split('-').map(word => 
     word.charAt(0).toUpperCase() + word.slice(1)
   ).join(' ');
@@ -68,7 +70,19 @@ function ToolsPageContent() {
       const categories = getToolCategories(tool);
       categories.forEach(category => allCategories.add(category));
     });
-    return Array.from(allCategories).sort((a, b) => a.localeCompare(b));
+    // Add HS Recommended as a special category if there are any recommended tools
+    const hasRecommendedTools = toolsData.some(tool => 
+      tool.hs_recommended?.toLowerCase() === "yes"
+    );
+    if (hasRecommendedTools) {
+      allCategories.add("HS Recommended");
+    }
+    return Array.from(allCategories).sort((a, b) => {
+      // Put HS Recommended first
+      if (a === "HS Recommended") return -1;
+      if (b === "HS Recommended") return 1;
+      return a.localeCompare(b);
+    });
   }, []);
 
   // Initialize selectedTag with proper slug conversion and validation
@@ -82,7 +96,8 @@ function ToolsPageContent() {
       );
       return validCategory || null;
     }
-    return null;
+    // Default to HS Recommended if no category parameter is present
+    return "HS Recommended";
   });
 
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -162,10 +177,17 @@ function ToolsPageContent() {
       );
 
       if (matchingCategory) {
+        let tools;
+        if (matchingCategory === "HS Recommended") {
+          tools = toolsData.filter(tool => tool.hs_recommended?.toLowerCase() === "yes");
+        } else {
+          tools = toolsData.filter(tool => toolBelongsToCategory(tool, matchingCategory));
+        }
+        
         return [{
           name: matchingCategory,
           description: "",
-          tools: toolsData.filter(tool => toolBelongsToCategory(tool, matchingCategory)),
+          tools: tools,
         }];
       }
 
@@ -177,14 +199,21 @@ function ToolsPageContent() {
     }
 
     if (selectedTag) {
+      let tools;
+      if (selectedTag === "HS Recommended") {
+        tools = toolsData.filter(tool => tool.hs_recommended?.toLowerCase() === "yes");
+      } else {
+        tools = toolsData.filter(tool => toolBelongsToCategory(tool, selectedTag));
+      }
+      
       return [{
         name: selectedTag,
         description: "",
-        tools: toolsData.filter(tool => toolBelongsToCategory(tool, selectedTag)),
+        tools: tools,
       }];
     }
 
-    // Group tools by category
+    // Group tools by category (excluding HS Recommended when showing all)
     const categoryMap = new Map<string, Tool[]>();
     toolsData.forEach((tool: Tool) => {
       const categories = getToolCategories(tool);
@@ -195,6 +224,9 @@ function ToolsPageContent() {
         categoryMap.get(category)!.push(tool);
       });
     });
+
+    // When showing "All", don't include HS Recommended as a separate category
+    // HS Recommended tools will still appear under their regular categories
 
     return Array.from(categoryMap.entries())
       .map(([categoryName, tools]) => ({
@@ -254,8 +286,8 @@ function ToolsPageContent() {
     }
     
     // Use replace to avoid adding to browser history
-    const newUrl = params.toString() ? `?${params.toString()}` : '';
-    router.replace(`/tools-for-nonprofits${newUrl}`, { scroll: false });
+    const newUrl = params.toString() ? `?${params.toString()}` : '/tools-for-nonprofits';
+    router.replace(newUrl, { scroll: false });
   };
 
   // Auto-select category tag when search matches a category name exactly
@@ -276,6 +308,17 @@ function ToolsPageContent() {
       }
     }
   }, [debouncedSearch, selectedTag, allTags]);
+
+  // Set default URL parameter for HS Recommended when no category is specified
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    if (!categoryParam && selectedTag === "HS Recommended") {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set('category', categoryToSlug("HS Recommended"));
+      const newUrl = `?${params.toString()}`;
+      router.replace(`/tools-for-nonprofits${newUrl}`, { scroll: false });
+    }
+  }, [searchParams, selectedTag, router]);
 
   return (
     <main className="bg-[#F7F2EE] text-black font-sans">
@@ -355,9 +398,14 @@ function ToolsPageContent() {
           </div>
 
           {/* Desktop: Category Pills */}
-          <div className="hidden md:flex flex-wrap gap-3 mb-12  ">
+          <div className="hidden md:flex flex-wrap gap-3 mb-6">
             <button
-              onClick={() => setSelectedTag(null)}
+              onClick={() => {
+                setSearch("");
+                setDebouncedSearch("");
+                setSelectedTag(null);
+                router.replace('/tools-for-nonprofits', { scroll: false });
+              }}
               className={`px-4 py-2 text-sm rounded-full font-medium transition-colors shadow ${
                 selectedTag === null
                   ? "bg-yellow-500 text-black"
@@ -376,7 +424,7 @@ function ToolsPageContent() {
                     : "bg-gray-200 text-gray-600 hover:bg-yellow-400"
                 }`}
               >
-                {tag}
+                {tag === "HS Recommended" ? "★ HS Recommended" : tag}
               </button>
             ))}
           </div>
@@ -392,7 +440,10 @@ function ToolsPageContent() {
               onChange={(e) => {
                 const value = e.target.value;
                 if (value === "") {
+                  setSearch("");
+                  setDebouncedSearch("");
                   setSelectedTag(null);
+                  router.replace('/tools-for-nonprofits', { scroll: false });
                 } else {
                   handleTagClick(value);
                 }
@@ -402,7 +453,7 @@ function ToolsPageContent() {
               <option value="">All categories</option>
               {allTags.map((tag) => (
                 <option key={tag} value={tag}>
-                  {tag}
+                  {tag === "HS Recommended" ? "★ HS Recommended" : tag}
                 </option>
               ))}
             </select>
@@ -413,7 +464,9 @@ function ToolsPageContent() {
           {filteredCategories.map((category: ToolCategory) => (
             <div key={category.name} className="space-y-6">
               <div>
-                <h2 className="text-3xl font-semibold tracking-tight text-black/80">{category.name}</h2>
+                <h2 className="text-3xl font-semibold tracking-tight text-black/80">
+                  {category.name === "HS Recommended" ? "Heaps Smart Recommended" : category.name}
+                </h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

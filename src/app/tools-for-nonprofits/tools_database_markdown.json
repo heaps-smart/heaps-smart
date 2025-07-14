@@ -515,7 +515,7 @@
   {
     "name": "Google Gmail",
     "link": "https://mail.google.com",
-    "category": "Communication",
+    "category": ["Communication", "Email Management"],
     "description": "Email platform for daily communication \u2014 commonly used by non-profits to manage donor, partner, and internal emails.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
