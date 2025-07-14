@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect, useRef, useMemo, Suspense } from "react";
+import { useState, useEffect, useRef, useMemo, Suspense, useReducer, useCallback } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import Fuse from "fuse.js";
+import Fuse, { FuseResult } from "fuse.js";
 import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
@@ -32,6 +32,41 @@ interface ToolCategory {
   tools: Tool[];
 }
 
+interface FilterState {
+  selectedTag: string | null;
+  search: string;
+  debouncedSearch: string;
+  isDropdownVisible: boolean;
+  selectedDropdownIndex: number;
+}
+
+type FilterAction = 
+  | { type: 'SET_SELECTED_TAG'; payload: string | null }
+  | { type: 'SET_SEARCH'; payload: string }
+  | { type: 'SET_DEBOUNCED_SEARCH'; payload: string }
+  | { type: 'SET_DROPDOWN_VISIBLE'; payload: boolean }
+  | { type: 'SET_SELECTED_DROPDOWN_INDEX'; payload: number }
+  | { type: 'RESET_FILTERS' };
+
+const filterReducer = (state: FilterState, action: FilterAction): FilterState => {
+  switch (action.type) {
+    case 'SET_SELECTED_TAG':
+      return { ...state, selectedTag: action.payload };
+    case 'SET_SEARCH':
+      return { ...state, search: action.payload };
+    case 'SET_DEBOUNCED_SEARCH':
+      return { ...state, debouncedSearch: action.payload };
+    case 'SET_DROPDOWN_VISIBLE':
+      return { ...state, isDropdownVisible: action.payload, selectedDropdownIndex: -1 };
+    case 'SET_SELECTED_DROPDOWN_INDEX':
+      return { ...state, selectedDropdownIndex: action.payload };
+    case 'RESET_FILTERS':
+      return { ...state, search: '', debouncedSearch: '', isDropdownVisible: false, selectedDropdownIndex: -1 };
+    default:
+      return state;
+  }
+};
+
 // Helper functions for URL-friendly category slugs
 const categoryToSlug = (category: string): string => {
   if (category === "HS Recommended") return "hs-recommended";
@@ -56,22 +91,50 @@ const toolBelongsToCategory = (tool: Tool, categoryName: string): boolean => {
   return categories.includes(categoryName);
 };
 
+// Utility function to get filtered tools by category
+const getFilteredTools = (tools: Tool[], categoryName: string): Tool[] => {
+  if (categoryName === "HS Recommended") {
+    return tools.filter(tool => tool.hs_recommended?.toLowerCase() === "yes");
+  }
+  return tools.filter(tool => toolBelongsToCategory(tool, categoryName));
+};
+
+// Error boundary and validation for tools data
+const validateToolsData = (data: unknown): Tool[] => {
+  if (!Array.isArray(data)) {
+    console.error('Tools data is not an array');
+    return [];
+  }
+  
+  return data.filter((tool: unknown): tool is Tool => {
+    return tool !== null && 
+           typeof tool === 'object' && 
+           'name' in tool &&
+           'slug' in tool &&
+           'category' in tool &&
+           typeof (tool as Record<string, unknown>).name === 'string' && 
+           typeof (tool as Record<string, unknown>).slug === 'string' &&
+           (typeof (tool as Record<string, unknown>).category === 'string' || 
+            Array.isArray((tool as Record<string, unknown>).category));
+  });
+};
+
 function ToolsPageContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   
-  const [search, setSearch] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState("");
-
-  // Calculate allTags first
+  // Validate and process tools data
+  const validatedTools = useMemo(() => validateToolsData(toolsData), []);
+  
+  // Calculate allTags first (moved before state initialization)
   const allTags = useMemo(() => {
     const allCategories = new Set<string>();
-    toolsData.forEach((tool: Tool) => {
+    validatedTools.forEach((tool: Tool) => {
       const categories = getToolCategories(tool);
       categories.forEach(category => allCategories.add(category));
     });
     // Add HS Recommended as a special category if there are any recommended tools
-    const hasRecommendedTools = toolsData.some(tool => 
+    const hasRecommendedTools = validatedTools.some(tool => 
       tool.hs_recommended?.toLowerCase() === "yes"
     );
     if (hasRecommendedTools) {
@@ -83,10 +146,10 @@ function ToolsPageContent() {
       if (b === "HS Recommended") return 1;
       return a.localeCompare(b);
     });
-  }, []);
+  }, [validatedTools]);
 
-  // Initialize selectedTag with proper slug conversion and validation
-  const [selectedTag, setSelectedTag] = useState<string | null>(() => {
+  // Initialize state with proper selectedTag from URL or default to HS Recommended
+  const initialSelectedTag = useMemo(() => {
     const categoryParam = searchParams.get('category');
     if (categoryParam) {
       // Convert slug back to category name and validate it exists
@@ -94,28 +157,37 @@ function ToolsPageContent() {
       const validCategory = allTags.find(tag => 
         tag.toLowerCase() === categoryName.toLowerCase()
       );
-      return validCategory || null;
+      return validCategory || "HS Recommended";
     }
     // Default to HS Recommended if no category parameter is present
     return "HS Recommended";
+  }, [searchParams, allTags]);
+
+  // Use reducer for filter state management with properly initialized selectedTag
+  const [filterState, dispatch] = useReducer(filterReducer, {
+    selectedTag: initialSelectedTag,
+    search: '',
+    debouncedSearch: '',
+    isDropdownVisible: false,
+    selectedDropdownIndex: -1
   });
 
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const shadowClass = "shadow-sm hover:shadow-md";
 
+  // Debounce search
   useEffect(() => {
     const handler = setTimeout(() => {
-      setDebouncedSearch(search);
+      dispatch({ type: 'SET_DEBOUNCED_SEARCH', payload: filterState.search });
     }, 200);
 
     return () => {
       clearTimeout(handler);
     };
-  }, [search]);
+  }, [filterState.search]);
 
-  const allTools = useMemo(() => toolsData, []);
+  const allTools = useMemo(() => validatedTools, [validatedTools]);
 
   const fuse = useMemo(() =>
     new Fuse(allTools, {
@@ -135,10 +207,10 @@ function ToolsPageContent() {
       ignoreLocation: true,
     }), [allTools]);
 
-  const searchResults = useMemo(() => {
-    if (debouncedSearch.trim().length <= 1) return [];
+  const searchResults = useMemo((): FuseResult<Tool>[] => {
+    if (filterState.debouncedSearch.trim().length <= 1) return [];
     
-    const query = debouncedSearch.trim().toLowerCase();
+    const query = filterState.debouncedSearch.trim().toLowerCase();
     
     // Check for exact matches in tool names
     const exactMatch = allTools.find(tool => 
@@ -147,13 +219,13 @@ function ToolsPageContent() {
     
     // If there is an exact match, return only that tool
     if (exactMatch) {
-      return [{ item: exactMatch, score: 0 }];
+      return [{ item: exactMatch, score: 0, refIndex: 0 }];
     }
     
     // Otherwise, return fuzzy search results
     return Array.from(
       new Map(
-        fuse.search(debouncedSearch).map((result) => [
+        fuse.search(filterState.debouncedSearch).map((result) => [
           result.item.name.toLowerCase(), result
         ])
       ).values()
@@ -167,22 +239,17 @@ function ToolsPageContent() {
         return (a.score || 0) - (b.score || 0);
       })
       .slice(0, 6);
-  }, [debouncedSearch, fuse, allTools]);
+  }, [filterState.debouncedSearch, fuse, allTools]);
 
   const filteredCategories = useMemo(() => {
-    if (debouncedSearch.trim().length > 1) {
+    if (filterState.debouncedSearch.trim().length > 1) {
       const matchingCategory = allTags.find(
         (category) =>
-          category.toLowerCase() === debouncedSearch.trim().toLowerCase()
+          category.toLowerCase() === filterState.debouncedSearch.trim().toLowerCase()
       );
 
       if (matchingCategory) {
-        let tools;
-        if (matchingCategory === "HS Recommended") {
-          tools = toolsData.filter(tool => tool.hs_recommended?.toLowerCase() === "yes");
-        } else {
-          tools = toolsData.filter(tool => toolBelongsToCategory(tool, matchingCategory));
-        }
+        const tools = getFilteredTools(validatedTools, matchingCategory);
         
         return [{
           name: matchingCategory,
@@ -198,16 +265,11 @@ function ToolsPageContent() {
       }];
     }
 
-    if (selectedTag) {
-      let tools;
-      if (selectedTag === "HS Recommended") {
-        tools = toolsData.filter(tool => tool.hs_recommended?.toLowerCase() === "yes");
-      } else {
-        tools = toolsData.filter(tool => toolBelongsToCategory(tool, selectedTag));
-      }
+    if (filterState.selectedTag) {
+      const tools = getFilteredTools(validatedTools, filterState.selectedTag);
       
       return [{
-        name: selectedTag,
+        name: filterState.selectedTag,
         description: "",
         tools: tools,
       }];
@@ -215,7 +277,7 @@ function ToolsPageContent() {
 
     // Group tools by category (excluding HS Recommended when showing all)
     const categoryMap = new Map<string, Tool[]>();
-    toolsData.forEach((tool: Tool) => {
+    validatedTools.forEach((tool: Tool) => {
       const categories = getToolCategories(tool);
       categories.forEach(category => {
         if (!categoryMap.has(category)) {
@@ -234,33 +296,46 @@ function ToolsPageContent() {
         description: "",
         tools: tools.filter((tool: Tool) => {
           const matchesSearch =
-            tool.name.toLowerCase().includes(debouncedSearch.toLowerCase()) ||
-            tool.description.toLowerCase().includes(debouncedSearch.toLowerCase());
+            tool.name.toLowerCase().includes(filterState.debouncedSearch.toLowerCase()) ||
+            tool.description.toLowerCase().includes(filterState.debouncedSearch.toLowerCase());
           return matchesSearch;
         }),
       }))
       .filter((category) => category.tools.length > 0)
       .sort((a, b) => a.name.localeCompare(b.name));
-  }, [debouncedSearch, searchResults, selectedTag, allTags]);
+  }, [filterState.debouncedSearch, filterState.selectedTag, searchResults, allTags, validatedTools]);
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = useCallback((event: MouseEvent) => {
     if (
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target as Node) &&
       inputRef.current &&
       !inputRef.current.contains(event.target as Node)
     ) {
-      setIsDropdownVisible(false);
+      dispatch({ type: 'SET_DROPDOWN_VISIBLE', payload: false });
     }
-  };
+  }, []);
 
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === "Escape" || event.key === "Enter") {
-      setIsDropdownVisible(false);
+  const handleKeyDown = useCallback((event: KeyboardEvent) => {
+    if (event.key === "Escape") {
+      dispatch({ type: 'SET_DROPDOWN_VISIBLE', payload: false });
+    } else if (event.key === "Enter" && filterState.selectedDropdownIndex >= 0) {
+      const selectedTool = searchResults[filterState.selectedDropdownIndex];
+      if (selectedTool) {
+        window.location.href = `/tools-for-nonprofits/${selectedTool.item.slug}`;
+      }
+    } else if (event.key === "ArrowDown") {
+      event.preventDefault();
+      const nextIndex = Math.min(filterState.selectedDropdownIndex + 1, searchResults.length - 1);
+      dispatch({ type: 'SET_SELECTED_DROPDOWN_INDEX', payload: nextIndex });
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      const prevIndex = Math.max(filterState.selectedDropdownIndex - 1, -1);
+      dispatch({ type: 'SET_SELECTED_DROPDOWN_INDEX', payload: prevIndex });
     }
-  };
+  }, [filterState.selectedDropdownIndex, searchResults]);
 
-  // Setup event listeners to close dropdown when clicking outside or pressing Escape/Enter
+  // Setup event listeners to close dropdown when clicking outside or pressing keys
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleKeyDown);
@@ -269,13 +344,12 @@ function ToolsPageContent() {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
+  }, [handleClickOutside, handleKeyDown]);
 
   const handleTagClick = (tag: string) => {
-    setSearch("");
-    setDebouncedSearch(""); 
-    const newSelectedTag = selectedTag === tag ? null : tag;
-    setSelectedTag(newSelectedTag);
+    dispatch({ type: 'RESET_FILTERS' });
+    const newSelectedTag = filterState.selectedTag === tag ? null : tag;
+    dispatch({ type: 'SET_SELECTED_TAG', payload: newSelectedTag });
     
     // Update URL parameter
     const params = new URLSearchParams(searchParams.toString());
@@ -292,33 +366,33 @@ function ToolsPageContent() {
 
   // Auto-select category tag when search matches a category name exactly
   useEffect(() => {
-    if (debouncedSearch.trim().length > 1) {
+    if (filterState.debouncedSearch.trim().length > 1) {
       const matchingCategory = allTags.find(
         (category) =>
-          category.toLowerCase() === debouncedSearch.trim().toLowerCase()
+          category.toLowerCase() === filterState.debouncedSearch.trim().toLowerCase()
       );
 
       if (matchingCategory) {
-        setSelectedTag(matchingCategory);
+        dispatch({ type: 'SET_SELECTED_TAG', payload: matchingCategory });
         return;
       }
 
-      if (selectedTag) {
-        setSelectedTag(null);
+      if (filterState.selectedTag) {
+        dispatch({ type: 'SET_SELECTED_TAG', payload: null });
       }
     }
-  }, [debouncedSearch, selectedTag, allTags]);
+  }, [filterState.debouncedSearch, filterState.selectedTag, allTags]);
 
   // Set default URL parameter for HS Recommended when no category is specified
   useEffect(() => {
     const categoryParam = searchParams.get('category');
-    if (!categoryParam && selectedTag === "HS Recommended") {
+    if (!categoryParam && filterState.selectedTag === "HS Recommended") {
       const params = new URLSearchParams(searchParams.toString());
       params.set('category', categoryToSlug("HS Recommended"));
       const newUrl = `?${params.toString()}`;
       router.replace(`/tools-for-nonprofits${newUrl}`, { scroll: false });
     }
-  }, [searchParams, selectedTag, router]);
+  }, [searchParams, filterState.selectedTag, router]);
 
   return (
     <main className="bg-[#F7F2EE] text-black font-sans">
@@ -345,22 +419,22 @@ function ToolsPageContent() {
               type="text"
               placeholder="Search tools..."
               className="w-full px-4 py-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-400"
-              value={search}
+              value={filterState.search}
               onChange={(e) => {
-                setSearch(e.target.value);
-                setIsDropdownVisible(true);
+                dispatch({ type: 'SET_SEARCH', payload: e.target.value });
+                dispatch({ type: 'SET_DROPDOWN_VISIBLE', payload: true });
               }}
               onFocus={() => {
-                if (search.trim().length > 1) {
-                  setIsDropdownVisible(true);
+                if (filterState.search.trim().length > 1) {
+                  dispatch({ type: 'SET_DROPDOWN_VISIBLE', payload: true });
                 }
               }}
             />
-            {search && (
+            {filterState.search && (
               <button
                 onClick={() => {
-                  setSearch("");
-                  setIsDropdownVisible(false);
+                  dispatch({ type: 'SET_SEARCH', payload: '' });
+                  dispatch({ type: 'SET_DROPDOWN_VISIBLE', payload: false });
                 }}
                 className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 focus:outline-none"
                 aria-label="Clear search"
@@ -369,19 +443,27 @@ function ToolsPageContent() {
               </button>
             )}
 
-            {isDropdownVisible && searchResults.length > 0 && (
+            {filterState.isDropdownVisible && searchResults.length > 0 && (
               <div
                 ref={dropdownRef}
                 className="absolute z-50 mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-md max-h-72 overflow-y-auto"
+                role="listbox"
+                aria-label="Search results"
               >
-                {searchResults.map((result) => {
+                {searchResults.map((result, index) => {
                   const tool = result.item;
                   return (
                     <Link
                       key={tool.name}
                       href={`/tools-for-nonprofits/${tool.slug}`}
-                      className="block px-4 py-3 hover:bg-yellow-100 transition-colors flex justify-between items-center"
-                      onClick={() => setIsDropdownVisible(false)}
+                      className={`block px-4 py-3 transition-colors flex justify-between items-center ${
+                        index === filterState.selectedDropdownIndex 
+                          ? 'bg-yellow-100' 
+                          : 'hover:bg-yellow-100'
+                      }`}
+                      role="option"
+                      aria-selected={index === filterState.selectedDropdownIndex}
+                      onClick={() => dispatch({ type: 'SET_DROPDOWN_VISIBLE', payload: false })}
                     >
                       <div>
                         <div className="font-semibold text-black/90">{tool.name}</div>
@@ -401,13 +483,12 @@ function ToolsPageContent() {
           <div className="hidden md:flex flex-wrap gap-3 mb-6">
             <button
               onClick={() => {
-                setSearch("");
-                setDebouncedSearch("");
-                setSelectedTag(null);
+                dispatch({ type: 'RESET_FILTERS' });
+                dispatch({ type: 'SET_SELECTED_TAG', payload: null });
                 router.replace('/tools-for-nonprofits', { scroll: false });
               }}
               className={`px-4 py-2 text-sm rounded-full font-medium transition-colors shadow ${
-                selectedTag === null
+                filterState.selectedTag === null
                   ? "bg-yellow-500 text-black"
                   : "bg-gray-200 text-gray-600 hover:bg-yellow-400"
               }`}
@@ -419,7 +500,7 @@ function ToolsPageContent() {
                 key={tag}
                 onClick={() => handleTagClick(tag)}
                 className={`px-4 py-2 text-sm rounded-full font-medium transition-colors shadow ${
-                  selectedTag === tag
+                  filterState.selectedTag === tag
                     ? "bg-yellow-500 text-black"
                     : "bg-gray-200 text-gray-600 hover:bg-yellow-400"
                 }`}
@@ -436,13 +517,12 @@ function ToolsPageContent() {
             </label>
             <select
               id="category-select"
-              value={selectedTag || ""}
+              value={filterState.selectedTag || ""}
               onChange={(e) => {
                 const value = e.target.value;
                 if (value === "") {
-                  setSearch("");
-                  setDebouncedSearch("");
-                  setSelectedTag(null);
+                  dispatch({ type: 'RESET_FILTERS' });
+                  dispatch({ type: 'SET_SELECTED_TAG', payload: null });
                   router.replace('/tools-for-nonprofits', { scroll: false });
                 } else {
                   handleTagClick(value);
