@@ -38,7 +38,10 @@
   {
     "name": "Airtable",
     "link": "https://airtable.com",
-    "category": "Data Management",
+    "category": [
+      "Data Management",
+      "Data Visualisation"
+    ],
     "description": "Combines spreadsheet simplicity with database power \u2014 ideal for tracking volunteer applications or event RSVPs.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$",
@@ -48,7 +51,7 @@
     "hs_recommended": "Yes",
     "hs_recommended_details": "Airtable is a great option for non-profits that are still using spreadsheets like Excel to manage things like grants, volunteers, or events. It looks like a spreadsheet but works more like a database, so you can link information together, filter and sort with ease, and build simple workflows without writing code. It's especially helpful when you're tracking lots of moving parts and want to avoid version control issues or getting lost in complex formulas. The 50% nonprofit discount makes it more affordable than many other tools in this space. There is a learning curve if you're used to traditional spreadsheets, but the time you save in the long run makes up for it.",
     "affiliate_link": "https://airtable.com/invite/r/skZPOGer",
-    "slug": "airtable",
+    "slug": "airtable", 
     "gallery_images": [
       {
         "id": 1,
@@ -352,7 +355,7 @@
     "non_profit_discount_link": "https://ghost.org/help/ghostpro-discounts/",
     "pricing_details": "Non-profits can receive a 20% discount on all Ghost(Pro) plans by subscribing to an annual billing cycle.\n\n**How to apply:**\n- Set up your free Ghost (Pro) account by starting a 14-day trial at [Ghost.org](https://ghost.org/)  \n- Choose an annual billing plan during the subscription process to automatically receive the 20% discount  \n\nNote: Ghost is operated by a non-profit organisation and does not offer additional discounts beyond the annual billing reduction. However, the Ghost software is free and open-source, allowing you to self-host if preferred.",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "Ghost is a great option for non-profits that want full control over their website, blog, or newsletter without being tied to big platforms. It's open source, fast, and designed with publishing in mind, which makes it ideal for sharing updates, stories, and campaigns with your community. You can use it for both public content and member-only posts, and the built-in newsletter tools are a nice bonus. The 20% discount on annual plans helps keep it affordable, and you can also self-host it for free if you have the tech skills. It's a more hands-on platform than something like Wix or Squarespace, but for teams that want flexibility and ownership, it's a strong option.",
+    "hs_recommended_details": "Ghost is a great option for non-profits that want full control over their website, blog, or newsletter without being tied to big platforms. It's open source, fast, and designed with publishing in mind, which makes it ideal for sharing updates, stories, and campaigns with your community. You can use it for both public content and member-only posts, and the built-in newsletter tools are a nice bonus. The 20% discount on annual plans helps keep it affordable, and you can also self-host it for free if you have the tech skills. It's a more hands-on platform than something like [Wix](/tools-for-nonprofits/wix) or [Squarespace](/tools-for-nonprofits/squarespace), but for teams that want flexibility and ownership, it's a strong option.",
     "affiliate_link": "Requires a Ghost.org website to apply",
     "slug": "ghost",
     "gallery_images": [
@@ -548,7 +551,7 @@
   {
     "name": "Google Sheets",
     "link": "https://sheets.google.com",
-    "category": "Data Management",
+    "category": ["Data Management", "Data Visualisation"],
     "description": "Versatile spreadsheet tool for budgets, tracking impact, or maintaining mailing lists \u2014 easy to share with collaborators.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
@@ -1219,7 +1222,7 @@
     "hs_recommended_details": "",
     "affiliate_link": "Available in Partnerstack, need to have Softr products to showcase",
     "slug": "softr",
-    "description_singlepage": "Softr is a no-code website and app builder that turns Airtable data into interactive pages. Non-profits use it to create directories, member portals or project dashboards without needing to write code.",
+    "description_singlepage": "Softr is a no-code website and app builder that turns [Airtable](/tools-for-nonprofits/airtable) data into interactive pages. Non-profits use it to create directories, member portals or project dashboards without needing to write code.",
     "gallery_images": [
       {
         "id": 1,
@@ -1662,7 +1665,7 @@
     "description_singlepage": "Wix is a website builder that allows users to design and launch sites with drag-and-drop simplicity. Non-profits use it to create engaging websites for events, donations or information sharing without any coding skills."
   },
   {
-    "name": "WordPress",
+    "name": "WordPress.org",
     "link": "https://wordpress.org",
     "category": "Website Builder",
     "description": "Open-source CMS \u2014 widely used for building scalable non-profit websites with donation, blog, and volunteer features.",
@@ -1744,7 +1747,7 @@
     "non_profit_discount_link": "https://zapier.com/non-profits",
     "pricing_details": "Non-profits can apply for Zapier's non-profit discount to receive 15% off any paid plan.\n\n**How to apply:**\n- Set up your free Zapier account  \n- Visit the [Zapier for non-profits page](https://zapier.com/non-profits)  \n- Complete the application form, providing proof of your non-profit status  \n- Once verified, Zapier will apply the discount to your account and notify you by email  ",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "Zapier is a powerful tool for non-profits that want to automate repetitive tasks and save time. You can use it to connect the different apps your team already uses, like moving form responses into a spreadsheet, sending welcome emails to new volunteers, or syncing contact data between platforms. It takes a lot of the manual work out of your day-to-day operations.\n\nThat said, there are a couple of things to watch. Pricing can creep up quickly if you're running lots of automations or using premium apps. And it's important that someone on your team knows what's running and can troubleshoot if something breaks. It's not a set-and-forget tool, and things can get messy if no one's keeping an eye on it.\n\nOnce you've got the right setup, it can make a huge difference in reducing admin and letting your team focus on the real work. If you're not sure where to start, Heaps Smart can help you get up and running with automation.",
+    "hs_recommended_details": "Zapier is a powerful tool for non-profits that want to automate repetitive tasks and save time. You can use it to connect the different apps your team already uses, like moving form responses into a spreadsheet, sending welcome emails to new volunteers, or syncing contact data between platforms. It takes a lot of the manual work out of your day-to-day operations.\n\nThat said, there are a couple of things to watch. Pricing can creep up quickly if you're running lots of automations or using premium apps. And it's important that someone on your team knows what's running and can troubleshoot if something breaks. It's not a set-and-forget tool, and things can get messy if no one's keeping an eye on it.\n\nOnce you've got the right setup, it can make a huge difference in reducing admin and letting your team focus on the real work. If you're not sure where to start, Heaps Smart can help you get up and running with automation. [Get in touch](/contact) to see how we can help your non-profit save time and streamline operations.",
     "affiliate_link": "N/A - No affiliate program",
     "slug": "zapier",
     "gallery_images": [
@@ -1786,9 +1789,27 @@
     "description_singlepage": "Zoho CRM is a budget-friendly customer relationship management tool that helps teams track contacts, emails and supporter activity. Non-profits use it to manage donor relationships, follow up with leads and keep supporter data organised.",
     "gallery_images": [
       {
-        "id": 1,
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/zoho-related-list.mp4",
+        "alt": "Zoho CRM interface video 3",
+        "type": "video"
+      },
+      {
+        "id": 2,
         "src": "/assets/img/tools-for-nonprofits/zoho-crm-interface.webp",
+        "alt": "Zoho CRM interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/zoho-sidebar.webp",
         "alt": "Zoho CRM interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 4,
+        "src": "/assets/img/tools-for-nonprofits/zoho-reports-tab.webp",
+        "alt": "Zoho CRM interface screenshot 4",
         "type": "image"
       }
     ]
@@ -1840,7 +1861,7 @@
     "non_profit_discount_link": "https://calendly.com/pricing",
     "pricing_details": "Non-profits can apply for Calendly's non-profit discount to receive 25% off annual plans.\n\n**How to apply:**\n- Set up your free Calendly account  \n- Contact Calendly's support team at support@calendly.com  \n- Provide proof of your non-profit status  \n- Once verified, Calendly will apply the discount to your account and notify you by email  ",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "Calendly is one of the easiest and most user-friendly scheduling tools out there. It's perfect if your non-profit regularly books appointments, meetings, or interviews and wants to avoid the back-and-forth of email. It syncs with your calendar, lets people book a time that suits them, and handles reminders automatically.\n\nThat said, as a stand-alone tool, it comes with a price tag that's hard to justify for smaller teams already using Google Calendar. Google's free appointment slots feature covers the basics well, especially for internal use.\n\nWhere Calendly stands out is when you need to set up multiple booking types, route bookings to different staff members, manage group events, or collect information at the time of booking. It also offers a cleaner booking experience, custom questions, and more control over availability, which can be helpful for programs like volunteer inductions, donor check-ins, or student mentoring.\n\nIf your team handles a high volume of external bookings and needs something polished and reliable, Calendly is a strong option. For everything else, Google might get the job done.",
+    "hs_recommended_details": "Calendly is one of the easiest and most user-friendly scheduling tools out there. It's perfect if your non-profit regularly books appointments, meetings, or interviews and wants to avoid the back-and-forth of email. It syncs with your calendar, lets people book a time that suits them, and handles reminders automatically.\n\nThat said, as a stand-alone tool, it comes with a price tag that's hard to justify for smaller teams already using [Google Calendar](/tools-for-nonprofits/google-calendar). Google's free appointment slots feature covers the basics well, especially for internal use.\n\nWhere Calendly stands out is when you need to set up multiple booking types, route bookings to different staff members, manage group events, or collect information at the time of booking. It also offers a cleaner booking experience, custom questions, and more control over availability, which can be helpful for programs like volunteer inductions, donor check-ins, or student mentoring.\n\nIf your team handles a high volume of external bookings and needs something polished and reliable, Calendly is a strong option. For everything else, Google might get the job done.",
     "affiliate_link": "N/A - No affiliate program",
     "slug": "calendly",
     "gallery_images": [
@@ -2012,7 +2033,7 @@
     "non_profit_discount_link": "https://www.xero.com/au/small-businesses/non-profit/",
     "pricing_details": "Non-profits receive 25% off Business Edition plans.\n\n**How to apply:**\n- Sign up for a free trial or paid Xero plan  \n- Log in to Xero Central and raise a support case  \n- Provide proof of your non-profit status  \n- Once verified, Xero will apply the discount and notify you by email  ",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "While we're not accountants, we believe Xero is a solid choice for non-profits that want to stay on top of their finances without a full-time bookkeeper. It's great for smaller teams because it simplifies tasks like tracking expenses, sending invoices, managing payroll, and reconciling bank accounts. The interface is clean, and it's easy to share access with your accountant or treasurer. There's also a non-profit discount available, which helps keep it affordable as your organization grows.\n\nOne of the strengths of Xero is its extensive integration capabilities. For instance, it connects with donor management tools like Keela and Infoodle, allowing you to sync donor data and streamline fundraising efforts. If your non-profit uses platforms like Stripe or PayPal for online donations, Xero can integrate with these to automatically record transactions, reducing manual data entry.\n\nThese integrations help non-profits automate routine tasks, maintain accurate records, and focus more on their mission rather than administrative work.",
+    "hs_recommended_details": "While we're not accountants, we believe Xero is a solid choice for non-profits that want to stay on top of their finances without a full-time bookkeeper. It's great for smaller teams because it simplifies tasks like tracking expenses, sending invoices, managing payroll, and reconciling bank accounts. The interface is clean, and it's easy to share access with your accountant or treasurer. There's also a non-profit discount available, which helps keep it affordable as your organisation grows.\n\nOne of the strengths of Xero is its extensive integration capabilities. For instance, it connects with donor management tools like [Keela](/tools-for-nonprofits/keela) and Infoodle, allowing you to sync donor data and streamline fundraising efforts. If your non-profit uses platforms like [Stripe](/tools-for-nonprofits/stripe) or PayPal for online donations, Xero can integrate with these to automatically record transactions, reducing manual data entry.\n\nThese integrations help non-profits automate routine tasks, maintain accurate records, and focus more on their mission rather than administrative work.",
     "affiliate_link": "",
     "slug": "xero",
     "gallery_images": [
@@ -2166,9 +2187,9 @@
     "raw_pricing": "$$$$",
     "non_profit_discount": "Built for non-profits with scaled pricing",
     "non_profit_discount_link": "https://www.keela.co/pricing/",
-    "pricing_details": "Keela offers tiered pricing based on the number of contacts in your database, starting from $79 USD/month for up to 1,000 contacts.\n\n**How to get started:**\n- Visit the Keela website and request a demo\n- Choose a plan based on your contact database size\n- Keela offers onboarding support and training to help you get set up\n- Pricing scales with your organization's size rather than offering traditional non-profit discounts",
+    "pricing_details": "Keela offers tiered pricing based on the number of contacts in your database, starting from $79 USD/month for up to 1,000 contacts.\n\n**How to get started:**\n- Visit the Keela website and request a demo\n- Choose a plan based on your contact database size\n- Keela offers onboarding support and training to help you get set up\n- Pricing scales with your organisation's size rather than offering traditional non-profit discounts",
     "hs_recommended": "Yes",
-    "hs_recommended_details": "Keela is purpose-built for non-profits, which means it understands the unique needs of fundraising organizations right out of the box. Unlike general CRMs that you have to adapt, Keela includes features like donor segmentation, gift tracking, campaign management, and reporting dashboards designed specifically for fundraising teams.\n\nIt's particularly strong for organizations that are ready to move beyond spreadsheets and basic tools but aren't quite ready for enterprise-level platforms like Salesforce. The built-in email marketing, online donation forms, and volunteer management features mean you can consolidate several tools into one platform.\n\nThe pricing is higher than general CRMs, but it includes specialized features that would otherwise require multiple subscriptions. It's worth considering if fundraising is a major part of your operations and you want a system that speaks your language from day one.",
+    "hs_recommended_details": "Keela is purpose-built for non-profits, which means it understands the unique needs of fundraising organisations right out of the box. Unlike general CRMs that you have to adapt, Keela includes features like donor segmentation, gift tracking, campaign management, and reporting dashboards designed specifically for fundraising teams.\n\nIt's particularly strong for organisations that are ready to move beyond spreadsheets and basic tools but aren't quite ready for enterprise-level platforms like Salesforce. The built-in email marketing, online donation forms, and volunteer management features mean you can consolidate several tools into one platform.\n\nThe pricing is higher than general CRMs, but it includes specialized features that would otherwise require multiple subscriptions. It's worth considering if fundraising is a major part of your operations and you want a system that speaks your language from day one.",
     "affiliate_link": "",
     "slug": "keela",
     "description_singlepage": "Keela is an AI\u2011enhanced CRM and donor management platform designed specifically for non\u2011profits. Non\u2011profits use it to store supporter details, automate thank\u2011you emails and campaign planning, and track donations and volunteer engagement all in one place.",

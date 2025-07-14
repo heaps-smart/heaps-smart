@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useMemo } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Fuse from "fuse.js";
 import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
@@ -13,7 +14,7 @@ interface Tool {
   name: string;
   description: string;
   link: string;
-  category: string;
+  category: string | string[];
   monthly_pricing_aud: string;
   raw_pricing: string;
   non_profit_discount: string;
@@ -31,16 +32,64 @@ interface ToolCategory {
   tools: Tool[];
 }
 
+// Helper functions for URL-friendly category slugs
+const categoryToSlug = (category: string): string => {
+  return category.toLowerCase().replace(/\s+/g, '-');
+};
+
+const slugToCategory = (slug: string): string => {
+  return slug.split('-').map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1)
+  ).join(' ');
+};
+
+//  Pre-check all categories from a tool
+const getToolCategories = (tool: Tool): string[] => {
+  return Array.isArray(tool.category) ? tool.category : [tool.category];
+};
+
+// Pre-check if a tool belongs to a category
+const toolBelongsToCategory = (tool: Tool, categoryName: string): boolean => {
+  const categories = getToolCategories(tool);
+  return categories.includes(categoryName);
+};
+
 export default function ToolsPage() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  
+  // Calculate allTags first so we can validate the category parameter
+  const allTags = useMemo(() => {
+    const allCategories = new Set<string>();
+    toolsData.forEach((tool: Tool) => {
+      const categories = getToolCategories(tool);
+      categories.forEach(category => allCategories.add(category));
+    });
+    return Array.from(allCategories).sort((a, b) => a.localeCompare(b));
+  }, []);
+
+  // Initialize selectedTag with proper slug conversion and validation
+  const [selectedTag, setSelectedTag] = useState<string | null>(() => {
+    const categoryParam = searchParams.get('category');
+    if (categoryParam) {
+      // Convert slug back to category name and validate it exists
+      const categoryName = slugToCategory(categoryParam);
+      const validCategory = allTags.find(tag => 
+        tag.toLowerCase() === categoryName.toLowerCase()
+      );
+      return validCategory || null;
+    }
+    return null;
+  });
+  
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const shadowClass = "shadow-sm hover:shadow-md";
 
-  // Debounce search input to avoid excessive renders while typing
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedSearch(search);
@@ -51,21 +100,20 @@ export default function ToolsPage() {
     };
   }, [search]);
 
-  const allTags = useMemo(() => (
-    Array.from(
-      new Set(
-        toolsData.map((tool: Tool) => tool.category)
-      )
-    ).sort()
-  ), []);
-
   const allTools = useMemo(() => toolsData, []);
 
   const fuse = useMemo(() =>
     new Fuse(allTools, {
       keys: [
         { name: "name", weight: 0.7 },
-        { name: "category", weight: 0.5 },
+        { 
+          name: "category", 
+          weight: 0.5,
+          getFn: (tool) => {
+            const categories = getToolCategories(tool);
+            return categories.join(' ');
+          }
+        },
         { name: "description", weight: 0.3 },
       ],
       threshold: 0.3,
@@ -117,7 +165,7 @@ export default function ToolsPage() {
         return [{
           name: matchingCategory,
           description: "",
-          tools: toolsData.filter(tool => tool.category === matchingCategory),
+          tools: toolsData.filter(tool => toolBelongsToCategory(tool, matchingCategory)),
         }];
       }
 
@@ -132,18 +180,20 @@ export default function ToolsPage() {
       return [{
         name: selectedTag,
         description: "",
-        tools: toolsData.filter(tool => tool.category === selectedTag),
+        tools: toolsData.filter(tool => toolBelongsToCategory(tool, selectedTag)),
       }];
     }
 
     // Group tools by category
     const categoryMap = new Map<string, Tool[]>();
     toolsData.forEach((tool: Tool) => {
-      const category = tool.category;
-      if (!categoryMap.has(category)) {
-        categoryMap.set(category, []);
-      }
-      categoryMap.get(category)!.push(tool);
+      const categories = getToolCategories(tool);
+      categories.forEach(category => {
+        if (!categoryMap.has(category)) {
+          categoryMap.set(category, []);
+        }
+        categoryMap.get(category)!.push(tool);
+      });
     });
 
     return Array.from(categoryMap.entries())
@@ -192,7 +242,20 @@ export default function ToolsPage() {
   const handleTagClick = (tag: string) => {
     setSearch("");
     setDebouncedSearch(""); 
-    setSelectedTag((prev) => (prev === tag ? null : tag));
+    const newSelectedTag = selectedTag === tag ? null : tag;
+    setSelectedTag(newSelectedTag);
+    
+    // Update URL parameter
+    const params = new URLSearchParams(searchParams.toString());
+    if (newSelectedTag) {
+      params.set('category', categoryToSlug(newSelectedTag));
+    } else {
+      params.delete('category');
+    }
+    
+    // Use replace to avoid adding to browser history
+    const newUrl = params.toString() ? `?${params.toString()}` : '';
+    router.replace(`/tools-for-nonprofits${newUrl}`, { scroll: false });
   };
 
   // Auto-select category tag when search matches a category name exactly
@@ -225,10 +288,12 @@ export default function ToolsPage() {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
             Tools for non-profits
           </h1>
-          <p className="text-lg md:text-xl max-w-3xl mb-4 text-black/70 leading-relaxed">
-            We've tested hundreds of tools to find the ones that deliver the most value for non-profits and businesses.
-            Here are our top recommendations across various categories.
-          </p>
+            <p className="text-lg md:text-xl max-w-3xl mb-4 text-black/70 leading-relaxed tracking-tight">
+            As part of our work, we get to test heaps of products. We've pulled together some of the best tools for non-profits across a bunch of categories and we hope you find it useful. If you have questions or another great tool we should know about?{" "}
+            <Link href="/contact" className="text-black-800 underline">
+              Get in touch →
+            </Link>
+            </p>
           <div className="h-1 w-24 bg-yellow-400 mt-4 mb-6 rounded-full"></div>
 
           <div className="relative mb-6">
@@ -364,7 +429,7 @@ export default function ToolsPage() {
         <div className={`bg-white p-8 rounded-lg ${shadowClass} mb-16 border border-gray-200`}>
           <h2 className="text-2xl font-semibold mb-4 text-black/80">Need help choosing the right tools?</h2>
           <p className="mb-6 text-black/70 leading-relaxed">
-            Every organization has unique needs. We can help you select and implement the right tools for your specific requirements.
+            Every organisation has unique needs. We can help you select and implement the right tools for your specific requirements.
           </p>
           <Link
             href="/contact"

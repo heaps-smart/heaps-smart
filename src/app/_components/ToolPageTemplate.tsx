@@ -6,7 +6,12 @@ import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import ResponsiveVideo from "@/app/_components/ResponsiveVideo";
 import markdownToHtml from "@/lib/markdownToHtml";
+import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
+
+const categoryToSlug = (category: string): string => {
+  return category.toLowerCase().replace(/\s+/g, '-');
+};
 
 type Section = {
   title: string;
@@ -54,6 +59,7 @@ export default function ToolPageTemplate({
 }: Props) {
   const [renderedPricingDetails, setRenderedPricingDetails] = useState<string>("");
   const [renderedHsDetails, setRenderedHsDetails] = useState<string>("");
+  const [renderedDescription, setRenderedDescription] = useState<string>("");
 
   useEffect(() => {
     const convertMarkdown = async () => {
@@ -74,10 +80,20 @@ export default function ToolPageTemplate({
         );
         setRenderedHsDetails(updatedHtmlContent);
       }
+
+      if (descriptionSinglepage) {
+        const htmlContent = await markdownToHtml(descriptionSinglepage);
+        const updatedHtmlContent = htmlContent.replace(
+          /<a /g,
+          '<a target="_blank" rel="noopener noreferrer" '
+        );
+        setRenderedDescription(updatedHtmlContent);
+      }
     };
     
     convertMarkdown();
-  }, [pricingDetails, hsRecommendedDetails]);
+  }, [pricingDetails, hsRecommendedDetails, descriptionSinglepage]);
+	
   return (
     <main className="bg-[#f8f3ef] text-black font-sans">
       <Container>
@@ -109,7 +125,7 @@ export default function ToolPageTemplate({
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Tools for Non-profits
+              Back to tools for non-profits
             </a>
           </div>
         </header>
@@ -158,11 +174,11 @@ export default function ToolPageTemplate({
                 rel="noopener noreferrer"
                 className="block hover:text-gray-900 transition-colors"
               >
-                <h4 className="text-lg font-semibold text-black/80 mb-1">
+                <h4 className="text-xl font-semibold text-black/80 mb-1">
                   Website
                 </h4>
                 <span 
-                  className="inline-block text-slate-600 hover:text-slate-900 text-sm underline transition-colors"
+                  className="inline-block text-slate-600 hover:text-slate-900 text-base underline transition-colors"
                 >
                   {website}
                 </span>
@@ -172,7 +188,7 @@ export default function ToolPageTemplate({
             {/* Pricing Section */}
             <section>
               <div>
-                <h4 className="text-lg font-semibold text-black/80 mb-2">
+                <h4 className="text-xl font-semibold text-black/80 mb-2">
                   Pricing
                 </h4>
                 <div className="space-y-2">
@@ -201,22 +217,34 @@ export default function ToolPageTemplate({
             {/* Category Section */}
             <section>
               <div>
-                <h4 className="text-lg font-semibold text-black/80 mb-2">
-                  Category
+                <h4 className="text-xl font-semibold text-black/80 mb-2">
+                  {tags.length > 1 ? 'Categories' : 'Category'}
                 </h4>
-                <div className="text-sm text-black/70">
-                  {tags.join(", ")}
-                </div>
+                <ul className="flex flex-col gap-1">
+                  {tags.map((tag) => (
+                    <li key={tag}>
+                      <Link
+                        href={`/tools-for-nonprofits?category=${categoryToSlug(tag)}`}
+                        className="text-base text-[#333] font-medium border-l-4 border-slate-300 pl-3 hover:text-gray-900 hover:border-slate-400 transition-colors block"
+                      >
+                        {tag}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </section>
           </aside>
 
           <div className="col-span-2 space-y-14">
-            {descriptionSinglepage && (
+						{descriptionSinglepage && renderedDescription && (
               <section>
-                <p className="text-lg leading-relaxed text-black/80">
-                  {descriptionSinglepage}
-                </p>
+                <div
+                  className="prose prose-gray max-w-none text-lg leading-relaxed text-black/80 [&_a]:text-gray-700 [&_a:hover]:text-gray-900 [&_a]:underline [&_a]:transition-colors [&_strong]:font-semibold [&_p]:mb-4 [&_ul]:mb-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:mb-2"
+                  dangerouslySetInnerHTML={{
+                    __html: renderedDescription,
+                  }}
+                />
               </section>
             )}
 

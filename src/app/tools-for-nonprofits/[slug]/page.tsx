@@ -6,7 +6,7 @@ interface Tool {
   name: string;
   description: string;
   link: string;
-  category: string;
+  category: string | string[];
   monthly_pricing_aud: string;
   raw_pricing: string;
   non_profit_discount: string;
@@ -16,6 +16,13 @@ interface Tool {
   hs_recommended_details: string;
   affiliate_link: string;
   slug: string;
+  gallery_images?: Array<{
+    id: number;
+    src: string;
+    alt: string;
+    type?: string;
+  }>;
+  description_singlepage?: string;
 }
 
 type Params = { slug: string };
@@ -28,6 +35,11 @@ export default function ToolPage({ params }: { params: Params }) {
   const tool = toolsData.find((t: Tool) => t.slug === params.slug);
 
   if (!tool) notFound();
+
+  // Helper function to get categories as array
+  const getCategories = (category: string | string[]): string[] => {
+    return Array.isArray(category) ? category : [category];
+  };
 
   const sections = [
     { title: 'Overview', content: tool.description },
@@ -52,7 +64,7 @@ export default function ToolPage({ params }: { params: Params }) {
 	return (
 		<ToolPageTemplate
 			toolName={tool.name}
-			tags={[tool.category]}
+			tags={getCategories(tool.category)}
 			sections={sections}
       galleryImages={tool.gallery_images || []}
 			website={tool.link}
