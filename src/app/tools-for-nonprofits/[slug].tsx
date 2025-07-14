@@ -50,7 +50,7 @@ export default function ToolDetailsPage({ tool }: { tool: Tool }) {
 		<InnovationPageTemplate
 			pageTitle={tool.name}
 			tags={tool.tags || []}
-			techStack={[]}Off
+			techStack={[]}
 			sections={[
 				{
 					title: "Description",
