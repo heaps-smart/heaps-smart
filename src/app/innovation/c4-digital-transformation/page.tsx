@@ -1,9 +1,18 @@
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
+import Link from "next/link";
 
 export default function C4DigitalTransformationPage() {
   const tags = ["Website Development", "Digital Strategy", "Conservation", "Automation"];
   const pageTitle = "C4 Digital Transformation";
-  const techStack = ["WordPress", "Next.js/React", "Airtable", "Stripe", "Zapier", "Google Workspace", "Canva"];
+  const techStack = [
+    <Link key="wordpress" href="/tools-for-nonprofits/wordpress">WordPress</Link>,
+    <Link key="contact" href="/contact">Next.js/React</Link>,
+    <Link key="airtable" href="/tools-for-nonprofits/airtable">Airtable</Link>,
+    <Link key="stripe" href="/tools-for-nonprofits/stripe">Stripe</Link>,
+    <Link key="zapier" href="/tools-for-nonprofits/zapier">Zapier</Link>,
+    <Link key="google-docs" href="/tools-for-nonprofits/google-docs">Google Workspace</Link>,
+    <Link key="canva" href="/tools-for-nonprofits/canva">Canva</Link>
+  ];
 
   const galleryImages = [
     { id: 1, src: "/assets/video/c4-walkthru.mp4", alt: "C4 digital transformation walkthrough", type: "video", poster: "/assets/img/c4.webp" },

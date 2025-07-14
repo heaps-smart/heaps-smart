@@ -1,10 +1,15 @@
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Script from "next/script";
+import Link from "next/link";
 
 export default function MeetCassiePage() {
   const tags = ["AI", "Conservation", "Community"];
   const pageTitle = "Meet Cassie: our cassowary expert";
-  const techStack = ["Python (LangChain)", "OpenAI API", "React - Next.js"];
+  const techStack = [
+    <Link key="react" href="/contact">React - Next.js</Link>,
+    <Link key="supabase" href="/tools-for-nonprofits/chatgpt">OpenAI/ChatGPT</Link>,
+  ];
+
   
   const galleryImages = [
     { id: 2, src: "/assets/img/cassie-1.webp", alt: "Cassowary in Mission Beach rainforest" },

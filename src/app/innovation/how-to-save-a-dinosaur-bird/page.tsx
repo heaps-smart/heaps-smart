@@ -1,9 +1,13 @@
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
+import Link from "next/link";
 
 export default function HowToSaveADinosaurBirdPage() {
   const tags = ["Conservation", "Citizen Science", "Data"];
   const pageTitle = "How to save a dinosaur bird";
-  const techStack = ["React - Next.js", "Supabase (PostgreSQL)"];
+  const techStack = [
+    <Link key="react" href="/contact">React - Next.js</Link>,
+    <Link key="supabase" href="/tools-for-nonprofits/supabase">Supabase (PostgreSQL)</Link>,
+  ];
 
   const galleryImages = [
     { id: 2, src: "/assets/img/dino-2.webp", alt: "Map interface showing cassowary sightings" },

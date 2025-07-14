@@ -1,9 +1,14 @@
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
+import Link from "next/link";
 
 export default function RedefiningMvpPage() {
   const tags = ["Conservation", "Citizen Science", "Data", "Vision AI"];
   const pageTitle = "Redefining MVP: most valuable poo";
-  const techStack = ["Python", "Landing Lens (Vision AI)", "PostgreSQL"];
+  const techStack = [
+    <Link key="python" href="/contact">Python</Link>,
+    <Link key="landing-lens" href="/contact">Landing Lens (Vision AI)</Link>,
+    <Link key="supabase" href="/tools-for-nonprofits/supabase">Supabase (PostgreSQL)</Link>,
+  ];
   
   const galleryImages = [
     { id: 1, src: "/assets/img/poo-1.webp", alt: "Cassowary in Mission Beach rainforest" },
@@ -44,7 +49,7 @@ export default function RedefiningMvpPage() {
       ),
     },
     {
-      title: "What’s next",
+      title: "What's next",
       content:
         "We're working toward digitising samples with image recognition, exploring blockchain-style tracking for biodiversity verification, and scaling this model for other keystone species.",
     },

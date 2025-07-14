@@ -246,8 +246,7 @@ export default function InnovationPageTemplate({
                 {techStack.map((tech) => (
                   <li
                     key={tech}
-                    className="text-base text-[#333] font-medium border-l-4 border-slate-300 pl-3"
-                  >
+                    className="text-base text-[#333] font-medium border-l-4 border-slate-300 pl-3 hover:text-gray-900 hover:border-slate-400 transition-colors block"                    >
                     {tech}
                   </li>
                 ))}
