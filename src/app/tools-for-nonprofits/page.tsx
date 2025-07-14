@@ -64,9 +64,9 @@ export default function ToolsPage() {
   const fuse = useMemo(() =>
     new Fuse(allTools, {
       keys: [
-        { name: "name", weight: 0.7 }, // Higher weight for exact matches on name
+        { name: "name", weight: 0.7 },
         { name: "category", weight: 0.5 },
-        { name: "description", weight: 0.3 }, // Lower weight for partial matches in description
+        { name: "description", weight: 0.3 },
       ],
       threshold: 0.3,
       ignoreLocation: true,
@@ -77,12 +77,12 @@ export default function ToolsPage() {
     
     const query = debouncedSearch.trim().toLowerCase();
     
-    // First, check for exact matches in tool names
+    // Check for exact matches in tool names
     const exactMatch = allTools.find(tool => 
       tool.name.toLowerCase() === query
     );
     
-    // If we have an exact match, return only that tool
+    // If there is an exact match, return only that tool
     if (exactMatch) {
       return [{ item: exactMatch, score: 0 }];
     }
@@ -342,7 +342,7 @@ export default function ToolsPage() {
                       </div>
                     </div>
                     {tool.non_profit_discount && (
-                      <div className="text-base font-medium text-purple-800 mb-2 font-semibold">
+                      <div className="text-base font-medium text-purple-900 mb-2 tracking-tight font-semibold">
                         {tool.non_profit_discount}
                       </div>
                     )}

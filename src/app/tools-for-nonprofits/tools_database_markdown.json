@@ -94,9 +94,9 @@
       },
       {
         "id": 2,
-        "src": "/assets/img/tools-for-nonprofits/asana-ui.gif",
+        "src": "/assets/img/tools-for-nonprofits/asana-ui.mp4",
         "alt": "Asana interface screenshot 2",
-        "type": "image"
+        "type": "video"
       }
     ],
     "description_singlepage": "Asana is a project management tool that helps teams plan, track and manage their work. Non-profits use it to stay on top of campaigns, events or funding deadlines with clear tasks and timelines."
@@ -118,9 +118,9 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/balsamiq-drag-and-drop.gif",
+        "src": "/assets/img/tools-for-nonprofits/balsamiq-drag-and-drop.mp4",
         "alt": "Balsamiq interface screenshot 1",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 2,
@@ -286,9 +286,9 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/copper-mobile-talk-to-text.gif",
+        "src": "/assets/img/tools-for-nonprofits/copper-mobile-talk-to-text.mp4",
         "alt": "Copper interface screenshot 1",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 2,
@@ -319,7 +319,27 @@
     "hs_recommended_details": "Google's Gemini AI Assistant can be a helpful support tool for non-profits looking to save time on admin, writing, and planning. It can help draft grant proposals, write donor thank-you letters, summarise reports, or even brainstorm ideas for events or newsletters. If you're not sure where to start, Google offers a [free Nonprofit Prompt Library](https://support.google.com/nonprofits/answer/15287523?hl=en-GB) with examples tailored to the kinds of tasks non-profits do every day. It's available through the Google Workspace for Nonprofits programme, and many organisations can access it at no cost or at a significant discount. It's not perfect and won't replace your voice, but it's a smart tool to have on hand when capacity is tight.",
     "affiliate_link": "Pending Via CJ Affiliates",
     "slug": "google-gemini",
-    "description_singlepage": "Google Gemini is an AI assistant that helps with writing, research and creative tasks across text, images and more. Non-profits use it to draft reports, plan events or generate content quickly."
+    "description_singlepage": "Google Gemini is an AI assistant that helps with writing, research and creative tasks across text, images and more. Non-profits use it to draft reports, plan events or generate content quickly.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/gemini-2.mp4",
+        "alt": "Gemini interface video 1",
+        "type": "video"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/gemini-1.mp4",
+        "alt": "Gemini interface video 2",
+        "type": "video"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/gemini-3.mp4",
+        "alt": "Gemini interface video 3",
+        "type": "video"
+      }
+    ]
   },
   {
     "name": "Ghost.org",
@@ -621,9 +641,9 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/google-drive-1.gif",
+        "src": "/assets/img/tools-for-nonprofits/google-drive-1.mp4",
         "alt": "Google Drive interface screenshot 1",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 2,
@@ -737,7 +757,27 @@
     "hs_recommended_details": "",
     "affiliate_link": "",
     "slug": "humantix",
-    "description_singlepage": "Humanitix is a ticketing platform where all booking fees go to charity projects. Non-profits use it to sell tickets for events while supporting education and social causes at the same time."
+    "description_singlepage": "Humanitix is a ticketing platform where all booking fees go to charity projects. Non-profits use it to sell tickets for events while supporting education and social causes at the same time.",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/humanitix-1.webp",
+        "alt": "Humanitix interface screenshot 1",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/humanitix-2.webp",
+        "alt": "Humanitix interface screenshot 2",
+        "type": "image"
+      },
+      {
+        "id": 3,
+        "src": "/assets/img/tools-for-nonprofits/humanitix-3.webp",
+        "alt": "Humanitix interface screenshot 3",
+        "type": "image"
+      }
+    ]
   },
   {
     "name": "Jotform",
@@ -1039,9 +1079,9 @@
       },
       {
         "id": 4,
-        "src": "/assets/img/tools-for-nonprofits/raisely-4.gif",
+        "src": "/assets/img/tools-for-nonprofits/raisely-4.mp4",
         "alt": "Raisely interface screenshot 4",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 5,
@@ -1081,9 +1121,9 @@
       },
       {
         "id": 3,
-        "src": "/assets/img/tools-for-nonprofits/salesforce-3.gif",
+        "src": "/assets/img/tools-for-nonprofits/salesforce-3.mp4",
         "alt": "Salesforce interface screenshot 3",
-        "type": "image"
+        "type": "video"
       }
     ]
   },
@@ -1141,21 +1181,21 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/slack-1-views.gif",
+        "src": "/assets/img/tools-for-nonprofits/slack-1-views.mp4",
         "alt": "Slack interface screenshot 1",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 2,
-        "src": "/assets/img/tools-for-nonprofits/slack-2-create-menu.gif",
+        "src": "/assets/img/tools-for-nonprofits/slack-2-create-menu.mp4",
         "alt": "Slack interface screenshot 2",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 3,
-        "src": "/assets/img/tools-for-nonprofits/slack-3-workspace.gif",
+        "src": "/assets/img/tools-for-nonprofits/slack-3-workspace.mp4",
         "alt": "Slack interface screenshot 3",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 4,
@@ -1315,9 +1355,9 @@
       },
       {
         "id": 3,
-        "src": "/assets/img/tools-for-nonprofits/tableau-3.gif",
+        "src": "/assets/img/tools-for-nonprofits/tableau-3.mp4",
         "alt": "Tableau interface screenshot 3",
-        "type": "image"
+        "type": "video"
       }
     ]
   },
@@ -1375,20 +1415,14 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/tally-simple-rsvp.mp4",
-        "alt": "Tally interface video 1",
-        "type": "video"
-      },
-      {
-        "id": 1,
         "src": "/assets/img/tools-for-nonprofits/tally-1.webp",
         "alt": "Tally Forms interface screenshot 1",
         "type": "image"
       },
       {
-        "id": 1,
+        "id": 4,
         "src": "/assets/img/tools-for-nonprofits/tally-do-you-work-at-a-non-profit.mp4",
-        "alt": "Tally interface video 1",
+        "alt": "Tally Forms interface screenshot 4",
         "type": "video"
       },
       {
@@ -1402,6 +1436,12 @@
         "src": "/assets/img/tools-for-nonprofits/tally-3.webp",
         "alt": "Tally Forms interface screenshot 3",
         "type": "image"
+      },
+      {
+        "id": 5,
+        "src": "/assets/img/tools-for-nonprofits/tally-simple-rsvp.mp4",
+        "alt": "Tally Forms interface screenshot 5",
+        "type": "video"
       }
     ]
   },
@@ -1495,21 +1535,21 @@
     "gallery_images": [
       {
         "id": 1,
-        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-1.gif",
+        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-1.mp4",
         "alt": "Typeform interface screenshot 1",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 2,
-        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-2.gif",
+        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-2.mp4",
         "alt": "Typeform interface screenshot 2",
-        "type": "image"
+        "type": "video"
       },
       {
         "id": 3,
-        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-3.gif",
+        "src": "/assets/img/tools-for-nonprofits/typeform-ui-gif-3.mp4",
         "alt": "Typeform interface screenshot 3",
-        "type": "image"
+        "type": "video"
       }
     ]
   },
