@@ -20,13 +20,13 @@ type Project = {
 
 const projectsData: Project[] = [
   {
-    title: "Empowering Remote Research Teams Through AI-Driven Meeting Automation",
+    title: "Smarter Meetings for Remote Research Teams",
     content:
       "How we implemented an AI-driven solution to streamline meeting management for environmental researchers, allowing them to focus on research rather than administrative tasks.",
     video: "/assets/video/tactiq.mp4",
     tags: ["AI Automation", "Remote Collaboration", "Research Tools"],
     poster: "/assets/video/posters/tactiq.webp",
-    slug: "empowering-remote-research-teams"
+    slug: "smarter-remote-research-teams"
   },
   {
     title: "C4 Digital Transformation",

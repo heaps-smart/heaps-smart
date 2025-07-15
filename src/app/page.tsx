@@ -15,8 +15,8 @@ const TerrainBackground = dynamic(
 
 const projects = [
   {
-    slug: "empowering-remote-research-teams",
-    title: "Empowering Remote Research Teams Through AI-Driven Meeting Automation",
+    slug: "smarter-remote-research-teams",
+    title: "Smarter Meetings for Remote Research Teams",
     description: "How we implemented an AI-driven solution to streamline meeting management for environmental researchers, allowing them to focus on research rather than administrative tasks.",
     tags: ["AI Automation", "Remote Collaboration", "Research Tools"],
     video: "/assets/video/tactiq.mp4",

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function EmpoweringRemoteResearchTeamsPage() {
   const tags = ["AI Automation", "Remote Collaboration", "Research Tools", "Meeting Management"];
-  const pageTitle = "Empowering Remote Research Teams Through AI-Driven Meeting Automation";
+  const pageTitle = "Smarter Meetings for Remote Research Teams";
   const techStack = [
-    <Link key="openai" href="/tools-for-nonprofits/openai">OpenAI API</Link>,
+    <Link key="openai" href="/tools-for-nonprofits/chatgpt">OpenAI API</Link>,
     <Link key="zoom" href="/tools-for-nonprofits/zoom">Zoom Integration</Link>,
     <Link key="tactiq" href="/tools-for-nonprofits/tactiq">Tactiq Transcription</Link>
   ];
