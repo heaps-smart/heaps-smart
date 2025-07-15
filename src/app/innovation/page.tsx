@@ -15,6 +15,14 @@ const TorusKnotCanvas = dynamic(() => import("@/app/_components/animations/Torus
 
 const projects = [
   {
+    slug: "empowering-remote-research-teams",
+    title: "Empowering Remote Research Teams Through AI-Driven Meeting Automation",
+    description: "How we implemented an AI-driven solution to streamline meeting management for environmental researchers, allowing them to focus on research rather than administrative tasks.",
+    tags: ["AI Automation", "Remote Collaboration", "Research Tools"],
+    video: "/assets/video/tactiq.mp4",
+    poster: "/assets/video/posters/tactiq.webp",
+  },
+  {
     slug: "redefining-mvp",
     title: "Redefining MVP: most valuable poo",
     description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",

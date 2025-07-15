@@ -60,13 +60,12 @@ export default async function PostPage({ params }: PostPageProps) {
           <div className="flex flex-wrap gap-1 mb-6">
             {Array.isArray(data.tags) &&
               data.tags.map((tag: string) => (
-                <a
+                <span
                   key={tag}
-                  href={`/tags/${tag}`}
-                  className="inline-block bg-transparent text-slate-500 text-sm px-1 py-0.5 border-b border-slate-200 hover:text-slate-700"
+                  className="inline-block bg-transparent text-slate-500 text-sm px-1 py-0.5 border-b border-slate-200"
                 >
                   {tag}
-                </a>
+                </span>
               ))}
           </div>
           <div className="text-lg text-black/60 mb-2">

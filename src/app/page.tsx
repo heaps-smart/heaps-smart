@@ -15,20 +15,20 @@ const TerrainBackground = dynamic(
 
 const projects = [
   {
+    slug: "empowering-remote-research-teams",
+    title: "Empowering Remote Research Teams Through AI-Driven Meeting Automation",
+    description: "How we implemented an AI-driven solution to streamline meeting management for environmental researchers, allowing them to focus on research rather than administrative tasks.",
+    tags: ["AI Automation", "Remote Collaboration", "Research Tools"],
+    video: "/assets/video/tactiq.mp4",
+    poster: "/assets/video/posters/tactiq.webp",
+  },
+  {
     slug: "c4-digital-transformation",
     title: "C4 Digital Transformation",
     description: "We worked with C4 to overhaul their digital ecosystem, creating a modern brand extension, new website, and integrated tools to scale their conservation mission.",
     tags: ["Website Development", "Digital Strategy", "Conservation"],
     video: "/assets/video/c4-walkthru.mp4",
     poster: "/assets/video/posters/c4.webp",
-  },
-  {
-    slug: "redefining-mvp",
-    title: "Redefining MVP: most valuable poo",
-    description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
-    tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
-    video: "/assets/video/wall-of-poo.mp4",
-    poster: "/assets/video/posters/wall-of-poo.webp",
   },
 ];
 
