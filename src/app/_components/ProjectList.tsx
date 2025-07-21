@@ -38,7 +38,7 @@ const projectsData: Project[] = [
     slug: "c4-digital-transformation"
   },
   {
-    title: "How to save a dinosaur bird",
+    title: "Saving a dinosaur bird, with data",
     content:
       "Many hands (or eyes) make short work of recording observational data on the endangered and misunderstood Southern Cassowary in Australia.",
     video: "/assets/video/cassowary-web.mp4",

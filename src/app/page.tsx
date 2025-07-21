@@ -15,12 +15,12 @@ const TerrainBackground = dynamic(
 
 const projects = [
   {
-    slug: "smarter-remote-research-teams",
-    title: "Smarter Meetings for Remote Research Teams",
-    description: "How we implemented an AI-driven solution to streamline meeting management for environmental researchers, allowing them to focus on research rather than administrative tasks.",
-    tags: ["AI Automation", "Remote Collaboration", "Research Tools"],
-    video: "/assets/video/tactiq.mp4",
-    poster: "/assets/video/posters/tactiq.webp",
+    slug: "wall-of-poo",
+    title: "Redefining MVP: most valuable poo",
+    description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
+    tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
+    video: "/assets/video/wall-of-poo.mp4",
+    poster: "/assets/video/posters/wall-of-poo.webp",
   },
   {
     slug: "c4-digital-transformation",
@@ -58,32 +58,28 @@ export default function HeapsSmart() {
             <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Technology for good.</span>
           </h1>
 
-          <h2 className="text-3xl mb-8 tracking-tighter">Be more productive with <span className="font-semibold">AI tools and automations.</span></h2>
-          
-          <div className="flex flex-col md:flex-row justify-between items-center bg-[#f9fafb] p-8 rounded-lg space-y-8 md:space-y-0">
-            <div className="flex items-center space-x-4">
-              <img src="/assets/svg/data-infrastructure.svg" alt="Eliminate busywork icon" className="w-12 h-12 text-yellow-400 mx-2" />
-              <div>
-                <h3 className="text-xl font-semibold">Eliminate busywork.</h3>
-                <p>Integrate your tools so they can share information seamlessly.</p>
-              </div>
-            </div>
-            <div className="h-16 w-[1px] bg-black mx-4 hidden md:block" />
-            <div className="flex items-center space-x-4">
-              <img src="/assets/svg/digital-communications.svg" alt="Develop efficiency icon" className="w-12 h-12 text-yellow-400 mx-2" />
-              <div>
-                <h3 className="text-xl font-semibold">Develop efficiency.</h3>
-                <p>Develop new tools and workflows designed for your team to get more done.</p>
-              </div>
-            </div>
-            <div className="h-16 w-[1px] bg-black mx-4 hidden md:block" />
-            <div className="flex items-center space-x-4">
-              <img src="/assets/svg/ai-solutions.svg" alt="Gain control icon" className="w-12 h-12 text-yellow-400 mx-2" />
-              <div>
-                <h3 className="text-xl font-semibold">Gain control.</h3>
-                <p>Have greater control over how work gets done with automated processes.</p>
-              </div>
-            </div>
+          <h2 className="text-3xl mb-2 tracking-tighter">We build digital tools for non-profits.</h2>
+          <h3 className="text-xl mb-4 text-black/80 tracking-tight">
+            Find out how technology partners can solve more than technology problems.
+          </h3>
+
+          <div className="flex space-x-4 justify-start">
+            <a
+              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
+              className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
+              aria-label="Schedule a call with Heaps Smart"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a call →
+            </a>
+            <Link
+              href="/contact"
+              className="inline-block px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium rounded-lg transition-colors focus:outline-none border border-gray-300"
+              aria-label="Partner with us"
+            >
+              Partner with us
+            </Link>
           </div>
         </section>
       </Container>
@@ -251,7 +247,7 @@ export default function HeapsSmart() {
             </p>
           </div>
 
-          <div>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
               className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
@@ -261,6 +257,12 @@ export default function HeapsSmart() {
             >
               Schedule a call →
             </a>
+            <Link
+              href="/contact"
+              className="inline-block px-6 py-3 bg-white hover:bg-gray-50 text-black font-medium rounded-lg transition-colors focus:outline-none border border-gray-300"
+            >
+              Partner with us
+            </Link>
           </div>
         </div>
       </Container>

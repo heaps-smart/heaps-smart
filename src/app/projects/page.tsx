@@ -34,7 +34,7 @@ const projects = [
 	},
 	{
 		slug: "how-to-save-a-dinosaur-bird",
-		title: "How to save a dinosaur bird",
+		title: "Saving a dinosaur bird, with data",
 		description:
 			"Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
 		tags: ["Conservation", "Citizen Science", "Data"],

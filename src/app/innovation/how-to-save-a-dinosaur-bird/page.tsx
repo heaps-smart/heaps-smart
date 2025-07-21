@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HowToSaveADinosaurBirdPage() {
   const tags = ["Conservation", "Citizen Science", "Data"];
-  const pageTitle = "How to save a dinosaur bird";
+  const pageTitle = "Saving a dinosaur bird, with data";
   const techStack = [
     <Link key="react" href="/contact">React - Next.js</Link>,
     <Link key="supabase" href="/tools-for-nonprofits/supabase">Supabase (PostgreSQL)</Link>,
