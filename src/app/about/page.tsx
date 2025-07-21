@@ -21,19 +21,20 @@ export default function About() {
               About us
             </h2>
             <p className="tracking-tighter leading-tight md:text-3xl max-w-4xl mb-6 text-black/80">
-              <b className="text-black/100">Heaps Smart</b> began with a mission to help women spend more time doing what they love by using online tools and modern technology.
+              Smart technology for purpose-driven work.
             </p>
             <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
-              As our team grew, so did our vision. Today, we extend that same support to non-profits and purpose-driven organisations, helping those who are making a positive impact.
+              Heaps Smart is a technology consultancy founded by Kate and Derek Blank. For over 20 years, we have been building custom software, data solutions, and digital communications for global brands including Google, WordPress, and Lonely Planet.
             </p>
             <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
-              From strategy to custom builds and online communications, 
-              our creative and technology teams work with you every step of the way, training and empowering
-              your team to make the most of what we create together.
+              Our work took us across the world, from San Francisco to Melbourne, but it was working with non-profits that felt the most grounded. It was this work that brought us out of the boardrooms and into the front-lines: cleaning plastic from the ocean, planting trees to save the rainforest, caring for injured wildlife, delivering education technology to remote communities.
             </p>
-						<p className="tracking-tight leading-tight md:text-xl max-w-2xl text-black/80">
-							We are based in beautiful <b>Mission Beach, Far North Queensland</b>, where our surroundings and community inspire our work and values every day.
-						</p>
+            <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
+              Founding Heaps Smart was the natural next step: A consultancy dedicated to applying our technical expertise directly to organisations doing good things.
+            </p>
+            <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
+              Today, we partner with non-profits and mission-driven teams across Australia to scale their impact with technology. We apply digital solutions to help them expand their reach, connect with funding, and streamline their operations. We work collaboratively with your teams online or wherever you need us.
+            </p>
           </div>
 
           <div className="w-full md:w-1/3 h-auto relative">
