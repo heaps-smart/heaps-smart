@@ -2,6 +2,7 @@
   {
     "name": "1Password",
     "link": "https://1password.com",
+    "link_text": "https://1password.com",
     "category": "Password Management",
     "description": "Securely stores team passwords and sensitive documents \u2014 perfect for sharing login access to donor platforms without risk.",
     "monthly_pricing_aud": "$5",
@@ -38,6 +39,7 @@
   {
     "name": "Airtable",
     "link": "https://airtable.com",
+    "link_text": "https://airtable.com",
     "category": [
       "Data Management",
       "Data Visualisation"
@@ -77,6 +79,7 @@
   {
     "name": "Asana",
     "link": "https://asana.com",
+    "link_text": "https://asana.com",
     "category": "Project Management",
     "description": "Helps teams manage projects and tasks \u2014 for example, planning a fundraising campaign from idea to launch.",
     "monthly_pricing_aud": "$21",
@@ -107,6 +110,7 @@
   {
     "name": "Balsamiq",
     "link": "https://balsamiq.com",
+    "link_text": "https://balsamiq.com",
     "category": "Design",
     "description": "Quickly creates wireframes and mockups \u2014 useful when scoping a new website or donor portal.",
     "monthly_pricing_aud": "$19",
@@ -143,6 +147,7 @@
   {
     "name": "Canva",
     "link": "https://canva.com",
+    "link_text": "https://canva.com",
     "category": "Design",
     "description": "Easy-to-use design tool for creating social media posts, flyers, or grant presentations without needing a graphic designer.",
     "monthly_pricing_aud": "$19",
@@ -167,6 +172,7 @@
   {
     "name": "ChatGPT",
     "link": "https://openai.com",
+    "link_text": "https://openai.com",
     "category": "AI Assistant",
     "description": "Assists with drafting grant applications, summarising reports, or generating volunteer outreach emails in seconds.",
     "monthly_pricing_aud": "$32",
@@ -203,6 +209,7 @@
   {
     "name": "Chuffed",
     "link": "https://chuffed.org",
+    "link_text": "https://chuffed.org",
     "category": "Fundraising",
     "description": "A crowdfunding platform built for social causes \u2014 great for running a grassroots campaign to fund a specific local project.",
     "monthly_pricing_aud": "",
@@ -239,6 +246,7 @@
   {
     "name": "ClickUp",
     "link": "https://clickup.com",
+    "link_text": "https://clickup.com",
     "category": "Project Management",
     "description": "All-in-one task and project management platform \u2014 perfect for coordinating a small team's outreach, admin, and reporting tasks.",
     "monthly_pricing_aud": "$16",
@@ -275,6 +283,7 @@
   {
     "name": "Copper",
     "link": "https://copper.com",
+    "link_text": "https://copper.com",
     "category": "CRM",
     "description": "A lightweight CRM that integrates seamlessly with Google Workspace \u2014 useful for tracking supporter engagement directly from Gmail.",
     "monthly_pricing_aud": "$36",
@@ -310,14 +319,15 @@
   },
   {
     "name": "Google Gemini",
-    "link": "https://gemini.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": "AI Assistant",
     "description": "AI assistant for generating reports, drafting documents, or brainstorming project ideas \u2014 ideal for overstretched teams.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$",
     "non_profit_discount": "75% off plans for non-profits upgrading for AI features",
     "non_profit_discount_link": "https://support.google.com/a/answer/9752995?sjid=4326752495032023799-NC#discounts",
-    "pricing_details": "Non-profits can access Google Gemini's AI capabilities through the Google Workspace for Non-profits program.\n\n**How to apply:**\n- Apply for the Google for Nonprofits programme  \n- Once approved, activate Google Workspace for Non-profits from your account dashboard  \n- Access Gemini features included in the no-cost Workspace for Non-profits plan  \n- To unlock additional AI functionalities, upgrade to an advanced Google Workspace edition with discounts of up to 75% off the standard price  ",
+    "pricing_details": "Non-profits can access Google Gemini's AI capabilities through the Google Workspace for Non-profits program.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Apply for the Google for Nonprofits programme  \n- Once approved, activate Google Workspace for Non-profits from your account dashboard  \n- Access Gemini features included in the no-cost Workspace for Non-profits plan  \n- To unlock additional AI functionalities, upgrade to an advanced Google Workspace edition with discounts of up to 75% off the standard price  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google's Gemini AI Assistant can be a helpful support tool for non-profits looking to save time on admin, writing, and planning. It can help draft grant proposals, write donor thank-you letters, summarise reports, or even brainstorm ideas for events or newsletters. If you're not sure where to start, Google offers a [free Nonprofit Prompt Library](https://support.google.com/nonprofits/answer/15287523?hl=en-GB) with examples tailored to the kinds of tasks non-profits do every day. It's available through the Google Workspace for Nonprofits programme, and many organisations can access it at no cost or at a significant discount. It's not perfect and won't replace your voice, but it's a smart tool to have on hand when capacity is tight.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -347,6 +357,7 @@
   {
     "name": "Ghost.org",
     "link": "https://ghost.org",
+    "link_text": "https://ghost.org",
     "category": "Website Builder",
     "description": "Simple, elegant platform for publishing blog posts or newsletters \u2014 great for showcasing impact stories on your website.",
     "monthly_pricing_aud": "$31",
@@ -377,6 +388,7 @@
   {
     "name": "GiveNow",
     "link": "https://givenow.com.au",
+    "link_text": "https://givenow.com.au",
     "category": "Fundraising",
     "description": "Free platform for collecting online donations \u2014 ideal for small Australian charities wanting to fundraise without monthly fees.",
     "monthly_pricing_aud": "",
@@ -413,6 +425,7 @@
   {
     "name": "GoFundMe",
     "link": "https://gofundme.com",
+    "link_text": "https://gofundme.com",
     "category": "Fundraising",
     "description": "Crowdfunding tool for one-off campaigns \u2014 great for rallying community support after an emergency or local crisis.",
     "monthly_pricing_aud": "",
@@ -449,6 +462,7 @@
   {
     "name": "Google Maps",
     "link": "https://developers.google.com",
+    "link_text": "https://developers.google.com",
     "category": "Mapping",
     "description": "Embeds interactive maps on your website \u2014 helpful for showing project locations or listing environmental restoration sites.",
     "monthly_pricing_aud": "",
@@ -490,14 +504,15 @@
   },
   {
     "name": "Google Meet",
-    "link": "https://meet.google.com/",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": "Communication",
     "description": "Simple, secure video meetings \u2014 used by remote teams or volunteer coordinators to host planning sessions and interviews.",
     "monthly_pricing_aud": "$9",
     "raw_pricing": "$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Meet is a reliable, no-fuss video conferencing tool that's included for free with Google Workspace for Nonprofits. It works seamlessly with other Google tools like Calendar and Gmail, so scheduling and joining meetings is simple for staff, volunteers, and board members. It's a solid choice for team check-ins, remote collaboration, or even hosting webinars. If you've activated Gemini in your Workspace, you can also access features like live transcription, recordings, and AI-generated summaries. This is especially useful for governance meetings, saving time on note-taking and follow-ups. For non-profits already using Google tools, it's an easy win.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -514,14 +529,15 @@
   },
   {
     "name": "Google Gmail",
-    "link": "https://mail.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": ["Communication", "Email Management"],
     "description": "Email platform for daily communication \u2014 commonly used by non-profits to manage donor, partner, and internal emails.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Gmail is included for free with Google Workspace for Nonprofits, and it's much more than just email. It gives your team a professional setup with the option to use your own domain (like info@yourorganisation.org) instead of a personal @gmail.com address, which is great for building trust and keeping things consistent. It's easy to manage even without an IT team, and perfect for onboarding staff, volunteers, or board members.\n\nBeyond email, Gmail comes with useful built-in features like templates for no-code newsletters and event invites, automated filters and labels, and scheduled sending. It connects seamlessly with Google Calendar and Drive, making it simple to stay organised and collaborative. If you're still using personal email accounts to run your non-profit, this is an easy and free upgrade that makes a big difference.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -550,14 +566,15 @@
   },
   {
     "name": "Google Sheets",
-    "link": "https://sheets.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": ["Data Management", "Data Visualisation"],
     "description": "Versatile spreadsheet tool for budgets, tracking impact, or maintaining mailing lists \u2014 easy to share with collaborators.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Ah, Sheets! One of our favourite tools. Google Sheets is more than just a spreadsheet. It can be a database, a planning tool, a reporting dashboard, or an organising space for anything your non-profit needs. You can use it to manage volunteer rosters, grant pipelines, contact lists, budgets, project plans, or survey responses. And because it's part of Google Workspace for Nonprofits, it's free and integrates easily with Gmail, Forms, Calendar, and Drive.\n\nOne of the best things about Sheets is how easily it connects with other platforms. It works with hundreds of automation tools, so you can pull in data from forms, sync with email lists, or trigger actions without writing any code. If your organisation doesn't need a full CRM, Sheets is often more than enough. It's flexible, powerful, and easy for anyone on your team to use.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -592,14 +609,15 @@
   },
   {
     "name": "Google Forms",
-    "link": "https://forms.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": "Form Builder",
     "description": "Creates surveys and forms \u2014 perfect for volunteer sign-ups, event RSVPs, or collecting post-program feedback.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Forms is one of the simplest and most useful tools available to non-profits. Whether you're collecting RSVPs, feedback, volunteer sign-ups, survey responses, or grant data, it just works. It's easy to set up, easy to share, and all the responses feed straight into a connected Google Sheet. That makes reporting and follow-up a breeze, especially when combined with automation tools or conditional logic.\n\nIt's included for free as part of Google Workspace for Nonprofits, so there's no cost barrier to getting started. The only thing we don't love is the limited design options \u2014 your forms won't win any style awards. But for functionality, flexibility, and ease of use, it's hard to beat. If your organisation needs to collect information from your community or team, Forms is a great place to start.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -628,14 +646,15 @@
   },
   {
     "name": "Google Drive",
-    "link": "https://drive.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": "Knowledge Management",
     "description": "Cloud storage that keeps files organised and accessible \u2014 useful for storing funding applications, reports, and assets in one place.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Drive is a must-have for non-profits that need a simple, secure place to store and share their files. It comes free with Google Workspace for Nonprofits and helps teams keep everything in one place, whether you're managing funding applications, photos from events, policies, or meeting notes.\n\nYou can organise files into shared folders for staff, volunteers, or board members, and control who can view or edit each item. It's especially handy for remote teams or part-time staff who need access to documents without digging through inboxes or hard drives. You can also collaborate in real time on Docs, Sheets, and Slides, which means no more version control issues or lost changes.\n\nIt's easy to use, works on any device, and reduces the need for expensive file storage or clunky email chains. If your non-profit is still juggling USB sticks or shared desktop folders, Google Drive is a simple step forward.",
     "affiliate_link": "Pending Via CJ Affiliates",
@@ -677,6 +696,7 @@
   {
     "name": "Hootsuite",
     "link": "https://hootsuite.com",
+    "link_text": "https://hootsuite.com",
     "category": "Social Media Management",
     "description": "Schedules and monitors social media posts \u2014 helps comms teams plan consistent messaging across platforms.",
     "monthly_pricing_aud": "$156",
@@ -713,6 +733,7 @@
   {
     "name": "HubSpot",
     "link": "https://hubspot.com",
+    "link_text": "https://hubspot.com",
     "category": "CRM",
     "description": "A CRM with built-in marketing tools \u2014 used by non-profits to track donor relationships and send automated email updates.",
     "monthly_pricing_aud": "$32",
@@ -749,6 +770,7 @@
   {
     "name": "Humanitix",
     "link": "https://humanitix.com",
+    "link_text": "Humanitix",
     "category": "Event Management",
     "description": "Event ticketing platform that directs booking fees to charity \u2014 great for hosting fundraising dinners, workshops, or community events.",
     "monthly_pricing_aud": "",
@@ -785,6 +807,7 @@
   {
     "name": "Jotform",
     "link": "https://jotform.com",
+    "link_text": "https://jotform.com",
     "category": "Form Builder",
     "description": "Easy-to-use form builder for registrations, donations, or surveys \u2014 commonly used for collecting volunteer sign-ups or program feedback.",
     "monthly_pricing_aud": "$62",
@@ -815,6 +838,7 @@
   {
     "name": "Mailchimp",
     "link": "https://mailchimp.com",
+    "link_text": "https://mailchimp.com",
     "category": "Email Management",
     "description": "Email marketing platform to design, send, and track campaigns \u2014 perfect for monthly donor updates or appeal drives.",
     "monthly_pricing_aud": "$21",
@@ -845,6 +869,7 @@
   {
     "name": "MailPoet",
     "link": "https://mailpoet.com",
+    "link_text": "https://mailpoet.com",
     "category": "Email Management",
     "description": "WordPress plugin for sending newsletters and automations \u2014 great for small non-profits managing emails directly from their website.",
     "monthly_pricing_aud": "$16",
@@ -881,6 +906,7 @@
   {
     "name": "Microsoft Teams",
     "link": "https://microsoft.com",
+    "link_text": "https://www.microsoft.com/en-us/nonprofits/microsoft-365",
     "category": "Communication",
     "description": "Communication and file-sharing hub \u2014 helps internal teams and boards stay connected across locations with chat and video.",
     "monthly_pricing_aud": "$6",
@@ -917,6 +943,7 @@
   {
     "name": "Monday.com",
     "link": "https://monday.com",
+    "link_text": "https://monday.com/nonprofits",
     "category": "CRM",
     "description": "Visual project and task management tool \u2014 ideal for organising campaigns, grant applications, or team workflows.",
     "monthly_pricing_aud": "$19",
@@ -953,6 +980,7 @@
   {
     "name": "Notion",
     "link": "https://notion.so",
+    "link_text": "https://notion.so",
     "category": "Knowledge Management",
     "description": "All-in-one workspace for notes, databases, and wikis \u2014 used by non-profits to track goals, manage board documents, or plan events.",
     "monthly_pricing_aud": "$15",
@@ -983,6 +1011,7 @@
   {
     "name": "Otter.ai",
     "link": "https://otter.ai",
+    "link_text": "https://otter.ai",
     "category": "Transcription",
     "description": "Records and transcribes meetings or interviews \u2014 useful for documenting board discussions or recording oral histories.",
     "monthly_pricing_aud": "$16",
@@ -1019,6 +1048,7 @@
   {
     "name": "Queensland Globe",
     "link": "https://qldglobe.information.qld.gov.au",
+    "link_text": "https://qldglobe.information.qld.gov.au",
     "category": "Mapping",
     "description": "Interactive GIS tool for exploring local land, planning, and environmental data \u2014 ideal for conservation groups or advocacy mapping.",
     "monthly_pricing_aud": "$0",
@@ -1049,6 +1079,7 @@
   {
     "name": "Raisely",
     "link": "https://raisely.com",
+    "link_text": "https://raisely.com",
     "category": "Fundraising",
     "description": "All-in-one fundraising platform \u2014 great for running donation campaigns, peer-to-peer events, or long-term supporter drives.",
     "monthly_pricing_aud": "",
@@ -1097,6 +1128,7 @@
   {
     "name": "Salesforce",
     "link": "https://salesforce.org",
+    "link_text": "https://salesforce.org",
     "category": "CRM",
     "description": "Highly customisable CRM \u2014 ideal for large non-profits managing complex donor databases, grants, and outreach at scale.",
     "monthly_pricing_aud": "$40",
@@ -1133,6 +1165,7 @@
   {
     "name": "Sanity",
     "link": "https://sanity.io",
+    "link_text": "https://sanity.io",
     "category": "Content Management",
     "description": "Flexible content platform \u2014 used to manage dynamic web content like project updates, blog posts, or case studies collaboratively.",
     "monthly_pricing_aud": "$19",
@@ -1169,6 +1202,7 @@
   {
     "name": "Slack",
     "link": "https://slack.com",
+    "link_text": "https://slack.com",
     "category": "Communication",
     "description": "Real-time messaging platform \u2014 useful for coordinating distributed teams, volunteers, and program leads in shared channels.",
     "monthly_pricing_aud": "$20",
@@ -1211,6 +1245,7 @@
   {
     "name": "Softr",
     "link": "https://softr.io",
+    "link_text": "https://softr.io",
     "category": "Website Builder",
     "description": "No-code builder for websites and internal portals \u2014 perfect for creating a volunteer dashboard or project directory from Airtable data.",
     "monthly_pricing_aud": "$77",
@@ -1265,6 +1300,7 @@
   {
     "name": "Square",
     "link": "https://squareup.com",
+    "link_text": "https://squareup.com",
     "category": "Payments",
     "description": "Point-of-sale and online payment solution \u2014 used at events, op shops, or donation stations to process payments quickly.",
     "monthly_pricing_aud": "",
@@ -1301,6 +1337,7 @@
   {
     "name": "Stripe",
     "link": "https://stripe.com",
+    "link_text": "https://stripe.com",
     "category": "Payments",
     "description": "Secure online payments platform \u2014 commonly used to accept one-off or recurring donations via a website or campaign page.",
     "monthly_pricing_aud": "",
@@ -1331,6 +1368,7 @@
   {
     "name": "Tableau",
     "link": "https://tableau.com",
+    "link_text": "https://tableau.com",
     "category": "Data Visualisation",
     "description": "Data visualisation tool \u2014 turns program outcomes, survey data, or donor metrics into interactive, shareable dashboards.",
     "monthly_pricing_aud": "$111",
@@ -1367,6 +1405,7 @@
   {
     "name": "Tactiq",
     "link": "https://tactiq.io",
+    "link_text": "https://tactiq.io",
     "category": "Transcription",
     "description": "Captures and summarises video calls \u2014 helps staff quickly pull meeting notes or action items from board or partner calls.",
     "monthly_pricing_aud": "$13",
@@ -1403,6 +1442,7 @@
   {
     "name": "Tally Forms",
     "link": "https://tally.so",
+    "link_text": "https://tally.so",
     "category": "Form Builder",
     "description": "Free, simple form builder \u2014 great for collecting volunteer interest, feedback, or workshop sign-ups without limits.",
     "monthly_pricing_aud": "$46",
@@ -1451,6 +1491,7 @@
   {
     "name": "Trello",
     "link": "https://trello.com",
+    "link_text": "https://trello.com",
     "category": "Project Management",
     "description": "Visual project management using cards and boards \u2014 ideal for tracking to-dos across fundraising, events, or programs.",
     "monthly_pricing_aud": "$9",
@@ -1487,6 +1528,7 @@
   {
     "name": "Twilio",
     "link": "https://twilio.com",
+    "link_text": "https://twilio.com",
     "category": "Communication",
     "description": "Communication API for SMS, calls, and WhatsApp \u2014 useful for sending donation reminders or event alerts to supporters.",
     "monthly_pricing_aud": "",
@@ -1523,6 +1565,7 @@
   {
     "name": "Typeform",
     "link": "https://typeform.com",
+    "link_text": "https://typeform.com",
     "category": "Form Builder",
     "description": "Sleek, interactive forms \u2014 perfect for donor surveys or onboarding forms that feel personal and engaging.",
     "monthly_pricing_aud": "$40",
@@ -1559,6 +1602,7 @@
   {
     "name": "Vimeo",
     "link": "https://vimeo.com",
+    "link_text": "https://vimeo.com",
     "category": "Video Hosting",
     "description": "High-quality video hosting \u2014 used to present campaigns, testimonials, or virtual events in a polished format.",
     "monthly_pricing_aud": "$19",
@@ -1595,6 +1639,7 @@
   {
     "name": "WhatsApp",
     "link": "https://whatsapp.com",
+    "link_text": "https://whatsapp.com",
     "category": "Communication",
     "description": "Direct messaging app \u2014 allows rapid updates and engagement with communities, especially where email is underused.",
     "monthly_pricing_aud": "",
@@ -1631,6 +1676,7 @@
   {
     "name": "Wix",
     "link": "https://wix.com",
+    "link_text": "https://wix.com",
     "category": "Website Builder",
     "description": "Drag-and-drop website builder \u2014 easy for small non-profits to create a polished site without coding.",
     "monthly_pricing_aud": "$19",
@@ -1667,6 +1713,7 @@
   {
     "name": "WordPress.org",
     "link": "https://wordpress.org",
+    "link_text": "https://wordpress.org",
     "category": "Website Builder",
     "description": "Open-source CMS \u2014 widely used for building scalable non-profit websites with donation, blog, and volunteer features.",
     "monthly_pricing_aud": "$0",
@@ -1703,6 +1750,7 @@
   {
     "name": "YouTube",
     "link": "https://youtube.com",
+    "link_text": "https://youtube.com",
     "category": "Video Hosting",
     "description": "Public video hosting platform \u2014 great for showcasing your mission, stories, and program impact to a broad audience.",
     "monthly_pricing_aud": "",
@@ -1739,6 +1787,7 @@
   {
     "name": "Zapier",
     "link": "https://zapier.com",
+    "link_text": "https://zapier.com",
     "category": "Automation",
     "description": "Connects apps to automate workflows \u2014 helps automate email lists, form responses, or CRM updates without code.",
     "monthly_pricing_aud": "$47",
@@ -1775,6 +1824,7 @@
   {
     "name": "Zoho CRM",
     "link": "https://zoho.com/crm",
+    "link_text": "https://zoho.com/crm",
     "category": "CRM",
     "description": "Budget-friendly CRM with AI features \u2014 ideal for tracking donors, automating comms, and managing supporter data.",
     "monthly_pricing_aud": "",
@@ -1817,6 +1867,7 @@
   {
     "name": "Zoom",
     "link": "https://zoom.us",
+    "link_text": "https://zoom.us",
     "category": "Communication",
     "description": "Video meeting platform \u2014 widely used for virtual board meetings, webinars, and training sessions.",
     "monthly_pricing_aud": "$24",
@@ -1853,6 +1904,7 @@
   {
     "name": "Calendly",
     "link": "https://calendly.com",
+    "link_text": "https://calendly.com",
     "category": "Communication",
     "description": "Public scheduling link \u2014 makes it easy for partners or volunteers to book time with you, with automatic reminders.",
     "monthly_pricing_aud": "$10",
@@ -1882,14 +1934,15 @@
   },
   {
     "name": "Google Calendar",
-    "link": "https://calendar.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "https://referworkspace.app.goo.gl/8yJ9",
     "category": "Communication",
     "description": "Built-in scheduling tool \u2014 lets people book from your calendar using defined time slots, ideal for intake calls or donor chats.",
     "monthly_pricing_aud": "$32",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Calendar is one of those tools that seems simple at first, but ends up solving all sorts of problems for non-profits. It's included with Google Workspace for Nonprofits and works beautifully across teams, making it easy to stay on top of meetings, events, and deadlines.\n\nOne use we love is turning Calendar into a booking system for shared spaces. For example, we recently helped a non-profit use it to manage room hire for their community space. No more manual bookings, phone calls, or chasing up payments. It streamlined the whole process.\n\nBeyond that, shared calendars are great for scheduling all-staff events, volunteer shifts, board meetings, or public-facing events like workshops and community gatherings. You can create different calendars for different teams or locations, and embed public calendars into your website so the community always knows what's on. It's simple, free, and surprisingly powerful once you start using it fully.",
     "affiliate_link": "",
@@ -1925,6 +1978,7 @@
   {
     "name": "Supabase",
     "link": "https://supabase.com",
+    "link_text": "https://supabase.com",
     "category": "Data Management",
     "description": "Supabase is an open-source backend platform that non-profits can use to build custom apps or databases for things like research projects, citizen science, or program tracking.",
     "monthly_pricing_aud": "$37",
@@ -1961,6 +2015,7 @@
   {
     "name": "Buffer",
     "link": "https://buffer.com",
+    "link_text": "https://buffer.com",
     "category": "Social Media Management",
     "description": "Buffer is a social media scheduling tool that helps non-profits plan, publish, and manage posts across multiple platforms from one place.",
     "monthly_pricing_aud": "$9",
@@ -1985,6 +2040,7 @@
   {
     "name": "n8n",
     "link": "https://n8n.io",
+    "link_text": "https://n8n.io",
     "category": "Automation",
     "description": "n8n is an open-source automation tool that lets non-profits connect apps and automate tasks like syncing data between forms, CRMs, and email platforms.",
     "monthly_pricing_aud": "$33",
@@ -2020,14 +2076,15 @@
   },
   {
     "name": "Google Docs",
-    "link": "https://docs.google.com",
+    "link": "https://referworkspace.app.goo.gl/8yJ9",
+    "link_text": "Google Workspace for Non-profits",
     "category": "Knowledge Management",
     "description": "Google Docs is a free, cloud-based word processor that non-profits can use to collaborate on documents like grant applications, meeting notes, and reports in real time.",
     "monthly_pricing_aud": "$33",
     "raw_pricing": "$$$$",
     "non_profit_discount": "Free with Google Non-Profit Workspace",
     "non_profit_discount_link": "https://www.google.com/nonprofits/",
-    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- Set up a free Google account for your workspace admin  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
+    "pricing_details": "Non-profits can apply for Google Workspace for non-profits to receive free access to essential productivity tools, including Gmail, Google Drive, Google Meet, and more. Discounted rates are also available for Business Standard, Business Plus, and Enterprise editions.\n\n**How to apply:**\n- [Set up a free Google account for your workspace admin](https://referworkspace.app.goo.gl/8yJ9)  \n- Visit the [Google for non-profits website](https://www.google.com/nonprofits/) and click 'Get Started'  \n- Sign in with your workspace admin's Google account and complete the [eligibility form](https://www.google.com/nonprofits/account/u/0/signup)  \n- Wait for verification by Google's partner, which typically takes 2\u201314 business days  \n- Once approved, activate Google Workspace for non-profits from your account dashboard  ",
     "hs_recommended": "Yes",
     "hs_recommended_details": "Google Docs is probably already part of your toolkit, but it's worth getting to know a few of the lesser-known features that make it especially useful for non-profits. It's a good tool for collaboration, especially if your team is spread out or working part-time.\n\nYou can add checklists to documents, which is helpful for shared agendas, action items, or onboarding steps. There's also a simple eSignature tool built in, which can be a quick solution for signing internal documents without needing a separate platform. If you're reviewing policies or writing grants as a group, the commenting and suggestion tools help keep everyone on the same page.\n\nDocs isn't flashy, but it does a lot quietly in the background. It's free with Google Workspace for Nonprofits and gives your team a shared space to work together without worrying about version control or who has the latest file.",
     "affiliate_link": "",
@@ -2045,6 +2102,7 @@
   {
     "name": "Xero",
     "link": "https://xero.com",
+    "link_text": "https://xero.com",
     "category": "Accounting",
     "description": "Xero is cloud-based accounting software that helps non-profits manage finances, track expenses, send invoices, and simplify bookkeeping with helpful integrations.",
     "monthly_pricing_aud": "$29",
@@ -2087,6 +2145,7 @@
   {
     "name": "Quickbooks",
     "link": "https://quickbooks.intuit.com",
+    "link_text": "https://quickbooks.intuit.com",
     "category": "Accounting",
     "description": "QuickBooks is accounting software that non-profits can use to manage budgets, track donations and grants, run payroll, and generate financial reports for compliance and board reporting.",
     "monthly_pricing_aud": "$29",
@@ -2117,6 +2176,7 @@
   {
     "name": "MYOB",
     "link": "https://myob.com",
+    "link_text": "https://myob.com",
     "category": "Accounting",
     "description": "MYOB is accounting software that supports non-profits with tasks like payroll, expense tracking, and budgeting, and is especially useful for organisations operating in Australia and New Zealand.",
     "monthly_pricing_aud": "$24",
@@ -2153,6 +2213,7 @@
   {
     "name": "Squarespace",
     "link": "https://squarespace.com",
+    "link_text": "https://squarespace.com",
     "category": "Website Builder",
     "description": "Squarespace is a website builder that non-profits can use to create clean, professional websites with built-in tools for blogging, donations, event pages, and email signups.",
     "monthly_pricing_aud": "$24",
@@ -2201,6 +2262,7 @@
   {
     "name": "Keela",
     "link": "https://keela.co/",
+    "link_text": "https://keela.co/",
     "category": "CRM",
     "description": "All-in-one fundraising CRM designed specifically for non-profits \u2014 helps manage donors, track giving patterns, and run targeted campaigns.",
     "monthly_pricing_aud": "$125",

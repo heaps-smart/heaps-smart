@@ -7,6 +7,7 @@ interface Tool {
   name: string;
   description: string;
   link: string;
+  link_text: string;
   category: string | string[];
   monthly_pricing_aud: string;
   raw_pricing: string;
@@ -120,6 +121,7 @@ export default function ToolPage({ params }: { params: Params }) {
         sections={sections}
         galleryImages={tool.gallery_images || []}
         website={tool.link}
+        websiteText={tool.link_text}
         monthlyPricing={tool.raw_pricing}
         nonprofitDiscount={tool.non_profit_discount}
         nonprofitPricingUrl={tool.non_profit_discount_link}

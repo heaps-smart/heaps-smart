@@ -32,6 +32,7 @@ type Props = {
   sections: Section[];
   galleryImages: GalleryImage[];
   website: string;
+  websiteText: string;
   monthlyPricing?: string;
   nonprofitDiscount?: string;
   nonprofitPricingUrl?: string;
@@ -48,6 +49,7 @@ export default function ToolPageTemplate({
   sections,
   galleryImages,
   website,
+  websiteText,
   monthlyPricing,
   nonprofitDiscount,
   nonprofitPricingUrl,
@@ -302,7 +304,7 @@ export default function ToolPageTemplate({
                 <span 
                   className="inline-block text-slate-600 hover:text-slate-900 text-base underline transition-colors"
                 >
-                  {website}
+                  {websiteText}
                 </span>
               </a>
             </section>
