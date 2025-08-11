@@ -7,13 +7,15 @@ export default function HowToSaveADinosaurBirdPage() {
   const techStack = [
     <Link key="react" href="/contact">React - Next.js</Link>,
     <Link key="supabase" href="/tools-for-nonprofits/supabase">Supabase (PostgreSQL)</Link>,
+    <Link key="arcgis" href="/tools-for-nonprofits/arcgis">ArcGIS</Link>,
   ];
 
   const galleryImages = [
     { id: 2, src: "/assets/img/dino-2.webp", alt: "Map interface showing cassowary sightings" },
-    { id: 1, src: "/assets/img/dino-1.webp", alt: "Cassowary chick in undergrowth" },
+    { id: 5, src: "/assets/img/arcgis-mapping.webp", alt: "ArcGIS map interface showing cassowary sightings" },
     { id: 3, src: "/assets/img/dino-3.webp", alt: "Community members participating in citizen science" },
     { id: 4, src: "/assets/img/dino-4.webp", alt: "Wet Tropics rainforest landscape" },
+    { id: 1, src: "/assets/img/dino-1.webp", alt: "Cassowary chick in undergrowth" },
   ];
 
   const sections = [
@@ -67,8 +69,8 @@ export default function HowToSaveADinosaurBirdPage() {
       location="Cassowary Coast, Queensland"
       acknowledgements={
         <>
-          Cassowary photography: Jeff Larson<br />
-          C4 Management Team (1990 - present): cassowary logbook sightings
+          <b>Cassowary photography:</b> Jeff Larson<br />
+          <b>C4 Management Team (1990 - present):</b> Cassowary logbook sightings
         </>
       }
     />
