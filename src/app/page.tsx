@@ -15,7 +15,7 @@ const TerrainBackground = dynamic(
 
 const projects = [
   {
-    slug: "wall-of-poo",
+    slug: "redefining-mvp",
     title: "Redefining MVP: most valuable poo",
     description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
     tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
@@ -55,12 +55,12 @@ export default function HeapsSmart() {
             id="work-smarter"
             className="text-4xl md:text-8xl font-sans font-bold tracking-tighter text-black/80"
           >
-            <span className="font-feature-settings:'kern', 'liga', 'clig', 'calt'">Technology for good.</span>
+            Technology for good.
           </h1>
 
-          <h2 className="text-3xl mb-2 tracking-tighter">We build digital tools for non-profits.</h2>
           <h3 className="text-xl mb-4 text-black/80 tracking-tight">
-            Find out how technology partners can solve more than technology problems.
+            We design and build <strong>websites</strong>, <strong>mobile apps</strong>, <strong>data tools</strong>, <strong>interactive maps</strong>, and <strong>audio/visuals</strong> for non-profits in Australia. <br />
+            Find out how technology partners can solve more than technology problems.  
           </h3>
 
           <div className="flex space-x-4 justify-start">
@@ -244,6 +244,8 @@ export default function HeapsSmart() {
           <div className="relative mb-8">
             <p className="tracking-tight text-2xl md:text-2xl leading-snug mx-auto max-w-4xl text-black/80">
               Ready to work smarter with <span className="font-semibold">AI tools and automations</span>?
+              <br />
+              We are located right here, in Mission Beach, Queensland, Australia. 
             </p>
           </div>
 
