@@ -15,12 +15,12 @@ const TerrainBackground = dynamic(
 
 const projects = [
   {
-    slug: "redefining-mvp",
-    title: "Redefining MVP: most valuable poo",
-    description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and an interactive educational experience.",
-    tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
-    video: "/assets/video/wall-of-poo.mp4",
-    poster: "/assets/video/posters/wall-of-poo.webp",
+    slug: "how-to-save-a-dinosaur-bird",
+    title: "Saving a dinosaur bird, with data",
+    description: "Heaps Smart partnered with C4 to digitise three decades of cassowary sightings using geospatial and GIS systems.",
+    tags: ["Conservation", "GIS", "Citizen Science", "Data"],
+    video: "/assets/video/gis-mapping.mp4",
+    poster: "/assets/video/posters/gis-mapping-poster.webp",
   },
   {
     slug: "c4-digital-transformation",
@@ -181,6 +181,12 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Data</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
+                  <Link href="/innovation/how-to-save-a-dinosaur-bird" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">GIS/geospatial mapping</span>
+                  </Link>
+                </li>
+                <li className="flex items-center">
                   <Link href="/tools-for-nonprofits/google-sheets" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">Google Workspace</span>
@@ -205,7 +211,7 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Custom Development</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/services/website-development" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">Websites and Mobile Apps</span>
                   </Link>
@@ -213,11 +219,11 @@ export default function HeapsSmart() {
                 <li className="flex items-center">
                   <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">React/React Native/Node.js</span>
+                    <span className="group-hover:underline">WordPress/React/React Native/Node.js</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/services/mobile-app-development" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">iOS/Android app development</span>
                   </Link>

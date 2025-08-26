@@ -2,12 +2,12 @@ import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Link from "next/link";
 
 export default function HowToSaveADinosaurBirdPage() {
-  const tags = ["Conservation", "Citizen Science", "Data"];
+  const tags = ["Conservation", "GIS", "Citizen Science", "Data"];
   const pageTitle = "Saving a dinosaur bird, with data";
   const techStack = [
     <Link key="react" href="/contact">React - Next.js</Link>,
     <Link key="supabase" href="/tools-for-nonprofits/supabase">Supabase (PostgreSQL)</Link>,
-    <Link key="arcgis" href="/tools-for-nonprofits/arcgis">ArcGIS</Link>,
+    <Link key="arcgis" href="/tools-for-nonprofits/arcgis">ArcGIS/geospatial systems</Link>,
   ];
 
   const galleryImages = [
@@ -31,7 +31,7 @@ export default function HowToSaveADinosaurBirdPage() {
       title: "Our response",
       content: (
         <>
-          Heaps Smart partnered with <b>Community for Coastal and Cassowary Conservation (C4)</b> to digitise three decades of cassowary sightings. Together, we built an automated database to catalogue new and historic records, created simple logging tools for the public, and designed a notification system to keep contributors informed and engaged. We implemented an intuitive drag-and-drop map interface that allows users to precisely pinpoint sighting locations with  out needing to use coordinates. The system makes it easy to collect sightings from multiple sources (including social media, forms, and emails) and collates them into a clean, structured database ready for conservation use. Sightings are added via the C4 website via a REST API, which then updates the information into a <b>Supabase</b> datastore.
+          Heaps Smart partnered with <b>Community for Coastal and Cassowary Conservation (C4)</b> to digitise three decades of cassowary sightings using geospatial and GIS systems. Together, we built an automated database to catalogue new and historic records, created simple logging tools for the public, and designed a notification system to keep contributors informed and engaged. We implemented an intuitive drag-and-drop map interface that allows users to precisely pinpoint sighting locations with  out needing to use coordinates. The system makes it easy to collect sightings from multiple sources (including social media, forms, and emails) and collates them into a clean, structured database ready for conservation use. Sightings are added via the C4 website via a REST API, which then updates the information into a <b>Supabase</b> datastore. 
         </>
       ),
     },
@@ -40,6 +40,7 @@ export default function HowToSaveADinosaurBirdPage() {
       content: (
         <ul className="list-disc pl-6 space-y-2">
           <li>Translated 30+ years of community-collected cassowary data into structured database</li>
+          <li>Utilised geospatial analysis to identify key habitats and movement patterns</li>
           <li>Automated the ingestion and tagging of sightings from multiple channels</li>
           <li>Re-engaged a passionate local network of contributors</li>
           <li>Built the foundation for a real-time, publicly accessible cassowary monitoring tool</li>
@@ -50,7 +51,7 @@ export default function HowToSaveADinosaurBirdPage() {
       title: "What’s next",
       content: (
         <>
-          We're now developing an open-data platform to make cassowary sightings visible and usable for conservationists, planners, and researchers. This includes integrating and sharing datasets with platforms like <b>iNaturalist</b>, <b>Atlas of Living Australia</b>, and <b>GBIF (Global Biodiversity Information Facility)</b> to broaden the reach and impact of the data. Future features will include image analysis to help identify individual birds and track their movement across the landscape, helping protect one of Australia's most iconic and endangered species.
+          We're now developing an open-data platform to make cassowary sightings visible and usable for conservationists, planners, and researchers. This includes integrating and sharing geospatial datasets with platforms like <b>iNaturalist</b>, <b>Atlas of Living Australia</b>, and <b>GBIF (Global Biodiversity Information Facility)</b> to broaden the reach and impact of the data. Future features will include image analysis to help identify individual birds and track their movement across the landscape, helping protect one of Australia's most iconic and endangered species.
           <br /><br />
           <a href="https://cassowaryconservation.org/sighting/" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">Report a cassowary sighting →</a>
         </>
