@@ -59,7 +59,7 @@ export default function HeapsSmart() {
           </h1>
 
           <h3 className="text-xl mb-4 text-black/80 tracking-tight">
-            We design and build <strong>websites</strong>, <strong>mobile apps</strong>, <strong>data tools</strong>, <strong>interactive maps</strong>, and <strong>audio/visuals</strong> for non-profits in Australia. <br />
+            We design and build <Link href="/services/website-development" className="font-bold hover:underline hover:text-black">websites</Link>, <Link href="/services/mobile-app-development" className="font-bold hover:underline hover:text-black">mobile apps</Link>, <Link href="/services/data-tools" className="font-bold hover:underline hover:text-black">data tools</Link>, <Link href="/services/mapping" className="font-bold hover:underline hover:text-black">interactive GIS maps</Link>, and <Link href="/services/audio-visual-production" className="font-bold hover:underline hover:text-black">audio/visuals</Link> for non-profits in Australia and beyond. <br />
             Find out how technology partners can solve more than technology problems.  
           </h3>
 
