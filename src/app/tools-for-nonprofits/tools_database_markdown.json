@@ -1049,7 +1049,7 @@
     "name": "Queensland Globe",
     "link": "https://qldglobe.information.qld.gov.au",
     "link_text": "https://qldglobe.information.qld.gov.au",
-    "category": "Mapping",
+    "category": "GIS",
     "description": "Interactive GIS tool for exploring local land, planning, and environmental data \u2014 ideal for conservation groups or advocacy mapping.",
     "monthly_pricing_aud": "$0",
     "raw_pricing": "$",
