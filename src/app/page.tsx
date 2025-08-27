@@ -59,8 +59,8 @@ export default function HeapsSmart() {
           </h1>
 
           <h3 className="text-xl mb-4 text-black/80 tracking-tight">
-            We design and build <Link href="/services/website-development" className="font-bold hover:underline hover:text-black">websites</Link>, <Link href="/services/mobile-app-development" className="font-bold hover:underline hover:text-black">mobile apps</Link>, <Link href="/services/data-tools" className="font-bold hover:underline hover:text-black">data tools</Link>, <Link href="/services/mapping" className="font-bold hover:underline hover:text-black">interactive GIS maps</Link>, and <Link href="/services/audio-visual-production" className="font-bold hover:underline hover:text-black">audio/visuals</Link> for non-profits in Australia and beyond. <br />
-            Find out how technology partners can solve more than technology problems.  
+            We design and build <span className="font-bold hover:underline hover:text-black">websites</span>, <span className="font-bold hover:underline hover:text-black">mobile apps</span>, <span className="font-bold hover:underline hover:text-black">data tools</span>, <span className="font-bold hover:underline hover:text-black">interactive GIS maps</span>, and <span className="font-bold hover:underline hover:text-black">audio/visuals</span> for non-profits in Australia and beyond. <br />
+            Find out how technology partners can solve more than technology problems.
           </h3>
 
           <div className="flex space-x-4 justify-start">
@@ -211,7 +211,7 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Custom Development</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <Link href="/services/website-development" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">Websites and Mobile Apps</span>
                   </Link>
@@ -223,7 +223,7 @@ export default function HeapsSmart() {
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="/services/mobile-app-development" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">iOS/Android app development</span>
                   </Link>

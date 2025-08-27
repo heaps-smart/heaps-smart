@@ -37,7 +37,7 @@ export default function PostsIndex() {
         <Container>
           <div className="py-8 md:py-12">
             <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-black/80 leading-tight md:leading-none pb-4">
-              Labs: testing shiny new things
+              Labs: exploring ideas, tools, and experiments
             </h2>
             <p className="text-lg md:text-xl max-w-3xl mb-4 text-black/70 leading-relaxed">
               Heaps Smart Labs is where we explore new tools, technologies, and ideas that can help us work better. 
