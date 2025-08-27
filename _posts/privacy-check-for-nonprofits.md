@@ -1,13 +1,13 @@
 ---
 title: "Privacy Check for Non-Profits: Is Your Organisation Up to Date?"
 excerpt: "Australia's Privacy Act reforms have raised the bar on data transparency, consent, and security. Here's what changed in 2024 and a checklist to keep your organisation compliant."
-coverImage: "/assets/posts/privacy-check-nonprofits/cover.webp"
+coverImage: "/assets/posts/privacy-check-for-nonprofits/cover.webp"
 date: "2025-08-27"
 author:
   name: Kate Blank
   picture: "/assets/team/kate-blank.jpg"
 ogImage:
-  url: "/assets/posts/privacy-check-nonprofits/cover.webp"
+  url: "/assets/posts/privacy-check-for-nonprofits/cover.webp"
 tags: ["Privacy", "Non-profits", "Data Security", "Compliance"]
 published: true
 ---
