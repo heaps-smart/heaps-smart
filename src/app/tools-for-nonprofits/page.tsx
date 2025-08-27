@@ -99,7 +99,6 @@ const getFilteredTools = (tools: Tool[], categoryName: string): Tool[] => {
   return tools.filter(tool => toolBelongsToCategory(tool, categoryName));
 };
 
-// Icon mapping configuration
 const CATEGORY_ICON_MAP = {
   'ai-solutions': {
     icon: '/assets/svg/ai-solutions.svg',
@@ -232,7 +231,6 @@ function ToolsPageContent() {
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const shadowClass = "shadow-sm hover:shadow-md";
 
-  // Debounce search
   useEffect(() => {
     const handler = setTimeout(() => {
       dispatch({ type: 'SET_DEBOUNCED_SEARCH', payload: filterState.search });

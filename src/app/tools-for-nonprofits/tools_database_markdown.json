@@ -463,7 +463,7 @@
     "name": "Google Maps",
     "link": "https://developers.google.com",
     "link_text": "https://developers.google.com",
-    "category": "Mapping",
+    "category": ["Mapping", "GIS"],
     "description": "Embeds interactive maps on your website \u2014 helpful for showing project locations or listing environmental restoration sites.",
     "monthly_pricing_aud": "",
     "raw_pricing": "$",
@@ -2289,5 +2289,61 @@
         "type": "image"
       }
     ]
+  },
+  {
+    "name": "ArcGIS",
+    "link": "https://www.esri.com/en-us/arcgis/about-arcgis/overview",
+    "link_text": "https://www.esri.com/en-us/arcgis/about-arcgis/overview",
+    "category": "GIS",
+    "description": "Professional GIS platform for mapping, spatial analysis, and data management — essential for conservation projects, land use planning, and environmental monitoring.",
+    "monthly_pricing_aud": "Varies: free to $150+",
+    "raw_pricing": "$$$$",
+    "non_profit_discount": "Discounts for non-profits",
+    "non_profit_discount_link": "https://www.esri.com/en-us/industries/sustainability/nonprofit",
+    "pricing_details": "Non-profits can apply for significant discounts on ArcGIS products through Esri's Conservation Program and non-profit initiatives.\n\n**How to apply:**\n- Visit the [Esri Non-profit Program page](https://www.esri.com/en-us/industries/sustainability/nonprofit)\n- Complete the application form with your organisation's details\n- Provide documentation of your non-profit status\n- Once approved, you'll receive access to discounted licensing and may qualify for grants\n- Many conservation organisations can access ArcGIS Online, ArcGIS Pro, and other tools at up to 50% off standard pricing",
+    "hs_recommended": "Yes",
+    "hs_recommended_details": "ArcGIS is the industry standard for professional GIS work. While it has a steeper learning curve than simpler mapping tools, it's incredibly powerful for spatial analysis, data management, and creating publication-quality maps. We've used it for conservation mapping, data analysis, and creating maps for reports and presentations. The non-profit discounts make it much more accessible, and Esri provides excellent training resources. If your organisation works with location data, environmental monitoring, or needs to create detailed maps for grants or reports, ArcGIS is worth the investment.",
+    "affiliate_link": "N/A - No affiliate program available",
+    "slug": "arcgis",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/posts/affordable-gis-for-nonprofits/cover.webp",
+        "alt": "ArcGIS interface showing mapping tools",
+        "type": "image"
+      }
+    ],
+    "description_singlepage": "ArcGIS is a comprehensive geographic information system (GIS) platform that enables organisations to create, analyse, and share spatial data and maps. Non-profits use it for conservation planning, environmental monitoring, community mapping, and creating compelling visualisations for grants and stakeholder engagement."
+  },
+  {
+    "name": "QGIS",
+    "link": "https://qgis.org",
+    "link_text": "https://qgis.org",
+    "category": "GIS",
+    "description": "Free, open-source GIS software for mapping and spatial analysis — perfect for non-profits needing professional mapping capabilities without licensing costs.",
+    "monthly_pricing_aud": "$0",
+    "raw_pricing": "Free",
+    "non_profit_discount": "Completely free and open-source",
+    "non_profit_discount_link": "https://qgis.org/funding/donate/",
+    "pricing_details": "QGIS is completely free and open-source software developed by a community of volunteers and organisations.\n\n**Getting started:**\n- Download QGIS from the [official website](https://qgis.org/en/site/forusers/download.html)\n- Choose the version that matches your operating system (Windows, Mac, Linux)\n- Access extensive [documentation and tutorials](https://qgis.org/en/site/forusers/trainingmaterial/index.html) to get started\n- Join the active community forums for support and tips\n- Consider donating to support ongoing development if QGIS becomes valuable to your organisation",
+    "hs_recommended": "Yes",
+    "hs_recommended_details": "QGIS is an excellent choice for non-profits that need professional GIS capabilities but have limited budgets. It's surprisingly powerful and can handle most of the same tasks as commercial GIS software. The learning curve is moderate, and there are plenty of free tutorials and resources available. The fact that it's completely free makes it accessible to any organisation, and the active community means regular updates and improvements. While the interface isn't as polished as some commercial alternatives, the functionality is solid and it supports all major data formats.",
+    "affiliate_link": "N/A - Open source project",
+    "slug": "qgis",
+    "gallery_images": [
+      {
+        "id": 1,
+        "src": "/assets/img/tools-for-nonprofits/qgis-1.webp",
+        "alt": "QGIS interface showing mapping capabilities",
+        "type": "image"
+      },
+      {
+        "id": 2,
+        "src": "/assets/img/tools-for-nonprofits/qgis-2.webp",
+        "alt": "QGIS spatial analysis tools",
+        "type": "image"
+      }
+    ],
+    "description_singlepage": "QGIS is a free, open-source geographic information system that provides professional mapping and spatial analysis capabilities. Non-profits use it to create maps, analyse environmental data, plan conservation projects, and visualise spatial information without the cost of commercial GIS software."
   }
 ]

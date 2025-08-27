@@ -14,7 +14,7 @@ published: true
 
 ## Why Cost Matters in Community Mapping  
 
-Geographic Information Systems (GIS) turn raw data into maps that tell stories about people, places, and impact. Whether it's mapping cassowary habitats, food insecurity hotspots, or community services, the goal is the same: give your data a place on the map so decision-makers and the public can see what is happening.  
+Geographic Information Systems ([GIS](/tools-for-nonprofits/?category=gis)) turn raw location data into clear, decision-ready maps that show patterns, need, and impact. Whether you are mapping cassowary habitat corridors, food insecurity hotspots, or community service coverage, the goal is the same: give your data geographic context so people can immediately see what is happening—and where.
 
 For non-profits, budgets are often stretched thin. Every dollar saved on software is another dollar that can go towards planting trees, running community programmes, or funding staff time. Mapping does not have to be expensive. Today, powerful GIS tools are available at heavily discounted rates, or even free, for organisations working in social or environmental good.  
 
@@ -24,7 +24,7 @@ At Heaps Smart, we are focused on lowering the barrier to entry for non-profits 
 
 ## ArcGIS: Discounts and Grants for Non-Profits  
 
-ArcGIS is Esri's flagship suite of mapping and analysis tools, used by governments, universities, and businesses worldwide. It's used for everything from building maps and analysing data to creating interactive dashboards and digital stories. For non-profits, this means moving the ability to move beyond static maps at a fraction of the price.  
+[ArcGIS](/tools-for-nonprofits/arcgis/) is Esri's flagship suite of mapping and analysis tools, used by governments, universities, and businesses worldwide. It's used for everything from building maps and analysing data to creating interactive dashboards and digital stories. For non-profits, this means moving the ability to move beyond static maps at a fraction of the price.  
 
 Esri's Nonprofit Program offers special pricing and packages for registered charities and NGOs. You'll get access to a suite of tools, each with a different purpose:  
 
@@ -52,7 +52,7 @@ Smaller organisations can sometimes also access the **Small Nonprofit Organisati
 
 ## QGIS: Free and Open-Source GIS Software for Non-Profits
 
-If your team prefers open-source tools, or does not want to navigate licensing applications, **QGIS** is a strong free alternative.  
+If your team prefers open-source tools, or does not want to navigate licensing applications, **[QGIS](/tools-for-nonprofits/qgis/)** is a strong free alternative.  
 
 It offers:  
 - A full desktop GIS platform with advanced analysis tools.  
@@ -69,7 +69,7 @@ QGIS works best for grassroots projects, quick analysis, and organisations that 
 ---
 
 ## Other Free or Discounted GIS Tools for Non-Profits
-- **[Google Maps Platform](https://developers.google.com/maps)**: $200 USD of free usage credits each month. Easy to embed with an API key for service areas, event locations, or routes. Not suited for advanced spatial analysis.  
+- **[Google Maps Platform](/tools-for-nonprofits/google-maps/)**: $200 USD of free usage credits each month. Easy to embed with an API key for service areas, event locations, or routes. Not suited for advanced spatial analysis.  
 - **[Google Earth Engine](https://earthengine.google.com/)**: Cloud-based satellite imagery and geospatial analysis platform. Free for approved non-profits and research; powerful for conservation, land use, and climate projects.  
 - **[Mapbox Non-profit / Community Program](https://www.mapbox.com/community)**: Discounted access to customizable, high-performance web maps. Great for branded campaigns, dashboards, and mobile apps.  
 - **[OpenStreetMap (OSM)](https://www.openstreetmap.org/)**: Free, crowd-sourced global basemap. Ideal for participatory mapping and filling data gaps in under-mapped regions.  
@@ -79,8 +79,8 @@ QGIS works best for grassroots projects, quick analysis, and organisations that 
 
 ## Choosing What's Right for Your Organisation
 
-- Choose **ArcGIS** if you need enterprise stability, polished StoryMaps, or if your funders expect ArcGIS outputs.  
-- Choose **QGIS** if you want maximum flexibility, no ongoing costs, and you are comfortable with open-source support.  
+- Choose **[ArcGIS](/tools-for-nonprofits/arcgis/)** if you need enterprise stability, polished StoryMaps, or if your funders expect ArcGIS outputs.  
+- Choose **[QGIS](/tools-for-nonprofits/qgis/)** if you want maximum flexibility, no ongoing costs, and you are comfortable with open-source support.  
 - Use **both** if you want the best of both worlds. Many non-profits analyse in QGIS, then publish results in ArcGIS StoryMaps for public engagement.  
 
 ---
