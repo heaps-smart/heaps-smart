@@ -27,7 +27,7 @@ export default function About() {
               Heaps Smart is a technology consultancy founded by Kate and Derek Blank. For over 20 years, we have been building custom software, data solutions, and digital communications for global brands including Google, WordPress, and Lonely Planet.
             </p>
             <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
-              Our work took us across the world, from San Francisco to Melbourne, but it was working with non-profits that felt the most grounded. It was this work that brought us out of the boardrooms and into the front-lines: cleaning plastic from the ocean, planting trees to save the rainforest, caring for injured wildlife, delivering education technology to remote communities.
+              Our work took us across the world, from San Francisco to London to Melbourne, but it was working with non-profits that felt the most grounded. It was this work that brought us out of the boardrooms and into the front-lines: cleaning plastic from the ocean, planting trees to save the rainforest, caring for injured wildlife, delivering education technology to remote communities.
             </p>
             <p className="tracking-tight leading-tight md:text-xl max-w-2xl mb-4 text-black/80">
               Founding Heaps Smart was the natural next step: A consultancy dedicated to applying our technical expertise directly to organisations doing good things.

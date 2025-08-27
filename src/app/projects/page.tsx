@@ -6,6 +6,15 @@ import Swell from "../_components/Swell";
 
 const projects = [
 	{
+		slug: "how-to-save-a-dinosaur-bird",
+		title: "Saving a dinosaur bird, with data",
+		description:
+			"Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
+		tags: ["Conservation", "Citizen Science", "Data"],
+		video: "/assets/video/cassowary-web.mp4",
+		poster: "/assets/video/posters/cassowary-web.webp",
+	},
+	{
 		slug: "smarter-remote-research-teams",
 		title: "Smarter Meetings for Remote Research Teams",
 		description:
@@ -31,15 +40,6 @@ const projects = [
 		tags: ["Conservation", "Citizen Science", "Data", "Vision AI"],
 		video: "/assets/video/wall-of-poo.mp4",
 		poster: "/assets/video/posters/wall-of-poo.webp",
-	},
-	{
-		slug: "how-to-save-a-dinosaur-bird",
-		title: "Saving a dinosaur bird, with data",
-		description:
-			"Partnering with C4, Heaps Smart digitised three decades of cassowary sightings, building an automated database and simple logging tools for the public.",
-		tags: ["Conservation", "Citizen Science", "Data"],
-		video: "/assets/video/cassowary-web.mp4",
-		poster: "/assets/video/posters/cassowary-web.webp",
 	},
 	{
 		slug: "meet-cassie",
