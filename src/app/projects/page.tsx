@@ -43,9 +43,9 @@ const projects = [
 	},
 	{
 		slug: "meet-cassie",
-		title: "Meet Cassie: our cassowary expert",
+		title: "Meet Cassie: the cassowary expert powered by community knowledge",
 		description:
-			"We built Cassie, an AI-powered teammate trained on 30+ years of cassowary conservation insights, making local knowledge accessible through natural language.",
+			"Cassie is a custom GPT built in partnership with the community organisation Mission Beach Cassowaries. Currently in active development, Cassie is being trained on over 30 years of local conservation insights with the goal of making this valuable knowledge accessible through natural language.",
 		tags: ["AI", "Agents", "Accessibility"],
 		video: "/assets/video/cassie.mp4",
 		poster: "/assets/video/posters/cassie.webp",

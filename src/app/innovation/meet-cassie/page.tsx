@@ -7,7 +7,7 @@ export default function MeetCassiePage() {
   const pageTitle = "Meet Cassie: our cassowary expert";
   const techStack = [
     <Link key="react" href="/contact">React - Next.js</Link>,
-    <Link key="supabase" href="/tools-for-nonprofits/chatgpt">OpenAI/ChatGPT</Link>,
+    <Link key="supabase" href="/tools-for-nonprofits/chatgpt">OpenAI/ChatGPT  </Link>,
   ];
 
   
@@ -21,21 +21,17 @@ export default function MeetCassiePage() {
     {
       title: "The opportunity",
       content:
-        "Cassowary conservation in Mission Beach is built on decades of effort: fieldwork, research, local knowledge, and thousands of sightings logged by passionate community members and visitors. But this collective intelligence was hard to access, buried across spreadsheets, paper records, Facebook posts, and memory. The community needed a way to connect with all this information quickly without needing to be technical.",
+        "Cassowary conservation in Mission Beach is built on decades of effort: fieldwork, research, local knowledge, and thousands of sightings logged by dedicated community members and visitors. However, accessing this collective intelligence was challenging, as it was spread across spreadsheets, paper records, Facebook posts, and individual memory.",
     },
     {
       title: "Our response",
       content: (
         <>
-          <p>
-            We built Cassie to be an always-on AI-powered teammate trained to understand cassowaries.<br /><br />Cassie helps users
-            explore 30+ years of conservation insights using natural language. Ask her about movement patterns, habitat
-            threats, known individuals, or historical interventions. She'll find and explain it. Built specifically for
-            the Mission Beach Cassowaries team, Cassie makes local knowledge searchable, shareable, and useful.
-          </p>
+            <p>
+            In collaboration with <strong><a href="https://www.missionbeachcassowaries.com/" target="_blank" rel="noopener noreferrer" className="text-black underline">Mission Beach Cassowaries</a></strong>, we developed Cassie, an AI-powered conservation tool trained on decades of community-provided cassowary data. Currently in active development, Cassie's goal is to consolidate existing local knowledge and make it more accessible, shareable, and actionable.
+            </p>
           <p className="mt-4">
-            As part of the engagement, the internal team was upskilled in AI fundamentals, tools and workflows,
-            empowering them to maintain and expand Cassie's brain over time.
+            As part of the collaboration, the Mission Beach Cassowaries team gained skills in AI fundamentals, tools, and workflows, empowering them to maintain and expand Cassie's capabilities over time as development progresses.
           </p>
           <div className="my-8">
             <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
@@ -56,17 +52,20 @@ export default function MeetCassiePage() {
       title: "Impact",
       content: (
         <ul className="list-disc pl-6 space-y-2">
-          <li>Made decades of scattered data and knowledge accessible through natural conversation</li>
-          <li>Enabled the team to ask complex questions and get contextual answers in seconds</li>
-          <li>Boosted local AI literacy and confidence through hands-on training</li>
-          <li>Sparked new ways of thinking about storytelling, education, and advocacy</li>
+          <li>Made decades of distributed data and knowledge accessible through natural conversation</li>
+          <li>Enabled the Mission Beach Cassowaries team to ask complex questions and receive contextual answers quickly</li>
+          <li>Enhanced local AI literacy and confidence through hands-on training with our conservation partners</li>
+          <li>Inspired new approaches to storytelling, education, and advocacy in cassowary conservation</li>
         </ul>
       ),
     },
     {
       title: "What's next",
-      content:
-        "Cassie is always learning and evolving. She's busy converting sightings data into a cohesive children's book on the lives of individual cassowaries — birds so familiar to the community they're practically family. These personalised narratives will help connect kids (and adults) to cassowary conservation through emotion and story.",
+      content: (
+        <>
+          Cassie continues to learn and evolve as development progresses.<br /><br />Learn more about the conservation efforts that support Cassie at <strong><a href="https://www.missionbeachcassowaries.com/" target="_blank" rel="noopener noreferrer" className="text-black underline">Mission Beach Cassowaries</a></strong>.
+        </>
+      ),
     },
   ];
   const location = "Mission Beach, Queensland, Australia";
@@ -80,7 +79,7 @@ export default function MeetCassiePage() {
       galleryImages={galleryImages}
       location={location}
       acknowledgements={
-        <>Mission Beach Cassowaries: cassowary sightings media and data</>
+        <>Cassie was built in partnership with <strong><a href="https://www.missionbeachcassowaries.com/" target="_blank" rel="noopener noreferrer" className="text-black underline">Mission Beach Cassowaries</a></strong>, utilising decades of community-supported cassowary sightings media and data.</>
       }
     />
   );
