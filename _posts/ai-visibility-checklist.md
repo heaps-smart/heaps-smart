@@ -2,7 +2,7 @@
 title: "AI Visibility Check for Non-Profits: Can AI Find and Represent You?"
 excerpt: "AI tools are becoming a first point of contact between organisations and the public. Here's a checklist to help your organisation stay visible and accurately represented."
 coverImage: "/assets/posts/ai-visibility-checklist/cover.webp"
-date: "2025-09-08"
+date: "2025-08-08"
 author:
   name: Kate Blank
   picture: "/assets/team/kate-blank.jpg"
