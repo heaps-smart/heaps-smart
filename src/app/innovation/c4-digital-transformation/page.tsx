@@ -25,7 +25,7 @@ export default function C4DigitalTransformationPage() {
       title: "The opportunity",
       content: (
         <>
-          C4 (<strong><a href="https://cassowaryconservation.org" target="_blank" rel="noopener noreferrer" className="underline">Community for Coastal and Cassowary Conservation</a></strong>) has protected the Wet Tropics for over 30 years—but their digital presence hadn't kept pace with the scale or scope of their work. Their old website was outdated, difficult to update, and failed to reflect the breadth of their conservation and community engagement programs. Internally, C4 relied on manual workflows and disconnected tools. As the organisation grew—taking on more volunteers, events, and education programs—so too did the complexity of its admin. It needed a new identity and a modern digital platform built for long-term impact..
+          C4 (<strong><a href="https://cassowaryconservation.org" target="_blank" rel="noopener noreferrer" className="underline">Community for Coastal and Cassowary Conservation</a></strong>) has been protecting the Wet Tropics for over 30 years, with a strong record in conservation and community engagement. As the organisation grew, welcoming more volunteers, events and education programs, its digital presence needed to evolve as well. The website and internal systems no longer reflected the full breadth of C4’s work or the scale of its impact. A refreshed identity and a modern digital platform were the natural next steps to support long-term growth and engagement. 
         </>
       )
     },
@@ -38,9 +38,9 @@ export default function C4DigitalTransformationPage() {
       title: "",
       content: (
         <ul className="list-disc pl-6 space-y-2">
-          <li>
-            A custom website optimised for speed, accessibility, and ongoing storytelling
-          </li>
+            <li>
+            A custom <strong><Link href="/tools-for-nonprofits/wordpress" className="text-black underline">WordPress</Link></strong> website optimised for speed, accessibility, and ongoing storytelling, leveraging our WordPress expertise
+            </li>
           <li>
             A simplified content structure with modular blocks for events, programs updates, and news posts
           </li>
@@ -48,19 +48,19 @@ export default function C4DigitalTransformationPage() {
             Integrated forms for volunteers, donations, and member sign-up
           </li>
           <li>
-            Stripe integration for online payments
+            <strong><Link href="/tools-for-nonprofits/stripe" className="text-black underline">Stripe</Link></strong> integration for online payments
           </li>
           <li>
-            Airtable databases for managing members, supporters, and education bookings
+            <strong><Link href="/tools-for-nonprofits/airtable" className="text-black underline">Airtable</Link></strong> databases for managing members, supporters, and education bookings
           </li>
           <li>
-            Zapier automations to streamline admin, alerts, and onboarding
+            <strong><Link href="/tools-for-nonprofits/zapier" className="text-black underline">Zapier</Link></strong> automations to streamline admin, alerts, and onboarding
           </li>
           <li>
-            Google Workspace setup for coordinated team operations
+            <strong><Link href="/tools-for-nonprofits/google-docs" className="text-black underline">Google Workspace</Link></strong> setup for coordinated team operations
           </li>
           <li>
-            Canva templates and automation for in-house teams to create on-brand materials without needing a designer
+            <strong><Link href="/tools-for-nonprofits/canva" className="text-black underline">Canva</Link></strong> templates and automation for in-house teams to create on-brand materials without needing a designer
           </li>
         </ul>
       ),
