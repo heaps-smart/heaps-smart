@@ -8,7 +8,7 @@ author:
   picture: "/assets/team/kate-blank.jpg"
 ogImage:
   url: "/assets/posts/ai-visibility-checklist/cover.webp"
-tags: ["AI", "Non-profits", "Visibility", "Messaging"]
+tags: ["AI", "Non-profits"]
 published: true
 ---
 
@@ -60,3 +60,6 @@ AI tools are becoming a first point of contact between organisations and the pub
 ---
 
 **Bottom line:** If your site is crawlable, structured, clear, and consistent, AI systems are far more likely to represent your organisation accurately. From there, map the gaps into an action plan: do you need to publish more structured content, refine your messaging, or remove outdated material?
+
+> Need a hand with your organisation's AI visibility checklist? Let's talk.  
+> [Contact Heaps Smart](https://heaps-smart.com/contact/) to explore how we can help your organisation update your AI visibility. 
