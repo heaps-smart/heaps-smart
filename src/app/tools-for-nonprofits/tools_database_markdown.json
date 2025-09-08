@@ -170,6 +170,24 @@
     ]
   },
   {
+    "name": "Claude",
+    "link": "https://claude.ai/",
+    "link_text": "https://claude.ai/",
+    "category": "AI Assistant",
+    "description": "An advanced AI assistant for drafting, summarizing, and brainstorming content, ideal for non-profits managing communications and reports.",
+    "monthly_pricing_aud": "$25",
+    "raw_pricing": "$$$",
+    "non_profit_discount": "Special pricing for non-profits available upon request",
+    "non_profit_discount_link": "https://claude.ai/nonprofits",
+    "pricing_details": "Non-profits can request special pricing tailored to their needs. Contact Claude's team for more details.\n\n**How to apply:**\n- Visit the Claude for Non-profits page\n- Submit your organisation's details and proof of non-profit status\n- Wait for verification and custom pricing proposal",
+    "hs_recommended": "Yes",
+    "hs_recommended_details": "Claude is highly recommended for non-profits looking for an AI assistant that excels in natural language understanding and generation. It can help with drafting grant proposals, summarizing lengthy reports, and brainstorming ideas for campaigns. Claude's thoughtful approach to content creation and its ability to understand context make it particularly valuable for organisations that need nuanced, high-quality written communications.",
+    "affiliate_link": "",
+    "slug": "claude",
+    "gallery_images": [],
+    "description_singlepage": "Claude is an AI assistant designed to help non-profits with content creation, from drafting reports to brainstorming ideas. Its advanced natural language capabilities make it a valuable tool for organizations aiming to streamline their communication tasks."
+  },
+  {
     "name": "ChatGPT",
     "link": "https://openai.com",
     "link_text": "https://openai.com",
