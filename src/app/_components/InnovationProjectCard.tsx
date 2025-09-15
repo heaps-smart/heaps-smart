@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import ResponsiveVideo from "./ResponsiveVideo";
+import Image from "next/image";
 
 const Tag = ({ children }: { children: React.ReactNode }) => (
   <span className="inline-block bg-gray-100 text-gray-800 text-xs font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded-full">
@@ -30,10 +30,12 @@ export default function InnovationProjectCard({ project }: InnovationProjectCard
       className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1"
     >
       <div className="relative w-full aspect-video">
-        <ResponsiveVideo
-          src={project.video}
-          poster={project.poster}
-          className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+        <Image
+          src={project.poster}
+          alt={project.title}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
         />
       </div>
       <div className="p-6 flex flex-col flex-grow">
