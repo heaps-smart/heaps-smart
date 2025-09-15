@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import { Metadata } from "next";
 import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
@@ -7,6 +8,51 @@ import Swell from "@/app/_components/Swell";
 import InnovationProjectCard from "@/app/_components/InnovationProjectCard";
 import LatestPosts from "@/app/_components/LatestPosts";
 import YellowBullet from "@/app/_components/YellowBullet";
+
+export const metadata: Metadata = {
+  title: "Heaps Smart - Technology for Non-Profits and Mission-Driven Organisations",
+  description: "We design and build websites, mobile apps, data tools, interactive GIS maps, and audio/visuals for non-profits and mission-driven organisations in Australia and beyond. Experts in automation, AI, and custom development.",
+  keywords: "non-profit technology, mission-driven organisations, website development, mobile apps, data tools, GIS mapping, automation, AI for non-profits, Zapier, n8n, Claude AI, Australia",
+  authors: [{ name: "Heaps Smart" }],
+  creator: "Heaps Smart",
+  publisher: "Heaps Smart",
+  openGraph: {
+    title: "Heaps Smart - Technology for Non-Profits and Mission-Driven Organisations",
+    description: "We design and build websites, mobile apps, data tools, interactive GIS maps, and audio/visuals for non-profits and mission-driven organisations in Australia and beyond.",
+    url: "https://www.heaps-smart.com",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "/assets/img/heaps-smart-logo-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Heaps Smart - Technology for Good",
+      },
+    ],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Heaps Smart - Technology for Non-Profits",
+    description: "We design and build websites, mobile apps, data tools, and automation for non-profits and mission-driven organisations.",
+    images: ["/assets/img/heaps-smart-logo-og.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com",
+  },
+};
 
 const TerrainBackground = dynamic(
   () => import("./_components/animations/Terrain"),
@@ -33,8 +79,82 @@ const projects = [
 ];
 
 export default function HeapsSmart() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Heaps Smart",
+    "url": "https://www.heaps-smart.com",
+    "logo": "https://www.heaps-smart.com/assets/img/heaps-smart-logo.png",
+    "description": "Technology for non-profits and mission-driven organisations. We design and build websites, mobile apps, data tools, interactive GIS maps, and audio/visuals.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mission Beach",
+      "addressRegion": "Queensland",
+      "addressCountry": "AU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "hello@heaps-smart.com",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/heaps-smart"
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -17.8688,
+        "longitude": 146.1078
+      },
+      "geoRadius": "100000"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Technology Services for Non-Profits",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Development",
+            "description": "Custom websites for non-profits and mission-driven organisations"
+          }
+        },
+        {
+          "@type": "Offer", 
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Mobile App Development",
+            "description": "iOS and Android apps for non-profit organisations"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
+            "name": "Data Tools & GIS Mapping",
+            "description": "Interactive maps and data visualization tools"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Automation & AI Integration", 
+            "description": "Workflow automation and AI tools for non-profits"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <main className="bg-[#F7F2EE] text-[#111111] font-sans relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <header className="relative h-auto min-h-[50vh] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <TerrainBackground />
@@ -58,19 +178,19 @@ export default function HeapsSmart() {
             Technology for good.
           </h1>
 
-          <h3 className="text-xl mb-4 text-black/80 tracking-tight">
-            We design and build <span className="font-bold">websites</span>, <span className="font-bold">mobile apps</span>, <span className="font-bold">data tools</span>, <span className="font-bold">interactive GIS maps</span>, and <span className="font-bold">audio/visuals</span> for non-profits and mission-driven organisations in Australia and beyond. <br />
-          </h3>
+          <p className="text-xl mb-4 text-black/80 tracking-tight">
+            Modern technology for non-profits and mission-driven organisations from websites and training to automation and data systems.
+          </p>
 
           <div className="flex space-x-4 justify-start">
             <a
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
               className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
-              aria-label="Schedule a call with Heaps Smart"
+              aria-label="Book a 20-min call with Heaps Smart"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Schedule a call →
+              Book a 20-min call →
             </a>
             <Link
               href="/contact"
@@ -82,30 +202,10 @@ export default function HeapsSmart() {
           </div>
         </section>
       </Container>
-    
-      <Container>
-        <div className="my-16">
-          <h2 className="text-3xl mb-8 tracking-tighter font-semibold">Latest projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project) => (
-          <InnovationProjectCard key={project.slug} project={project} />
-        ))}
-          </div>
-          <div className="mt-8">
-            <a
-              href="/projects"
-              className="inline-block text-black font-medium rounded-lg transition-colors focus:outline-none"
-              aria-label="Explore more projects"
-            >
-              Explore more projects →
-            </a>
-          </div>
-        </div>
-      </Container>
 
-      <Container>
-        <div className="my-16">
-          <h2 className="text-3xl mb-8 tracking-tighter font-semibold">How we can help</h2>
+            <Container>
+        <section className="my-16" aria-labelledby="how-we-help">
+          <h2 id="how-we-help" className="text-3xl mb-8 tracking-tighter font-semibold">How we can help</h2>
           <p className="text-xl text-black/70 mb-12 max-w-4xl">
             We work alongside your team to build and adapt the tools, systems and training that make technology simple and effective.
           </p>
@@ -225,12 +325,33 @@ export default function HeapsSmart() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
+      </Container>
+
+    
+      <Container>
+        <section className="my-16" aria-labelledby="latest-projects">
+          <h2 id="latest-projects" className="text-3xl mb-8 tracking-tighter font-semibold">Latest projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((project) => (
+          <InnovationProjectCard key={project.slug} project={project} />
+        ))}
+          </div>
+          <div className="mt-8">
+            <a
+              href="/projects"
+              className="inline-block text-black font-medium rounded-lg transition-colors focus:outline-none"
+              aria-label="Explore more projects"
+            >
+              Explore more projects →
+            </a>
+          </div>
+        </section>
       </Container>
 
       <Container>
-        <div className="my-16">
-          <h2 className="text-3xl mb-8 tracking-tighter font-semibold">Latest labs</h2>
+        <section className="my-16" aria-labelledby="latest-labs">
+          <h2 id="latest-labs" className="text-3xl mb-8 tracking-tighter font-semibold">Latest labs</h2>
           <LatestPosts limit={3} />
           <div className="mt-8">
             <a
@@ -241,14 +362,14 @@ export default function HeapsSmart() {
               Explore more labs →
             </a>
           </div>
-        </div>
+        </section>
       </Container>
 
       <Container>
-        <section className="pt-6 pb-16 bg-[#F7F2EE]">
-          <h2 className="text-3xl font-semibold mb-2 tracking-tighter">Tools for non-profits</h2>
-          <p className="text-lg mb-8 text-black/70 tracking tight">
-            We use a range of tools to help teams work smarter. Here are some of the platforms and technologies we frequently integrate with:
+        <section className="pt-6 pb-16 bg-[#F7F2EE]" aria-labelledby="tools-for-nonprofits">
+          <h2 id="tools-for-nonprofits" className="text-3xl font-semibold mb-2 tracking-tighter">Tools for non-profits</h2>
+          <p className="text-xl mb-4 text-black/80 tracking-tight">
+            As part of our work, we use heaps of software products. We've pulled together some of the best tools for non-profits across a bunch of categories and we hope you find it useful.
           </p>
           
           
@@ -385,9 +506,7 @@ export default function HeapsSmart() {
         <div className="text-center my-16">
           <div className="relative mb-8">
             <p className="tracking-tight text-2xl md:text-2xl leading-snug mx-auto max-w-4xl text-black/80">
-              Ready to work smarter with <span className="font-semibold">AI tools and automations</span>?
-              <br />
-              We are located right here, in Mission Beach, Queensland, Australia. 
+              Ready to get started?
             </p>
           </div>
 
@@ -395,11 +514,11 @@ export default function HeapsSmart() {
             <a
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
               className="inline-block px-6 py-3 bg-[#fcd34d] hover:bg-[#fcbb1e] text-black font-medium rounded-lg transition-colors focus:outline-none"
-              aria-label="Schedule a call with Heaps Smart"
+              aria-label="Book a 20-min call with Heaps Smart"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Schedule a call →
+              Book a 20-min call →
             </a>
             <Link
               href="/contact"

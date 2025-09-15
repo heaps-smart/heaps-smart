@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 import AnimatedHeading from "@/app/_components/AnimatedHeading";
 import Container from "@/app/_components/Container";
 import CTA from "@/app/_components/CTA";
@@ -10,6 +11,38 @@ import LightningIcon from "@/app/_components/svg/LightningIcon";
 import HeartIcon from "@/app/_components/svg/HeartIcon";
 import CodeIcon from "@/app/_components/svg/CodeIcon";
 import LatestPosts from "@/app/_components/LatestPosts";
+
+export const metadata: Metadata = {
+  title: "Product Development - Custom Software & AI Solutions | Heaps Smart",
+  description: "We work with your team to move from concept to production-ready product using proven innovation frameworks. Experts in AI solutions, UX design, and custom software development.",
+  keywords: "product development, custom software, AI solutions, UX design, web apps, mobile apps, JavaScript, Python, innovation frameworks",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "Product Development - Custom Software & AI Solutions",
+    description: "We work with your team to move from concept to production-ready product using proven innovation frameworks.",
+    url: "https://www.heaps-smart.com/product-development",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "/assets/img/heaps-smart-logo-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Heaps Smart Product Development Services",
+      },
+    ],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Development - Custom Software & AI Solutions",
+    description: "We work with your team to move from concept to production-ready product using proven innovation frameworks.",
+    images: ["/assets/img/heaps-smart-logo-og.png"],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/product-development",
+  },
+};
 
 const BubbleGroupsCanvas = dynamic(() => import("@/app/_components/animations/Bubble"), {
   ssr: false,

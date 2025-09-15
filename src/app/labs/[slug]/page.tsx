@@ -7,8 +7,8 @@ import fs from "fs";
 import matter from "gray-matter";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import "@/styles/markdown.css";
-import Head from "next/head";
 
 export async function generateStaticParams() {
   const postsDirectory = path.join(process.cwd(), "_posts");
@@ -22,6 +22,61 @@ interface PostPageProps {
   params: { slug: string };
 }
 
+export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
+  const postsDirectory = path.join(process.cwd(), "_posts");
+  const fullPath = path.join(postsDirectory, `${params.slug}.md`);
+  
+  if (!fs.existsSync(fullPath)) {
+    return {
+      title: "Post Not Found",
+      description: "The requested post could not be found.",
+    };
+  }
+
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data } = matter(fileContents);
+
+  return {
+    title: `${data.title} | Heaps Smart Labs`,
+    description: data.excerpt || "Read the latest insights and experiments from Heaps Smart.",
+    keywords: Array.isArray(data.tags) ? data.tags.join(", ") : "",
+    authors: data.author ? [{ name: data.author.name }] : [{ name: "Heaps Smart" }],
+    openGraph: {
+      title: data.title,
+      description: data.excerpt || "Read the latest insights and experiments from Heaps Smart.",
+      url: `https://www.heaps-smart.com/labs/${params.slug}`,
+      siteName: "Heaps Smart",
+      images: data.coverImage ? [
+        {
+          url: data.coverImage,
+          width: 1200,
+          height: 630,
+          alt: data.title,
+        },
+      ] : [
+        {
+          url: "/assets/img/heaps-smart-logo-og.png",
+          width: 1200,
+          height: 630,
+          alt: "Heaps Smart Labs",
+        },
+      ],
+      locale: "en_AU",
+      type: "article",
+      publishedTime: data.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: data.title,
+      description: data.excerpt || "Read the latest insights and experiments from Heaps Smart.",
+      images: data.coverImage ? [data.coverImage] : ["/assets/img/heaps-smart-logo-og.png"],
+    },
+    alternates: {
+      canonical: `https://www.heaps-smart.com/labs/${params.slug}`,
+    },
+  };
+}
+
 export default async function PostPage({ params }: PostPageProps) {
   const postsDirectory = path.join(process.cwd(), "_posts");
   const fullPath = path.join(postsDirectory, `${params.slug}.md`);
@@ -32,23 +87,6 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <main className="bg-[#f8f3ef] text-black font-sans">
-      <Head>
-        <title>{data.title}</title>
-        <meta name="description" content={data.excerpt} />
-        <meta property="og:title" content={data.title} />
-        <meta property="og:description" content={data.excerpt} />
-        <meta property="og:type" content="article" />
-        {data.coverImage && (
-          <meta property="og:image" content={data.coverImage} />
-        )}
-        <meta property="og:url" content={`https://heapsmart.com.au/posts/${params.slug}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={data.title} />
-        <meta name="twitter:description" content={data.excerpt} />
-        {data.coverImage && (
-          <meta name="twitter:image" content={data.coverImage} />
-        )}
-      </Head>
       <Container>
         <Header variant="light" />
       </Container>

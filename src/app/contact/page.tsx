@@ -30,7 +30,7 @@ export default function Contact() {
               </div>
               <div className="mb-8">
                 <p className="mb-4">
-                  Or, schedule a free 30-minute call to talk through what you're working on and how we can help.
+                  Or, schedule a free 20-minute call to talk through what you're working on and how we can help.
                 </p>
                 <a
                   href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wJdTJq1eTmlBTwyP3ky18tYx7V5A18jD5WVDaRklGIV0U38AReUQGrZoBWUrijhjUDjgEY5QR?gv=true"
@@ -39,7 +39,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Schedule a call →
+                  Book a call →
                 </a>
               </div>
               <div className="mb-8">
