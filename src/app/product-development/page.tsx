@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Heaps Smart",
     images: [
       {
-        url: "/assets/img/heaps-smart-logo-og.png",
+        url: `https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Product Development - Custom Software & AI Solutions")}`,
         width: 1200,
         height: 630,
         alt: "Heaps Smart Product Development Services",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Product Development - Custom Software & AI Solutions",
     description: "We work with your team to move from concept to production-ready product using proven innovation frameworks.",
-    images: ["/assets/img/heaps-smart-logo-og.png"],
+    images: [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Product Development - Custom Software & AI Solutions")}`],
   },
   alternates: {
     canonical: "https://www.heaps-smart.com/product-development",

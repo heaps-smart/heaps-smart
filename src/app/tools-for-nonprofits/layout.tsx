@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     siteName: "Heaps Smart",
     images: [
       {
-        url: "/assets/img/heaps-smart-logo-og.png",
+        url: `https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Tools for Non-Profits")}`,
         width: 1200,
         height: 630,
         alt: "Tools for Non-Profits - Heaps Smart",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tools for Non-Profits - Software Recommendations",
     description: "Discover the best software tools for non-profits across categories like AI solutions, data infrastructure, digital communications, automation, and more.",
-    images: ["/assets/img/heaps-smart-logo-og.png"],
+    images: [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Tools for Non-Profits")}`],
   },
   alternates: {
     canonical: "https://www.heaps-smart.com/tools-for-nonprofits",

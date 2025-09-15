@@ -1,6 +1,39 @@
+import { Metadata } from "next";
 import Container from "@/app/_components/Container";
 import Header from "@/app/_components/Header";
 import Footer from "@/app/_components/Footer";
+
+export const metadata: Metadata = {
+  title: "FAQ - Frequently Asked Questions | Heaps Smart",
+  description: "Common questions about working with Heaps Smart and how we can help your organisation with technology solutions.",
+  keywords: "FAQ, frequently asked questions, non-profit technology, pricing, services, Heaps Smart",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "FAQ - Frequently Asked Questions",
+    description: "Common questions about working with Heaps Smart and how we can help your organisation with technology solutions.",
+    url: "https://www.heaps-smart.com/faq",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: `https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Frequently Asked Questions")}`,
+        width: 1200,
+        height: 630,
+        alt: "Heaps Smart FAQ",
+      },
+    ],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ - Frequently Asked Questions",
+    description: "Common questions about working with Heaps Smart and how we can help your organisation with technology solutions.",
+    images: [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Frequently Asked Questions")}`],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/faq",
+  },
+};
 
 const faqs = [
   {

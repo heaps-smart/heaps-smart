@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 
   // Get the main image from gallery images
-  const mainImage = tool.gallery_images?.[0]?.src || '/assets/img/heaps-smart-logo-og.png';
+  const mainImage = tool.gallery_images?.[0]?.src || `https://www.heaps-smart.com/api/og?title=${encodeURIComponent(tool.name)}`;
 
   return {
     title: `${tool.name} - Tools for Non-Profits | Heaps Smart`,

@@ -55,10 +55,10 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
         },
       ] : [
         {
-          url: "/assets/img/heaps-smart-logo-og.png",
+          url: `https://www.heaps-smart.com/api/og?title=${encodeURIComponent(data.title)}`,
           width: 1200,
           height: 630,
-          alt: "Heaps Smart Labs",
+          alt: data.title,
         },
       ],
       locale: "en_AU",
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
       card: "summary_large_image",
       title: data.title,
       description: data.excerpt || "Read the latest insights and experiments from Heaps Smart.",
-      images: data.coverImage ? [data.coverImage] : ["/assets/img/heaps-smart-logo-og.png"],
+      images: data.coverImage ? [data.coverImage] : [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent(data.title)}`],
     },
     alternates: {
       canonical: `https://www.heaps-smart.com/labs/${params.slug}`,
