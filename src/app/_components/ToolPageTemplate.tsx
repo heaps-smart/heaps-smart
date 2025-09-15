@@ -323,11 +323,6 @@ export default function ToolPageTemplate({
 											</span>
 										</div>
                   )}
-                  {nonprofitDiscount && (
-                    <div className="text-base text-green-800 font-medium pb-2">
-                      ✓ &nbsp;Non-profit discount available
-                    </div>
-                  )}
                   <a 
                     href={nonprofitPricingUrl || website}
                     target="_blank" 

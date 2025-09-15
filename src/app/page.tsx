@@ -60,7 +60,6 @@ export default function HeapsSmart() {
 
           <h3 className="text-xl mb-4 text-black/80 tracking-tight">
             We design and build <span className="font-bold">websites</span>, <span className="font-bold">mobile apps</span>, <span className="font-bold">data tools</span>, <span className="font-bold">interactive GIS maps</span>, and <span className="font-bold">audio/visuals</span> for non-profits and mission-driven organisations in Australia and beyond. <br />
-            Find out how technology partners can solve more than technology problems.
           </h3>
 
           <div className="flex space-x-4 justify-start">
@@ -108,29 +107,39 @@ export default function HeapsSmart() {
         <div className="my-16">
           <h2 className="text-3xl mb-8 tracking-tighter font-semibold">How we can help</h2>
           <p className="text-xl text-black/70 mb-12 max-w-4xl">
-            We work alongside your team to build and adapt the tools, systems and training that make technology simple and effective. Select your problem(s):
+            We work alongside your team to build and adapt the tools, systems and training that make technology simple and effective.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
-                  Automate everyday tasks
-                </h3>
+                <div className="flex items-center mb-3">
+                  <svg className="w-6 h-6 mr-3 text-[#fcd34d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-black/90 leading-tight">
+                    Automate everyday tasks
+                  </h3>
+                </div>
                 <p className="text-sm text-black/60 mb-4 italic">
                   "I want to automate everyday tasks so my team can save time and focus on impact."
                 </p>
               </div>
               <p className="text-black/70 leading-relaxed">
-                We map your workflow; automate the repeatable steps; measure the time saved.
+                We map your workflow, automate the repeatable steps, and measure the time saved.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
-                  Connect your systems
-                </h3>
+                <div className="flex items-center mb-3">
+                  <svg className="w-6 h-6 mr-3 text-[#fcd34d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-black/90 leading-tight">
+                    Connect your systems
+                  </h3>
+                </div>
                 <p className="text-sm text-black/60 mb-4 italic">
                   "I need my systems to talk to each other instead of working in silos."
                 </p>
@@ -142,57 +151,77 @@ export default function HeapsSmart() {
 
             <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
-                  Build effective websites
-                </h3>
+                <div className="flex items-center mb-3">
+                  <svg className="w-6 h-6 mr-3 text-[#fcd34d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-black/90 leading-tight">
+                    Build effective websites
+                  </h3>
+                </div>
                 <p className="text-sm text-black/60 mb-4 italic">
                   "I want a website that tells our story clearly and reaches the right people."
                 </p>
               </div>
               <p className="text-black/70 leading-relaxed">
-                We refine the message; improve journeys; set up analytics; ship fast.
+                We refine the message, improve journeys, set up analytics, and ship fast.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
-                  Product leadership
-                </h3>
+                <div className="flex items-center mb-3">
+                  <svg className="w-6 h-6 mr-3 text-[#fcd34d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-black/90 leading-tight">
+                    Product leadership
+                  </h3>
+                </div>
                 <p className="text-sm text-black/60 mb-4 italic">
                   "I want confidence that we are building the right thing that aligns to our business goals."
                 </p>
               </div>
               <p className="text-black/70 leading-relaxed">
-                We provide fractional product leadership; Mapping priorities, managing builds and ensuring outcomes.
+                We provide fractional product leadership, mapping priorities, managing builds and ensuring outcomes.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
-                  Data insights
-                </h3>
+                <div className="flex items-center mb-3">
+                  <svg className="w-6 h-6 mr-3 text-[#fcd34d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-black/90 leading-tight">
+                    Data insights
+                  </h3>
+                </div>
                 <p className="text-sm text-black/60 mb-4 italic">
                   "I need a data system that gives my team timely, useful insights."
                 </p>
               </div>
               <p className="text-black/70 leading-relaxed">
-                We define the metrics that matter; build simple dashboards; train your team.
+                We define the metrics that matter, build simple dashboards, and train your team.
               </p>
             </div>
 
             <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <div className="mb-4">
-                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
-                  Tool stack guidance
-                </h3>
+                <div className="flex items-center mb-3">
+                  <svg className="w-6 h-6 mr-3 text-[#fcd34d]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-black/90 leading-tight">
+                    Tool stack guidance
+                  </h3>
+                </div>
                 <p className="text-sm text-black/60 mb-4 italic">
                   "I want to better understand modern tools and how to stack them."
                 </p>
               </div>
               <p className="text-black/70 leading-relaxed">
-                We recommend a stack that matches your needs and budget; set it up; run training; provide clear notes.
+                We recommend a stack that matches your needs and budget, set it up, run training, and provide clear notes.
               </p>
             </div>
           </div>
@@ -202,7 +231,7 @@ export default function HeapsSmart() {
       <Container>
         <div className="my-16">
           <h2 className="text-3xl mb-8 tracking-tighter font-semibold">Latest labs</h2>
-          <LatestPosts limit={2} />
+          <LatestPosts limit={3} />
           <div className="mt-8">
             <a
               href="/labs"
@@ -225,7 +254,37 @@ export default function HeapsSmart() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-8">
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Automation Platforms</h3>
+              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Content Management</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center">
+                  <Link href="/tools-for-nonprofits/sanity" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Sanity</span>
+                  </Link>
+                </li>
+                <li className="flex items-center">
+                  <Link href="/tools-for-nonprofits/wordpress" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Wordpress</span>
+                  </Link>
+                </li>
+                <li className="flex items-center">
+                  <Link href="/tools-for-nonprofits/ghost" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Ghost.org</span>
+                  </Link>
+                </li>
+                <li className="flex items-center">
+                  <Link href="/tools-for-nonprofits/buffer" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">Buffer</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Automation</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
                   <Link href="/tools-for-nonprofits/zapier" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
@@ -234,15 +293,15 @@ export default function HeapsSmart() {
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="/tools-for-nonprofits/n8n" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/make" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">n8n</span>
+                    <span className="group-hover:underline">Make</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="/tools-for-nonprofits/hubspot" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/n8n" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">HubSpot</span>
+                    <span className="group-hover:underline">n8n</span>
                   </Link>
                 </li>
               </ul>
@@ -252,19 +311,25 @@ export default function HeapsSmart() {
               <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">AI & LLMs</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <Link href="/tools-for-nonprofits/chatgpt" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/claude" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">OpenAI/ChatGPT</span>
+                    <span className="group-hover:underline">Claude</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="https://ollama.com/" target="_blank" rel="noopener noreferrer" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/ollama" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">Ollama</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="https://www.langchain.com/" target="_blank" rel="noopener noreferrer" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/openai" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
+                    <span className="group-hover:underline">OpenAI</span>
+                  </Link>
+                </li>
+                <li className="flex items-center">
+                  <Link href="/tools-for-nonprofits/langchain" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
                     <span className="group-hover:underline">Langchain</span>
                   </Link>
@@ -273,18 +338,18 @@ export default function HeapsSmart() {
             </div>
             
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Data</h3>
+              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">CRM & Data Management</h3>
               <ul className="space-y-4">
                 <li className="flex items-center">
-                  <Link href="/innovation/how-to-save-a-dinosaur-bird" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/hubspot" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">GIS/geospatial mapping</span>
+                    <span className="group-hover:underline">Hubspot</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="/tools-for-nonprofits/google-sheets" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/supabase" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">Google Workspace</span>
+                    <span className="group-hover:underline">Supabase</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
@@ -294,33 +359,9 @@ export default function HeapsSmart() {
                   </Link>
                 </li>
                 <li className="flex items-center">
-                  <Link href="/tools-for-nonprofits/supabase" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
+                  <Link href="/tools-for-nonprofits/qgis" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
                     <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">Supabase</span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-xl font-semibold mb-6 text-[#111111] border-l-4 border-[#fcd34d] pl-3">Custom Development</h3>
-              <ul className="space-y-4">
-                <li className="flex items-center">
-                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
-                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">Websites and Mobile Apps</span>
-                  </Link>
-                </li>
-                <li className="flex items-center">
-                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
-                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">WordPress/React/React Native/Node.js</span>
-                  </Link>
-                </li>
-                <li className="flex items-center">
-                  <Link href="/contact" className="group flex items-center w-full text-[#111111]/80 hover:text-[#111111] transition-colors">
-                    <YellowBullet className="group-hover:text-[#fcbb1e]" />
-                    <span className="group-hover:underline">iOS/Android app development</span>
+                    <span className="group-hover:underline">GIS / Geospatial</span>
                   </Link>
                 </li>
               </ul>

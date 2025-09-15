@@ -41,8 +41,9 @@ function getLatestPosts(limit = 2): PostMeta[] {
 
 export default function LatestPosts({ limit = 2 }: { limit?: number }) {
   const posts = getLatestPosts(limit);
+  const gridCols = limit === 3 ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "grid-cols-1 md:grid-cols-2";
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-4">
+    <div className={`grid ${gridCols} gap-8 mb-4`}>
       {posts.map((post) => (
         <Link
           key={post.slug}
@@ -51,13 +52,13 @@ export default function LatestPosts({ limit = 2 }: { limit?: number }) {
           aria-label={`Read ${post.title}`}
         >
           <div>
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-start justify-between mb-2">
               <h4 className="text-xl font-semibold">{post.title}</h4>
               {post.coverImage && (
                 <img
                   src={post.coverImage}
                   alt={`Cover for ${post.title}`}
-                  className="w-14 h-14 ml-4 rounded-md object-cover"
+                  className="w-14 h-14 ml-4 rounded-md object-cover flex-shrink-0"
                 />
               )}
             </div>
