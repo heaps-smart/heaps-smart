@@ -59,7 +59,7 @@ export default function HeapsSmart() {
           </h1>
 
           <h3 className="text-xl mb-4 text-black/80 tracking-tight">
-            We design and build <span className="font-bold">websites</span>, <span className="font-bold">mobile apps</span>, <span className="font-bold">data tools</span>, <span className="font-bold">interactive GIS maps</span>, and <span className="font-bold">audio/visuals</span> for non-profits in Australia and beyond. <br />
+            We design and build <span className="font-bold">websites</span>, <span className="font-bold">mobile apps</span>, <span className="font-bold">data tools</span>, <span className="font-bold">interactive GIS maps</span>, and <span className="font-bold">audio/visuals</span> for non-profits and mission-driven organisations in Australia and beyond. <br />
             Find out how technology partners can solve more than technology problems.
           </h3>
 
@@ -100,6 +100,101 @@ export default function HeapsSmart() {
             >
               Explore more projects →
             </a>
+          </div>
+        </div>
+      </Container>
+
+      <Container>
+        <div className="my-16">
+          <h2 className="text-3xl mb-8 tracking-tighter font-semibold">How we can help</h2>
+          <p className="text-xl text-black/70 mb-12 max-w-4xl">
+            We work alongside your team to build and adapt the tools, systems and training that make technology simple and effective. Select your problem(s):
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
+                  Automate everyday tasks
+                </h3>
+                <p className="text-sm text-black/60 mb-4 italic">
+                  "I want to automate everyday tasks so my team can save time and focus on impact."
+                </p>
+              </div>
+              <p className="text-black/70 leading-relaxed">
+                We map your workflow; automate the repeatable steps; measure the time saved.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
+                  Connect your systems
+                </h3>
+                <p className="text-sm text-black/60 mb-4 italic">
+                  "I need my systems to talk to each other instead of working in silos."
+                </p>
+              </div>
+              <p className="text-black/70 leading-relaxed">
+                We connect CRM, forms, email, finance and reporting so data moves once.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
+                  Build effective websites
+                </h3>
+                <p className="text-sm text-black/60 mb-4 italic">
+                  "I want a website that tells our story clearly and reaches the right people."
+                </p>
+              </div>
+              <p className="text-black/70 leading-relaxed">
+                We refine the message; improve journeys; set up analytics; ship fast.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
+                  Product leadership
+                </h3>
+                <p className="text-sm text-black/60 mb-4 italic">
+                  "I want confidence that we are building the right thing that aligns to our business goals."
+                </p>
+              </div>
+              <p className="text-black/70 leading-relaxed">
+                We provide fractional product leadership; Mapping priorities, managing builds and ensuring outcomes.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
+                  Data insights
+                </h3>
+                <p className="text-sm text-black/60 mb-4 italic">
+                  "I need a data system that gives my team timely, useful insights."
+                </p>
+              </div>
+              <p className="text-black/70 leading-relaxed">
+                We define the metrics that matter; build simple dashboards; train your team.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-black/90 mb-3 leading-tight">
+                  Tool stack guidance
+                </h3>
+                <p className="text-sm text-black/60 mb-4 italic">
+                  "I want to better understand modern tools and how to stack them."
+                </p>
+              </div>
+              <p className="text-black/70 leading-relaxed">
+                We recommend a stack that matches your needs and budget; set it up; run training; provide clear notes.
+              </p>
+            </div>
           </div>
         </div>
       </Container>
