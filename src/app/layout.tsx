@@ -24,7 +24,7 @@ export default function RootLayout({
           property="og:description"
           content="Heaps Smart is a creative technology agency helping non-profits and purpose-driven organisations by providing digital solutions, including AI, web, and mobile app development."
         />
-        <meta property="og:image" content="/assets/img/hinchinbrook.webp" />
+    
         <meta property="og:url" content="https://www.heaps-smart.com" />
         <meta property="og:type" content="website" />
 
