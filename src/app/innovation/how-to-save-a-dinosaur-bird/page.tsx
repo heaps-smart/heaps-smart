@@ -1,5 +1,38 @@
+import { Metadata } from "next";
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Saving a dinosaur bird, with data | Innovation | Heaps Smart",
+  description: "Heaps Smart partnered with C4 to digitise three decades of cassowary sightings using geospatial and GIS systems, transforming community observations into a living, useful dataset for conservation.",
+  keywords: "cassowary conservation, GIS mapping, citizen science, biodiversity data, geospatial analysis, community for coastal and cassowary conservation, C4, Mission Beach",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "Saving a dinosaur bird, with data",
+    description: "Heaps Smart partnered with C4 to digitise three decades of cassowary sightings using geospatial and GIS systems, transforming community observations into a living, useful dataset for conservation.",
+    url: "https://www.heaps-smart.com/innovation/how-to-save-a-dinosaur-bird",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "https://www.heaps-smart.com/assets/img/dino-1.webp",
+        width: 1200,
+        height: 630,
+        alt: "Cassowary chick in undergrowth - Conservation technology project",
+      },
+    ],
+    locale: "en_AU",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Saving a dinosaur bird, with data",
+    description: "Heaps Smart partnered with C4 to digitise three decades of cassowary sightings using geospatial and GIS systems.",
+    images: ["https://www.heaps-smart.com/assets/img/dino-1.webp"],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/innovation/how-to-save-a-dinosaur-bird",
+  },
+};
 
 export default function HowToSaveADinosaurBirdPage() {
   const tags = ["Conservation", "GIS", "Citizen Science", "Data"];

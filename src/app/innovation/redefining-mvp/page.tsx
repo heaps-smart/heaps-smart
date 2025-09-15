@@ -1,5 +1,38 @@
+import { Metadata } from "next";
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Redefining MVP: most valuable poo | Innovation | Heaps Smart",
+  description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and the interactive 'Wall of Poo' education experience.",
+  keywords: "cassowary scat analysis, citizen science, conservation data, vision AI, ecological research, science communication, Wall of Poo, biodiversity monitoring",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "Redefining MVP: most valuable poo",
+    description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and the interactive 'Wall of Poo' education experience.",
+    url: "https://www.heaps-smart.com/innovation/redefining-mvp",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "https://www.heaps-smart.com/assets/img/poo-1.webp",
+        width: 1200,
+        height: 630,
+        alt: "Cassowary scat analysis - Conservation science and technology",
+      },
+    ],
+    locale: "en_AU",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Redefining MVP: most valuable poo",
+    description: "Heaps Smart helped turn cassowary poo into a science communication tool, developing a digital cataloguing system and the interactive 'Wall of Poo' education experience.",
+    images: ["https://www.heaps-smart.com/assets/img/poo-1.webp"],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/innovation/redefining-mvp",
+  },
+};
 
 export default function RedefiningMvpPage() {
   const tags = ["Conservation", "Citizen Science", "Data", "Vision AI"];

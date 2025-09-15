@@ -1,5 +1,38 @@
+import { Metadata } from "next";
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Smarter Meetings for Remote Research Teams | Innovation | Heaps Smart",
+  description: "How we implemented an AI-driven solution to streamline meeting management for remote environmental research teams, automating minute-taking and action item tracking.",
+  keywords: "remote research teams, AI automation, meeting management, Zoom integration, OpenAI, Tactiq, research collaboration, environmental research",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "Smarter Meetings for Remote Research Teams",
+    description: "How we implemented an AI-driven solution to streamline meeting management for remote environmental research teams, automating minute-taking and action item tracking.",
+    url: "https://www.heaps-smart.com/innovation/smarter-remote-research-teams",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "https://www.heaps-smart.com/assets/img/heaps-smart-logo-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Smarter Meetings for Remote Research Teams - AI automation technology",
+      },
+    ],
+    locale: "en_AU",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smarter Meetings for Remote Research Teams",
+    description: "AI-driven solution to streamline meeting management for remote environmental research teams.",
+    images: ["https://www.heaps-smart.com/assets/img/heaps-smart-logo-og.png"],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/innovation/smarter-remote-research-teams",
+  },
+};
 
 export default function EmpoweringRemoteResearchTeamsPage() {
   const tags = ["AI Automation", "Remote Collaboration", "Research Tools", "Meeting Management"];

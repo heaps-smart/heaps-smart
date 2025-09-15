@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
       siteName: "Heaps Smart",
       images: data.coverImage ? [
         {
-          url: data.coverImage,
+          url: `https://www.heaps-smart.com${data.coverImage}`,
           width: 1200,
           height: 630,
           alt: data.title,
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: PostPageProps): Promise<Metad
       card: "summary_large_image",
       title: data.title,
       description: data.excerpt || "Read the latest insights and experiments from Heaps Smart.",
-      images: data.coverImage ? [data.coverImage] : [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent(data.title)}`],
+      images: data.coverImage ? [`https://www.heaps-smart.com${data.coverImage}`] : [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent(data.title)}`],
     },
     alternates: {
       canonical: `https://www.heaps-smart.com/labs/${params.slug}`,

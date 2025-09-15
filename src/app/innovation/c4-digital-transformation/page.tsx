@@ -1,5 +1,38 @@
+import { Metadata } from "next";
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "C4 Digital Transformation | Innovation | Heaps Smart",
+  description: "Heaps Smart worked with C4 to overhaul their digital ecosystem, creating a modern brand extension, new website, and integrated tools to scale their conservation mission.",
+  keywords: "digital transformation, conservation organization, WordPress development, non-profit technology, C4, cassowary conservation, website development, automation",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "C4 Digital Transformation",
+    description: "Heaps Smart worked with C4 to overhaul their digital ecosystem, creating a modern brand extension, new website, and integrated tools to scale their conservation mission.",
+    url: "https://www.heaps-smart.com/innovation/c4-digital-transformation",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "https://www.heaps-smart.com/assets/img/c4.webp",
+        width: 1200,
+        height: 630,
+        alt: "C4 Digital Transformation - Conservation organization technology upgrade",
+      },
+    ],
+    locale: "en_AU",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "C4 Digital Transformation",
+    description: "Heaps Smart worked with C4 to overhaul their digital ecosystem, creating a modern brand extension, new website, and integrated tools.",
+    images: ["https://www.heaps-smart.com/assets/img/c4.webp"],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/innovation/c4-digital-transformation",
+  },
+};
 
 export default function C4DigitalTransformationPage() {
   const tags = ["Website Development", "Digital Strategy", "Conservation", "Automation"];

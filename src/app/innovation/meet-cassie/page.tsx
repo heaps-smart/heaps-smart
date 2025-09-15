@@ -1,6 +1,39 @@
+import { Metadata } from "next";
 import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Script from "next/script";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Meet Cassie: our cassowary expert | Innovation | Heaps Smart",
+  description: "Meet Cassie, an AI-powered conservation tool trained on decades of community-provided cassowary data, developed in collaboration with Mission Beach Cassowaries to make local knowledge more accessible.",
+  keywords: "AI conservation, cassowary expert, ChatGPT, OpenAI, Mission Beach Cassowaries, artificial intelligence, conservation technology, community knowledge",
+  authors: [{ name: "Heaps Smart" }],
+  openGraph: {
+    title: "Meet Cassie: our cassowary expert",
+    description: "Meet Cassie, an AI-powered conservation tool trained on decades of community-provided cassowary data, developed in collaboration with Mission Beach Cassowaries to make local knowledge more accessible.",
+    url: "https://www.heaps-smart.com/innovation/meet-cassie",
+    siteName: "Heaps Smart",
+    images: [
+      {
+        url: "https://www.heaps-smart.com/assets/img/cassie-1.webp",
+        width: 1200,
+        height: 630,
+        alt: "Cassowary in Mission Beach rainforest - AI conservation technology",
+      },
+    ],
+    locale: "en_AU",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meet Cassie: our cassowary expert",
+    description: "Meet Cassie, an AI-powered conservation tool trained on decades of community-provided cassowary data.",
+    images: ["https://www.heaps-smart.com/assets/img/cassie-1.webp"],
+  },
+  alternates: {
+    canonical: "https://www.heaps-smart.com/innovation/meet-cassie",
+  },
+};
 
 export default function MeetCassiePage() {
   const tags = ["AI", "Conservation", "Community"];
