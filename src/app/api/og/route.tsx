@@ -4,16 +4,8 @@ import type { NextRequest } from "next/server";
 
 export const runtime = "edge";
 
-async function loadFont() {
-  const res = await fetch(
-    new URL("./Inter-Bold.ttf", import.meta.url) // put the TTF next to this file
-  );
-  return res.arrayBuffer();
-}
-
 export async function GET(request: NextRequest) {
   try {
-    const fontData = await loadFont().catch(() => undefined);
 
     const { searchParams } = new URL(request.url);
     const title = (searchParams.get("title") || "Heaps Smart").trim();
@@ -73,9 +65,6 @@ export async function GET(request: NextRequest) {
       {
         width: 1200,
         height: 630,
-        fonts: fontData
-          ? [{ name: "Inter", data: fontData, style: "normal", weight: 700 }]
-          : undefined,
         headers: {
           "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=604800",
         },

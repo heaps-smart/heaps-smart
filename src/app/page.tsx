@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Heaps Smart",
     images: [
       {
-        url: `https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Technology for Non-Profits and Mission-Driven Organisations")}`,
+        url: "https://www.heaps-smart.com/assets/img/heaps-smart-logo-og.png",
         width: 1200,
         height: 630,
         alt: "Heaps Smart - Technology for Good",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Heaps Smart - Technology for Non-Profits",
     description: "We design and build websites, mobile apps, data tools, and automation for non-profits and mission-driven organisations.",
-    images: [`https://www.heaps-smart.com/api/og?title=${encodeURIComponent("Technology for Non-Profits and Mission-Driven Organisations")}`],
+    images: ["https://www.heaps-smart.com/assets/img/heaps-smart-logo-og.png"],
   },
   robots: {
     index: true,
