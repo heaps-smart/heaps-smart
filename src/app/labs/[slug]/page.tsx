@@ -2,6 +2,8 @@ import Container from "@/app/_components/Container";
 import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
+import ShareButton from "@/app/_components/ShareButton";
+import CTA from "@/app/_components/CTA";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
@@ -141,6 +143,15 @@ export default async function PostPage({ params }: PostPageProps) {
           <article
             className="markdown"
             dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+      </Container>
+      <Container>
+        <div className="pt-2 pb-8 md:pb-12">
+          <ShareButton
+            url={`/labs/${params.slug}`}
+            title={data.title}
+            description={data.excerpt}
           />
         </div>
       </Container>
