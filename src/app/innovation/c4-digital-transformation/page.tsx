@@ -175,6 +175,8 @@ export default function C4DigitalTransformationPage() {
       sections={sections}
       galleryImages={galleryImages}
       location={location}
+      website="https://cassowaryconservation.org/"
+      websiteText="cassowaryconservation.org"
     />
   );
 }

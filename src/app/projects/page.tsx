@@ -50,6 +50,15 @@ const projects = [
 		video: "/assets/video/cassie.mp4",
 		poster: "/assets/video/posters/cassie.webp",
 	},
+	{
+		slug: "the-dyrt",
+		title: "Building The Dyrt's Mobile Experience",
+		description:
+			"React Native iOS and Android apps for The Dyrt, with GIS mapping layers, offline capability, and performance-focused architecture.",
+		tags: ["Mobile", "React Native", "GIS", "Offline-first", "Performance"],
+		video: "",
+		poster: "/assets/img/the-dyrt-2.jpg",
+	},
 ];
 
 export default function Projects() {
@@ -70,40 +79,10 @@ export default function Projects() {
 						latest work.
 					</p>
 					<div className="h-1 w-24 bg-yellow-400 mt-4 mb-6 rounded-full"></div>
-				</div>
-
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-8">
-					{projects.map((project) => (
-						<InnovationProjectCard key={project.slug} project={project} />
-					))}
-				</div>
-			</Container>
-
-			{/* Previous Work */}
-			<Container>
-				<div className="py-6 md:py-10">
-					<h3 className="text-3xl md:text-4xl font-bold tracking-tighter text-black/80 mb-2">Previous Work</h3>
-					<p className="text-black/70 mb-6 max-w-3xl">Selected work undertaken prior to founding Heaps Smart, included here for context.</p>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-						<a
-							href="/previous-work/the-dyrt"
-							className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1"
-						>
-							<div className="relative w-full aspect-video overflow-hidden">
-								<img
-									src="/assets/img/previous-work/the-dyrt-2.jpg"
-									alt="The Dyrt - Mobile Apps"
-									className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-									loading="lazy"
-								/>
-							</div>
-							<div className="p-6">
-								<h4 className="text-lg font-bold mb-2 group-hover:text-[#333]">Building The Dyrt's Mobile Experience</h4>
-								<p className="text-sm text-black/70">
-									Pre-Heaps Smart: Director of Mobile Development for The Dyrt — designed and delivered the company’s first iOS and Android apps.
-								</p>
-							</div>
-						</a>
+						{projects.map((project) => (
+							<InnovationProjectCard key={project.slug} project={project} />
+						))}
 					</div>
 				</div>
 			</Container>

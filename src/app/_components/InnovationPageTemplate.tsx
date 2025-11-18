@@ -28,6 +28,8 @@ type Props = {
   galleryImages: GalleryImage[];
   location: string;
   acknowledgements?: ReactNode;
+  website?: string;
+  websiteText?: string;
 };
 
 export default function InnovationPageTemplate({
@@ -38,6 +40,8 @@ export default function InnovationPageTemplate({
   galleryImages,
   location,
   acknowledgements,
+  website,
+  websiteText,
 }: Props) {
   const [lightboxMedia, setLightboxMedia] = useState<GalleryImage | null>(null);
   const [currentMediaIndex, setCurrentMediaIndex] = useState<number>(0);
@@ -230,6 +234,21 @@ export default function InnovationPageTemplate({
       <Container>
         <div className="pb-16 md:pb-24 grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
           <aside className="space-y-12">
+            {website && (
+              <section>
+                <a
+                  href={website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-gray-900 transition-colors"
+                >
+                  <h4 className="text-xl font-semibold text-black/80 mb-1">Website</h4>
+                  <span className="inline-block text-slate-600 hover:text-slate-900 text-base underline transition-colors">
+                    {websiteText || website.replace(/^https?:\/\//, "")}
+                  </span>
+                </a>
+              </section>
+            )}
             <section>
               <h4 className="text-xl font-semibold tracking-tight text-[#111]">
                 Location

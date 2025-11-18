@@ -3,14 +3,14 @@ import InnovationPageTemplate from "@/app/_components/InnovationPageTemplate";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Building The Dyrt's Mobile Experience | Previous Work | Heaps Smart",
+  title: "Building The Dyrt's Mobile Experience | Innovation | Heaps Smart",
   description:
     "Greenfield React Native build for The Dyrt with GIS mapping layers, offline capability, and performance-focused architecture across iOS and Android.",
   openGraph: {
     title: "Building The Dyrt's Mobile Experience",
     description:
       "React Native iOS and Android apps for The Dyrt with GIS mapping layers, offline capability, and performance-focused architecture.",
-    url: "https://www.heaps-smart.com/previous-work/the-dyrt",
+  url: "https://www.heaps-smart.com/innovation/the-dyrt",
     siteName: "Heaps Smart",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     images: ["https://www.heaps-smart.com/assets/img/heaps-smart-logo-og.png"],
   },
   alternates: {
-    canonical: "https://www.heaps-smart.com/previous-work/the-dyrt",
+    canonical: "https://www.heaps-smart.com/innovation/the-dyrt",
   },
 };
 
@@ -49,16 +49,16 @@ export default function PreviousWorkTheDyrtPage() {
     {
       title: "Project background",
       content: (
-				<>
-					The Dyrt is consumer subscription software for camping, and the largest source of information for campgrounds throughout the United States. Before its mobile apps existed, the platform lived entirely on the web and was already powered by a huge community of campers posting photos, videos and reviews. As Director of Mobile Development, work was undertaken to close a major gap: travellers relying on their phones in remote areas had no dedicated mobile experience. The project brought The Dyrt's rich, user-generated content into a purpose-built app for campers on the move.
-				</>
+			<>
+				<Link href="https://thedyrt.com/">The Dyrt</Link> is consumer subscription software for camping, and the largest source of information for campgrounds throughout the United States. Before its mobile apps existed, the platform lived entirely on the web and was already powered by a huge community of campers posting photos, videos and reviews. As Director of Mobile Development, work was undertaken to close a major gap: travellers relying on their phones in remote areas had no dedicated mobile experience. The project brought <Link href="https://thedyrt.com/">The Dyrt</Link>'s rich, user-generated content into a purpose-built app for campers on the move.
+			</>
       ),
     },
     {
       title: "The brief",
       content: (
         <>
-          The brief was ambitious, to build the company's first iOS and Android apps from the ground up using React Native. This included shaping the entire mobile architecture, defining performance expectations, and designing the core experience for campers who often use the app in low connectivity or offline. The build drew on the existing web platform while rethinking the flow for mobile first behaviour like quick search, map based discovery.
+          The brief was ambitious, to build the company’s first iOS and Android apps from the ground up using React Native. It meant shaping the entire mobile architecture, defining performance expectations, and designing the core experience for campers who often use the app in low connectivity or offline. The build drew on the existing web platform while rethinking the flow for mobile first behaviour like quick search, map based discovery, and on the road navigation.
         </>
       ),
     },
@@ -89,14 +89,14 @@ export default function PreviousWorkTheDyrtPage() {
   ];
 
   const galleryImages = [
-    { id: 1, src: "/assets/img/previous-work/the-dyrt-1.jpg", alt: "Mobile campsite discovery, map based view" },
-    { id: 2, src: "/assets/img/previous-work/the-dyrt-2.jpg", alt: "The Dyrt, mobile app with GIS layers" },
-    { id: 3, src: "/assets/img/previous-work/the-dyrt-3.jpg", alt: "Offline map tiles and campsite details" },
-    { id: 4, src: "/assets/img/previous-work/the-dyrt-4.jpg", alt: "Campsite detail view with reviews" },
-    { id: 5, src: "/assets/img/previous-work/the-dyrt-5.jpg", alt: "Map clustering and filter controls" },
-    { id: 6, src: "/assets/img/previous-work/the-dyrt-6.jpg", alt: "Route directions and navigation UI" },
-    { id: 7, src: "/assets/img/previous-work/the-dyrt-7.jpg", alt: "In app photo gallery and upload flow" },
-    { id: 8, src: "/assets/img/previous-work/the-dyrt-8.jpg", alt: "Performance focused mapping interface" },
+  { id: 1, src: "/assets/img/the-dyrt-1.jpg", alt: "Mobile campsite discovery, map based view" },
+  { id: 2, src: "/assets/img/the-dyrt-2.jpg", alt: "The Dyrt, mobile app with GIS layers" },
+  { id: 3, src: "/assets/img/the-dyrt-3.jpg", alt: "Offline map tiles and campsite details" },
+  { id: 4, src: "/assets/img/the-dyrt-4.jpg", alt: "Campsite detail view with reviews" },
+  { id: 5, src: "/assets/img/the-dyrt-5.jpg", alt: "Map clustering and filter controls" },
+  { id: 6, src: "/assets/img/the-dyrt-6.jpg", alt: "Route directions and navigation UI" },
+  { id: 7, src: "/assets/img/the-dyrt-7.jpg", alt: "In app photo gallery and upload flow" },
+  { id: 8, src: "/assets/img/the-dyrt-8.jpg", alt: "Performance focused mapping interface" },
   ];
 
   return (
@@ -107,6 +107,8 @@ export default function PreviousWorkTheDyrtPage() {
       sections={sections}
       galleryImages={galleryImages}
       location="United States"
+      website="https://thedyrt.com/"
+      websiteText="thedyrt.com"
       acknowledgements={<></>}
     />
   );
