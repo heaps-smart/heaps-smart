@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Building The Dyrt's Mobile Experience",
     description:
-      "React Native iOS and Android apps for The Dyrt with GIS mapping layers, offline capability, and performance-focused architecture.",
+      "A ground-up build of The Dyrt's first iOS and Android apps, transforming a web-only camping platform into a mobile-ready experience for travellers exploring remote areas. The project delivered a fast, map-centred interface that brought user-generated campground data, GIS layers and offline-friendly navigation into one cohesive app.",
     url: "https://www.heaps-smart.com/previous-work/the-dyrt",
     siteName: "Heaps Smart",
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Building The Dyrt's Mobile Experience",
     description:
-      "React Native iOS and Android apps for The Dyrt with GIS mapping layers, offline capability, and performance-focused architecture.",
+      "A ground-up build of The Dyrt's first iOS and Android apps, transforming a web-only camping platform into a mobile-ready experience for travellers exploring remote areas. The project delivered a fast, map-centred interface that brought user-generated campground data, GIS layers and offline-friendly navigation into one cohesive app.",
     images: ["https://www.heaps-smart.com/assets/img/heaps-smart-logo-og.png"],
   },
   alternates: {

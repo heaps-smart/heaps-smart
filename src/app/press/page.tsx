@@ -12,8 +12,8 @@ export default function PressPage() {
       date: "Oct 2025",
       href: "https://www.communitydirectors.com.au/articles/ai-is-talking-about-you-behind-your-back.-now-what",
       description: "Exploring emerging AI reputation dynamics and practical steps for community organisations to prepare and respond.",
-      image: "/assets/img/press/our-community.svg",
-      alt: "Our Community article placeholder thumbnail",
+  image: "https://files.ourcommunity.com.au/general/Articles/_large/RobotWatcher_AI_shutterstock_2380761979.jpg",
+      alt: "Our Community article thumbnail",
     },
     {
       title: "EcoTone Magazine – September 2025 Feature",
@@ -32,18 +32,18 @@ export default function PressPage() {
       date: "Aug 2025",
       href: "https://www.youtube.com/watch?v=1Bazlu-PWIg",
       description: "Panel discussion on unlocking latent organisational data for measurable social and environmental outcomes.",
-      image: "/assets/img/press/dius-webinar.svg",
-      alt: "DiUS webinar placeholder thumbnail",
+  image: "https://img.youtube.com/vi/1Bazlu-PWIg/maxresdefault.jpg",
+      alt: "DiUS webinar thumbnail",
     },
     {
       title: "Mapping Key to Mission",
-  outlet: "The Cassowary Coast Observer",
+      outlet: "The Cassowary Coast Observer",
       type: "News Article",
       date: "Oct 2025",
       href: "https://www.observernews.com.au/mapping-key-to-mission-2025-10-11",
       description: "Local news coverage of cassowary habitat mapping informing on-ground conservation decisions.",
       image: "/assets/img/press/cc-observer.svg",
-  alt: "The Cassowary Coast Observer article placeholder thumbnail",
+      alt: "The Cassowary Coast Observer article placeholder thumbnail",
     },
   ];
 
@@ -99,11 +99,11 @@ export default function PressPage() {
                       <span className="text-xs font-semibold uppercase tracking-wide bg-gray-100 text-gray-700 px-2 py-1 rounded">
                         {item.type}
                       </span>
-                      <span className="ml-auto text-sm text-black/50 font-mono">
-                        {item.date}
-                      </span>
                     </div>
-                    <p className="text-sm text-black/65 font-medium mt-1">{item.outlet}</p>
+                    <div className="flex items-center gap-x-3 mt-1">
+                      <span className="text-sm text-black/65 font-medium">{item.outlet}</span> - 
+                      <span className="text-sm text-black/65 font-medium">{item.date}</span>
+                    </div>
                     <p className="text-sm text-black/70 leading-relaxed mt-2">{item.description}</p>
                     <div className="mt-3">
                       <a
