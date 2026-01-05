@@ -61,6 +61,22 @@ const TerrainBackground = dynamic(
 
 const projects = [
   {
+    slug: "gayle-dumbrell-counselling",
+    title: "From the classroom to the counselling couch: Building a digital foundation",
+    description: "Heaps Smart supported Gayle Dumbrell Counselling to establish a clear, gentle digital foundation from scratch, creating a brand and website that reflected Gayle's experience, values and approach.",
+    tags: ["Health", "Education", "Branding", "Website Development", "Digital Infrastructure", "Data", "Automation"],
+    video: "/assets/video/gd-counselling.mp4",
+    poster: "/assets/video/posters/gd-counselling.webp",
+  },
+  {
+    slug: "doing-ageing-differently",
+    title: "What better looks like; Doing ageing differently.",
+    description: "Heaps Smart worked with Good Flock to strengthen the foundations of their content platform, improving content structure, discoverability, and connecting people to the organisation as they engage.",
+    tags: ["Ageing", "Content Management", "Digital Infrastructure", "SEO", "Automation", "Integrations"],
+    video: "/assets/video/good-flock.mp4",
+    poster: "/assets/video/posters/good-flock.webp",
+  },
+  {
     slug: "how-to-save-a-dinosaur-bird",
     title: "Saving a dinosaur bird, with data",
     description: "Heaps Smart partnered with C4 to digitise three decades of cassowary sightings using geospatial and GIS systems.",
@@ -333,7 +349,7 @@ export default function HeapsSmart() {
         <section className="my-16" aria-labelledby="latest-projects">
           <h2 id="latest-projects" className="text-3xl mb-8 tracking-tighter font-semibold">Latest projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project) => (
+        {projects.slice(0, 2).map((project) => (
           <InnovationProjectCard key={project.slug} project={project} />
         ))}
           </div>

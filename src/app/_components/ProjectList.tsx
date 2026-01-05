@@ -20,6 +20,24 @@ type Project = {
 
 const projectsData: Project[] = [
   {
+    title: "From the classroom to the counselling couch: Building a digital foundation",
+    content:
+      "Heaps Smart supported Gayle Dumbrell Counselling to establish a clear, gentle digital foundation from scratch, creating a brand and website that reflected Gayle's experience, values and approach.",
+    video: "/assets/video/gd-counselling.mp4",
+    tags: ["Health", "Education", "Branding", "Website Development", "Digital Infrastructure", "Data", "Automation"],
+    poster: "/assets/video/posters/gd-counselling.webp",
+    slug: "gayle-dumbrell-counselling"
+  },
+  {
+    title: "What better looks like; Doing ageing differently.",
+    content:
+      "Heaps Smart worked with Good Flock to strengthen the foundations of their content platform, improving content structure, discoverability, and connecting people to the organisation as they engage.",
+    video: "/assets/video/good-flock.mp4",
+    tags: ["Ageing", "Content Management", "Digital Infrastructure", "SEO", "Automation", "Integrations"],
+    poster: "/assets/video/posters/good-flock.webp",
+    slug: "doing-ageing-differently"
+  },
+  {
     title: "Smarter Meetings for Remote Research Teams",
     content:
       "How we implemented an AI-driven solution to streamline meeting management for environmental researchers, allowing them to focus on research rather than administrative tasks.",
