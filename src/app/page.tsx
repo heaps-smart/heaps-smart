@@ -6,7 +6,10 @@ import Footer from "@/app/_components/Footer";
 import Header from "@/app/_components/Header";
 import Swell from "@/app/_components/Swell";
 import InnovationProjectCard from "@/app/_components/InnovationProjectCard";
-import LatestPosts from "@/app/_components/LatestPosts";
+import LabsCarousel from "@/app/_components/LabsCarousel";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 import YellowBullet from "@/app/_components/YellowBullet";
 
 export const metadata: Metadata = {
@@ -59,6 +62,30 @@ const TerrainBackground = dynamic(
   { ssr: false }
 );
 
+function getLatestPosts(limit = 3) {
+  const postsDirectory = path.join(process.cwd(), "_posts");
+  const filenames = fs.readdirSync(postsDirectory);
+  const posts = filenames
+    .filter((name) => name.endsWith(".md"))
+    .map((filename) => {
+      const filePath = path.join(postsDirectory, filename);
+      const fileContents = fs.readFileSync(filePath, "utf8");
+      const { data } = matter(fileContents);
+      return {
+        slug: filename.replace(/\.md$/, ""),
+        title: data.title,
+        excerpt: data.excerpt,
+        date: data.date,
+        author: data.author || { name: "", picture: "" },
+        coverImage: data.coverImage || (data.ogImage && data.ogImage.url) || "",
+        published: data.published === true,
+      };
+    })
+    .filter((post) => post.published)
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
+  return posts.slice(0, limit);
+}
+
 const projects = [
   {
     slug: "gayle-dumbrell-counselling",
@@ -95,6 +122,7 @@ const projects = [
 ];
 
 export default function HeapsSmart() {
+  const latestPosts = getLatestPosts(10); // Get enough posts for multiple pages
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -368,8 +396,10 @@ export default function HeapsSmart() {
       <Container>
         <section className="my-16" aria-labelledby="latest-labs">
           <h2 id="latest-labs" className="text-3xl mb-8 tracking-tighter font-semibold">Latest labs</h2>
-          <LatestPosts limit={3} />
-          <div className="mt-8">
+          <div className="relative overflow-visible">
+            <LabsCarousel posts={latestPosts} />
+          </div>
+          <div className="mt-4">
             <a
               href="/labs"
               className="inline-block text-black font-medium rounded-lg transition-colors focus:outline-none"

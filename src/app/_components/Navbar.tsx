@@ -13,8 +13,6 @@ export function Navbar({ textColor, bgColor }: NavbarProps) {
 
   const navItems = [
     { label: "Projects", href: "/projects" },
-    { label: "Labs", href: "/labs" },
-    { label: "Press", href: "/press" },
     { label: "Tools", href: "/tools-for-nonprofits" },
     { label: "Contact", href: "/contact" },
   ];

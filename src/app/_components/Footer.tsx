@@ -11,30 +11,23 @@ export function Footer({ inverted = false }) {
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0">
           <div className="flex flex-col items-center md:items-start space-y-2">
+            <p className="text-sm font-semibold">
+              Heaps Smart Pty Ltd | ACN - 680 910 516
+            </p>
             <p className="text-sm">
               <a href="/about" className={`${linkColor} hover:underline`} aria-label="Learn more about Heaps Smart">
                 About us
               </a>
             </p>
             <p className="text-sm">
-              <a href="/faq" className={`${linkColor} hover:underline`} aria-label="Frequently Asked Questions">
-                FAQs
+              <a href="/press" className={`${linkColor} hover:underline`} aria-label="Press and media">
+                Press
               </a>
             </p>
             <p className="text-sm">
-              <a href="mailto:hello@heaps-smart.com" className={`${linkColor} hover:underline`} aria-label="Email Heaps Smart">hello@heaps-smart.com</a>
-            </p>
-            <a
-              href="https://www.linkedin.com/company/heaps-smart"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-sm mt-2 hover:underline"
-              aria-label="Visit Heaps Smart on LinkedIn"
-            >
-              LinkedIn
-            </a>
-            <p className="text-xs text-center md:text-left text-neutral-600">
-              ABN: 99680910516
+              <a href="/contact" className={`${linkColor} hover:underline`} aria-label="Contact Heaps Smart">
+                Contact
+              </a>
             </p>
           </div>
           <div className="flex flex-col items-center md:items-start space-y-2">

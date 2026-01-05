@@ -72,7 +72,7 @@ const projects = [
 		slug: "the-dyrt",
 		title: "Building The Dyrt's Mobile Experience",
 		description:
-			"A ground-up build of The Dyrt’s first iOS and Android apps, transforming a web-only camping platform into a mobile-ready experience for travellers exploring remote areas. The project delivered a fast, map-centred interface that brought user-generated campground data, GIS layers and offline-friendly navigation into one cohesive app.",
+			"A ground-up build of The Dyrt's first iOS and Android apps, transforming a web-only camping platform into a mobile-ready experience for travellers exploring remote areas. The project delivered a fast, map-centred interface that brought user-generated campground data, GIS layers and offline-friendly navigation into one cohesive app.",
 		tags: ["Mobile", "React Native", "GIS"],
 		video: "",
 		poster: "/assets/img/the-dyrt-2.jpg",
