@@ -15,6 +15,15 @@ const projects = [
 		poster: "/assets/video/posters/gd-counselling.webp",
 	},
 	{
+		slug: "building-confidence-with-technology",
+		title: "Building Confidence with Technology: Digital workshops for managers & small teams",
+		description:
+			"Workshops and coaching that help managers and small teams build confidence with modern workplace tools, AI-enabled workflows, and agile-inspired ways of working.",
+		tags: ["Training", "Workshops", "AI", "Capability Building", "Agile", "Modern Work"],
+		video: "",
+		poster: "/assets/img/projects/building-confidence-with-technology/cover.webp",
+	},
+	{
 		slug: "doing-ageing-differently",
 		title: "What better looks like; Doing ageing differently.",
 		description:
